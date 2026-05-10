@@ -207,7 +207,7 @@
 <div class="app">
 
   <!-- LIST -->
-  <div id="p-list" class="panel active" style="flex-direction:column;">
+  <div id="p-list" class="panel" style="flex-direction:column;">
     <div class="topbar">
       <div class="topbar-inner">
         <div class="app-logo">
@@ -259,7 +259,7 @@
   </div>
 
   <!-- TOP RANKING -->
-  <div id="p-top" class="panel">
+  <div id="p-top" class="panel active">
     <div class="panel-title">Top <span style="color:var(--accent)">ranking</span></div>
     <div class="panel-scroll" id="top-list"></div>
   </div>
@@ -308,46 +308,9 @@
   </div>
 
   <!-- IMPORTER -->
-  <div id="p-import" class="panel">
-    <div class="panel-title">Importer</div>
-    <div class="panel-scroll">
-      <div style="margin-bottom:20px;">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
-          <div style="font-size:12px;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;">Données d'exemple</div>
-          <button onclick="forceReloadAll()" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid var(--border2);background:var(--surface2);color:var(--text2);cursor:pointer;">↺ Tout recharger</button>
-        </div>
-        <div id="data-files" style="display:flex;flex-direction:column;gap:6px;"></div>
-      </div>
-      <div style="height:1px;background:var(--border);margin-bottom:20px;"></div>
-      <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-in').click()">
-        <div class="drop-icon">📂</div>
-        <div class="drop-title">Glisser un fichier ou appuyer</div>
-        <div class="drop-sub">iCal, CSV, JSON, texte</div>
-      </div>
-      <div class="formats">
-        <span class="fmt">.ics / iCal</span><span class="fmt">.csv</span><span class="fmt">.json</span><span class="fmt">Texte libre</span>
-      </div>
-      <input type="file" id="file-in" accept=".ics,.csv,.json,.txt" style="display:none" onchange="handleFile(this)" />
-      <div class="fgroup">
-        <label>Ou coller du texte</label>
-        <textarea id="import-txt" style="height:120px;width:100%;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--r);padding:11px 14px;font-size:13px;color:var(--text);font-family:'DM Sans',sans-serif;resize:none;outline:none;" placeholder="Coller ici une liste, un email de confirmation…&#10;ex: Coldplay, 15 juin 2026, Stade de France"></textarea>
-      </div>
-      <button class="save-btn" onclick="analyseText()" style="background:var(--surface2);color:var(--text);border:0.5px solid var(--border2);">✨ Analyser et importer</button>
-      <div style="height:20px"></div>
-    </div>
-  </div>
-
-  <!-- TAB BAR — 6 tabs -->
+  <!-- TAB BAR — 5 tabs + burger -->
   <nav class="tabbar">
-    <button class="tab-btn active" id="tb-list" onclick="goTab('list')">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="3" rx="1"/><rect x="3" y="10.5" width="18" height="3" rx="1"/><rect x="3" y="16" width="18" height="3" rx="1"/></svg>
-      Liste
-    </button>
-    <button class="tab-btn" id="tb-cal" onclick="goTab('cal')">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      Agenda
-    </button>
-    <button class="tab-btn" id="tb-top" onclick="goTab('top')">
+    <button class="tab-btn active" id="tb-top" onclick="goTab('top')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 9H4a2 2 0 0 1-2-2V5h4"/><path d="M18 9h2a2 2 0 0 0 2-2V5h-4"/><path d="M6 3h12v7a6 6 0 0 1-12 0z"/><path d="M9 22h6"/><line x1="12" y1="17" x2="12" y2="22"/><path d="M5 17a7 7 0 0 0 14 0"/></svg>
       Top
     </button>
@@ -355,15 +318,57 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
       Réserver
     </button>
+    <button class="tab-btn" id="tb-cal" onclick="goTab('cal')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Agenda
+    </button>
     <button class="tab-btn" id="tb-add" onclick="goTab('add')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
       Nouveau
     </button>
-    <button class="tab-btn" id="tb-import" onclick="goTab('import')">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
-      Import
+    <button class="tab-btn" id="tb-list" onclick="goTab('list')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="3" rx="1"/><rect x="3" y="10.5" width="18" height="3" rx="1"/><rect x="3" y="16" width="18" height="3" rx="1"/></svg>
+      Liste
+    </button>
+    <button class="tab-btn" id="tb-burger" onclick="openBurger()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+      Autre
     </button>
   </nav>
+</div>
+
+<!-- Burger backdrop -->
+<div id="burger-backdrop" onclick="closeBurger()" style="display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,0.55);"></div>
+
+<!-- Burger bottom sheet -->
+<div id="burger-sheet" style="display:none;flex-direction:column;position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;background:var(--surface);border-radius:20px 20px 0 0;z-index:101;max-height:88vh;padding-bottom:env(safe-area-inset-bottom);">
+  <div style="width:38px;height:4px;background:var(--border2);border-radius:2px;margin:12px auto 0;flex-shrink:0;"></div>
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 20px 10px;flex-shrink:0;">
+    <div style="font-family:'DM Serif Display',serif;font-size:20px;">Autre</div>
+    <button onclick="closeBurger()" style="width:30px;height:30px;border-radius:50%;border:none;background:var(--surface2);color:var(--text2);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;">✕</button>
+  </div>
+  <div style="flex:1;overflow-y:auto;overscroll-behavior:contain;padding:0 20px 20px;">
+    <!-- Fichiers de données -->
+    <div style="font-size:12px;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;">Données chargées</div>
+    <div id="data-files" style="display:flex;flex-direction:column;gap:6px;margin-bottom:20px;"></div>
+    <div style="height:1px;background:var(--border);margin-bottom:20px;"></div>
+    <!-- Import fichier -->
+    <div style="font-size:12px;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;">Importer</div>
+    <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-in').click()">
+      <div class="drop-icon">📂</div>
+      <div class="drop-title">Glisser un fichier ou appuyer</div>
+      <div class="drop-sub">iCal, CSV, JSON, texte</div>
+    </div>
+    <div class="formats">
+      <span class="fmt">.ics / iCal</span><span class="fmt">.csv</span><span class="fmt">.json</span><span class="fmt">Texte libre</span>
+    </div>
+    <input type="file" id="file-in" accept=".ics,.csv,.json,.txt" style="display:none" onchange="handleFile(this)" />
+    <div class="fgroup">
+      <label>Ou coller du texte</label>
+      <textarea id="import-txt" style="height:100px;width:100%;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--r);padding:11px 14px;font-size:13px;color:var(--text);font-family:'DM Sans',sans-serif;resize:none;outline:none;" placeholder="Coller ici une liste, un email de confirmation…&#10;ex: Coldplay, 15 juin 2026, Stade de France"></textarea>
+    </div>
+    <button class="save-btn" onclick="analyseText()" style="background:var(--surface2);color:var(--text);border:0.5px solid var(--border2);">✨ Analyser et importer</button>
+  </div>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -409,8 +414,21 @@ function toast(msg) {
   clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove('show'), 2600);
 }
 
-const TABS = ['list','cal','top','areserver','add','import'];
+const TABS = ['top','areserver','cal','add','list'];
+function openBurger() {
+  const s=document.getElementById('burger-sheet');
+  const b=document.getElementById('burger-backdrop');
+  s.style.display='flex'; b.style.display='block';
+  document.getElementById('tb-burger').classList.add('active');
+  initDataFiles();
+}
+function closeBurger() {
+  document.getElementById('burger-sheet').style.display='none';
+  document.getElementById('burger-backdrop').style.display='none';
+  document.getElementById('tb-burger').classList.remove('active');
+}
 function goTab(name) {
+  closeBurger();
   TABS.forEach(n => {
     document.getElementById('p-'+n).classList.toggle('active', n===name);
     document.getElementById('tb-'+n).classList.toggle('active', n===name);
@@ -419,7 +437,6 @@ function goTab(name) {
   if (name==='cal')       renderCal();
   if (name==='top')       renderTop();
   if (name==='areserver') renderAReserver();
-  if (name==='import')    initDataFiles();
 }
 function goAdd() { goTab('add'); }
 
@@ -786,9 +803,9 @@ async function initDataFiles() {
   cont.innerHTML = '<div style="font-size:12px;color:var(--text3)">Chargement…</div>';
   let files = [];
   try {
-    const idx = await fetch('data/index.json').then(r=>r.json());
+    const idx = await fetch('./data/index.json').then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
     files = idx.files || [];
-  } catch { cont.innerHTML = '<div style="font-size:12px;color:var(--text3)">Aucun fichier disponible</div>'; return; }
+  } catch(err) { console.error('initDataFiles:', err); cont.innerHTML = '<div style="font-size:12px;color:var(--text3)">Aucun fichier disponible</div>'; return; }
 
   cont.innerHTML = '';
   for (const df of files) {
@@ -803,7 +820,7 @@ async function initDataFiles() {
       <button class="data-file-btn${already?' loaded':''}" id="btn-${df.file}"
         onclick="loadDataFile('${df.file}',this)">${already?'✓ Chargé':'Charger'}</button>`;
     cont.appendChild(row);
-    fetch(`data/${df.file}`).then(r=>r.json()).then(arr=>{
+    fetch(`./data/${df.file}`).then(r=>r.json()).then(arr=>{
       const el=document.getElementById(`cnt-${df.file}`);
       if(el) el.textContent=arr.length+' events';
     }).catch(()=>{});
@@ -834,7 +851,7 @@ async function forceReloadAll() {
   } catch(err) {
     console.error('forceReloadAll: cannot fetch data/index.json', err);
     toast('⚠ Impossible de lire data/index.json');
-    renderImportTab(); return;
+    initDataFiles(); return;
   }
   let total = 0;
   for (const df of files) {
@@ -850,7 +867,7 @@ async function forceReloadAll() {
   save();
   localStorage.setItem('psp-loaded', JSON.stringify([..._loadedFiles]));
   render();
-  renderImportTab();
+  initDataFiles();
   toast(total > 0 ? `✓ ${total} events chargés` : '✓ Données déjà à jour');
 }
 
@@ -942,6 +959,7 @@ dz.addEventListener('drop',e=>{
 });
 
 render();
+renderTop();
 autoLoadDataFiles();
 </script>
 </body>
