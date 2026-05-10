@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Sorties" />
+  <title>Paris Sortie Planner</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0e0d0c;
+      --surface: #1a1916;
+      --surface2: #23221f;
+      --surface3: #2e2c28;
+      --border: rgba(255,255,255,0.08);
+      --border2: rgba(255,255,255,0.14);
+      --text: #f0ede8;
+      --text2: #9e9a92;
+      --text3: #5e5c57;
+      --accent: #e8c97a;
+      --accent-dim: rgba(232,201,122,0.12);
+      --red: #e05252;
+      --red-dim: rgba(224,82,82,0.12);
+      --orange: #e89652;
+      --orange-dim: rgba(232,150,82,0.12);
+      --green: #5cb88a;
+      --green-dim: rgba(92,184,138,0.12);
+      --blue: #5b9bd5;
+      --blue-dim: rgba(91,155,213,0.12);
+      --pink: #d47aa0;
+      --pink-dim: rgba(212,122,160,0.12);
+      --r: 10px;
+      --r-lg: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 15px; overflow: hidden; }
+    .app { display: flex; flex-direction: column; height: 100dvh; max-width: 430px; margin: 0 auto; }
+
+    /* Header */
+    .topbar { padding: 52px 20px 16px; flex-shrink: 0; }
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; }
+    .app-title { font-family: 'DM Serif Display', serif; font-size: 26px; color: var(--text); letter-spacing: -0.3px; }
+    .app-title span { color: var(--accent); }
+    .add-btn { width: 38px; height: 38px; border-radius: 50%; background: var(--accent); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #0e0d0c; font-size: 20px; font-weight: 600; transition: transform 0.15s, opacity 0.15s; flex-shrink: 0; }
+    .add-btn:active { transform: scale(0.93); opacity: 0.85; }
+
+    /* Stats */
+    .stats { display: flex; gap: 8px; padding: 0 20px 16px; flex-shrink: 0; }
+    .stat-card { flex: 1; background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r); padding: 12px; }
+    .stat-num { font-size: 22px; font-weight: 600; color: var(--text); line-height: 1; }
+    .stat-num.red { color: var(--red); }
+    .stat-num.orange { color: var(--orange); }
+    .stat-lbl { font-size: 11px; color: var(--text2); margin-top: 3px; }
+
+    /* Filters */
+    .filter-scroll { display: flex; gap: 7px; padding: 0 20px 14px; overflow-x: auto; flex-shrink: 0; scrollbar-width: none; }
+    .filter-scroll::-webkit-scrollbar { display: none; }
+    .chip { padding: 6px 13px; border-radius: 20px; font-size: 12px; font-weight: 500; border: 0.5px solid var(--border); background: var(--surface); color: var(--text2); cursor: pointer; white-space: nowrap; transition: all 0.15s; }
+    .chip.active { background: var(--accent-dim); border-color: var(--accent); color: var(--accent); }
+
+    /* Events list */
+    .scroll-area { flex: 1; overflow-y: auto; padding: 0 20px; scrollbar-width: none; }
+    .scroll-area::-webkit-scrollbar { display: none; }
+    .month-sep { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text3); margin: 18px 0 10px; }
+
+    /* Event card */
+    .ev-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 14px; margin-bottom: 8px; position: relative; overflow: hidden; cursor: pointer; transition: border-color 0.2s; }
+    .ev-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; }
+    .ev-card.urg::before { background: var(--red); }
+    .ev-card.soon::before { background: var(--orange); }
+    .ev-card.ok::before { background: var(--green); }
+    .ev-card:active { border-color: var(--border2); }
+    .ev-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+    .ev-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+    .ev-title { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 5px; line-height: 1.3; }
+    .ev-meta { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--text2); margin-bottom: 3px; }
+    .ev-meta svg { width: 13px; height: 13px; flex-shrink: 0; opacity: 0.6; }
+    .days-badge { font-size: 11px; padding: 2px 7px; border-radius: 20px; margin-left: 4px; }
+    .del-btn { background: none; border: none; cursor: pointer; color: var(--text3); padding: 4px; font-size: 16px; line-height: 1; transition: color 0.15s; flex-shrink: 0; }
+    .del-btn:active { color: var(--red); }
+    .reminder-row { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text3); margin-top: 6px; }
+
+    /* Empty */
+    .empty { text-align: center; padding: 50px 20px; color: var(--text3); }
+    .empty-icon { font-size: 40px; margin-bottom: 12px; opacity: 0.4; }
+    .empty p { font-size: 14px; color: var(--text2); }
+    .empty small { font-size: 12px; margin-top: 4px; display: block; }
+
+    /* Tab bar */
+    .tabbar { display: flex; background: var(--surface); border-top: 0.5px solid var(--border); padding-bottom: env(safe-area-inset-bottom); flex-shrink: 0; }
+    .tab-btn { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 0; border: none; background: none; cursor: pointer; color: var(--text3); font-size: 10px; font-family: 'DM Sans', sans-serif; transition: color 0.15s; }
+    .tab-btn.active { color: var(--accent); }
+    .tab-btn svg { width: 22px; height: 22px; }
+
+    /* Panels */
+    .panel { display: none; flex-direction: column; flex: 1; overflow: hidden; }
+    .panel.active { display: flex; }
+    .panel-scroll { flex: 1; overflow-y: auto; padding: 20px; scrollbar-width: none; }
+    .panel-scroll::-webkit-scrollbar { display: none; }
+    .panel-title { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--text); padding: 52px 20px 20px; flex-shrink: 0; }
+
+    /* Form */
+    .fgroup { margin-bottom: 16px; }
+    .fgroup label { display: block; font-size: 12px; font-weight: 500; color: var(--text2); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .fgroup input, .fgroup select, .fgroup textarea {
+      width: 100%; background: var(--surface2); border: 0.5px solid var(--border2); border-radius: var(--r);
+      padding: 11px 14px; font-size: 14px; color: var(--text); font-family: 'DM Sans', sans-serif;
+      -webkit-appearance: none; appearance: none; outline: none; transition: border-color 0.15s;
+    }
+    .fgroup input:focus, .fgroup select:focus, .fgroup textarea:focus { border-color: var(--accent); }
+    .fgroup textarea { height: 70px; resize: none; line-height: 1.5; }
+    .fgroup select option { background: var(--surface2); }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .rem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px; }
+    .rem-opt { padding: 9px; text-align: center; font-size: 12px; font-weight: 500; border: 0.5px solid var(--border2); border-radius: var(--r); cursor: pointer; color: var(--text2); background: var(--surface2); transition: all 0.15s; }
+    .rem-opt.sel { background: var(--accent-dim); border-color: var(--accent); color: var(--accent); }
+    .save-btn { width: 100%; padding: 14px; background: var(--accent); border: none; border-radius: var(--r-lg); font-size: 15px; font-weight: 600; color: #0e0d0c; cursor: pointer; margin-top: 8px; font-family: 'DM Sans', sans-serif; transition: opacity 0.15s, transform 0.15s; }
+    .save-btn:active { opacity: 0.85; transform: scale(0.98); }
+
+    /* Import */
+    .drop-zone { border: 1.5px dashed var(--border2); border-radius: var(--r-lg); padding: 32px 20px; text-align: center; cursor: pointer; margin-bottom: 16px; transition: border-color 0.2s, background 0.2s; }
+    .drop-zone:active, .drop-zone.drag { border-color: var(--accent); background: var(--accent-dim); }
+    .drop-icon { font-size: 36px; margin-bottom: 10px; }
+    .drop-title { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 4px; }
+    .drop-sub { font-size: 12px; color: var(--text2); }
+    .formats { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
+    .fmt { font-size: 11px; padding: 4px 10px; border: 0.5px solid var(--border2); border-radius: 20px; color: var(--text2); background: var(--surface2); }
+
+    /* Toast */
+    .toast { position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%) translateY(10px); background: var(--text); color: var(--bg); padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 500; pointer-events: none; opacity: 0; transition: opacity 0.25s, transform 0.25s; white-space: nowrap; z-index: 100; }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* Category colors */
+    .b-concert { background: var(--blue-dim); color: var(--blue); }
+    .b-resto { background: var(--green-dim); color: var(--green); }
+    .b-spectacle { background: var(--pink-dim); color: var(--pink); }
+    .b-voyage { background: var(--orange-dim); color: var(--orange); }
+    .b-autre { background: rgba(255,255,255,0.05); color: var(--text2); }
+    .d-urg { background: var(--red-dim); color: var(--red); }
+    .d-soon { background: var(--orange-dim); color: var(--orange); }
+    .d-ok { background: var(--green-dim); color: var(--green); }
+    .d-past { background: rgba(255,255,255,0.05); color: var(--text3); }
+  </style>
+</head>
+<body>
+<div class="app">
+
+  <!-- LIST PANEL -->
+  <div id="p-list" class="panel active" style="flex-direction:column;">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="app-title">Mes <span>sorties</span></div>
+        <button class="add-btn" onclick="goAdd()" aria-label="Ajouter un événement">+</button>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat-card"><div class="stat-num" id="s-total">0</div><div class="stat-lbl">événements</div></div>
+      <div class="stat-card"><div class="stat-num red" id="s-urg">0</div><div class="stat-lbl">à réserver</div></div>
+      <div class="stat-card"><div class="stat-num orange" id="s-soon">0</div><div class="stat-lbl">ce mois</div></div>
+    </div>
+    <div class="filter-scroll" id="filters">
+      <div class="chip active" onclick="setFilter('all',this)">Tous</div>
+      <div class="chip" onclick="setFilter('concert',this)">🎵 Concerts</div>
+      <div class="chip" onclick="setFilter('resto',this)">🍽️ Restos</div>
+      <div class="chip" onclick="setFilter('voyage',this)">✈️ Voyages</div>
+      <div class="chip" onclick="setFilter('spectacle',this)">🎭 Spectacles</div>
+      <div class="chip" onclick="setFilter('autre',this)">📌 Autres</div>
+    </div>
+    <div class="scroll-area" id="ev-list"></div>
+  </div>
+
+  <!-- ADD PANEL -->
+  <div id="p-add" class="panel">
+    <div class="panel-title">Nouvel événement</div>
+    <div class="panel-scroll">
+      <div class="fgroup">
+        <label>Titre</label>
+        <input id="f-title" type="text" placeholder="ex: Coldplay – Stade de France" />
+      </div>
+      <div class="fgroup">
+        <label>Catégorie</label>
+        <select id="f-cat">
+          <option value="concert">🎵 Concert</option>
+          <option value="resto">🍽️ Restaurant</option>
+          <option value="spectacle">🎭 Spectacle</option>
+          <option value="voyage">✈️ Voyage / Weekend</option>
+          <option value="autre">📌 Autre</option>
+        </select>
+      </div>
+      <div class="two-col">
+        <div class="fgroup"><label>Date</label><input id="f-date" type="date" /></div>
+        <div class="fgroup"><label>Heure</label><input id="f-time" type="time" /></div>
+      </div>
+      <div class="fgroup">
+        <label>Lieu</label>
+        <input id="f-venue" type="text" placeholder="Salle Pleyel, Paris…" />
+      </div>
+      <div class="fgroup">
+        <label>Réserver avant le</label>
+        <input id="f-deadline" type="date" />
+      </div>
+      <div class="fgroup">
+        <label>Rappels</label>
+        <div class="rem-grid" id="rem-opts">
+          <div class="rem-opt sel" data-v="1m" onclick="toggleRem(this)">1 mois avant</div>
+          <div class="rem-opt sel" data-v="2w" onclick="toggleRem(this)">2 semaines</div>
+          <div class="rem-opt" data-v="1w" onclick="toggleRem(this)">1 semaine</div>
+          <div class="rem-opt" data-v="1d" onclick="toggleRem(this)">La veille</div>
+        </div>
+      </div>
+      <div class="fgroup">
+        <label>Notes / lien réservation</label>
+        <textarea id="f-notes" placeholder="URL de réservation, infos pratiques…"></textarea>
+      </div>
+      <button class="save-btn" onclick="saveEv()">Enregistrer</button>
+      <div style="height:20px"></div>
+    </div>
+  </div>
+
+  <!-- IMPORT PANEL -->
+  <div id="p-import" class="panel">
+    <div class="panel-title">Importer</div>
+    <div class="panel-scroll">
+      <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-in').click()">
+        <div class="drop-icon">📂</div>
+        <div class="drop-title">Glisser un fichier ou appuyer</div>
+        <div class="drop-sub">iCal, CSV, JSON, texte</div>
+      </div>
+      <div class="formats">
+        <span class="fmt">.ics / iCal</span>
+        <span class="fmt">.csv</span>
+        <span class="fmt">.json</span>
+        <span class="fmt">Texte libre</span>
+      </div>
+      <input type="file" id="file-in" accept=".ics,.csv,.json,.txt" style="display:none" onchange="handleFile(this)" />
+      <div class="fgroup">
+        <label>Ou coller du texte</label>
+        <textarea id="import-txt" style="height:120px;width:100%;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--r);padding:11px 14px;font-size:13px;color:var(--text);font-family:'DM Sans',sans-serif;resize:none;outline:none;" placeholder="Coller ici une liste, un email de confirmation…&#10;ex: Coldplay, 15 juin 2026, Stade de France"></textarea>
+      </div>
+      <button class="save-btn" onclick="analyseText()" style="background:var(--surface2);color:var(--text);border:0.5px solid var(--border2);">✨ Analyser et importer</button>
+      <div style="height:20px"></div>
+    </div>
+  </div>
+
+  <!-- TAB BAR -->
+  <nav class="tabbar">
+    <button class="tab-btn active" id="tb-list" onclick="goTab('list')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="3" rx="1"/><rect x="3" y="10.5" width="18" height="3" rx="1"/><rect x="3" y="16" width="18" height="3" rx="1"/></svg>
+      Liste
+    </button>
+    <button class="tab-btn" id="tb-add" onclick="goTab('add')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+      Nouveau
+    </button>
+    <button class="tab-btn" id="tb-import" onclick="goTab('import')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+      Importer
+    </button>
+  </nav>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const CAT = {
+  concert:   { l:'Concert',    b:'b-concert' },
+  resto:     { l:'Restaurant', b:'b-resto' },
+  spectacle: { l:'Spectacle',  b:'b-spectacle' },
+  voyage:    { l:'Voyage',     b:'b-voyage' },
+  autre:     { l:'Autre',      b:'b-autre' }
+};
+
+let events = JSON.parse(localStorage.getItem('psp-events') || '[]');
+let filter = 'all';
+let rems = new Set(['1m','2w']);
+
+function save() { localStorage.setItem('psp-events', JSON.stringify(events)); }
+
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._t);
+  t._t = setTimeout(() => t.classList.remove('show'), 2400);
+}
+
+function goTab(name) {
+  ['list','add','import'].forEach(n => {
+    document.getElementById('p-'+n).classList.toggle('active', n===name);
+    document.getElementById('tb-'+n).classList.toggle('active', n===name);
+  });
+  if (name==='list') render();
+}
+function goAdd() { goTab('add'); }
+
+function setFilter(f, el) {
+  filter = f;
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  render();
+}
+
+function daysTo(d) {
+  if (!d) return 9999;
+  const t = new Date(d); t.setHours(12);
+  const n = new Date(); n.setHours(12,0,0,0);
+  return Math.round((t-n)/86400000);
+}
+
+function fmtDate(d) {
+  if (!d) return '';
+  return new Date(d+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'long'});
+}
+
+function render() {
+  let list = filter==='all' ? [...events] : events.filter(e=>e.cat===filter);
+  list.sort((a,b)=>(a.date||'9999')<(b.date||'9999')?-1:1);
+
+  document.getElementById('s-total').textContent = events.length;
+  document.getElementById('s-urg').textContent = events.filter(e=>{const d=daysTo(e.deadline||e.date);return d>=0&&d<=14;}).length;
+  document.getElementById('s-soon').textContent = events.filter(e=>{const d=daysTo(e.date);return d>=0&&d<=31;}).length;
+
+  const cont = document.getElementById('ev-list');
+  if (!list.length) {
+    cont.innerHTML = `<div class="empty"><div class="empty-icon">🎟️</div><p>Aucun événement</p><small>Ajoute ou importe tes sorties !</small></div>`;
+    return;
+  }
+
+  let html = '', lastM = '';
+  list.forEach((ev,i) => {
+    const mo = ev.date ? new Date(ev.date+'T12:00:00').toLocaleDateString('fr-FR',{month:'long',year:'numeric'}) : 'Sans date';
+    if (mo!==lastM) { html+=`<div class="month-sep">${mo}</div>`; lastM=mo; }
+    const cat = CAT[ev.cat]||CAT.autre;
+    const days = daysTo(ev.date);
+    const urgCls = days<0?'ok':days<=14?'urg':days<=45?'soon':'ok';
+    const dLabel = days<0?'Passé':days===0?"Auj.!":`${days}j`;
+    const dCls = days<0?'d-past':days<=14?'d-urg':days<=45?'d-soon':'d-ok';
+    const dlInfo = ev.deadline?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>Réserver avant le ${fmtDate(ev.deadline)}</div>`:'';
+    const remInfo = ev.reminders?.length?`<div class="reminder-row">🔔 ${ev.reminders.length} rappel${ev.reminders.length>1?'s':''} configuré${ev.reminders.length>1?'s':''}</div>`:'';
+    html+=`<div class="ev-card ${urgCls}">
+      <div class="ev-top">
+        <span class="ev-badge ${cat.b}">${cat.l}</span>
+        <button class="del-btn" onclick="delEv(event,${i})">✕</button>
+      </div>
+      <div class="ev-title">${ev.title}</div>
+      <div class="ev-meta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        ${fmtDate(ev.date)}${ev.time?' · '+ev.time:''}
+        <span class="days-badge ${dCls}">${dLabel}</span>
+      </div>
+      ${ev.venue?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>${ev.venue}</div>`:''}
+      ${dlInfo}
+      ${ev.notes?`<div style="font-size:12px;color:var(--text3);margin-top:6px;line-height:1.5">${ev.notes}</div>`:''}
+      ${remInfo}
+    </div>`;
+  });
+  cont.innerHTML = html;
+}
+
+function delEv(e, i) {
+  e.stopPropagation();
+  events.splice(i,1); save(); render(); toast('Supprimé');
+}
+
+function toggleRem(el) {
+  el.classList.toggle('sel');
+  const v=el.dataset.v;
+  if(rems.has(v)) rems.delete(v); else rems.add(v);
+}
+
+function saveEv() {
+  const title=document.getElementById('f-title').value.trim();
+  if(!title){toast('⚠️ Ajoute un titre');return;}
+  events.push({
+    title, date:document.getElementById('f-date').value,
+    time:document.getElementById('f-time').value,
+    cat:document.getElementById('f-cat').value,
+    venue:document.getElementById('f-venue').value.trim(),
+    deadline:document.getElementById('f-deadline').value,
+    notes:document.getElementById('f-notes').value.trim(),
+    reminders:Array.from(rems),
+    added:new Date().toISOString()
+  });
+  save();
+  ['f-title','f-date','f-time','f-venue','f-deadline','f-notes'].forEach(id=>document.getElementById(id).value='');
+  toast('✓ Événement enregistré !');
+  goTab('list');
+}
+
+function handleFile(input) {
+  const f=input.files[0]; if(!f) return;
+  const r=new FileReader();
+  r.onload=e=>{
+    const txt=e.target.result;
+    if(f.name.endsWith('.ics')) importICS(txt);
+    else if(f.name.endsWith('.csv')) importCSV(txt);
+    else if(f.name.endsWith('.json')) importJSON(txt);
+    else { document.getElementById('import-txt').value=txt; }
+  };
+  r.readAsText(f);
+}
+
+function importICS(txt) {
+  const added=[];
+  txt.split('BEGIN:VEVENT').slice(1).forEach(b=>{
+    const g=k=>{const m=b.match(new RegExp(k+'[^:]*:(.+)'));return m?m[1].trim():''};
+    const dr=g('DTSTART');
+    const ds=dr.length>=8?dr.substring(0,4)+'-'+dr.substring(4,6)+'-'+dr.substring(6,8):'';
+    added.push({title:g('SUMMARY'),date:ds,cat:'autre',notes:g('DESCRIPTION'),venue:g('LOCATION'),reminders:['1w'],added:new Date().toISOString()});
+  });
+  if(added.length){events.push(...added);save();toast(`✓ ${added.length} événement(s) importé(s)`);goTab('list');}
+  else toast('Aucun événement trouvé');
+}
+
+function importCSV(txt) {
+  const rows=txt.trim().split('\n').slice(1).map(l=>{
+    const p=l.split(',');
+    return {title:p[0]||'',date:p[1]||'',cat:p[2]||'autre',venue:p[3]||'',notes:p[4]||'',reminders:['1w'],added:new Date().toISOString()};
+  }).filter(e=>e.title);
+  if(rows.length){events.push(...rows);save();toast(`✓ ${rows.length} ligne(s) importée(s)`);goTab('list');}
+}
+
+function importJSON(txt) {
+  try {
+    const data=JSON.parse(txt);
+    const arr=Array.isArray(data)?data:[data];
+    arr.forEach(e=>{if(!e.reminders)e.reminders=['1w'];if(!e.added)e.added=new Date().toISOString();});
+    events.push(...arr.filter(e=>e.title));
+    save();toast(`✓ ${arr.length} événement(s) importé(s)`);goTab('list');
+  } catch{toast('Erreur JSON');}
+}
+
+function analyseText() {
+  const txt=document.getElementById('import-txt').value.trim();
+  if(!txt){toast('Colle du texte à analyser');return;}
+  alert("Ouvre Claude.ai et colle ce message :\n\n« Analyse ce texte et extrais-en une liste d'événements (titre, date YYYY-MM-DD, catégorie concert/resto/spectacle/voyage/autre, lieu) :\n\n"+txt.substring(0,300)+"… »");
+}
+
+// Drag & drop
+const dz=document.getElementById('drop-zone');
+dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('drag');});
+dz.addEventListener('dragleave',()=>dz.classList.remove('drag'));
+dz.addEventListener('drop',e=>{
+  e.preventDefault();dz.classList.remove('drag');
+  const f=e.dataTransfer.files[0];
+  if(f){const inp=document.getElementById('file-in');const dt=new DataTransfer();dt.items.add(f);inp.files=dt.files;handleFile(inp);}
+});
+
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "Paris Sortie Planner",
+  "short_name": "Sorties",
+  "description": "Gère tes concerts, restos et voyages depuis ton iPhone",
+  "start_url": "/planout/index.html",
+  "scope": "/planout/",
+  "display": "standalone",
+  "background_color": "#0e0d0c",
+  "theme_color": "#0e0d0c",
+  "orientation": "portrait",
+  "icons": []
+}
