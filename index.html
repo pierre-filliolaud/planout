@@ -31,7 +31,7 @@
     .app { display: flex; flex-direction: column; height: 100dvh; max-width: 430px; margin: 0 auto; }
 
     /* Header */
-    .topbar { padding: 52px 20px 16px; flex-shrink: 0; }
+    .topbar { padding: calc(env(safe-area-inset-top, 0px) + 10px) 20px 12px; flex-shrink: 0; }
     .topbar-inner { display: flex; align-items: center; justify-content: space-between; }
     .app-logo { display: flex; align-items: center; gap: 10px; }
     .app-logo-icon { width: 34px; height: 34px; flex-shrink: 0; }
@@ -104,7 +104,7 @@
     .panel.active { display: flex; }
     .panel-scroll { flex: 1; overflow-y: auto; padding: 20px; scrollbar-width: none; overscroll-behavior: contain; }
     .panel-scroll::-webkit-scrollbar { display: none; }
-    .panel-title { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--text); padding: 52px 20px 20px; flex-shrink: 0; }
+    .panel-title { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--text); padding: calc(env(safe-area-inset-top, 0px) + 10px) 20px 16px; flex-shrink: 0; }
 
     /* Form */
     .fgroup { margin-bottom: 16px; }
@@ -148,7 +148,7 @@
     .d-past { background: rgba(255,255,255,0.05); color: var(--text3); }
 
     /* ── Calendar ── */
-    .cal-header { padding: 52px 20px 10px; flex-shrink: 0; }
+    .cal-header { padding: calc(env(safe-area-inset-top, 0px) + 10px) 20px 10px; flex-shrink: 0; }
     .cal-nav-row { display: flex; align-items: center; justify-content: space-between; }
     .cal-nav-btn { width: 36px; height: 36px; background: var(--surface2); border: 0.5px solid var(--border2); border-radius: 10px; color: var(--text); font-size: 20px; display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; }
     .cal-nav-btn:active { opacity: 0.7; }
@@ -240,17 +240,6 @@
       <div class="stat-card"><div class="stat-num" id="s-total">0</div><div class="stat-lbl">events</div></div>
       <div class="stat-card"><div class="stat-num red" id="s-urg">0</div><div class="stat-lbl">to book</div></div>
       <div class="stat-card"><div class="stat-num orange" id="s-soon">0</div><div class="stat-lbl">this month</div></div>
-    </div>
-    <div class="filter-scroll">
-      <div class="chip active" onclick="setFilter('all',this)">All</div>
-      <div class="chip" onclick="setFilter('musee',this)">🏛️ Museums</div>
-      <div class="chip" onclick="setFilter('concert',this)">🎵 Concerts</div>
-      <div class="chip" onclick="setFilter('resto',this)">🍽️ Restaurants</div>
-      <div class="chip" onclick="setFilter('voyage',this)">✈️ Trips</div>
-      <div class="chip" onclick="setFilter('spectacle',this)">🎭 Shows</div>
-      <div class="chip" onclick="setFilter('running',this)">🏃 Running</div>
-      <div class="chip" onclick="setFilter('volley',this)">🏐 Volley</div>
-      <div class="chip" onclick="setFilter('autre',this)">📌 Other</div>
     </div>
     <div class="scroll-area" id="ev-list"></div>
   </div>
@@ -368,6 +357,19 @@
     <div class="panel-scroll" id="detail-body" style="padding-top:0;"></div>
   </div>
 
+  <!-- SHARED FILTER BAR -->
+  <div id="filter-bar" class="filter-scroll" style="display:none;flex-shrink:0;border-top:0.5px solid var(--border);padding-top:10px;padding-bottom:10px;">
+    <div class="chip active" data-cat="all" onclick="setFilter('all',this)">All</div>
+    <div class="chip" data-cat="musee" onclick="setFilter('musee',this)">🏛️ Museums</div>
+    <div class="chip" data-cat="concert" onclick="setFilter('concert',this)">🎵 Concerts</div>
+    <div class="chip" data-cat="spectacle" onclick="setFilter('spectacle',this)">🎭 Shows</div>
+    <div class="chip" data-cat="running" onclick="setFilter('running',this)">🏃 Running</div>
+    <div class="chip" data-cat="volley" onclick="setFilter('volley',this)">🏐 Volley</div>
+    <div class="chip" data-cat="voyage" onclick="setFilter('voyage',this)">✈️ Trips</div>
+    <div class="chip" data-cat="resto" onclick="setFilter('resto',this)">🍽️ Restaurants</div>
+    <div class="chip" data-cat="autre" onclick="setFilter('autre',this)">📌 Other</div>
+  </div>
+
   <!-- TAB BAR -->
   <nav class="tabbar">
     <button class="tab-btn active" id="tb-top" onclick="goTab('top')">
@@ -446,6 +448,8 @@ const TABS = ['top','areserver','cal','add','list','more'];
 let _prevTab = 'top';
 let _detailId = null;
 
+const FILTER_TABS = new Set(['top','areserver','cal','list']);
+
 function goTab(name) {
   const isDetail = name === 'detail';
   if (!isDetail) _prevTab = name;
@@ -459,6 +463,9 @@ function goTab(name) {
     const btn = document.getElementById('tb-'+n);
     if (btn) btn.classList.toggle('active', n===name);
   });
+  // Show/hide shared filter bar
+  const fb = document.getElementById('filter-bar');
+  if (fb) fb.style.display = FILTER_TABS.has(name) ? 'flex' : 'none';
   if (name==='list')      render();
   if (name==='cal')       renderCal();
   if (name==='top')       renderTop();
@@ -544,9 +551,12 @@ function goAdd() { goTab('add'); }
 
 function setFilter(f, el) {
   filter = f;
-  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('#filter-bar .chip').forEach(c => c.classList.remove('active'));
   el.classList.add('active');
-  render();
+  if (_prevTab === 'list')      render();
+  else if (_prevTab === 'top')       renderTop();
+  else if (_prevTab === 'areserver') renderAReserver();
+  else if (_prevTab === 'cal')       renderCal();
 }
 
 function daysTo(d) {
@@ -715,7 +725,10 @@ function renderCal() {
   const offset   = (firstDay.getDay()+6)%7;
   const evMap = {};
   events.forEach(ev => {
-    if (ev.date) { if (!evMap[ev.date]) evMap[ev.date]=[]; evMap[ev.date].push(ev); }
+    if (!ev.date) return;
+    if (filter !== 'all' && (ev.cat||'autre') !== filter) return;
+    if (!evMap[ev.date]) evMap[ev.date]=[];
+    evMap[ev.date].push(ev);
   });
   let html='';
   for (let i=0;i<offset;i++) html+='<div class="cal-cell empty"></div>';
@@ -736,7 +749,7 @@ function renderCal() {
 function selectDay(ds) { calSelDay=ds; renderCal(); }
 
 function renderCalDay(ds) {
-  const evs = events.filter(e=>e.date===ds).sort((a,b)=>(a.time||'')<(b.time||'')?-1:1);
+  const evs = events.filter(e=>e.date===ds && (filter==='all'||(e.cat||'autre')===filter)).sort((a,b)=>(a.time||'')<(b.time||'')?-1:1);
   const label = new Date(ds+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',day:'numeric',month:'long'});
   let html=`<div class="cal-day-hdr">${label}</div>`;
   if (!evs.length) { html+='<div class="cal-empty" style="padding:16px 0">No events this day</div>'; }
@@ -763,7 +776,8 @@ function renderCalDay(ds) {
 
 function renderTop() {
   const todayStr = localStr(_today);
-  const upcoming = events.filter(e => e.date && e.date >= todayStr);
+  let upcoming = events.filter(e => e.date && e.date >= todayStr);
+  if (filter !== 'all') upcoming = upcoming.filter(e => (e.cat||'autre') === filter);
   const cont = document.getElementById('top-list');
   if (!upcoming.length) {
     cont.innerHTML = `<div class="empty"><div class="empty-icon">🏆</div><p>No upcoming events</p><small>Load data or add outings!</small></div>`;
@@ -812,15 +826,17 @@ function renderAReserver() {
   const todayStr = localStr(_today);
   const cont = document.getElementById('areserver-list');
 
+  const catOk = e => filter === 'all' || (e.cat||'autre') === filter;
+
   // Section 1 — Deadlines
   const withDead = events
-    .filter(e => e.deadline && e.deadline >= todayStr && (!e.date || e.date >= todayStr))
+    .filter(e => catOk(e) && e.deadline && e.deadline >= todayStr && (!e.date || e.date >= todayStr))
     .sort((a,b) => a.deadline < b.deadline ? -1 : 1);
 
   // Section 2 — Rappels
   const remItems = [];
   events.forEach(ev => {
-    if (!ev.date || ev.date < todayStr) return;
+    if (!catOk(ev) || !ev.date || ev.date < todayStr) return;
     (ev.reminders||[]).forEach(r => {
       const nd = new Date(ev.date+'T12:00:00');
       nd.setDate(nd.getDate() - (REM_DAYS[r]||1));
@@ -1061,7 +1077,7 @@ dz.addEventListener('drop',e=>{
 });
 
 render();
-renderTop();
+goTab('top');
 autoLoadDataFiles();
 </script>
 </body>
