@@ -12,29 +12,16 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0e0d0c;
-      --surface: #1a1916;
-      --surface2: #23221f;
-      --surface3: #2e2c28;
-      --border: rgba(255,255,255,0.08);
-      --border2: rgba(255,255,255,0.14);
-      --text: #f0ede8;
-      --text2: #9e9a92;
-      --text3: #5e5c57;
-      --accent: #e8c97a;
-      --accent-dim: rgba(232,201,122,0.12);
-      --red: #e05252;
-      --red-dim: rgba(224,82,82,0.12);
-      --orange: #e89652;
-      --orange-dim: rgba(232,150,82,0.12);
-      --green: #5cb88a;
-      --green-dim: rgba(92,184,138,0.12);
-      --blue: #5b9bd5;
-      --blue-dim: rgba(91,155,213,0.12);
-      --pink: #d47aa0;
-      --pink-dim: rgba(212,122,160,0.12);
-      --r: 10px;
-      --r-lg: 16px;
+      --bg: #0e0d0c; --surface: #1a1916; --surface2: #23221f; --surface3: #2e2c28;
+      --border: rgba(255,255,255,0.08); --border2: rgba(255,255,255,0.14);
+      --text: #f0ede8; --text2: #9e9a92; --text3: #5e5c57;
+      --accent: #e8c97a; --accent-dim: rgba(232,201,122,0.12);
+      --red: #e05252; --red-dim: rgba(224,82,82,0.12);
+      --orange: #e89652; --orange-dim: rgba(232,150,82,0.12);
+      --green: #5cb88a; --green-dim: rgba(92,184,138,0.12);
+      --blue: #5b9bd5; --blue-dim: rgba(91,155,213,0.12);
+      --pink: #d47aa0; --pink-dim: rgba(212,122,160,0.12);
+      --r: 10px; --r-lg: 16px;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
     html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 15px; overflow: hidden; }
@@ -52,8 +39,7 @@
     .stats { display: flex; gap: 8px; padding: 0 20px 16px; flex-shrink: 0; }
     .stat-card { flex: 1; background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r); padding: 12px; }
     .stat-num { font-size: 22px; font-weight: 600; color: var(--text); line-height: 1; }
-    .stat-num.red { color: var(--red); }
-    .stat-num.orange { color: var(--orange); }
+    .stat-num.red { color: var(--red); } .stat-num.orange { color: var(--orange); }
     .stat-lbl { font-size: 11px; color: var(--text2); margin-top: 3px; }
 
     /* Filters */
@@ -80,7 +66,11 @@
     .ev-meta { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--text2); margin-bottom: 3px; }
     .ev-meta svg { width: 13px; height: 13px; flex-shrink: 0; opacity: 0.6; }
     .days-badge { font-size: 11px; padding: 2px 7px; border-radius: 20px; margin-left: 4px; }
-    .del-btn { background: none; border: none; cursor: pointer; color: var(--text3); padding: 4px; font-size: 16px; line-height: 1; transition: color 0.15s; flex-shrink: 0; }
+    .ev-actions { display: flex; gap: 2px; flex-shrink: 0; }
+    .icon-btn { background: none; border: none; cursor: pointer; color: var(--text3); padding: 4px 5px; line-height: 1; transition: color 0.15s; display: flex; align-items: center; }
+    .icon-btn svg { width: 16px; height: 16px; }
+    .icon-btn:active { color: var(--accent); }
+    .del-btn { background: none; border: none; cursor: pointer; color: var(--text3); padding: 4px 5px; font-size: 16px; line-height: 1; transition: color 0.15s; }
     .del-btn:active { color: var(--red); }
     .reminder-row { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text3); margin-top: 6px; }
 
@@ -90,11 +80,11 @@
     .empty p { font-size: 14px; color: var(--text2); }
     .empty small { font-size: 12px; margin-top: 4px; display: block; }
 
-    /* Tab bar */
+    /* Tab bar — 5 tabs */
     .tabbar { display: flex; background: var(--surface); border-top: 0.5px solid var(--border); padding-bottom: env(safe-area-inset-bottom); flex-shrink: 0; }
-    .tab-btn { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 0; border: none; background: none; cursor: pointer; color: var(--text3); font-size: 10px; font-family: 'DM Sans', sans-serif; transition: color 0.15s; }
+    .tab-btn { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 9px 0; border: none; background: none; cursor: pointer; color: var(--text3); font-size: 9px; font-family: 'DM Sans', sans-serif; transition: color 0.15s; }
     .tab-btn.active { color: var(--accent); }
-    .tab-btn svg { width: 22px; height: 22px; }
+    .tab-btn svg { width: 20px; height: 20px; }
 
     /* Panels */
     .panel { display: none; flex-direction: column; flex: 1; overflow: hidden; }
@@ -106,11 +96,7 @@
     /* Form */
     .fgroup { margin-bottom: 16px; }
     .fgroup label { display: block; font-size: 12px; font-weight: 500; color: var(--text2); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
-    .fgroup input, .fgroup select, .fgroup textarea {
-      width: 100%; background: var(--surface2); border: 0.5px solid var(--border2); border-radius: var(--r);
-      padding: 11px 14px; font-size: 14px; color: var(--text); font-family: 'DM Sans', sans-serif;
-      -webkit-appearance: none; appearance: none; outline: none; transition: border-color 0.15s;
-    }
+    .fgroup input, .fgroup select, .fgroup textarea { width: 100%; background: var(--surface2); border: 0.5px solid var(--border2); border-radius: var(--r); padding: 11px 14px; font-size: 14px; color: var(--text); font-family: 'DM Sans', sans-serif; -webkit-appearance: none; appearance: none; outline: none; transition: border-color 0.15s; }
     .fgroup input:focus, .fgroup select:focus, .fgroup textarea:focus { border-color: var(--accent); }
     .fgroup textarea { height: 70px; resize: none; line-height: 1.5; }
     .fgroup select option { background: var(--surface2); }
@@ -144,17 +130,54 @@
     .d-soon { background: var(--orange-dim); color: var(--orange); }
     .d-ok { background: var(--green-dim); color: var(--green); }
     .d-past { background: rgba(255,255,255,0.05); color: var(--text3); }
+
+    /* ── Calendar ── */
+    .cal-header { padding: 52px 20px 10px; flex-shrink: 0; }
+    .cal-nav-row { display: flex; align-items: center; justify-content: space-between; }
+    .cal-nav-btn { width: 36px; height: 36px; background: var(--surface2); border: 0.5px solid var(--border2); border-radius: 10px; color: var(--text); font-size: 20px; display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; }
+    .cal-nav-btn:active { opacity: 0.7; }
+    .cal-month-lbl { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--text); }
+    .cal-month-lbl span { color: var(--accent); }
+    .cal-weekdays { display: grid; grid-template-columns: repeat(7,1fr); padding: 10px 14px 4px; flex-shrink: 0; }
+    .cal-wd { text-align: center; font-size: 10px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: 0.04em; }
+    .cal-grid { display: grid; grid-template-columns: repeat(7,1fr); gap: 3px; padding: 0 14px; flex-shrink: 0; }
+    .cal-cell { background: var(--surface); border: 0.5px solid var(--border); border-radius: 8px; min-height: 50px; padding: 5px 4px; cursor: pointer; transition: border-color 0.15s; }
+    .cal-cell.empty { background: transparent; border-color: transparent; cursor: default; pointer-events: none; }
+    .cal-cell.today { border-color: var(--accent); }
+    .cal-cell.selected { background: var(--accent-dim); border-color: var(--accent); }
+    .cal-cell.past { opacity: 0.4; }
+    .cal-dn { font-size: 11px; font-weight: 500; color: var(--text2); text-align: center; margin-bottom: 3px; line-height: 1; }
+    .cal-cell.today .cal-dn { color: var(--accent); font-weight: 700; }
+    .cal-dots { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px; }
+    .cal-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+    .cal-day-panel { flex: 1; overflow-y: auto; padding: 12px 20px; scrollbar-width: none; }
+    .cal-day-panel::-webkit-scrollbar { display: none; }
+    .cal-day-hdr { font-size: 13px; font-weight: 600; color: var(--text2); margin-bottom: 10px; text-transform: capitalize; }
+    .cal-empty { text-align: center; padding: 28px 20px; color: var(--text3); font-size: 13px; }
+
+    /* ── Rappels ── */
+    .rem-sep { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text3); margin: 16px 0 8px; }
+    .rem-sep:first-child { margin-top: 0; }
+    .rem-item { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r); padding: 12px 14px; margin-bottom: 7px; display: flex; align-items: center; gap: 10px; }
+    .rem-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .rem-body { flex: 1; min-width: 0; }
+    .rem-title { font-size: 14px; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 3px; }
+    .rem-sub { font-size: 11px; color: var(--text2); }
+    .rem-right { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; flex-shrink: 0; }
+    .exp-btn { background: none; border: none; cursor: pointer; color: var(--text3); padding: 2px; display: flex; transition: color 0.15s; }
+    .exp-btn svg { width: 15px; height: 15px; }
+    .exp-btn:active { color: var(--accent); }
   </style>
 </head>
 <body>
 <div class="app">
 
-  <!-- LIST PANEL -->
+  <!-- LIST -->
   <div id="p-list" class="panel active" style="flex-direction:column;">
     <div class="topbar">
       <div class="topbar-inner">
         <div class="app-title">Mes <span>sorties</span></div>
-        <button class="add-btn" onclick="goAdd()" aria-label="Ajouter un événement">+</button>
+        <button class="add-btn" onclick="goAdd()" aria-label="Ajouter">+</button>
       </div>
     </div>
     <div class="stats">
@@ -162,7 +185,7 @@
       <div class="stat-card"><div class="stat-num red" id="s-urg">0</div><div class="stat-lbl">à réserver</div></div>
       <div class="stat-card"><div class="stat-num orange" id="s-soon">0</div><div class="stat-lbl">ce mois</div></div>
     </div>
-    <div class="filter-scroll" id="filters">
+    <div class="filter-scroll">
       <div class="chip active" onclick="setFilter('all',this)">Tous</div>
       <div class="chip" onclick="setFilter('concert',this)">🎵 Concerts</div>
       <div class="chip" onclick="setFilter('resto',this)">🍽️ Restos</div>
@@ -173,14 +196,36 @@
     <div class="scroll-area" id="ev-list"></div>
   </div>
 
-  <!-- ADD PANEL -->
+  <!-- AGENDA -->
+  <div id="p-cal" class="panel">
+    <div class="cal-header">
+      <div class="cal-nav-row">
+        <button class="cal-nav-btn" onclick="calPrev()">‹</button>
+        <div class="cal-month-lbl" id="cal-month-lbl"></div>
+        <button class="cal-nav-btn" onclick="calNext()">›</button>
+      </div>
+    </div>
+    <div class="cal-weekdays">
+      <div class="cal-wd">L</div><div class="cal-wd">M</div><div class="cal-wd">M</div>
+      <div class="cal-wd">J</div><div class="cal-wd">V</div><div class="cal-wd">S</div><div class="cal-wd">D</div>
+    </div>
+    <div class="cal-grid" id="cal-grid"></div>
+    <div class="cal-day-panel" id="cal-day-panel">
+      <div class="cal-empty">Sélectionne un jour pour voir les événements</div>
+    </div>
+  </div>
+
+  <!-- RAPPELS -->
+  <div id="p-rem" class="panel">
+    <div class="panel-title">Rappels</div>
+    <div class="panel-scroll" id="rem-list"></div>
+  </div>
+
+  <!-- NOUVEAU -->
   <div id="p-add" class="panel">
     <div class="panel-title">Nouvel événement</div>
     <div class="panel-scroll">
-      <div class="fgroup">
-        <label>Titre</label>
-        <input id="f-title" type="text" placeholder="ex: Coldplay – Stade de France" />
-      </div>
+      <div class="fgroup"><label>Titre</label><input id="f-title" type="text" placeholder="ex: Coldplay – Stade de France" /></div>
       <div class="fgroup">
         <label>Catégorie</label>
         <select id="f-cat">
@@ -195,14 +240,8 @@
         <div class="fgroup"><label>Date</label><input id="f-date" type="date" /></div>
         <div class="fgroup"><label>Heure</label><input id="f-time" type="time" /></div>
       </div>
-      <div class="fgroup">
-        <label>Lieu</label>
-        <input id="f-venue" type="text" placeholder="Salle Pleyel, Paris…" />
-      </div>
-      <div class="fgroup">
-        <label>Réserver avant le</label>
-        <input id="f-deadline" type="date" />
-      </div>
+      <div class="fgroup"><label>Lieu</label><input id="f-venue" type="text" placeholder="Salle Pleyel, Paris…" /></div>
+      <div class="fgroup"><label>Réserver avant le</label><input id="f-deadline" type="date" /></div>
       <div class="fgroup">
         <label>Rappels</label>
         <div class="rem-grid" id="rem-opts">
@@ -212,16 +251,13 @@
           <div class="rem-opt" data-v="1d" onclick="toggleRem(this)">La veille</div>
         </div>
       </div>
-      <div class="fgroup">
-        <label>Notes / lien réservation</label>
-        <textarea id="f-notes" placeholder="URL de réservation, infos pratiques…"></textarea>
-      </div>
+      <div class="fgroup"><label>Notes / lien réservation</label><textarea id="f-notes" placeholder="URL de réservation, infos pratiques…"></textarea></div>
       <button class="save-btn" onclick="saveEv()">Enregistrer</button>
       <div style="height:20px"></div>
     </div>
   </div>
 
-  <!-- IMPORT PANEL -->
+  <!-- IMPORTER -->
   <div id="p-import" class="panel">
     <div class="panel-title">Importer</div>
     <div class="panel-scroll">
@@ -231,10 +267,7 @@
         <div class="drop-sub">iCal, CSV, JSON, texte</div>
       </div>
       <div class="formats">
-        <span class="fmt">.ics / iCal</span>
-        <span class="fmt">.csv</span>
-        <span class="fmt">.json</span>
-        <span class="fmt">Texte libre</span>
+        <span class="fmt">.ics / iCal</span><span class="fmt">.csv</span><span class="fmt">.json</span><span class="fmt">Texte libre</span>
       </div>
       <input type="file" id="file-in" accept=".ics,.csv,.json,.txt" style="display:none" onchange="handleFile(this)" />
       <div class="fgroup">
@@ -252,6 +285,14 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="3" rx="1"/><rect x="3" y="10.5" width="18" height="3" rx="1"/><rect x="3" y="16" width="18" height="3" rx="1"/></svg>
       Liste
     </button>
+    <button class="tab-btn" id="tb-cal" onclick="goTab('cal')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Agenda
+    </button>
+    <button class="tab-btn" id="tb-rem" onclick="goTab('rem')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      Rappels
+    </button>
     <button class="tab-btn" id="tb-add" onclick="goTab('add')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
       Nouveau
@@ -267,33 +308,47 @@
 
 <script>
 const CAT = {
-  concert:   { l:'Concert',    b:'b-concert' },
-  resto:     { l:'Restaurant', b:'b-resto' },
-  spectacle: { l:'Spectacle',  b:'b-spectacle' },
-  voyage:    { l:'Voyage',     b:'b-voyage' },
-  autre:     { l:'Autre',      b:'b-autre' }
+  concert:   { l:'Concert',    b:'b-concert',  dot:'#5b9bd5' },
+  resto:     { l:'Restaurant', b:'b-resto',     dot:'#5cb88a' },
+  spectacle: { l:'Spectacle',  b:'b-spectacle', dot:'#d47aa0' },
+  voyage:    { l:'Voyage',     b:'b-voyage',    dot:'#e89652' },
+  autre:     { l:'Autre',      b:'b-autre',     dot:'#9e9a92' }
 };
+const REM_DAYS = { '1m':30, '2w':14, '1w':7, '1d':1 };
+const REM_LBL  = { '1m':'1 mois avant', '2w':'2 semaines avant', '1w':'1 semaine avant', '1d':'La veille' };
+
+function uid() { return Math.random().toString(36).slice(2,10); }
+function localStr(d) { return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
 
 let events = JSON.parse(localStorage.getItem('psp-events') || '[]');
+let _dirty = false;
+events = events.map(e => { if (!e.id) { _dirty=true; return {...e, id:uid()}; } return e; });
+if (_dirty) localStorage.setItem('psp-events', JSON.stringify(events));
+
 let filter = 'all';
 let rems = new Set(['1m','2w']);
+let calYear, calMonth, calSelDay = null;
+const _today = new Date();
+calYear  = _today.getFullYear();
+calMonth = _today.getMonth();
 
 function save() { localStorage.setItem('psp-events', JSON.stringify(events)); }
 
 function toast(msg) {
   const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  clearTimeout(t._t);
-  t._t = setTimeout(() => t.classList.remove('show'), 2400);
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove('show'), 2400);
 }
 
+const TABS = ['list','cal','rem','add','import'];
 function goTab(name) {
-  ['list','add','import'].forEach(n => {
+  TABS.forEach(n => {
     document.getElementById('p-'+n).classList.toggle('active', n===name);
     document.getElementById('tb-'+n).classList.toggle('active', n===name);
   });
   if (name==='list') render();
+  if (name==='cal')  renderCal();
+  if (name==='rem')  renderRem();
 }
 function goAdd() { goTab('add'); }
 
@@ -316,35 +371,102 @@ function fmtDate(d) {
   return new Date(d+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'long'});
 }
 
+/* ── ICS export ─────────────────────────────────────── */
+
+const CAL_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="12" y1="14" x2="12" y2="18"/><line x1="10" y1="16" x2="14" y2="16"/></svg>`;
+
+function generateICS(ev) {
+  const now = new Date();
+  const stamp = now.toISOString().replace(/[-:.]/g,'').slice(0,15)+'Z';
+  let dtstart, dtend;
+  if (ev.date) {
+    const ds = ev.date.replace(/-/g,'');
+    if (ev.time) {
+      const ts = ev.time.replace(':','')+'00';
+      dtstart = `DTSTART:${ds}T${ts}`;
+      const end = new Date(`${ev.date}T${ev.time}`);
+      end.setHours(end.getHours()+2);
+      const es = `${end.getFullYear()}${String(end.getMonth()+1).padStart(2,'0')}${String(end.getDate()).padStart(2,'0')}T${String(end.getHours()).padStart(2,'0')}${String(end.getMinutes()).padStart(2,'0')}00`;
+      dtend = `DTEND:${es}`;
+    } else {
+      dtstart = `DTSTART;VALUE=DATE:${ds}`;
+      const nd = new Date(ev.date); nd.setDate(nd.getDate()+1);
+      dtend = `DTEND;VALUE=DATE:${nd.toISOString().split('T')[0].replace(/-/g,'')}`;
+    }
+  } else {
+    const ds = localStr(now).replace(/-/g,'');
+    dtstart = `DTSTART;VALUE=DATE:${ds}`;
+    dtend   = `DTEND;VALUE=DATE:${ds}`;
+  }
+
+  const alarms = (ev.reminders||[]).map(r => {
+    const d = REM_DAYS[r]||1;
+    return `BEGIN:VALARM\r\nTRIGGER:-P${d}D\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel ${(ev.title||'').slice(0,40)}\r\nEND:VALARM`;
+  }).join('\r\n');
+
+  const esc = s => (s||'').replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n');
+  const lines = [
+    'BEGIN:VCALENDAR','VERSION:2.0',
+    'PRODID:-//Paris Sortie Planner//FR',
+    'CALSCALE:GREGORIAN','METHOD:PUBLISH',
+    'BEGIN:VEVENT',
+    `UID:${ev.id||uid()}@planout`,
+    `DTSTAMP:${stamp}`,
+    dtstart, dtend,
+    `SUMMARY:${esc(ev.title)}`,
+  ];
+  if (ev.venue)    lines.push(`LOCATION:${esc(ev.venue)}`);
+  if (ev.notes)    lines.push(`DESCRIPTION:${esc(ev.notes)}`);
+  if (ev.deadline) lines.push(`X-DEADLINE;VALUE=DATE:${ev.deadline.replace(/-/g,'')}`);
+  if (alarms)      lines.push(alarms);
+  lines.push('END:VEVENT','END:VCALENDAR');
+  return lines.join('\r\n');
+}
+
+function exportEv(e, id) {
+  e.stopPropagation();
+  const ev = events.find(x => x.id===id); if (!ev) return;
+  const blob = new Blob([generateICS(ev)], {type:'text/calendar;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = (ev.title||'event').replace(/[^\w\s-]/g,'').trim().replace(/\s+/g,'_')+'.ics';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(()=>URL.revokeObjectURL(url), 1000);
+  toast('📅 Exporté vers Calendrier');
+}
+
+/* ── List ───────────────────────────────────────────── */
+
 function render() {
   let list = filter==='all' ? [...events] : events.filter(e=>e.cat===filter);
   list.sort((a,b)=>(a.date||'9999')<(b.date||'9999')?-1:1);
 
   document.getElementById('s-total').textContent = events.length;
-  document.getElementById('s-urg').textContent = events.filter(e=>{const d=daysTo(e.deadline||e.date);return d>=0&&d<=14;}).length;
-  document.getElementById('s-soon').textContent = events.filter(e=>{const d=daysTo(e.date);return d>=0&&d<=31;}).length;
+  document.getElementById('s-urg').textContent   = events.filter(e=>{const d=daysTo(e.deadline||e.date);return d>=0&&d<=14;}).length;
+  document.getElementById('s-soon').textContent  = events.filter(e=>{const d=daysTo(e.date);return d>=0&&d<=31;}).length;
 
   const cont = document.getElementById('ev-list');
   if (!list.length) {
     cont.innerHTML = `<div class="empty"><div class="empty-icon">🎟️</div><p>Aucun événement</p><small>Ajoute ou importe tes sorties !</small></div>`;
     return;
   }
-
-  let html = '', lastM = '';
-  list.forEach((ev,i) => {
+  let html='', lastM='';
+  list.forEach(ev => {
     const mo = ev.date ? new Date(ev.date+'T12:00:00').toLocaleDateString('fr-FR',{month:'long',year:'numeric'}) : 'Sans date';
     if (mo!==lastM) { html+=`<div class="month-sep">${mo}</div>`; lastM=mo; }
     const cat = CAT[ev.cat]||CAT.autre;
     const days = daysTo(ev.date);
     const urgCls = days<0?'ok':days<=14?'urg':days<=45?'soon':'ok';
-    const dLabel = days<0?'Passé':days===0?"Auj.!":`${days}j`;
+    const dLabel = days<0?'Passé':days===0?'Auj.!':`${days}j`;
     const dCls = days<0?'d-past':days<=14?'d-urg':days<=45?'d-soon':'d-ok';
-    const dlInfo = ev.deadline?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>Réserver avant le ${fmtDate(ev.deadline)}</div>`:'';
-    const remInfo = ev.reminders?.length?`<div class="reminder-row">🔔 ${ev.reminders.length} rappel${ev.reminders.length>1?'s':''} configuré${ev.reminders.length>1?'s':''}</div>`:'';
     html+=`<div class="ev-card ${urgCls}">
       <div class="ev-top">
         <span class="ev-badge ${cat.b}">${cat.l}</span>
-        <button class="del-btn" onclick="delEv(event,${i})">✕</button>
+        <div class="ev-actions">
+          <button class="icon-btn" onclick="exportEv(event,'${ev.id}')" title="Exporter vers Calendrier">${CAL_SVG}</button>
+          <button class="del-btn" onclick="delEv(event,'${ev.id}')">✕</button>
+        </div>
       </div>
       <div class="ev-title">${ev.title}</div>
       <div class="ev-meta">
@@ -353,30 +475,32 @@ function render() {
         <span class="days-badge ${dCls}">${dLabel}</span>
       </div>
       ${ev.venue?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>${ev.venue}</div>`:''}
-      ${dlInfo}
+      ${ev.deadline?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>Réserver avant le ${fmtDate(ev.deadline)}</div>`:''}
       ${ev.notes?`<div style="font-size:12px;color:var(--text3);margin-top:6px;line-height:1.5">${ev.notes}</div>`:''}
-      ${remInfo}
+      ${ev.reminders?.length?`<div class="reminder-row">🔔 ${ev.reminders.length} rappel${ev.reminders.length>1?'s':''}</div>`:''}
     </div>`;
   });
   cont.innerHTML = html;
 }
 
-function delEv(e, i) {
+function delEv(e, id) {
   e.stopPropagation();
-  events.splice(i,1); save(); render(); toast('Supprimé');
+  events = events.filter(ev=>ev.id!==id);
+  save(); render(); toast('Supprimé');
 }
 
 function toggleRem(el) {
   el.classList.toggle('sel');
   const v=el.dataset.v;
-  if(rems.has(v)) rems.delete(v); else rems.add(v);
+  if (rems.has(v)) rems.delete(v); else rems.add(v);
 }
 
 function saveEv() {
   const title=document.getElementById('f-title').value.trim();
-  if(!title){toast('⚠️ Ajoute un titre');return;}
+  if (!title) { toast('⚠️ Ajoute un titre'); return; }
   events.push({
-    title, date:document.getElementById('f-date').value,
+    id:uid(), title,
+    date:document.getElementById('f-date').value,
     time:document.getElementById('f-time').value,
     cat:document.getElementById('f-cat').value,
     venue:document.getElementById('f-venue').value.trim(),
@@ -391,14 +515,141 @@ function saveEv() {
   goTab('list');
 }
 
+/* ── Calendar ───────────────────────────────────────── */
+
+const MONTHS_FR = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+
+function calPrev() { if (calMonth===0){calMonth=11;calYear--;}else calMonth--; calSelDay=null; renderCal(); }
+function calNext() { if (calMonth===11){calMonth=0;calYear++;}else calMonth++; calSelDay=null; renderCal(); }
+
+function renderCal() {
+  document.getElementById('cal-month-lbl').innerHTML = `${MONTHS_FR[calMonth]} <span>${calYear}</span>`;
+
+  const todayStr  = localStr(_today);
+  const firstDay  = new Date(calYear, calMonth, 1);
+  const lastDay   = new Date(calYear, calMonth+1, 0);
+  const offset    = (firstDay.getDay()+6)%7; // Mon=0
+
+  const evMap = {};
+  events.forEach(ev => {
+    if (ev.date) {
+      if (!evMap[ev.date]) evMap[ev.date]=[];
+      evMap[ev.date].push(ev);
+    }
+  });
+
+  let html='';
+  for (let i=0;i<offset;i++) html+='<div class="cal-cell empty"></div>';
+  for (let d=1; d<=lastDay.getDate(); d++) {
+    const ds = `${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const isToday = ds===todayStr;
+    const isPast  = ds<todayStr;
+    const isSel   = calSelDay===ds;
+    const evs     = evMap[ds]||[];
+    let dots = evs.slice(0,5).map(ev=>`<div class="cal-dot" style="background:${(CAT[ev.cat]||CAT.autre).dot}"></div>`).join('');
+    if (evs.length>5) dots+=`<span style="font-size:8px;color:var(--text3);line-height:1">+${evs.length-5}</span>`;
+    html+=`<div class="cal-cell${isToday?' today':''}${isPast?' past':''}${isSel?' selected':''}" onclick="selectDay('${ds}')">
+      <div class="cal-dn">${d}</div>
+      <div class="cal-dots">${dots}</div>
+    </div>`;
+  }
+  document.getElementById('cal-grid').innerHTML = html;
+
+  if (calSelDay) renderCalDay(calSelDay);
+  else document.getElementById('cal-day-panel').innerHTML = '<div class="cal-empty">Sélectionne un jour pour voir les événements</div>';
+}
+
+function selectDay(ds) { calSelDay=ds; renderCal(); }
+
+function renderCalDay(ds) {
+  const evs = (events.filter(e=>e.date===ds)).sort((a,b)=>(a.time||'')<(b.time||'')?-1:1);
+  const label = new Date(ds+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'});
+  let html=`<div class="cal-day-hdr">${label}</div>`;
+  if (!evs.length) {
+    html+='<div class="cal-empty" style="padding:16px 0">Aucun événement ce jour</div>';
+  } else {
+    evs.forEach(ev=>{
+      const cat=CAT[ev.cat]||CAT.autre;
+      html+=`<div class="rem-item" style="border-left:3px solid ${cat.dot};padding-left:11px;">
+        <div class="rem-body">
+          <div class="rem-title">${ev.title}</div>
+          <div class="rem-sub">${[ev.time,ev.venue].filter(Boolean).join(' · ')}</div>
+        </div>
+        <div class="rem-right">
+          <span class="ev-badge ${cat.b}" style="font-size:10px">${cat.l}</span>
+          <button class="exp-btn" onclick="exportEv(event,'${ev.id}')" title="Exporter">${CAL_SVG}</button>
+        </div>
+      </div>`;
+    });
+  }
+  document.getElementById('cal-day-panel').innerHTML = html;
+}
+
+/* ── Rappels ────────────────────────────────────────── */
+
+function renderRem() {
+  const todayStr = localStr(_today);
+  const items = [];
+  events.forEach(ev => {
+    if (!ev.date || ev.date < todayStr) return;
+    (ev.reminders||[]).forEach(r => {
+      const nd = new Date(ev.date+'T12:00:00');
+      nd.setDate(nd.getDate() - (REM_DAYS[r]||1));
+      const remStr = localStr(nd);
+      const dUntil = Math.round((nd - new Date(todayStr+'T12:00:00')) / 86400000);
+      items.push({ev, r, remStr, dUntil});
+    });
+  });
+  items.sort((a,b)=>a.remStr<b.remStr?-1:1);
+
+  if (!items.length) {
+    document.getElementById('rem-list').innerHTML = `<div class="empty"><div class="empty-icon">🔔</div><p>Aucun rappel configuré</p><small>Ajoute des événements avec des rappels</small></div>`;
+    return;
+  }
+
+  const groups = [
+    {label:"Aujourd'hui", fn:x=>x.dUntil===0},
+    {label:'Cette semaine', fn:x=>x.dUntil>=1&&x.dUntil<=7},
+    {label:'Ce mois',       fn:x=>x.dUntil>=8&&x.dUntil<=30},
+    {label:'Plus tard',     fn:x=>x.dUntil>30},
+    {label:'Passés',        fn:x=>x.dUntil<0},
+  ];
+
+  let html='';
+  groups.forEach(g=>{
+    const gi=items.filter(g.fn);
+    if (!gi.length) return;
+    html+=`<div class="rem-sep">${g.label}</div>`;
+    gi.forEach(({ev,r,dUntil})=>{
+      const cat=CAT[ev.cat]||CAT.autre;
+      const dLabel = dUntil<0?`Il y a ${-dUntil}j`:dUntil===0?"Aujourd'hui":`Dans ${dUntil}j`;
+      const dCls   = dUntil<0?'d-past':dUntil===0?'d-urg':dUntil<=7?'d-soon':'d-ok';
+      html+=`<div class="rem-item">
+        <div class="rem-dot" style="background:${cat.dot}"></div>
+        <div class="rem-body">
+          <div class="rem-title">${ev.title}</div>
+          <div class="rem-sub">${REM_LBL[r]} · ${fmtDate(ev.date)}</div>
+        </div>
+        <div class="rem-right">
+          <span class="days-badge ${dCls}">${dLabel}</span>
+          <button class="exp-btn" onclick="exportEv(event,'${ev.id}')" title="Exporter">${CAL_SVG}</button>
+        </div>
+      </div>`;
+    });
+  });
+  document.getElementById('rem-list').innerHTML = html;
+}
+
+/* ── Import ─────────────────────────────────────────── */
+
 function handleFile(input) {
-  const f=input.files[0]; if(!f) return;
+  const f=input.files[0]; if (!f) return;
   const r=new FileReader();
   r.onload=e=>{
     const txt=e.target.result;
-    if(f.name.endsWith('.ics')) importICS(txt);
-    else if(f.name.endsWith('.csv')) importCSV(txt);
-    else if(f.name.endsWith('.json')) importJSON(txt);
+    if (f.name.endsWith('.ics')) importICS(txt);
+    else if (f.name.endsWith('.csv')) importCSV(txt);
+    else if (f.name.endsWith('.json')) importJSON(txt);
     else { document.getElementById('import-txt').value=txt; }
   };
   r.readAsText(f);
@@ -410,25 +661,25 @@ function importICS(txt) {
     const g=k=>{const m=b.match(new RegExp(k+'[^:]*:(.+)'));return m?m[1].trim():''};
     const dr=g('DTSTART');
     const ds=dr.length>=8?dr.substring(0,4)+'-'+dr.substring(4,6)+'-'+dr.substring(6,8):'';
-    added.push({title:g('SUMMARY'),date:ds,cat:'autre',notes:g('DESCRIPTION'),venue:g('LOCATION'),reminders:['1w'],added:new Date().toISOString()});
+    added.push({id:uid(),title:g('SUMMARY'),date:ds,cat:'autre',notes:g('DESCRIPTION'),venue:g('LOCATION'),reminders:['1w'],added:new Date().toISOString()});
   });
-  if(added.length){events.push(...added);save();toast(`✓ ${added.length} événement(s) importé(s)`);goTab('list');}
+  if (added.length){events.push(...added);save();toast(`✓ ${added.length} événement(s) importé(s)`);goTab('list');}
   else toast('Aucun événement trouvé');
 }
 
 function importCSV(txt) {
   const rows=txt.trim().split('\n').slice(1).map(l=>{
     const p=l.split(',');
-    return {title:p[0]||'',date:p[1]||'',cat:p[2]||'autre',venue:p[3]||'',notes:p[4]||'',reminders:['1w'],added:new Date().toISOString()};
+    return {id:uid(),title:p[0]||'',date:p[1]||'',cat:p[2]||'autre',venue:p[3]||'',notes:p[4]||'',reminders:['1w'],added:new Date().toISOString()};
   }).filter(e=>e.title);
-  if(rows.length){events.push(...rows);save();toast(`✓ ${rows.length} ligne(s) importée(s)`);goTab('list');}
+  if (rows.length){events.push(...rows);save();toast(`✓ ${rows.length} ligne(s) importée(s)`);goTab('list');}
 }
 
 function importJSON(txt) {
   try {
     const data=JSON.parse(txt);
     const arr=Array.isArray(data)?data:[data];
-    arr.forEach(e=>{if(!e.reminders)e.reminders=['1w'];if(!e.added)e.added=new Date().toISOString();});
+    arr.forEach(e=>{if(!e.id)e.id=uid();if(!e.reminders)e.reminders=['1w'];if(!e.added)e.added=new Date().toISOString();});
     events.push(...arr.filter(e=>e.title));
     save();toast(`✓ ${arr.length} événement(s) importé(s)`);goTab('list');
   } catch{toast('Erreur JSON');}
@@ -440,7 +691,6 @@ function analyseText() {
   alert("Ouvre Claude.ai et colle ce message :\n\n« Analyse ce texte et extrais-en une liste d'événements (titre, date YYYY-MM-DD, catégorie concert/resto/spectacle/voyage/autre, lieu) :\n\n"+txt.substring(0,300)+"… »");
 }
 
-// Drag & drop
 const dz=document.getElementById('drop-zone');
 dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('drag');});
 dz.addEventListener('dragleave',()=>dz.classList.remove('drag'));
