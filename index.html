@@ -136,6 +136,8 @@
     .b-spectacle{ background: var(--pink-dim);    color: var(--pink);   }
     .b-voyage   { background: var(--orange-dim);  color: var(--orange); }
     .b-musee    { background: var(--purple-dim);  color: var(--purple); }
+    .b-running  { background: rgba(34,198,188,0.12); color: #22c6bc; }
+    .b-volley   { background: rgba(140,198,63,0.12);  color: #8cc63f; }
     .b-autre    { background: rgba(255,255,255,0.05); color: var(--text2); }
     .d-urg  { background: var(--red-dim);    color: var(--red);    }
     .d-soon { background: var(--orange-dim); color: var(--orange); }
@@ -239,6 +241,8 @@
       <div class="chip" onclick="setFilter('resto',this)">🍽️ Restaurants</div>
       <div class="chip" onclick="setFilter('voyage',this)">✈️ Trips</div>
       <div class="chip" onclick="setFilter('spectacle',this)">🎭 Shows</div>
+      <div class="chip" onclick="setFilter('running',this)">🏃 Running</div>
+      <div class="chip" onclick="setFilter('volley',this)">🏐 Volley</div>
       <div class="chip" onclick="setFilter('autre',this)">📌 Other</div>
     </div>
     <div class="scroll-area" id="ev-list"></div>
@@ -288,6 +292,8 @@
           <option value="resto">🍽️ Restaurant</option>
           <option value="spectacle">🎭 Show</option>
           <option value="voyage">✈️ Trip / Weekend</option>
+          <option value="running">🏃 Sport Running</option>
+          <option value="volley">🏐 Sport Volley</option>
           <option value="autre">📌 Other</option>
         </select>
       </div>
@@ -393,9 +399,11 @@ const CAT = {
   resto:     { l:'Restaurant', b:'b-resto',      dot:'#5cb88a' },
   spectacle: { l:'Show',       b:'b-spectacle',  dot:'#d47aa0' },
   voyage:    { l:'Trip',       b:'b-voyage',     dot:'#e89652' },
-  autre:     { l:'Other',      b:'b-autre',      dot:'#9e9a92' }
+  running:   { l:'Running',   b:'b-running',    dot:'#22c6bc' },
+  volley:    { l:'Volley',    b:'b-volley',     dot:'#8cc63f' },
+  autre:     { l:'Other',     b:'b-autre',      dot:'#9e9a92' }
 };
-const CAT_ORDER = ['musee','concert','spectacle','voyage','resto','autre'];
+const CAT_ORDER = ['musee','concert','spectacle','voyage','resto','running','volley','autre'];
 const REM_DAYS = { '1m':30, '2w':14, '1w':7, '1d':1 };
 const REM_LBL  = { '1m':'1 month before', '2w':'2 weeks before', '1w':'1 week before', '1d':'Day before' };
 const MONTHS_FR = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -458,6 +466,27 @@ function openDetail(id) {
 }
 function closeDetail() { goTab(_prevTab); }
 
+function linkifyNotes(txt) {
+  if (!txt) return '';
+  const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  return txt.split('\n').map(line => {
+    const t = line.trim();
+    if (/^https?:\/\/\S+$/.test(t)) {
+      let domain = t;
+      try { domain = new URL(t).hostname.replace(/^www\./,''); } catch(e) {}
+      return `<a href="${esc(t)}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none;font-size:13px;display:inline-flex;align-items:center;gap:4px;margin-top:2px;">` +
+             `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>` +
+             `${esc(domain)}</a>`;
+    }
+    return `<span>${esc(line)}</span>`;
+  }).join('<br>');
+}
+
+function normalizeCat(cat) {
+  const MAP = { expo: 'musee' };
+  return MAP[cat] || cat;
+}
+
 function renderDetail(id) {
   const ev = events.find(e => e.id === id); if (!ev) return;
   document.getElementById('detail-exp-btn').onclick = e => { e.stopPropagation(); exportEv(e, id); };
@@ -466,18 +495,20 @@ function renderDetail(id) {
   const days = daysTo(ev.date);
   const dLabel = days < 0 ? 'Past' : days === 0 ? 'Today!' : `${days}d`;
   const dCls   = days < 0 ? 'd-past' : days <= 14 ? 'd-urg' : days <= 45 ? 'd-soon' : 'd-ok';
-  const imgHtml = ev.image
-    ? `<div style="width:100%;aspect-ratio:16/9;background:#000;overflow:hidden;margin-bottom:16px;border-radius:var(--r-lg);">
-        <img src="${ev.image}" alt="" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.style.display='none'">
+  const imgSrc = ev.image_url || ev.image;
+  const imgHtml = imgSrc
+    ? `<div style="width:100%;aspect-ratio:16/9;background:#111;overflow:hidden;margin-bottom:16px;border-radius:var(--r-lg);">
+        <img src="${imgSrc}" alt="" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.style.display='none'">
        </div>`
     : '';
   const remHtml = (ev.reminders||[]).length
     ? `<div class="detail-row"><span class="detail-lbl">Reminders</span><span class="detail-val">${ev.reminders.map(r=>REM_LBL[r]||r).join(', ')}</span></div>`
     : '';
   const reasonsHtml = (ev.match_reasons||[]).length
-    ? `<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;">${ev.match_reasons.map(r=>`<span class="fmt" style="font-size:10px">${r}</span>`).join('')}</div>`
+    ? `<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;">${ev.match_reasons.map(r=>`<span class="fmt" style="font-size:10px">${r.replace(/</g,'&lt;')}</span>`).join('')}</div>`
     : '';
   const sourceHtml = ev.source ? `<div class="detail-row"><span class="detail-lbl">Source</span><span class="detail-val" style="color:var(--text3)">${ev.source}</span></div>` : '';
+  const dateFin = ev.date_fin ? ` → ${fmtDate(ev.date_fin)}` : '';
   document.getElementById('detail-body').innerHTML = `
     ${imgHtml}
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
@@ -486,11 +517,11 @@ function renderDetail(id) {
       <span class="days-badge ${dCls}">${dLabel}</span>
     </div>
     <div style="font-family:'DM Serif Display',serif;font-size:22px;line-height:1.25;margin-bottom:16px;">${ev.title}</div>
-    ${ev.date ? `<div class="detail-row"><span class="detail-lbl">Date</span><span class="detail-val">${fmtDate(ev.date)}${ev.time ? ' · ' + ev.time : ''}</span></div>` : ''}
+    ${ev.date ? `<div class="detail-row"><span class="detail-lbl">Date</span><span class="detail-val">${fmtDate(ev.date)}${dateFin}${ev.time ? ' · ' + ev.time : ''}</span></div>` : ''}
     ${ev.venue ? `<div class="detail-row"><span class="detail-lbl">Venue</span><span class="detail-val">${ev.venue}</span></div>` : ''}
     ${ev.deadline ? `<div class="detail-row"><span class="detail-lbl">Book by</span><span class="detail-val" style="color:var(--red)">${fmtDate(ev.deadline)}</span></div>` : ''}
     ${remHtml}
-    ${ev.notes ? `<div class="detail-row" style="align-items:flex-start;"><span class="detail-lbl">Notes</span><span class="detail-val" style="white-space:pre-wrap;line-height:1.5;">${ev.notes}</span></div>` : ''}
+    ${ev.notes ? `<div class="detail-row" style="align-items:flex-start;"><span class="detail-lbl">Notes</span><span class="detail-val" style="line-height:1.8;">${linkifyNotes(ev.notes)}</span></div>` : ''}
     ${reasonsHtml}
     ${sourceHtml}
     <div style="height:20px;"></div>
@@ -895,7 +926,7 @@ async function loadDataFile(filename, btn) {
   if (_loadedFiles.has(filename)) { toast('Already loaded'); return; }
   try {
     const arr = await fetch(`data/${filename}`).then(r=>r.json());
-    arr.forEach(e=>{ if(!e.id)e.id=uid(); if(!e.added)e.added=new Date().toISOString(); });
+    arr.forEach(e=>{ if(!e.id)e.id=uid(); if(!e.added)e.added=new Date().toISOString(); e.cat=normalizeCat(e.cat); });
     const fresh = arr.filter(e=>e.title && !events.find(x=>x.title===e.title && x.date===e.date));
     events.push(...fresh); save();
     _loadedFiles.add(filename);
@@ -921,7 +952,7 @@ async function forceReloadAll() {
   for (const df of files) {
     try {
       const arr = await fetch(`./data/${df.file}`).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
-      arr.forEach(e=>{ if(!e.id)e.id=uid(); if(!e.added)e.added=new Date().toISOString(); });
+      arr.forEach(e=>{ if(!e.id)e.id=uid(); if(!e.added)e.added=new Date().toISOString(); e.cat=normalizeCat(e.cat); });
       const fresh = arr.filter(e=>e.title && !events.find(x=>x.title===e.title && x.date===e.date));
       events.push(...fresh);
       _loadedFiles.add(df.file);
@@ -947,7 +978,7 @@ async function autoLoadDataFiles() {
   for (const df of newFiles) {
     try {
       const arr = await fetch(`./data/${df.file}`).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
-      arr.forEach(e=>{ if(!e.id)e.id=uid(); if(!e.added)e.added=new Date().toISOString(); });
+      arr.forEach(e=>{ if(!e.id)e.id=uid(); if(!e.added)e.added=new Date().toISOString(); e.cat=normalizeCat(e.cat); });
       const fresh = arr.filter(e=>e.title && !events.find(x=>x.title===e.title && x.date===e.date));
       events.push(...fresh);
       _loadedFiles.add(df.file);

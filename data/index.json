@@ -1,9 +1,11 @@
 {
   "files": [
-    { "file": "2026-05-musee.json",  "label": "Mai · Musées",   "theme": "musee",     "month": "2026-05" },
-    { "file": "2026-05-paris.json",  "label": "Mai · Paris",    "theme": "spectacle", "month": "2026-05" },
-    { "file": "2026-05-techno.json", "label": "Mai · Techno",   "theme": "concert",   "month": "2026-05" },
-    { "file": "2026-06-paris.json",  "label": "Juin · Paris",   "theme": "spectacle", "month": "2026-06" },
-    { "file": "2026-06-techno.json", "label": "Juin · Techno",  "theme": "concert",   "month": "2026-06" }
+    { "file": "2026-05-musee.json",  "label": "May · Museums",        "theme": "musee",   "month": "2026-05" },
+    { "file": "2026-05-paris.json",   "label": "May · Paris",          "theme": "spectacle","month": "2026-05" },
+    { "file": "2026-05-techno.json", "label": "May · Techno",         "theme": "concert", "month": "2026-05" },
+    { "file": "2026-05-running.json", "label": "May · Running",        "theme": "running", "month": "2026-05" },
+    { "file": "2026-05-volley.json",  "label": "May · Volley",         "theme": "volley",  "month": "2026-05" },
+    { "file": "2026-06-paris.json",   "label": "June · Paris",         "theme": "spectacle","month": "2026-06" },
+    { "file": "2026-06-techno.json",  "label": "June · Techno",        "theme": "concert", "month": "2026-06" }
   ]
 }
