@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -181,7 +181,12 @@
     .top-sub { font-size: 11px; color: var(--text2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .top-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0; }
 
-    /* ── À réserver / Rappels ── */
+    /* ── Detail ── */
+    .detail-row { display:flex; gap:12px; margin-bottom:12px; }
+    .detail-lbl { font-size:11px; font-weight:600; color:var(--text3); text-transform:uppercase; letter-spacing:.06em; min-width:72px; padding-top:2px; flex-shrink:0; }
+    .detail-val { font-size:14px; color:var(--text); flex:1; }
+
+    /* ── To Book / Reminders ── */
     .rem-sep { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text3); margin: 16px 0 8px; }
     .rem-sep:first-child { margin-top: 0; }
     .rem-item { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r); padding: 12px 14px; margin-bottom: 7px; display: flex; align-items: center; gap: 10px; }
@@ -219,22 +224,22 @@
           </svg>
           <div class="app-title">Plan<span>Out</span></div>
         </div>
-        <button class="add-btn" onclick="goAdd()" aria-label="Ajouter">+</button>
+        <button class="add-btn" onclick="goAdd()" aria-label="Add">+</button>
       </div>
     </div>
     <div class="stats">
-      <div class="stat-card"><div class="stat-num" id="s-total">0</div><div class="stat-lbl">événements</div></div>
-      <div class="stat-card"><div class="stat-num red" id="s-urg">0</div><div class="stat-lbl">à réserver</div></div>
-      <div class="stat-card"><div class="stat-num orange" id="s-soon">0</div><div class="stat-lbl">ce mois</div></div>
+      <div class="stat-card"><div class="stat-num" id="s-total">0</div><div class="stat-lbl">events</div></div>
+      <div class="stat-card"><div class="stat-num red" id="s-urg">0</div><div class="stat-lbl">to book</div></div>
+      <div class="stat-card"><div class="stat-num orange" id="s-soon">0</div><div class="stat-lbl">this month</div></div>
     </div>
     <div class="filter-scroll">
-      <div class="chip active" onclick="setFilter('all',this)">Tous</div>
-      <div class="chip" onclick="setFilter('musee',this)">🏛️ Musées</div>
+      <div class="chip active" onclick="setFilter('all',this)">All</div>
+      <div class="chip" onclick="setFilter('musee',this)">🏛️ Museums</div>
       <div class="chip" onclick="setFilter('concert',this)">🎵 Concerts</div>
-      <div class="chip" onclick="setFilter('resto',this)">🍽️ Restos</div>
-      <div class="chip" onclick="setFilter('voyage',this)">✈️ Voyages</div>
-      <div class="chip" onclick="setFilter('spectacle',this)">🎭 Spectacles</div>
-      <div class="chip" onclick="setFilter('autre',this)">📌 Autres</div>
+      <div class="chip" onclick="setFilter('resto',this)">🍽️ Restaurants</div>
+      <div class="chip" onclick="setFilter('voyage',this)">✈️ Trips</div>
+      <div class="chip" onclick="setFilter('spectacle',this)">🎭 Shows</div>
+      <div class="chip" onclick="setFilter('autre',this)">📌 Other</div>
     </div>
     <div class="scroll-area" id="ev-list"></div>
   </div>
@@ -254,61 +259,103 @@
     </div>
     <div class="cal-grid" id="cal-grid"></div>
     <div class="cal-day-panel" id="cal-day-panel">
-      <div class="cal-empty">Sélectionne un jour pour voir les événements</div>
+      <div class="cal-empty">Select a day to see events</div>
     </div>
   </div>
 
   <!-- TOP RANKING -->
   <div id="p-top" class="panel active">
-    <div class="panel-title">Top <span style="color:var(--accent)">ranking</span></div>
+    <div class="panel-title">Top <span style="color:var(--accent)">Ranking</span></div>
     <div class="panel-scroll" id="top-list"></div>
   </div>
 
   <!-- À RÉSERVER -->
   <div id="p-areserver" class="panel">
-    <div class="panel-title">À <span style="color:var(--accent)">réserver</span></div>
+    <div class="panel-title">To <span style="color:var(--accent)">Book</span></div>
     <div class="panel-scroll" id="areserver-list"></div>
   </div>
 
   <!-- NOUVEAU -->
   <div id="p-add" class="panel">
-    <div class="panel-title">Nouvel événement</div>
+    <div class="panel-title">New Event</div>
     <div class="panel-scroll">
-      <div class="fgroup"><label>Titre</label><input id="f-title" type="text" placeholder="ex: Coldplay – Stade de France" /></div>
+      <div class="fgroup"><label>Title</label><input id="f-title" type="text" placeholder="e.g. Coldplay – Stade de France" /></div>
       <div class="fgroup">
-        <label>Catégorie</label>
+        <label>Category</label>
         <select id="f-cat">
-          <option value="musee">🏛️ Musée / Expo</option>
+          <option value="musee">🏛️ Museum / Expo</option>
           <option value="concert">🎵 Concert</option>
           <option value="resto">🍽️ Restaurant</option>
-          <option value="spectacle">🎭 Spectacle</option>
-          <option value="voyage">✈️ Voyage / Weekend</option>
-          <option value="autre">📌 Autre</option>
+          <option value="spectacle">🎭 Show</option>
+          <option value="voyage">✈️ Trip / Weekend</option>
+          <option value="autre">📌 Other</option>
         </select>
       </div>
       <div class="two-col">
         <div class="fgroup"><label>Date</label><input id="f-date" type="date" /></div>
-        <div class="fgroup"><label>Heure</label><input id="f-time" type="time" /></div>
+        <div class="fgroup"><label>Time</label><input id="f-time" type="time" /></div>
       </div>
-      <div class="fgroup"><label>Lieu</label><input id="f-venue" type="text" placeholder="Salle Pleyel, Paris…" /></div>
-      <div class="fgroup"><label>Réserver avant le</label><input id="f-deadline" type="date" /></div>
+      <div class="fgroup"><label>Venue</label><input id="f-venue" type="text" placeholder="Royal Albert Hall, London…" /></div>
+      <div class="fgroup"><label>Book by</label><input id="f-deadline" type="date" /></div>
       <div class="fgroup">
-        <label>Rappels</label>
+        <label>Reminders</label>
         <div class="rem-grid" id="rem-opts">
-          <div class="rem-opt sel" data-v="1m" onclick="toggleRem(this)">1 mois avant</div>
-          <div class="rem-opt sel" data-v="2w" onclick="toggleRem(this)">2 semaines</div>
-          <div class="rem-opt" data-v="1w" onclick="toggleRem(this)">1 semaine</div>
-          <div class="rem-opt" data-v="1d" onclick="toggleRem(this)">La veille</div>
+          <div class="rem-opt sel" data-v="1m" onclick="toggleRem(this)">1 month before</div>
+          <div class="rem-opt sel" data-v="2w" onclick="toggleRem(this)">2 weeks before</div>
+          <div class="rem-opt" data-v="1w" onclick="toggleRem(this)">1 week before</div>
+          <div class="rem-opt" data-v="1d" onclick="toggleRem(this)">Day before</div>
         </div>
       </div>
-      <div class="fgroup"><label>Notes / lien réservation</label><textarea id="f-notes" placeholder="URL de réservation, infos pratiques…"></textarea></div>
-      <button class="save-btn" onclick="saveEv()">Enregistrer</button>
+      <div class="fgroup"><label>Notes / booking link</label><textarea id="f-notes" placeholder="Booking URL, practical info…"></textarea></div>
+      <button class="save-btn" onclick="saveEv()">Save</button>
       <div style="height:20px"></div>
     </div>
   </div>
 
-  <!-- IMPORTER -->
-  <!-- TAB BAR — 5 tabs + burger -->
+  <!-- MORE -->
+  <div id="p-more" class="panel">
+    <div class="panel-title">More</div>
+    <div class="panel-scroll">
+      <div style="font-size:12px;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;">Loaded data</div>
+      <div id="data-files" style="display:flex;flex-direction:column;gap:6px;margin-bottom:20px;"></div>
+      <div style="height:1px;background:var(--border);margin-bottom:20px;"></div>
+      <div style="font-size:12px;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;">Import</div>
+      <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-in').click()">
+        <div class="drop-icon">📂</div>
+        <div class="drop-title">Drop a file or tap to browse</div>
+        <div class="drop-sub">iCal, CSV, JSON, text</div>
+      </div>
+      <div class="formats">
+        <span class="fmt">.ics / iCal</span><span class="fmt">.csv</span><span class="fmt">.json</span><span class="fmt">Free text</span>
+      </div>
+      <input type="file" id="file-in" accept=".ics,.csv,.json,.txt" style="display:none" onchange="handleFile(this)" />
+      <div class="fgroup">
+        <label>Or paste text</label>
+        <textarea id="import-txt" style="height:100px;width:100%;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--r);padding:11px 14px;font-size:13px;color:var(--text);font-family:'DM Sans',sans-serif;resize:none;outline:none;" placeholder="Paste a list, confirmation email…&#10;e.g. Coldplay, 15 June 2026, Stade de France"></textarea>
+      </div>
+      <button class="save-btn" onclick="analyseText()" style="background:var(--surface2);color:var(--text);border:0.5px solid var(--border2);">✨ Analyse &amp; import</button>
+      <div style="height:20px"></div>
+    </div>
+  </div>
+
+  <!-- DETAIL -->
+  <div id="p-detail" class="panel" style="flex-direction:column;">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <button onclick="closeDetail()" style="display:flex;align-items:center;gap:6px;background:none;border:none;color:var(--accent);font-size:15px;font-family:'DM Sans',sans-serif;cursor:pointer;padding:0;">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Back
+        </button>
+        <div style="display:flex;gap:8px;">
+          <button class="icon-btn" id="detail-exp-btn" title="Export to Calendar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="12" y1="14" x2="12" y2="18"/><line x1="10" y1="16" x2="14" y2="16"/></svg></button>
+          <button class="del-btn" id="detail-del-btn">✕</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-scroll" id="detail-body" style="padding-top:0;"></div>
+  </div>
+
+  <!-- TAB BAR -->
   <nav class="tabbar">
     <button class="tab-btn active" id="tb-top" onclick="goTab('top')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 9H4a2 2 0 0 1-2-2V5h4"/><path d="M18 9h2a2 2 0 0 0 2-2V5h-4"/><path d="M6 3h12v7a6 6 0 0 1-12 0z"/><path d="M9 22h6"/><line x1="12" y1="17" x2="12" y2="22"/><path d="M5 17a7 7 0 0 0 14 0"/></svg>
@@ -316,76 +363,42 @@
     </button>
     <button class="tab-btn" id="tb-areserver" onclick="goTab('areserver')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
-      Réserver
+      Book
     </button>
     <button class="tab-btn" id="tb-cal" onclick="goTab('cal')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      Agenda
+      Calendar
     </button>
     <button class="tab-btn" id="tb-add" onclick="goTab('add')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-      Nouveau
+      New
     </button>
     <button class="tab-btn" id="tb-list" onclick="goTab('list')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="3" rx="1"/><rect x="3" y="10.5" width="18" height="3" rx="1"/><rect x="3" y="16" width="18" height="3" rx="1"/></svg>
-      Liste
+      List
     </button>
-    <button class="tab-btn" id="tb-burger" onclick="openBurger()">
+    <button class="tab-btn" id="tb-more" onclick="goTab('more')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
-      Autre
+      More
     </button>
   </nav>
-</div>
-
-<!-- Burger backdrop -->
-<div id="burger-backdrop" onclick="closeBurger()" style="display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,0.55);"></div>
-
-<!-- Burger bottom sheet -->
-<div id="burger-sheet" style="display:none;flex-direction:column;position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;background:var(--surface);border-radius:20px 20px 0 0;z-index:101;max-height:88vh;padding-bottom:env(safe-area-inset-bottom);">
-  <div style="width:38px;height:4px;background:var(--border2);border-radius:2px;margin:12px auto 0;flex-shrink:0;"></div>
-  <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 20px 10px;flex-shrink:0;">
-    <div style="font-family:'DM Serif Display',serif;font-size:20px;">Autre</div>
-    <button onclick="closeBurger()" style="width:30px;height:30px;border-radius:50%;border:none;background:var(--surface2);color:var(--text2);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;">✕</button>
-  </div>
-  <div style="flex:1;overflow-y:auto;overscroll-behavior:contain;padding:0 20px 20px;">
-    <!-- Fichiers de données -->
-    <div style="font-size:12px;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;">Données chargées</div>
-    <div id="data-files" style="display:flex;flex-direction:column;gap:6px;margin-bottom:20px;"></div>
-    <div style="height:1px;background:var(--border);margin-bottom:20px;"></div>
-    <!-- Import fichier -->
-    <div style="font-size:12px;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;">Importer</div>
-    <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-in').click()">
-      <div class="drop-icon">📂</div>
-      <div class="drop-title">Glisser un fichier ou appuyer</div>
-      <div class="drop-sub">iCal, CSV, JSON, texte</div>
-    </div>
-    <div class="formats">
-      <span class="fmt">.ics / iCal</span><span class="fmt">.csv</span><span class="fmt">.json</span><span class="fmt">Texte libre</span>
-    </div>
-    <input type="file" id="file-in" accept=".ics,.csv,.json,.txt" style="display:none" onchange="handleFile(this)" />
-    <div class="fgroup">
-      <label>Ou coller du texte</label>
-      <textarea id="import-txt" style="height:100px;width:100%;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--r);padding:11px 14px;font-size:13px;color:var(--text);font-family:'DM Sans',sans-serif;resize:none;outline:none;" placeholder="Coller ici une liste, un email de confirmation…&#10;ex: Coldplay, 15 juin 2026, Stade de France"></textarea>
-    </div>
-    <button class="save-btn" onclick="analyseText()" style="background:var(--surface2);color:var(--text);border:0.5px solid var(--border2);">✨ Analyser et importer</button>
-  </div>
 </div>
 
 <div class="toast" id="toast"></div>
 
 <script>
 const CAT = {
-  musee:     { l:'Musée',      b:'b-musee',     dot:'#9b7fd4' },
+  musee:     { l:'Museum',     b:'b-musee',     dot:'#9b7fd4' },
   concert:   { l:'Concert',    b:'b-concert',   dot:'#5b9bd5' },
   resto:     { l:'Restaurant', b:'b-resto',      dot:'#5cb88a' },
-  spectacle: { l:'Spectacle',  b:'b-spectacle',  dot:'#d47aa0' },
-  voyage:    { l:'Voyage',     b:'b-voyage',     dot:'#e89652' },
-  autre:     { l:'Autre',      b:'b-autre',      dot:'#9e9a92' }
+  spectacle: { l:'Show',       b:'b-spectacle',  dot:'#d47aa0' },
+  voyage:    { l:'Trip',       b:'b-voyage',     dot:'#e89652' },
+  autre:     { l:'Other',      b:'b-autre',      dot:'#9e9a92' }
 };
 const CAT_ORDER = ['musee','concert','spectacle','voyage','resto','autre'];
 const REM_DAYS = { '1m':30, '2w':14, '1w':7, '1d':1 };
-const REM_LBL  = { '1m':'1 mois avant', '2w':'2 semaines avant', '1w':'1 semaine avant', '1d':'La veille' };
-const MONTHS_FR = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+const REM_LBL  = { '1m':'1 month before', '2w':'2 weeks before', '1w':'1 week before', '1d':'Day before' };
+const MONTHS_FR = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
 function uid()      { return Math.random().toString(36).slice(2,10); }
 function localStr(d){ return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
@@ -414,30 +427,81 @@ function toast(msg) {
   clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove('show'), 2600);
 }
 
-const TABS = ['top','areserver','cal','add','list'];
-function openBurger() {
-  const s=document.getElementById('burger-sheet');
-  const b=document.getElementById('burger-backdrop');
-  s.style.display='flex'; b.style.display='block';
-  document.getElementById('tb-burger').classList.add('active');
-  initDataFiles();
-}
-function closeBurger() {
-  document.getElementById('burger-sheet').style.display='none';
-  document.getElementById('burger-backdrop').style.display='none';
-  document.getElementById('tb-burger').classList.remove('active');
-}
+const TABS = ['top','areserver','cal','add','list','more'];
+let _prevTab = 'top';
+let _detailId = null;
+
 function goTab(name) {
-  closeBurger();
+  const isDetail = name === 'detail';
+  if (!isDetail) _prevTab = name;
+  // Toggle panels (TABS + detail)
+  [...TABS, 'detail'].forEach(n => {
+    const p = document.getElementById('p-'+n);
+    if (p) p.classList.toggle('active', n===name);
+  });
+  // Toggle tab buttons (TABS only — no tb-detail)
   TABS.forEach(n => {
-    document.getElementById('p-'+n).classList.toggle('active', n===name);
-    document.getElementById('tb-'+n).classList.toggle('active', n===name);
+    const btn = document.getElementById('tb-'+n);
+    if (btn) btn.classList.toggle('active', n===name);
   });
   if (name==='list')      render();
   if (name==='cal')       renderCal();
   if (name==='top')       renderTop();
   if (name==='areserver') renderAReserver();
+  if (name==='more')      initDataFiles();
+  if (isDetail && _detailId) renderDetail(_detailId);
 }
+
+function openDetail(id) {
+  _detailId = id;
+  goTab('detail');
+}
+function closeDetail() { goTab(_prevTab); }
+
+function renderDetail(id) {
+  const ev = events.find(e => e.id === id); if (!ev) return;
+  document.getElementById('detail-exp-btn').onclick = e => { e.stopPropagation(); exportEv(e, id); };
+  document.getElementById('detail-del-btn').onclick = e => { e.stopPropagation(); delEvDetail(id); };
+  const cat = CAT[ev.cat] || CAT.autre;
+  const days = daysTo(ev.date);
+  const dLabel = days < 0 ? 'Past' : days === 0 ? 'Today!' : `${days}d`;
+  const dCls   = days < 0 ? 'd-past' : days <= 14 ? 'd-urg' : days <= 45 ? 'd-soon' : 'd-ok';
+  const imgHtml = ev.image
+    ? `<div style="width:100%;aspect-ratio:16/9;background:#000;overflow:hidden;margin-bottom:16px;border-radius:var(--r-lg);">
+        <img src="${ev.image}" alt="" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.style.display='none'">
+       </div>`
+    : '';
+  const remHtml = (ev.reminders||[]).length
+    ? `<div class="detail-row"><span class="detail-lbl">Reminders</span><span class="detail-val">${ev.reminders.map(r=>REM_LBL[r]||r).join(', ')}</span></div>`
+    : '';
+  const reasonsHtml = (ev.match_reasons||[]).length
+    ? `<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;">${ev.match_reasons.map(r=>`<span class="fmt" style="font-size:10px">${r}</span>`).join('')}</div>`
+    : '';
+  const sourceHtml = ev.source ? `<div class="detail-row"><span class="detail-lbl">Source</span><span class="detail-val" style="color:var(--text3)">${ev.source}</span></div>` : '';
+  document.getElementById('detail-body').innerHTML = `
+    ${imgHtml}
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+      <span class="ev-badge ${cat.b}">${cat.l}</span>
+      ${ev.score ? `<span class="score-badge ${scoreCls(ev.score)}">★ ${ev.score}</span>` : ''}
+      <span class="days-badge ${dCls}">${dLabel}</span>
+    </div>
+    <div style="font-family:'DM Serif Display',serif;font-size:22px;line-height:1.25;margin-bottom:16px;">${ev.title}</div>
+    ${ev.date ? `<div class="detail-row"><span class="detail-lbl">Date</span><span class="detail-val">${fmtDate(ev.date)}${ev.time ? ' · ' + ev.time : ''}</span></div>` : ''}
+    ${ev.venue ? `<div class="detail-row"><span class="detail-lbl">Venue</span><span class="detail-val">${ev.venue}</span></div>` : ''}
+    ${ev.deadline ? `<div class="detail-row"><span class="detail-lbl">Book by</span><span class="detail-val" style="color:var(--red)">${fmtDate(ev.deadline)}</span></div>` : ''}
+    ${remHtml}
+    ${ev.notes ? `<div class="detail-row" style="align-items:flex-start;"><span class="detail-lbl">Notes</span><span class="detail-val" style="white-space:pre-wrap;line-height:1.5;">${ev.notes}</span></div>` : ''}
+    ${reasonsHtml}
+    ${sourceHtml}
+    <div style="height:20px;"></div>
+  `;
+}
+
+function delEvDetail(id) {
+  events = events.filter(e => e.id !== id);
+  save(); closeDetail(); render(); toast('Deleted');
+}
+
 function goAdd() { goTab('add'); }
 
 function setFilter(f, el) {
@@ -487,10 +551,10 @@ function generateICS(ev) {
     dtend   = `DTEND;VALUE=DATE:${ds}`;
   }
   const alarms = (ev.reminders||[]).map(r => {
-    return `BEGIN:VALARM\r\nTRIGGER:-P${REM_DAYS[r]||1}D\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel ${(ev.title||'').slice(0,40)}\r\nEND:VALARM`;
+    return `BEGIN:VALARM\r\nTRIGGER:-P${REM_DAYS[r]||1}D\r\nACTION:DISPLAY\r\nDESCRIPTION:Reminder: ${(ev.title||'').slice(0,40)}\r\nEND:VALARM`;
   }).join('\r\n');
   const esc = s => (s||'').replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n');
-  const descParts = [ev.notes, ev.score ? `★ Score: ${ev.score}/100` : '', ev.deadline ? `Réserver avant: ${ev.deadline}` : ''].filter(Boolean);
+  const descParts = [ev.notes, ev.score ? `★ Score: ${ev.score}/100` : '', ev.deadline ? `Book by: ${ev.deadline}` : ''].filter(Boolean);
   const lines = [
     'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//PlanOut//FR','CALSCALE:GREGORIAN','METHOD:PUBLISH',
     'BEGIN:VEVENT',
@@ -515,7 +579,7 @@ function exportEv(e, id) {
   a.download = (ev.title||'event').replace(/[^\w\s-]/g,'').trim().replace(/\s+/g,'_')+'.ics';
   document.body.appendChild(a); a.click(); document.body.removeChild(a);
   setTimeout(()=>URL.revokeObjectURL(url),1000);
-  toast('📅 Exporté vers Calendrier');
+  toast('📅 Exported to Calendar');
 }
 
 /* ── List ───────────────────────────────────────────── */
@@ -530,19 +594,19 @@ function render() {
 
   const cont = document.getElementById('ev-list');
   if (!list.length) {
-    cont.innerHTML = `<div class="empty"><div class="empty-icon">🎟️</div><p>Aucun événement</p><small>Ajoute ou importe tes sorties !</small></div>`;
+    cont.innerHTML = `<div class="empty"><div class="empty-icon">🎟️</div><p>No events</p><small>Add or import your outings!</small></div>`;
     return;
   }
   let html='', lastM='';
   list.forEach(ev => {
-    const mo = ev.date ? new Date(ev.date+'T12:00:00').toLocaleDateString('fr-FR',{month:'long',year:'numeric'}) : 'Sans date';
+    const mo = ev.date ? new Date(ev.date+'T12:00:00').toLocaleDateString('en-US',{month:'long',year:'numeric'}) : 'No date';
     if (mo!==lastM) { html+=`<div class="month-sep">${mo}</div>`; lastM=mo; }
     const cat = CAT[ev.cat]||CAT.autre;
     const days = daysTo(ev.date);
     const urgCls = days<0?'ok':days<=14?'urg':days<=45?'soon':'ok';
-    const dLabel = days<0?'Passé':days===0?'Auj.!':`${days}j`;
+    const dLabel = days<0?'Past':days===0?'Today!':`${days}d`;
     const dCls = days<0?'d-past':days<=14?'d-urg':days<=45?'d-soon':'d-ok';
-    html+=`<div class="ev-card ${urgCls}">
+    html+=`<div class="ev-card ${urgCls}" onclick="openDetail('${ev.id}')">
       <div class="ev-top">
         <div class="ev-top-left">
           <span class="ev-badge ${cat.b}">${cat.l}</span>
@@ -560,9 +624,9 @@ function render() {
         <span class="days-badge ${dCls}">${dLabel}</span>
       </div>
       ${ev.venue?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>${ev.venue}</div>`:''}
-      ${ev.deadline?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>Réserver avant le ${fmtDate(ev.deadline)}</div>`:''}
+      ${ev.deadline?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>Book by ${fmtDate(ev.deadline)}</div>`:''}
       ${ev.notes?`<div style="font-size:12px;color:var(--text3);margin-top:6px;line-height:1.5">${ev.notes.split('\n')[0]}</div>`:''}
-      ${ev.reminders?.length?`<div class="reminder-row">🔔 ${ev.reminders.length} rappel${ev.reminders.length>1?'s':''}</div>`:''}
+      ${ev.reminders?.length?`<div class="reminder-row">🔔 ${ev.reminders.length} reminder${ev.reminders.length>1?'s':''}</div>`:''}
     </div>`;
   });
   cont.innerHTML = html;
@@ -571,7 +635,7 @@ function render() {
 function delEv(e, id) {
   e.stopPropagation();
   events = events.filter(ev=>ev.id!==id);
-  save(); render(); toast('Supprimé');
+  save(); render(); toast('Deleted');
 }
 
 function toggleRem(el) {
@@ -582,7 +646,7 @@ function toggleRem(el) {
 
 function saveEv() {
   const title=document.getElementById('f-title').value.trim();
-  if (!title) { toast('⚠️ Ajoute un titre'); return; }
+  if (!title) { toast('⚠️ Add a title'); return; }
   events.push({
     id:uid(), title,
     date:document.getElementById('f-date').value,
@@ -596,7 +660,7 @@ function saveEv() {
   });
   save();
   ['f-title','f-date','f-time','f-venue','f-deadline','f-notes'].forEach(id=>document.getElementById(id).value='');
-  toast('✓ Événement enregistré !');
+  toast('✓ Event saved!');
   goTab('list');
 }
 
@@ -606,7 +670,7 @@ function calPrev() { if (calMonth===0){calMonth=11;calYear--;}else calMonth--; c
 function calNext() { if (calMonth===11){calMonth=0;calYear++;}else calMonth++; calSelDay=null; renderCal(); }
 
 function renderCal() {
-  document.getElementById('cal-month-lbl').innerHTML = `${MONTHS_FR[calMonth]} <span>${calYear}</span>`;
+  document.getElementById('cal-month-lbl').innerHTML = `${MONTHS_FR[calMonth]}&nbsp;<span>${calYear}</span>`;
   const todayStr = localStr(_today);
   const firstDay = new Date(calYear, calMonth, 1);
   const lastDay  = new Date(calYear, calMonth+1, 0);
@@ -628,20 +692,20 @@ function renderCal() {
   }
   document.getElementById('cal-grid').innerHTML = html;
   if (calSelDay) renderCalDay(calSelDay);
-  else document.getElementById('cal-day-panel').innerHTML = '<div class="cal-empty">Sélectionne un jour pour voir les événements</div>';
+  else document.getElementById('cal-day-panel').innerHTML = '<div class="cal-empty">Select a day to see events</div>';
 }
 
 function selectDay(ds) { calSelDay=ds; renderCal(); }
 
 function renderCalDay(ds) {
   const evs = events.filter(e=>e.date===ds).sort((a,b)=>(a.time||'')<(b.time||'')?-1:1);
-  const label = new Date(ds+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'});
+  const label = new Date(ds+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',day:'numeric',month:'long'});
   let html=`<div class="cal-day-hdr">${label}</div>`;
-  if (!evs.length) { html+='<div class="cal-empty" style="padding:16px 0">Aucun événement ce jour</div>'; }
+  if (!evs.length) { html+='<div class="cal-empty" style="padding:16px 0">No events this day</div>'; }
   else {
     evs.forEach(ev=>{
       const cat=CAT[ev.cat]||CAT.autre;
-      html+=`<div class="rem-item" style="border-left:3px solid ${cat.dot};padding-left:11px;">
+      html+=`<div class="rem-item" style="border-left:3px solid ${cat.dot};padding-left:11px;cursor:pointer;" onclick="openDetail('${ev.id}')">
         <div class="rem-body">
           <div class="rem-title">${ev.title}</div>
           <div class="rem-sub">${[ev.time,ev.venue].filter(Boolean).join(' · ')}</div>
@@ -664,7 +728,7 @@ function renderTop() {
   const upcoming = events.filter(e => e.date && e.date >= todayStr);
   const cont = document.getElementById('top-list');
   if (!upcoming.length) {
-    cont.innerHTML = `<div class="empty"><div class="empty-icon">🏆</div><p>Aucun événement à venir</p><small>Charge des données ou ajoute des sorties !</small></div>`;
+    cont.innerHTML = `<div class="empty"><div class="empty-icon">🏆</div><p>No upcoming events</p><small>Load data or add outings!</small></div>`;
     return;
   }
   const groups = {};
@@ -680,13 +744,13 @@ function renderTop() {
   CAT_ORDER.forEach(k => {
     const evs = groups[k]; if (!evs.length) return;
     const cat = CAT[k];
-    html += `<div class="top-cat-hdr"><span class="ev-badge ${cat.b}">${cat.l}</span><span class="top-cat-count">${evs.length} à venir</span></div>`;
+    html += `<div class="top-cat-hdr"><span class="ev-badge ${cat.b}">${cat.l}</span><span class="top-cat-count">${evs.length} upcoming</span></div>`;
     evs.forEach((ev,i) => {
       const days = daysTo(ev.date);
-      const dLabel = days===0?'Auj.!':days<0?'Passé':`${days}j`;
+      const dLabel = days===0?'Today!':days<0?'Past':`${days}d`;
       const dCls   = days<0?'d-past':days<=14?'d-urg':days<=45?'d-soon':'d-ok';
       const rankCls = i===0?'gold':i===1?'silver':i===2?'bronze':'';
-      html+=`<div class="top-item">
+      html+=`<div class="top-item" onclick="openDetail('${ev.id}')">
         <span class="top-rank ${rankCls}">#${i+1}</span>
         <div class="top-info">
           <div class="top-title">${ev.title}</div>
@@ -730,7 +794,7 @@ function renderAReserver() {
   remItems.sort((a,b) => a.remStr < b.remStr ? -1 : 1);
 
   if (!withDead.length && !remItems.length) {
-    cont.innerHTML = `<div class="empty"><div class="empty-icon">✅</div><p>Rien à réserver</p><small>Ajoute des événements avec deadline ou rappels</small></div>`;
+    cont.innerHTML = `<div class="empty"><div class="empty-icon">✅</div><p>Nothing to book</p><small>Add events with a deadline or reminders</small></div>`;
     return;
   }
 
@@ -738,20 +802,20 @@ function renderAReserver() {
 
   // Deadlines
   if (withDead.length) {
-    html += `<div class="rem-sep">🎫 Réservations à faire</div>`;
+    html += `<div class="rem-sep">🎫 Bookings to make</div>`;
     withDead.forEach(ev => {
       const dDead  = daysTo(ev.deadline);
       const cat    = CAT[ev.cat]||CAT.autre;
       const urgCls = dDead<=7?'d-urg':dDead<=30?'d-soon':'d-ok';
       const border = dDead<=7?'var(--red)':dDead<=30?'var(--orange)':'var(--green)';
-      html+=`<div class="rem-item" style="border-left:3px solid ${border};padding-left:11px;">
+      html+=`<div class="rem-item" style="border-left:3px solid ${border};padding-left:11px;cursor:pointer;" onclick="openDetail('${ev.id}')">
         <div class="rem-body">
           <div class="rem-title">${ev.title}</div>
-          <div class="rem-sub">Événement : ${fmtDate(ev.date)}</div>
-          <div class="rem-sub" style="margin-top:2px">⏰ Deadline : ${fmtDate(ev.deadline)}</div>
+          <div class="rem-sub">Event: ${fmtDate(ev.date)}</div>
+          <div class="rem-sub" style="margin-top:2px">⏰ Deadline: ${fmtDate(ev.deadline)}</div>
         </div>
         <div class="rem-right">
-          <span class="days-badge ${urgCls}">${dDead<=0?'Expiré':dDead===0?'Auj.!':`${dDead}j`}</span>
+          <span class="days-badge ${urgCls}">${dDead<=0?'Expired':dDead===0?'Today!':`${dDead}d`}</span>
           ${ev.score?`<span class="score-badge ${scoreCls(ev.score)}">★ ${ev.score}</span>`:''}
           <button class="exp-btn" onclick="exportEv(event,'${ev.id}')">${CAL_SVG}</button>
         </div>
@@ -762,22 +826,22 @@ function renderAReserver() {
   // Rappels
   if (remItems.length) {
     const remGroups = [
-      {label:"Aujourd'hui",   fn:x=>x.dUntil===0},
-      {label:'Cette semaine', fn:x=>x.dUntil>=1&&x.dUntil<=7},
-      {label:'Ce mois',       fn:x=>x.dUntil>=8&&x.dUntil<=30},
-      {label:'Plus tard',     fn:x=>x.dUntil>30},
-      {label:'Passés',        fn:x=>x.dUntil<0},
+      {label:'Today',      fn:x=>x.dUntil===0},
+      {label:'This week',  fn:x=>x.dUntil>=1&&x.dUntil<=7},
+      {label:'This month', fn:x=>x.dUntil>=8&&x.dUntil<=30},
+      {label:'Later',      fn:x=>x.dUntil>30},
+      {label:'Past',       fn:x=>x.dUntil<0},
     ];
     let firstRem = true;
     remGroups.forEach(g => {
       const gi = remItems.filter(g.fn); if (!gi.length) return;
-      if (firstRem) { html += `<div class="rem-sep" style="margin-top:${withDead.length?'20px':'0'}">🔔 Rappels</div>`; firstRem=false; }
+      if (firstRem) { html += `<div class="rem-sep" style="margin-top:${withDead.length?'20px':'0'}">🔔 Reminders</div>`; firstRem=false; }
       html += `<div style="font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin:10px 0 6px;">${g.label}</div>`;
       gi.forEach(({ev,r,dUntil}) => {
         const cat   = CAT[ev.cat]||CAT.autre;
-        const dLbl  = dUntil<0?`Il y a ${-dUntil}j`:dUntil===0?"Auj.":`${dUntil}j`;
+        const dLbl  = dUntil<0?`${-dUntil}d ago`:dUntil===0?'Today':`${dUntil}d`;
         const dCls  = dUntil<0?'d-past':dUntil===0?'d-urg':dUntil<=7?'d-soon':'d-ok';
-        html+=`<div class="rem-item">
+        html+=`<div class="rem-item" style="cursor:pointer;" onclick="openDetail('${ev.id}')">
           <div class="rem-dot" style="background:${cat.dot}"></div>
           <div class="rem-body">
             <div class="rem-title">${ev.title}</div>
@@ -800,12 +864,12 @@ function renderAReserver() {
 
 async function initDataFiles() {
   const cont = document.getElementById('data-files');
-  cont.innerHTML = '<div style="font-size:12px;color:var(--text3)">Chargement…</div>';
+  cont.innerHTML = '<div style="font-size:12px;color:var(--text3)">Loading…</div>';
   let files = [];
   try {
     const idx = await fetch('./data/index.json').then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
     files = idx.files || [];
-  } catch(err) { console.error('initDataFiles:', err); cont.innerHTML = '<div style="font-size:12px;color:var(--text3)">Aucun fichier disponible</div>'; return; }
+  } catch(err) { console.error('initDataFiles:', err); cont.innerHTML = '<div style="font-size:12px;color:var(--text3)">No files available</div>'; return; }
 
   cont.innerHTML = '';
   for (const df of files) {
@@ -818,7 +882,7 @@ async function initDataFiles() {
       <span class="data-file-name">${df.file}</span>
       <span class="data-file-count" id="cnt-${df.file}">…</span>
       <button class="data-file-btn${already?' loaded':''}" id="btn-${df.file}"
-        onclick="loadDataFile('${df.file}',this)">${already?'✓ Chargé':'Charger'}</button>`;
+        onclick="loadDataFile('${df.file}',this)">${already?'✓ Loaded':'Load'}</button>`;
     cont.appendChild(row);
     fetch(`./data/${df.file}`).then(r=>r.json()).then(arr=>{
       const el=document.getElementById(`cnt-${df.file}`);
@@ -828,7 +892,7 @@ async function initDataFiles() {
 }
 
 async function loadDataFile(filename, btn) {
-  if (_loadedFiles.has(filename)) { toast('Déjà chargé'); return; }
+  if (_loadedFiles.has(filename)) { toast('Already loaded'); return; }
   try {
     const arr = await fetch(`data/${filename}`).then(r=>r.json());
     arr.forEach(e=>{ if(!e.id)e.id=uid(); if(!e.added)e.added=new Date().toISOString(); });
@@ -836,9 +900,9 @@ async function loadDataFile(filename, btn) {
     events.push(...fresh); save();
     _loadedFiles.add(filename);
     localStorage.setItem('psp-loaded', JSON.stringify([..._loadedFiles]));
-    if(btn){ btn.textContent='✓ Chargé'; btn.classList.add('loaded'); }
-    render(); toast(`✓ ${fresh.length} events chargés`);
-  } catch(err) { console.error('loadDataFile error:', err); toast('Erreur chargement'); }
+    if(btn){ btn.textContent='✓ Loaded'; btn.classList.add('loaded'); }
+    render(); toast(`✓ ${fresh.length} events loaded`);
+  } catch(err) { console.error('loadDataFile error:', err); toast('Load error'); }
 }
 
 async function forceReloadAll() {
@@ -850,7 +914,7 @@ async function forceReloadAll() {
     files = idx.files || [];
   } catch(err) {
     console.error('forceReloadAll: cannot fetch data/index.json', err);
-    toast('⚠ Impossible de lire data/index.json');
+    toast('⚠ Cannot read data/index.json');
     initDataFiles(); return;
   }
   let total = 0;
@@ -868,7 +932,7 @@ async function forceReloadAll() {
   localStorage.setItem('psp-loaded', JSON.stringify([..._loadedFiles]));
   render();
   initDataFiles();
-  toast(total > 0 ? `✓ ${total} events chargés` : '✓ Données déjà à jour');
+  toast(total > 0 ? `✓ ${total} events loaded` : '✓ Data already up to date');
 }
 
 async function autoLoadDataFiles() {
@@ -894,7 +958,7 @@ async function autoLoadDataFiles() {
     save();
     localStorage.setItem('psp-loaded', JSON.stringify([..._loadedFiles]));
     render();
-    toast(`✓ ${total} events chargés automatiquement`);
+    toast(`✓ ${total} events loaded`);
   }
 }
 
@@ -921,8 +985,8 @@ function importICS(txt) {
     const ds=dr.length>=8?dr.substring(0,4)+'-'+dr.substring(4,6)+'-'+dr.substring(6,8):'';
     added.push({id:uid(),title:g('SUMMARY'),date:ds,cat:'autre',notes:g('DESCRIPTION'),venue:g('LOCATION'),reminders:['1w'],added:new Date().toISOString()});
   });
-  if(added.length){events.push(...added);save();toast(`✓ ${added.length} événement(s) importé(s)`);goTab('list');}
-  else toast('Aucun événement trouvé');
+  if(added.length){events.push(...added);save();toast(`✓ ${added.length} event(s) imported`);goTab('list');}
+  else toast('No events found');
 }
 
 function importCSV(txt) {
@@ -930,7 +994,7 @@ function importCSV(txt) {
     const p=l.split(',');
     return {id:uid(),title:p[0]||'',date:p[1]||'',cat:p[2]||'autre',venue:p[3]||'',notes:p[4]||'',reminders:['1w'],added:new Date().toISOString()};
   }).filter(e=>e.title);
-  if(rows.length){events.push(...rows);save();toast(`✓ ${rows.length} ligne(s) importée(s)`);goTab('list');}
+  if(rows.length){events.push(...rows);save();toast(`✓ ${rows.length} row(s) imported`);goTab('list');}
 }
 
 function importJSON(txt) {
@@ -939,14 +1003,14 @@ function importJSON(txt) {
     const arr=Array.isArray(data)?data:[data];
     arr.forEach(e=>{if(!e.id)e.id=uid();if(!e.reminders)e.reminders=['1w'];if(!e.added)e.added=new Date().toISOString();});
     events.push(...arr.filter(e=>e.title));
-    save();toast(`✓ ${arr.length} événement(s) importé(s)`);goTab('list');
-  } catch{toast('Erreur JSON');}
+    save();toast(`✓ ${arr.length} event(s) imported`);goTab('list');
+  } catch{toast('JSON error');}
 }
 
 function analyseText() {
   const txt=document.getElementById('import-txt').value.trim();
-  if(!txt){toast('Colle du texte à analyser');return;}
-  alert("Ouvre Claude.ai et colle ce message :\n\n« Analyse ce texte et extrais-en une liste d'événements (titre, date YYYY-MM-DD, catégorie concert/resto/spectacle/voyage/autre, lieu) :\n\n"+txt.substring(0,300)+"… »");
+  if(!txt){toast('Paste some text first');return;}
+  alert("Open Claude.ai and paste this message:\n\n\"Analyse this text and extract a list of events (title, date YYYY-MM-DD, category concert/resto/spectacle/voyage/autre, venue):\n\n"+txt.substring(0,300)+"…\"");
 }
 
 const dz=document.getElementById('drop-zone');
