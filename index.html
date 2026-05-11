@@ -235,6 +235,14 @@
     .data-file-btn:active { opacity: .7; }
     .data-file-btn.loaded { background: var(--green-dim); color: var(--green); border-color: var(--green); }
 
+    /* Loading splash */
+    #splash { position:fixed; inset:0; background:var(--bg); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; z-index:999; transition:opacity 0.4s; }
+    #splash.hidden { opacity:0; pointer-events:none; }
+    .spin-ring { width:44px; height:44px; border-radius:50%; border:3px solid rgba(232,201,122,0.15); border-top-color:var(--accent); animation:spin 0.8s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    .splash-logo { font-family:'DM Serif Display',serif; font-size:28px; color:var(--text); letter-spacing:-0.3px; }
+    .splash-logo span { color:var(--accent); }
+
     /* More panel section headers */
     .section-hdr { font-size: 13px; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; }
     .section-div { height: 1px; background: var(--border); margin: 20px 0; }
@@ -372,6 +380,7 @@
           Back
         </button>
         <div style="display:flex;gap:8px;">
+          <button class="icon-btn" id="detail-share-btn" title="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg></button>
           <button class="icon-btn" id="detail-exp-btn" title="Export to Calendar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="12" y1="14" x2="12" y2="18"/><line x1="10" y1="16" x2="14" y2="16"/></svg></button>
           <button class="del-btn" id="detail-del-btn">✕</button>
         </div>
@@ -427,6 +436,10 @@
   </nav>
 </div>
 
+<div id="splash">
+  <div class="splash-logo">Plan<span>Out</span></div>
+  <div class="spin-ring"></div>
+</div>
 <div class="toast" id="toast"></div>
 
 <script>
@@ -550,6 +563,7 @@ function normalizeCat(cat, theme) {
 
 function renderDetail(id) {
   const ev = events.find(e => e.id === id); if (!ev) return;
+  document.getElementById('detail-share-btn').onclick = e => { e.stopPropagation(); shareEv(id); };
   document.getElementById('detail-exp-btn').onclick = e => { e.stopPropagation(); exportEv(e, id); };
   document.getElementById('detail-del-btn').onclick = e => { e.stopPropagation(); delEvDetail(id); };
   const cat = CAT[ev.cat] || CAT.autre;
@@ -592,6 +606,37 @@ function renderDetail(id) {
 function delEvDetail(id) {
   events = events.filter(e => e.id !== id);
   save(); closeDetail(); render(); toast('Deleted');
+}
+
+function shareEv(id) {
+  const ev = events.find(e => e.id === id); if (!ev) return;
+  const payload = btoa(unescape(encodeURIComponent(JSON.stringify(ev))));
+  const base = location.href.split('#')[0];
+  const url = `${base}#ev=${payload}`;
+  const text = [ev.title, ev.date ? fmtDate(ev.date) : '', ev.venue].filter(Boolean).join(' · ');
+  if (navigator.share) {
+    navigator.share({ title: ev.title, text, url }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(url).then(() => toast('Link copied!')).catch(() => toast('Cannot share'));
+  }
+}
+
+function handleSharedEvent() {
+  const hash = location.hash;
+  if (!hash.startsWith('#ev=')) return;
+  try {
+    const json = decodeURIComponent(escape(atob(hash.slice(4))));
+    const ev = JSON.parse(json);
+    if (!ev.title) return;
+    history.replaceState(null, '', location.pathname);
+    const existing = events.find(x => x.title === ev.title && x.date === ev.date);
+    if (existing) { openDetail(existing.id); return; }
+    const msg = `Add "${ev.title}"${ev.date ? ' (' + fmtDate(ev.date) + ')' : ''} to PlanOut?`;
+    if (confirm(msg)) {
+      if (!ev.id) ev.id = Date.now().toString(36) + Math.random().toString(36).slice(2);
+      events.push(ev); save(); render(); openDetail(ev.id); toast('Added!');
+    }
+  } catch (_) {}
 }
 
 function goAdd() { goTab('add'); }
@@ -1216,7 +1261,12 @@ dz.addEventListener('drop',e=>{
 
 render();
 goTab('top');
-autoLoadDataFiles();
+handleSharedEvent();
+autoLoadDataFiles().finally(() => {
+  const s = document.getElementById('splash');
+  s.classList.add('hidden');
+  setTimeout(() => s.remove(), 450);
+});
 </script>
 </body>
 </html>
