@@ -608,16 +608,12 @@ function delEvDetail(id) {
   save(); closeDetail(); render(); toast('Deleted');
 }
 
-const _SK = { t:'title', d:'date', df:'date_fin', tm:'time', c:'cat', v:'venue', n:'notes' };
-const _SK_R = Object.fromEntries(Object.entries(_SK).map(([k,v])=>[v,k]));
-
+// Share payload: positional array [title, date, cat, venue, time, date_fin] — no keys, no notes
 function shareEv(id) {
   const ev = events.find(e => e.id === id); if (!ev) return;
-  const mini = {};
-  ['title','date','date_fin','time','cat','venue','notes'].forEach(k => {
-    if (ev[k]) mini[_SK_R[k]] = ev[k];
-  });
-  const payload = btoa(unescape(encodeURIComponent(JSON.stringify(mini))));
+  const arr = [ev.title||'', ev.date||'', ev.cat||'', ev.venue||'', ev.time||'', ev.date_fin||''];
+  while (arr.length > 1 && arr[arr.length-1] === '') arr.pop();
+  const payload = btoa(unescape(encodeURIComponent(JSON.stringify(arr))));
   const base = location.href.split('#')[0];
   const url = `${base}#ev=${payload}`;
   const text = [ev.title, ev.date ? fmtDate(ev.date) : '', ev.venue].filter(Boolean).join(' · ');
@@ -632,19 +628,14 @@ function handleSharedEvent() {
   const hash = location.hash;
   if (!hash.startsWith('#ev=')) return;
   try {
-    const json = decodeURIComponent(escape(atob(hash.slice(4))));
-    const mini = JSON.parse(json);
-    const ev = {};
-    Object.entries(mini).forEach(([k,v]) => { ev[_SK[k]||k] = v; });
-    if (!ev.title) return;
+    const arr = JSON.parse(decodeURIComponent(escape(atob(hash.slice(4)))));
+    if (!Array.isArray(arr) || !arr[0]) return;
     history.replaceState(null, '', location.pathname);
-    const existing = events.find(x => x.title === ev.title && x.date === ev.date);
+    const [title='', date='', cat='', venue='', time='', date_fin=''] = arr;
+    const existing = events.find(x => x.title === title && x.date === date);
     if (existing) { openDetail(existing.id); return; }
-    const msg = `Add "${ev.title}"${ev.date ? ' (' + fmtDate(ev.date) + ')' : ''} to PlanOut?`;
-    if (confirm(msg)) {
-      ev.id = Date.now().toString(36) + Math.random().toString(36).slice(2);
-      events.push(ev); save(); render(); openDetail(ev.id); toast('Added!');
-    }
+    const ev = { id: Date.now().toString(36)+Math.random().toString(36).slice(2), title, date, cat, venue, time, date_fin };
+    events.push(ev); save(); render(); openDetail(ev.id);
   } catch (_) {}
 }
 
