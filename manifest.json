@@ -4,7 +4,7 @@
   "description": "Planifie tes sorties Paris — concerts, expos, théâtre, sport",
   "start_url": "/planout/",
   "scope": "/planout/",
-  "display": "browser",
+  "display": "standalone",
   "background_color": "#0e0d0c",
   "theme_color": "#0e0d0c",
   "orientation": "portrait",
