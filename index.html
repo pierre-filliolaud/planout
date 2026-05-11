@@ -134,14 +134,17 @@
     .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
     /* Category colors */
-    .b-concert  { background: var(--blue-dim);   color: var(--blue);   }
-    .b-resto    { background: var(--green-dim);   color: var(--green);  }
-    .b-spectacle{ background: var(--pink-dim);    color: var(--pink);   }
-    .b-voyage   { background: var(--orange-dim);  color: var(--orange); }
-    .b-musee    { background: var(--purple-dim);  color: var(--purple); }
-    .b-running  { background: rgba(34,198,188,0.12); color: #22c6bc; }
+    .b-paris    { background: rgba(255,140,66,0.13);  color: #ff8c42; }
+    .b-spectacle{ background: var(--pink-dim);         color: var(--pink);   }
+    .b-musee    { background: var(--purple-dim);       color: var(--purple); }
+    .b-concert  { background: var(--blue-dim);         color: var(--blue);   }
+    .b-techno   { background: rgba(191,95,255,0.13);  color: #bf5fff; }
     .b-volley   { background: rgba(140,198,63,0.12);  color: #8cc63f; }
+    .b-running  { background: rgba(34,198,188,0.12);  color: #22c6bc; }
     .b-autre    { background: rgba(255,255,255,0.05); color: var(--text2); }
+    /* legacy */
+    .b-resto    { background: var(--green-dim);  color: var(--green); }
+    .b-voyage   { background: var(--orange-dim); color: var(--orange); }
     .d-urg  { background: var(--red-dim);    color: var(--red);    }
     .d-soon { background: var(--orange-dim); color: var(--orange); }
     .d-ok   { background: var(--green-dim);  color: var(--green);  }
@@ -191,6 +194,15 @@
     .detail-lbl { font-size:12px; font-weight:600; color:var(--text2); text-transform:uppercase; letter-spacing:.05em; min-width:76px; padding-top:2px; flex-shrink:0; }
     .detail-val { font-size:15px; color:var(--text); flex:1; line-height:1.5; }
 
+    /* ── Collapsible sections ── */
+    .sec-hdr { display:flex; align-items:center; justify-content:space-between; cursor:pointer; padding:11px 0 9px; user-select:none; -webkit-user-select:none; border-bottom:0.5px solid var(--border); margin-bottom:10px; }
+    .sec-hdr-lbl { font-size:13px; font-weight:600; color:var(--text2); display:flex; align-items:center; gap:7px; }
+    .sec-count { font-size:11px; color:var(--text3); background:var(--surface2); padding:2px 8px; border-radius:10px; }
+    .sec-chevron { color:var(--text3); flex-shrink:0; transition:transform 0.2s; }
+    .sec-chevron.closed { transform:rotate(-90deg); }
+    .subsec-hdr { display:flex; align-items:center; justify-content:space-between; cursor:pointer; padding:7px 0 5px; user-select:none; -webkit-user-select:none; margin:8px 0 4px; }
+    .subsec-hdr-lbl { font-size:11px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--text3); display:flex; align-items:center; gap:5px; }
+
     /* ── To Book / Reminders ── */
     .rem-sep { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text2); margin: 16px 0 8px; }
     .rem-sep:first-child { margin-top: 0; }
@@ -203,6 +215,16 @@
     .exp-btn { background: none; border: none; cursor: pointer; color: var(--text3); padding: 2px; display: flex; transition: color 0.15s; }
     .exp-btn svg { width: 15px; height: 15px; }
     .exp-btn:active { color: var(--accent); }
+
+    /* Search bar */
+    .search-bar { padding: 10px 20px 0; flex-shrink: 0; display: none; }
+    .search-input-wrap { position: relative; }
+    .search-input { width: 100%; background: var(--surface2); border: 0.5px solid var(--border2); border-radius: 22px; padding: 9px 36px 9px 38px; font-size: 14px; color: var(--text); font-family: 'DM Sans', sans-serif; outline: none; transition: border-color 0.15s; -webkit-appearance: none; appearance: none; }
+    .search-input:focus { border-color: var(--accent); }
+    .search-input::placeholder { color: var(--text3); }
+    .search-icon { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); color: var(--text3); pointer-events: none; }
+    .search-clear { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text3); cursor: pointer; padding: 4px; line-height: 1; display: none; font-size: 16px; }
+    .search-clear.visible { display: block; }
 
     /* Data file loader */
     .data-file-row { display: flex; align-items: center; gap: 8px; background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r); padding: 12px 14px; }
@@ -283,13 +305,13 @@
       <div class="fgroup">
         <label>Category</label>
         <select id="f-cat">
+          <option value="paris">🗼 Paris</option>
+          <option value="spectacle">🎭 Show</option>
           <option value="musee">🏛️ Museum / Expo</option>
           <option value="concert">🎵 Concert</option>
-          <option value="resto">🍽️ Restaurant</option>
-          <option value="spectacle">🎭 Show</option>
-          <option value="voyage">✈️ Trip / Weekend</option>
-          <option value="running">🏃 Sport Running</option>
-          <option value="volley">🏐 Sport Volley</option>
+          <option value="techno">🎧 Soirée Techno</option>
+          <option value="volley">🏐 Volley</option>
+          <option value="running">🏃 Running</option>
           <option value="autre">📌 Other</option>
         </select>
       </div>
@@ -357,17 +379,26 @@
     <div class="panel-scroll" id="detail-body" style="padding-top:0;"></div>
   </div>
 
+  <!-- SHARED SEARCH BAR -->
+  <div id="search-bar" class="search-bar">
+    <div class="search-input-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="search-input" class="search-input" type="search" placeholder="Search…" oninput="onSearch(this.value)" autocomplete="off" autocorrect="off" spellcheck="false" />
+      <button class="search-clear" id="search-clear" onclick="clearSearch()">✕</button>
+    </div>
+  </div>
+
   <!-- SHARED FILTER BAR -->
   <div id="filter-bar" class="filter-scroll" style="display:none;flex-shrink:0;border-top:0.5px solid var(--border);padding-top:10px;padding-bottom:10px;">
-    <div class="chip active" data-cat="all" onclick="setFilter('all',this)">All</div>
-    <div class="chip" data-cat="musee" onclick="setFilter('musee',this)">🏛️ Museums</div>
-    <div class="chip" data-cat="concert" onclick="setFilter('concert',this)">🎵 Concerts</div>
+    <div class="chip active" data-cat="all"       onclick="setFilter('all',this)">All</div>
+    <div class="chip" data-cat="paris"     onclick="setFilter('paris',this)">🗼 Paris</div>
     <div class="chip" data-cat="spectacle" onclick="setFilter('spectacle',this)">🎭 Shows</div>
-    <div class="chip" data-cat="running" onclick="setFilter('running',this)">🏃 Running</div>
-    <div class="chip" data-cat="volley" onclick="setFilter('volley',this)">🏐 Volley</div>
-    <div class="chip" data-cat="voyage" onclick="setFilter('voyage',this)">✈️ Trips</div>
-    <div class="chip" data-cat="resto" onclick="setFilter('resto',this)">🍽️ Restaurants</div>
-    <div class="chip" data-cat="autre" onclick="setFilter('autre',this)">📌 Other</div>
+    <div class="chip" data-cat="musee"     onclick="setFilter('musee',this)">🏛️ Museums</div>
+    <div class="chip" data-cat="concert"   onclick="setFilter('concert',this)">🎵 Concerts</div>
+    <div class="chip" data-cat="techno"    onclick="setFilter('techno',this)">🎧 Techno</div>
+    <div class="chip" data-cat="volley"    onclick="setFilter('volley',this)">🏐 Volley</div>
+    <div class="chip" data-cat="running"   onclick="setFilter('running',this)">🏃 Running</div>
+    <div class="chip" data-cat="autre"     onclick="setFilter('autre',this)">📌 Other</div>
   </div>
 
   <!-- TAB BAR -->
@@ -384,11 +415,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
       Calendar
     </button>
-    <button class="tab-btn" id="tb-add" onclick="goTab('add')">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-      New
-    </button>
-    <button class="tab-btn" id="tb-list" onclick="goTab('list')">
+<button class="tab-btn" id="tb-list" onclick="goTab('list')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="3" rx="1"/><rect x="3" y="10.5" width="18" height="3" rx="1"/><rect x="3" y="16" width="18" height="3" rx="1"/></svg>
       List
     </button>
@@ -403,16 +430,19 @@
 
 <script>
 const CAT = {
-  musee:     { l:'Museum',     b:'b-musee',     dot:'#9b7fd4' },
-  concert:   { l:'Concert',    b:'b-concert',   dot:'#5b9bd5' },
-  resto:     { l:'Restaurant', b:'b-resto',      dot:'#5cb88a' },
-  spectacle: { l:'Show',       b:'b-spectacle',  dot:'#d47aa0' },
-  voyage:    { l:'Trip',       b:'b-voyage',     dot:'#e89652' },
-  running:   { l:'Running',   b:'b-running',    dot:'#22c6bc' },
-  volley:    { l:'Volley',    b:'b-volley',     dot:'#8cc63f' },
-  autre:     { l:'Other',     b:'b-autre',      dot:'#9e9a92' }
+  paris:    { l:'Paris',     b:'b-paris',     dot:'#ff8c42' },
+  spectacle:{ l:'Show',      b:'b-spectacle', dot:'#d47aa0' },
+  musee:    { l:'Museum',    b:'b-musee',     dot:'#9b7fd4' },
+  concert:  { l:'Concert',   b:'b-concert',   dot:'#5b9bd5' },
+  techno:   { l:'Techno',    b:'b-techno',    dot:'#bf5fff' },
+  volley:   { l:'Volley',    b:'b-volley',    dot:'#8cc63f' },
+  running:  { l:'Running',   b:'b-running',   dot:'#22c6bc' },
+  autre:    { l:'Other',     b:'b-autre',     dot:'#9e9a92' },
+  // legacy fallbacks
+  resto:    { l:'Restaurant',b:'b-resto',     dot:'#5cb88a' },
+  voyage:   { l:'Trip',      b:'b-voyage',    dot:'#e89652' },
 };
-const CAT_ORDER = ['musee','concert','spectacle','voyage','resto','running','volley','autre'];
+const CAT_ORDER = ['paris','spectacle','musee','concert','techno','volley','running','autre'];
 const REM_DAYS = { '1m':30, '2w':14, '1w':7, '1d':1 };
 const REM_LBL  = { '1m':'1 month before', '2w':'2 weeks before', '1w':'1 week before', '1d':'Day before' };
 const MONTHS_FR = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -423,13 +453,18 @@ function scoreCls(s){ return s >= 80 ? 'score-hi' : s >= 60 ? 'score-mid' : 'sco
 
 let events = JSON.parse(localStorage.getItem('psp-events') || '[]');
 let _dirty = false;
-events = events.map(e => { if (!e.id) { _dirty=true; return {...e, id:uid()}; } return e; });
+events = events.map(e => {
+  const nc = normalizeCat(e.cat);
+  if (!e.id || nc !== e.cat) _dirty = true;
+  return { ...e, id: e.id || uid(), cat: nc };
+});
 if (_dirty) localStorage.setItem('psp-events', JSON.stringify(events));
 
 const _loadedFiles = new Set(JSON.parse(localStorage.getItem('psp-loaded')||'[]'));
 // Reset loaded-files tracking if there are no events (e.g. after clearing data)
 if (events.length === 0) { _loadedFiles.clear(); localStorage.removeItem('psp-loaded'); }
 let filter = 'all';
+let searchQuery = '';
 let rems = new Set(['1m','2w']);
 let calYear, calMonth, calSelDay = null;
 const _today = new Date();
@@ -444,7 +479,7 @@ function toast(msg) {
   clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove('show'), 2600);
 }
 
-const TABS = ['top','areserver','cal','add','list','more'];
+const TABS = ['top','areserver','cal','list','more'];
 let _prevTab = 'top';
 let _detailId = null;
 
@@ -463,9 +498,12 @@ function goTab(name) {
     const btn = document.getElementById('tb-'+n);
     if (btn) btn.classList.toggle('active', n===name);
   });
-  // Show/hide shared filter bar
+  // Show/hide search + filter bars
+  const sb = document.getElementById('search-bar');
   const fb = document.getElementById('filter-bar');
-  if (fb) fb.style.display = FILTER_TABS.has(name) ? 'flex' : 'none';
+  const show = FILTER_TABS.has(name);
+  if (sb) sb.style.display = show ? 'block' : 'none';
+  if (fb) fb.style.display = show ? 'flex' : 'none';
   if (name==='list')      render();
   if (name==='cal')       renderCal();
   if (name==='top')       renderTop();
@@ -496,9 +534,17 @@ function linkifyNotes(txt) {
   }).join('<br>');
 }
 
-function normalizeCat(cat) {
-  const MAP = { expo: 'musee' };
-  return MAP[cat] || cat;
+function normalizeCat(cat, theme) {
+  if (theme && CAT[theme]) return theme;
+  const MAP = {
+    expo: 'musee', theatre: 'spectacle', show: 'spectacle',
+    'soirees-concert': 'concert', 'soirees-techno': 'techno',
+    'sorties-musee': 'musee', 'sorties-paris': 'paris',
+    'sorties-theatre': 'spectacle', 'sport-running': 'running',
+    'sport-volley': 'volley',
+  };
+  const c = MAP[cat] || cat;
+  return CAT[c] ? c : 'autre';
 }
 
 function renderDetail(id) {
@@ -548,6 +594,36 @@ function delEvDetail(id) {
 }
 
 function goAdd() { goTab('add'); }
+
+function matchesSearch(ev) {
+  if (!searchQuery) return true;
+  const q = searchQuery.toLowerCase();
+  return (ev.title||'').toLowerCase().includes(q)
+      || (ev.venue||'').toLowerCase().includes(q)
+      || (ev.notes||'').toLowerCase().includes(q);
+}
+
+function onSearch(val) {
+  searchQuery = val.trim();
+  const cl = document.getElementById('search-clear');
+  if (cl) cl.classList.toggle('visible', searchQuery.length > 0);
+  if (_prevTab === 'list')           render();
+  else if (_prevTab === 'top')       renderTop();
+  else if (_prevTab === 'areserver') renderAReserver();
+  else if (_prevTab === 'cal')       renderCal();
+}
+
+function clearSearch() {
+  searchQuery = '';
+  const inp = document.getElementById('search-input');
+  if (inp) inp.value = '';
+  const cl = document.getElementById('search-clear');
+  if (cl) cl.classList.remove('visible');
+  if (_prevTab === 'list')           render();
+  else if (_prevTab === 'top')       renderTop();
+  else if (_prevTab === 'areserver') renderAReserver();
+  else if (_prevTab === 'cal')       renderCal();
+}
 
 function setFilter(f, el) {
   filter = f;
@@ -630,10 +706,60 @@ function exportEv(e, id) {
   toast('📅 Exported to Calendar');
 }
 
+/* ── Collapsible sections ───────────────────────────── */
+
+const _secState = {}; // key → true=collapsed
+
+function secCollapsed(key, defaultCollapsed) {
+  return key in _secState ? _secState[key] : defaultCollapsed;
+}
+
+function toggleSection(key, defaultCollapsed) {
+  _secState[key] = !secCollapsed(key, defaultCollapsed);
+  if (key.startsWith('book-') || key.startsWith('rem-')) renderAReserver();
+  else render();
+}
+
+function chevron(key, defaultCollapsed) {
+  const c = secCollapsed(key, defaultCollapsed);
+  return `<svg class="sec-chevron${c?' closed':''}" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>`;
+}
+
 /* ── List ───────────────────────────────────────────── */
 
+function evCardHtml(ev) {
+  const cat = CAT[ev.cat]||CAT.autre;
+  const days = daysTo(ev.date);
+  const urgCls = days<0?'ok':days<=14?'urg':days<=45?'soon':'ok';
+  const dLabel = days<0?'Past':days===0?'Today!':`${days}d`;
+  const dCls = days<0?'d-past':days<=14?'d-urg':days<=45?'d-soon':'d-ok';
+  return `<div class="ev-card ${urgCls}" onclick="openDetail('${ev.id}')">
+    <div class="ev-top">
+      <div class="ev-top-left">
+        <span class="ev-badge ${cat.b}">${cat.l}</span>
+        ${ev.score?`<span class="score-badge ${scoreCls(ev.score)}">★ ${ev.score}</span>`:''}
+      </div>
+      <div class="ev-actions">
+        <button class="icon-btn" onclick="exportEv(event,'${ev.id}')">${CAL_SVG}</button>
+        <button class="del-btn" onclick="delEv(event,'${ev.id}')">✕</button>
+      </div>
+    </div>
+    <div class="ev-title">${ev.title}</div>
+    <div class="ev-meta">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      ${fmtDate(ev.date)}${ev.time?' · '+ev.time:''}
+      <span class="days-badge ${dCls}">${dLabel}</span>
+    </div>
+    ${ev.venue?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>${ev.venue}</div>`:''}
+    ${ev.deadline?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>Book by ${fmtDate(ev.deadline)}</div>`:''}
+    ${ev.notes?`<div style="font-size:12px;color:var(--text3);margin-top:6px;line-height:1.5">${ev.notes.split('\n')[0]}</div>`:''}
+    ${ev.reminders?.length?`<div class="reminder-row">🔔 ${ev.reminders.length} reminder${ev.reminders.length>1?'s':''}</div>`:''}
+  </div>`;
+}
+
 function render() {
-  let list = filter==='all' ? [...events] : events.filter(e=>e.cat===filter);
+  const todayMonth = localStr(_today).slice(0,7);
+  let list = events.filter(e => (filter==='all' || e.cat===filter) && matchesSearch(e));
   list.sort((a,b)=>(a.date||'9999')<(b.date||'9999')?-1:1);
 
   document.getElementById('s-total').textContent = events.length;
@@ -645,37 +771,28 @@ function render() {
     cont.innerHTML = `<div class="empty"><div class="empty-icon">🎟️</div><p>No events</p><small>Add or import your outings!</small></div>`;
     return;
   }
-  let html='', lastM='';
+
+  // Group by YYYY-MM
+  const groups = {};
   list.forEach(ev => {
-    const mo = ev.date ? new Date(ev.date+'T12:00:00').toLocaleDateString('en-US',{month:'long',year:'numeric'}) : 'No date';
-    if (mo!==lastM) { html+=`<div class="month-sep">${mo}</div>`; lastM=mo; }
-    const cat = CAT[ev.cat]||CAT.autre;
-    const days = daysTo(ev.date);
-    const urgCls = days<0?'ok':days<=14?'urg':days<=45?'soon':'ok';
-    const dLabel = days<0?'Past':days===0?'Today!':`${days}d`;
-    const dCls = days<0?'d-past':days<=14?'d-urg':days<=45?'d-soon':'d-ok';
-    html+=`<div class="ev-card ${urgCls}" onclick="openDetail('${ev.id}')">
-      <div class="ev-top">
-        <div class="ev-top-left">
-          <span class="ev-badge ${cat.b}">${cat.l}</span>
-          ${ev.score ? `<span class="score-badge ${scoreCls(ev.score)}">★ ${ev.score}</span>` : ''}
-        </div>
-        <div class="ev-actions">
-          <button class="icon-btn" onclick="exportEv(event,'${ev.id}')" title="Exporter vers Calendrier">${CAL_SVG}</button>
-          <button class="del-btn" onclick="delEv(event,'${ev.id}')">✕</button>
-        </div>
-      </div>
-      <div class="ev-title">${ev.title}</div>
-      <div class="ev-meta">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        ${fmtDate(ev.date)}${ev.time?' · '+ev.time:''}
-        <span class="days-badge ${dCls}">${dLabel}</span>
-      </div>
-      ${ev.venue?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>${ev.venue}</div>`:''}
-      ${ev.deadline?`<div class="ev-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>Book by ${fmtDate(ev.deadline)}</div>`:''}
-      ${ev.notes?`<div style="font-size:12px;color:var(--text3);margin-top:6px;line-height:1.5">${ev.notes.split('\n')[0]}</div>`:''}
-      ${ev.reminders?.length?`<div class="reminder-row">🔔 ${ev.reminders.length} reminder${ev.reminders.length>1?'s':''}</div>`:''}
+    const key = ev.date ? ev.date.slice(0,7) : 'nodate';
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(ev);
+  });
+
+  let html = '';
+  Object.keys(groups).sort().forEach(key => {
+    const evs = groups[key];
+    const isPast = key !== 'nodate' && key < todayMonth;
+    const collapsed = secCollapsed('list-'+key, isPast);
+    const label = key === 'nodate' ? 'No date'
+      : new Date(key+'-15T12:00:00').toLocaleDateString('en-US',{month:'long',year:'numeric'});
+
+    html += `<div class="sec-hdr" onclick="toggleSection('list-${key}',${isPast})">
+      <div class="sec-hdr-lbl">${chevron('list-'+key, isPast)}${label}</div>
+      <span class="sec-count">${evs.length}</span>
     </div>`;
+    if (!collapsed) evs.forEach(ev => { html += evCardHtml(ev); });
   });
   cont.innerHTML = html;
 }
@@ -727,6 +844,7 @@ function renderCal() {
   events.forEach(ev => {
     if (!ev.date) return;
     if (filter !== 'all' && (ev.cat||'autre') !== filter) return;
+    if (!matchesSearch(ev)) return;
     if (!evMap[ev.date]) evMap[ev.date]=[];
     evMap[ev.date].push(ev);
   });
@@ -749,7 +867,7 @@ function renderCal() {
 function selectDay(ds) { calSelDay=ds; renderCal(); }
 
 function renderCalDay(ds) {
-  const evs = events.filter(e=>e.date===ds && (filter==='all'||(e.cat||'autre')===filter)).sort((a,b)=>(a.time||'')<(b.time||'')?-1:1);
+  const evs = events.filter(e=>e.date===ds && (filter==='all'||(e.cat||'autre')===filter) && matchesSearch(e)).sort((a,b)=>(a.time||'')<(b.time||'')?-1:1);
   const label = new Date(ds+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',day:'numeric',month:'long'});
   let html=`<div class="cal-day-hdr">${label}</div>`;
   if (!evs.length) { html+='<div class="cal-empty" style="padding:16px 0">No events this day</div>'; }
@@ -776,7 +894,7 @@ function renderCalDay(ds) {
 
 function renderTop() {
   const todayStr = localStr(_today);
-  let upcoming = events.filter(e => e.date && e.date >= todayStr);
+  let upcoming = events.filter(e => e.date && e.date >= todayStr && matchesSearch(e));
   if (filter !== 'all') upcoming = upcoming.filter(e => (e.cat||'autre') === filter);
   const cont = document.getElementById('top-list');
   if (!upcoming.length) {
@@ -826,7 +944,7 @@ function renderAReserver() {
   const todayStr = localStr(_today);
   const cont = document.getElementById('areserver-list');
 
-  const catOk = e => filter === 'all' || (e.cat||'autre') === filter;
+  const catOk = e => (filter === 'all' || (e.cat||'autre') === filter) && matchesSearch(e);
 
   // Section 1 — Deadlines
   const withDead = events
@@ -854,61 +972,82 @@ function renderAReserver() {
 
   let html = '';
 
-  // Deadlines
+  // ── Bookings to make ──────────────────────────────
   if (withDead.length) {
-    html += `<div class="rem-sep">🎫 Bookings to make</div>`;
-    withDead.forEach(ev => {
-      const dDead  = daysTo(ev.deadline);
-      const cat    = CAT[ev.cat]||CAT.autre;
-      const urgCls = dDead<=7?'d-urg':dDead<=30?'d-soon':'d-ok';
-      const border = dDead<=7?'var(--red)':dDead<=30?'var(--orange)':'var(--green)';
-      html+=`<div class="rem-item" style="border-left:3px solid ${border};padding-left:11px;cursor:pointer;" onclick="openDetail('${ev.id}')">
-        <div class="rem-body">
-          <div class="rem-title">${ev.title}</div>
-          <div class="rem-sub">Event: ${fmtDate(ev.date)}</div>
-          <div class="rem-sub" style="margin-top:2px">⏰ Deadline: ${fmtDate(ev.deadline)}</div>
-        </div>
-        <div class="rem-right">
-          <span class="days-badge ${urgCls}">${dDead<=0?'Expired':dDead===0?'Today!':`${dDead}d`}</span>
-          ${ev.score?`<span class="score-badge ${scoreCls(ev.score)}">★ ${ev.score}</span>`:''}
-          <button class="exp-btn" onclick="exportEv(event,'${ev.id}')">${CAL_SVG}</button>
-        </div>
-      </div>`;
-    });
-  }
-
-  // Rappels
-  if (remItems.length) {
-    const remGroups = [
-      {label:'Today',      fn:x=>x.dUntil===0},
-      {label:'This week',  fn:x=>x.dUntil>=1&&x.dUntil<=7},
-      {label:'This month', fn:x=>x.dUntil>=8&&x.dUntil<=30},
-      {label:'Later',      fn:x=>x.dUntil>30},
-      {label:'Past',       fn:x=>x.dUntil<0},
-    ];
-    let firstRem = true;
-    remGroups.forEach(g => {
-      const gi = remItems.filter(g.fn); if (!gi.length) return;
-      if (firstRem) { html += `<div class="rem-sep" style="margin-top:${withDead.length?'20px':'0'}">🔔 Reminders</div>`; firstRem=false; }
-      html += `<div style="font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin:10px 0 6px;">${g.label}</div>`;
-      gi.forEach(({ev,r,dUntil}) => {
-        const cat   = CAT[ev.cat]||CAT.autre;
-        const dLbl  = dUntil<0?`${-dUntil}d ago`:dUntil===0?'Today':`${dUntil}d`;
-        const dCls  = dUntil<0?'d-past':dUntil===0?'d-urg':dUntil<=7?'d-soon':'d-ok';
-        html+=`<div class="rem-item" style="cursor:pointer;" onclick="openDetail('${ev.id}')">
-          <div class="rem-dot" style="background:${cat.dot}"></div>
+    const key = 'book-deadlines';
+    const col = secCollapsed(key, false);
+    html += `<div class="sec-hdr" onclick="toggleSection('${key}',false)">
+      <div class="sec-hdr-lbl">${chevron(key,false)}🎫 Bookings to make</div>
+      <span class="sec-count">${withDead.length}</span>
+    </div>`;
+    if (!col) {
+      withDead.forEach(ev => {
+        const dDead  = daysTo(ev.deadline);
+        const cat    = CAT[ev.cat]||CAT.autre;
+        const urgCls = dDead<=7?'d-urg':dDead<=30?'d-soon':'d-ok';
+        const border = dDead<=7?'var(--red)':dDead<=30?'var(--orange)':'var(--green)';
+        html+=`<div class="rem-item" style="border-left:3px solid ${border};padding-left:11px;cursor:pointer;" onclick="openDetail('${ev.id}')">
           <div class="rem-body">
             <div class="rem-title">${ev.title}</div>
-            <div class="rem-sub">${REM_LBL[r]} · ${fmtDate(ev.date)}</div>
+            <div class="rem-sub">Event: ${fmtDate(ev.date)}</div>
+            <div class="rem-sub" style="margin-top:2px">⏰ Deadline: ${fmtDate(ev.deadline)}</div>
           </div>
           <div class="rem-right">
-            <span class="days-badge ${dCls}">${dLbl}</span>
+            <span class="days-badge ${urgCls}">${dDead<=0?'Expired':dDead===0?'Today!':`${dDead}d`}</span>
             ${ev.score?`<span class="score-badge ${scoreCls(ev.score)}">★ ${ev.score}</span>`:''}
             <button class="exp-btn" onclick="exportEv(event,'${ev.id}')">${CAL_SVG}</button>
           </div>
         </div>`;
       });
-    });
+    }
+  }
+
+  // ── Reminders ─────────────────────────────────────
+  if (remItems.length) {
+    const remGroups = [
+      {id:'today', label:'Today',      fn:x=>x.dUntil===0,        defaultCol:false},
+      {id:'week',  label:'This week',  fn:x=>x.dUntil>=1&&x.dUntil<=7,  defaultCol:false},
+      {id:'month', label:'This month', fn:x=>x.dUntil>=8&&x.dUntil<=30, defaultCol:false},
+      {id:'later', label:'Later',      fn:x=>x.dUntil>30,         defaultCol:false},
+      {id:'past',  label:'Past',       fn:x=>x.dUntil<0,          defaultCol:true},
+    ];
+    const totalRem = remItems.length;
+    const keyRem = 'book-reminders';
+    const colRem = secCollapsed(keyRem, false);
+    html += `<div class="sec-hdr" style="margin-top:${withDead.length?'16px':'0'}" onclick="toggleSection('${keyRem}',false)">
+      <div class="sec-hdr-lbl">${chevron(keyRem,false)}🔔 Reminders</div>
+      <span class="sec-count">${totalRem}</span>
+    </div>`;
+    if (!colRem) {
+      remGroups.forEach(g => {
+        const gi = remItems.filter(g.fn); if (!gi.length) return;
+        const subKey = 'rem-'+g.id;
+        const subCol = secCollapsed(subKey, g.defaultCol);
+        html += `<div class="subsec-hdr" onclick="event.stopPropagation();toggleSection('${subKey}',${g.defaultCol})">
+          <div class="subsec-hdr-lbl">${chevron(subKey,g.defaultCol)}${g.label}</div>
+          <span class="sec-count">${gi.length}</span>
+        </div>`;
+        if (!subCol) {
+          gi.forEach(({ev,r,dUntil}) => {
+            const cat  = CAT[ev.cat]||CAT.autre;
+            const dLbl = dUntil<0?`${-dUntil}d ago`:dUntil===0?'Today':`${dUntil}d`;
+            const dCls = dUntil<0?'d-past':dUntil===0?'d-urg':dUntil<=7?'d-soon':'d-ok';
+            html+=`<div class="rem-item" style="cursor:pointer;" onclick="openDetail('${ev.id}')">
+              <div class="rem-dot" style="background:${cat.dot}"></div>
+              <div class="rem-body">
+                <div class="rem-title">${ev.title}</div>
+                <div class="rem-sub">${REM_LBL[r]} · ${fmtDate(ev.date)}</div>
+              </div>
+              <div class="rem-right">
+                <span class="days-badge ${dCls}">${dLbl}</span>
+                ${ev.score?`<span class="score-badge ${scoreCls(ev.score)}">★ ${ev.score}</span>`:''}
+                <button class="exp-btn" onclick="exportEv(event,'${ev.id}')">${CAL_SVG}</button>
+              </div>
+            </div>`;
+          });
+        }
+      });
+    }
   }
 
   cont.innerHTML = html;
@@ -927,66 +1066,62 @@ async function initDataFiles() {
 
   cont.innerHTML = '';
   for (const df of files) {
+    const cat = CAT[df.theme] || CAT.autre;
+    const loaded = _loadedFiles.has(df.file);
+    const n = events.filter(e => {
+      const src = df.file.replace(/\.json$/,'');
+      return e.cat === df.theme || (loaded);
+    }).length;
     const row = document.createElement('div');
     row.className = 'data-file-row';
-    const already = _loadedFiles.has(df.file);
-    const cat = CAT[df.theme]||CAT.autre;
     row.innerHTML = `
-      <span class="ev-badge ${cat.b}" style="font-size:10px">${df.label}</span>
+      <span class="ev-badge ${cat.b}" style="font-size:10px;flex-shrink:0">${df.label}</span>
       <span class="data-file-name">${df.file}</span>
       <span class="data-file-count" id="cnt-${df.file}">…</span>
-      <button class="data-file-btn${already?' loaded':''}" id="btn-${df.file}"
-        onclick="loadDataFile('${df.file}',this)">${already?'✓ Loaded':'Load'}</button>`;
+      <span class="data-file-btn loaded">✓ Auto</span>`;
     cont.appendChild(row);
     fetch(`./data/${df.file}`).then(r=>r.json()).then(arr=>{
-      const el=document.getElementById(`cnt-${df.file}`);
-      if(el) el.textContent=arr.length+' events';
+      const el = document.getElementById(`cnt-${df.file}`);
+      if (el) el.textContent = arr.length + ' events';
     }).catch(()=>{});
+  }
+  if (!document.getElementById('reload-all-btn')) {
+    const reloadBtn = document.createElement('button');
+    reloadBtn.id = 'reload-all-btn';
+    reloadBtn.className = 'save-btn';
+    reloadBtn.style.cssText = 'margin-top:16px;background:var(--surface2);color:var(--text);border:0.5px solid var(--border2);font-size:13px;padding:11px;';
+    reloadBtn.textContent = '↺ Reload all data';
+    reloadBtn.onclick = () => { reloadBtn.textContent = '…'; forceReloadAll().then(() => { reloadBtn.textContent = '↺ Reload all data'; }); };
+    cont.parentNode.insertBefore(reloadBtn, cont.nextSibling.nextSibling);
   }
 }
 
-async function loadDataFile(filename, btn) {
-  if (_loadedFiles.has(filename)) { toast('Already loaded'); return; }
+async function loadDataFile(filename, theme) {
   try {
-    const arr = await fetch(`data/${filename}`).then(r=>r.json());
-    arr.forEach(e=>{ if(!e.id)e.id=uid(); if(!e.added)e.added=new Date().toISOString(); e.cat=normalizeCat(e.cat); });
-    const fresh = arr.filter(e=>e.title && !events.find(x=>x.title===e.title && x.date===e.date));
-    events.push(...fresh); save();
+    const arr = await fetch(`data/${filename}`).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
+    arr.forEach(e=>{ if(!e.id)e.id=uid(); if(!e.added)e.added=new Date().toISOString(); e.cat=normalizeCat(e.cat, theme); });
+    let added = 0, fixed = 0;
+    arr.forEach(e => {
+      if (!e.title) return;
+      const existing = events.find(x => x.title === e.title && x.date === e.date);
+      if (existing) {
+        if (existing.cat !== e.cat) { existing.cat = e.cat; fixed++; }
+      } else {
+        events.push(e); added++;
+      }
+    });
+    if (added > 0 || fixed > 0) save();
     _loadedFiles.add(filename);
     localStorage.setItem('psp-loaded', JSON.stringify([..._loadedFiles]));
-    if(btn){ btn.textContent='✓ Loaded'; btn.classList.add('loaded'); }
-    render(); toast(`✓ ${fresh.length} events loaded`);
-  } catch(err) { console.error('loadDataFile error:', err); toast('Load error'); }
+    return added;
+  } catch(err) { console.error('loadDataFile error:', filename, err); return 0; }
 }
 
 async function forceReloadAll() {
-  _loadedFiles.clear();
-  localStorage.removeItem('psp-loaded');
-  let files = [];
-  try {
-    const idx = await fetch('./data/index.json').then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
-    files = idx.files || [];
-  } catch(err) {
-    console.error('forceReloadAll: cannot fetch data/index.json', err);
-    toast('⚠ Cannot read data/index.json');
-    initDataFiles(); return;
-  }
-  let total = 0;
-  for (const df of files) {
-    try {
-      const arr = await fetch(`./data/${df.file}`).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
-      arr.forEach(e=>{ if(!e.id)e.id=uid(); if(!e.added)e.added=new Date().toISOString(); e.cat=normalizeCat(e.cat); });
-      const fresh = arr.filter(e=>e.title && !events.find(x=>x.title===e.title && x.date===e.date));
-      events.push(...fresh);
-      _loadedFiles.add(df.file);
-      total += fresh.length;
-    } catch(err) { console.error('forceReloadAll: error loading', df.file, err); }
-  }
-  save();
-  localStorage.setItem('psp-loaded', JSON.stringify([..._loadedFiles]));
-  render();
-  initDataFiles();
-  toast(total > 0 ? `✓ ${total} events loaded` : '✓ Data already up to date');
+  events = []; _loadedFiles.clear();
+  localStorage.removeItem('psp-events'); localStorage.removeItem('psp-loaded');
+  await autoLoadDataFiles();
+  render(); initDataFiles();
 }
 
 async function autoLoadDataFiles() {
@@ -994,25 +1129,27 @@ async function autoLoadDataFiles() {
   try {
     const idx = await fetch('./data/index.json').then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
     files = idx.files || [];
-  } catch(err) { console.error('autoLoad: cannot fetch data/index.json', err); return; }
-  const newFiles = files.filter(f=>!_loadedFiles.has(f.file));
-  if (!newFiles.length) return;
+  } catch(err) {
+    console.error('autoLoad: cannot fetch data/index.json', err);
+    if (location.protocol === 'file:') {
+      document.getElementById('top-list').innerHTML =
+        `<div class="empty" style="padding:30px 20px;text-align:left;">
+           <div style="font-size:24px;margin-bottom:12px;">⚠️</div>
+           <p style="font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px;">Serveur requis</p>
+           <p style="font-size:13px;color:var(--text2);line-height:1.6;">Le fichier est ouvert en <code style="background:var(--surface2);padding:1px 5px;border-radius:4px;">file://</code>, les données ne peuvent pas être chargées.<br><br>Lance le serveur local :</p>
+           <code style="display:block;background:var(--surface2);border:0.5px solid var(--border2);border-radius:8px;padding:12px;margin-top:10px;font-size:13px;color:var(--accent);word-break:break-all;">bash serve.sh</code>
+           <p style="font-size:12px;color:var(--text3);margin-top:8px;">Puis ouvre <strong>http://localhost:3000</strong></p>
+         </div>`;
+    }
+    return;
+  }
   let total = 0;
-  for (const df of newFiles) {
-    try {
-      const arr = await fetch(`./data/${df.file}`).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
-      arr.forEach(e=>{ if(!e.id)e.id=uid(); if(!e.added)e.added=new Date().toISOString(); e.cat=normalizeCat(e.cat); });
-      const fresh = arr.filter(e=>e.title && !events.find(x=>x.title===e.title && x.date===e.date));
-      events.push(...fresh);
-      _loadedFiles.add(df.file);
-      total += fresh.length;
-    } catch {}
+  for (const df of files) {
+    total += await loadDataFile(df.file, df.theme);
   }
   if (total > 0) {
-    save();
-    localStorage.setItem('psp-loaded', JSON.stringify([..._loadedFiles]));
-    render();
-    toast(`✓ ${total} events loaded`);
+    render(); renderTop();
+    toast(`✓ ${total} new events`);
   }
 }
 

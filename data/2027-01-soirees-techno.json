@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Rex Club — Automne/hiver 2026-2027",
+    "date": "2026-09-04",
+    "date_fin": "2027-03-31",
+    "time": "23:30",
+    "cat": "club",
+    "venue": "Rex Club, 5 Bd Poissonnière, Paris 2e",
+    "notes": "Soirées techno/house/DnB mercredi-samedi toute l'année. Programmation automne/hiver annoncée au fil de l'eau. Early bird ~5€, standard 12-20€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w"
+    ],
+    "score": 25,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno",
+      "jour_prefere: vendredi/samedi",
+      "budget_ok"
+    ],
+    "image_url": null
+  }
+]

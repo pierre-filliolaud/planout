@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Semi-marathon du Bois de Vincennes",
+    "date": "2026-10-18",
+    "date_fin": null,
+    "time": "09:30",
+    "cat": "running",
+    "venue": "Château de Vincennes → Bois de Vincennes, Paris (75/94)",
+    "notes": "Distance: 21,1km. Prix: 40€ → 55€. Parcours au cœur du bois.\nhttps://sportpassionorganisation.com/semi-marathon-du-bois-de-vincennes/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 90,
+    "source": "sportpassionorganisation.com",
+    "match_reasons": [
+      "distance_preferee: semi-marathon",
+      "type_prefere: trail",
+      "proximite_dans_rayon",
+      "jour_prefere: dimanche",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Salomon EcoTrail Paris — Automne",
+    "date": "2026-10-17",
+    "date_fin": null,
+    "time": "08:00",
+    "cat": "running",
+    "venue": "Île-de-France (75-78-95)",
+    "notes": "Distance: 20km / 50km / 80km. Prix: 31-90€. Trail éco-responsable, arrivée Tour Eiffel pour 80km.\nhttps://www.ecotrailparis.com/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 85,
+    "source": "ecotrailparis.com",
+    "match_reasons": [
+      "distance_preferee: trail",
+      "type_prefere: trail",
+      "proximite_dans_rayon",
+      "budget_ok",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Trail des Hauteurs — Romainville",
+    "date": "2026-10-04",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Corniche des Forts, Romainville, Seine-Saint-Denis (93)",
+    "notes": "Distance: 5km / 14km / 30km. Trail urbain-nature Seine-Saint-Denis.\nhttps://idf.fsgt.org/trail-des-hauteurs-2026/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 80,
+    "source": "fsgt.org",
+    "match_reasons": [
+      "distance_preferee: trail",
+      "type_prefere: trail",
+      "proximite_dans_rayon",
+      "jour_prefere: dimanche"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Harmonie Mutuelle 20km de Paris — 48e édition",
+    "date": "2026-10-11",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Pont d'Iéna → Tour Eiffel, Paris (75)",
+    "notes": "Distance: 20km. Prix: 71€ (FFA 52€). Parcours emblématique: Trocadéro, Bois de Boulogne, bords de Seine.\nhttps://harmonie-mutuelle.20kmparis.com/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 72,
+    "source": "20kmparis.com",
+    "match_reasons": [
+      "type_prefere: route",
+      "proximite_dans_rayon",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Parkrun Bois de Boulogne — 5km gratuit (hebdo samedi)",
+    "date": "2026-06-06",
+    "date_fin": "2027-11-27",
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Bois de Boulogne, Paris 16e (75)",
+    "notes": "Distance: 5km. Prix: GRATUIT. Récurrent chaque samedi matin à 9h. Inscription unique sur parkrun.fr.\nhttps://www.parkrun.fr/boisdeboulogne/",
+    "reminders": [
+      "1d"
+    ],
+    "score": 65,
+    "source": "parkrun.fr",
+    "match_reasons": [
+      "type_prefere: urban/parc",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi",
+      "gratuit"
+    ],
+    "image_url": null
+  }
+]

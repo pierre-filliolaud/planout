@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Impérial Trail de Fontainebleau 2027",
+    "date": "2027-09-11",
+    "date_fin": null,
+    "time": "08:00",
+    "cat": "running",
+    "venue": "Hippodrome de la Solle, Fontainebleau (77)",
+    "notes": "Distance: 13km / 25km / 45km / 67km. Prix: ~19-65€. Date estimée / récurrent.\nhttps://imperial-trail.fr/imperial-trail-fontainebleau/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 85,
+    "source": "imperial-trail.fr",
+    "match_reasons": [
+      "distance_preferee: trail",
+      "type_prefere: trail",
+      "proximite_dans_rayon",
+      "budget_ok",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Paris-Versailles 2027",
+    "date": "2027-09-26",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Paris (Tour Eiffel) → Versailles (78)",
+    "notes": "Distance: 16,2km. Prix: ~38€. Date estimée / récurrent (48e édition).\nhttps://www.parisversailles.com/site/en/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 80,
+    "source": "parisversailles.com",
+    "match_reasons": [
+      "type_prefere: route",
+      "proximite_dans_rayon",
+      "budget_ok",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Parkrun Bois de Boulogne — 5km gratuit (hebdo samedi)",
+    "date": "2026-06-06",
+    "date_fin": "2027-11-27",
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Bois de Boulogne, Paris 16e (75)",
+    "notes": "Distance: 5km. Prix: GRATUIT. Récurrent chaque samedi matin à 9h. Inscription unique sur parkrun.fr.\nhttps://www.parkrun.fr/boisdeboulogne/",
+    "reminders": [
+      "1d"
+    ],
+    "score": 65,
+    "source": "parkrun.fr",
+    "match_reasons": [
+      "type_prefere: urban/parc",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi",
+      "gratuit"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "La Parisienne 2027",
+    "date": "2027-09-12",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Paris centre (75)",
+    "notes": "Distance: 10km / 7km. Prix: ~48€. Date estimée / récurrent. Événement 100% féminin.\nhttps://la-parisienne.net/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 65,
+    "source": "la-parisienne.net",
+    "match_reasons": [
+      "distance_preferee: 10km",
+      "type_prefere: urban",
+      "proximite_dans_rayon",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  }
+]

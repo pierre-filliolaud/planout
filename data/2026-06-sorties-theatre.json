@@ -1,0 +1,236 @@
+[
+  {
+    "title": "La Vie parisienne — Comédie Française / Théâtre du Châtelet",
+    "date": "2026-06-12",
+    "date_fin": "2026-07-11",
+    "time": "20:00",
+    "cat": "theatre",
+    "venue": "Théâtre du Châtelet, Paris 1er",
+    "notes": "Jacques Offenbach, nouvelle création de la Comédie-Française. Opéra-bouffe. Lieu emblématique. ~40€.\nhttps://www.chatelet.com/en/season/25-26en/all/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 105,
+    "source": "chatelet.com",
+    "match_reasons": [
+      "genre_prefere: opera",
+      "lieu_emblematique: Châtelet",
+      "lieu_prefere: Theatre du Chatelet",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "La Traviata — Opéra National de Paris",
+    "date": "2026-06-04",
+    "date_fin": "2026-07-13",
+    "time": "19:30",
+    "cat": "theatre",
+    "venue": "Opéra Bastille, Paris 12e",
+    "notes": "Verdi. Nouvelle production mise en scène Simon Stone (Paris contemporain, réseaux sociaux). ~70€. 14 représentations.\nhttps://www.operadeparis.fr/saison-25-26/opera/la-traviata",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 100,
+    "source": "operadeparis.fr",
+    "match_reasons": [
+      "genre_prefere: opera",
+      "lieu_emblematique: Opera Bastille",
+      "lieu_prefere: Opera Bastille",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "La Bayadère (ballet Noureev) — Ballet de l'Opéra de Paris",
+    "date": "2026-06-17",
+    "date_fin": "2026-07-14",
+    "time": "19:30",
+    "cat": "theatre",
+    "venue": "Opéra Bastille, Paris 12e",
+    "notes": "Chorégraphie Rudolf Noureev, grand ballet classique du répertoire. ~60€. 19 représentations dont matinées.\nhttps://www.operadeparis.fr/saison-25-26/ballet/la-bayadere",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 95,
+    "source": "operadeparis.fr",
+    "match_reasons": [
+      "genre_prefere: ballet",
+      "lieu_emblematique: Opera Bastille",
+      "lieu_prefere: Opera Bastille"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Alex Lutz — Sexe, Grog et Rocking Chair",
+    "date": "2026-05-01",
+    "date_fin": "2026-06-20",
+    "time": "20:00",
+    "cat": "theatre",
+    "venue": "Dôme de Paris – Palais des Sports, Paris 15e",
+    "notes": "One-man-show. Lauréat du Molière de l'humour 2026. Thèmes : filiation, deuil, hyperconnexion. 1h40. ~35€.\nhttps://www.billetreduc.com/spectacle/alex-lutz-400779",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 90,
+    "source": "billetreduc.com",
+    "match_reasons": [
+      "genre_prefere: one-man-show",
+      "note_critique_elevee: Molière humour 2026",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Le Procès d'une vie — Théâtre du Splendid",
+    "date": "2026-05-11",
+    "date_fin": "2026-09-13",
+    "time": "21:00",
+    "cat": "theatre",
+    "venue": "Théâtre du Splendid, Paris 10e",
+    "notes": "Barbara Lamballais & Karina Testa. Inspiré du procès de Bobigny 1972 (Gisèle Halimi). Lauréat 3 Molières 2026 : Meilleur spectacle privé, Autrices francophones, Comédienne second rôle. 1h20. ~30€.\nhttps://www.lesplendid.com/project/le-proces-dune-vie/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 90,
+    "source": "lesplendid.com",
+    "match_reasons": [
+      "genre_prefere: theatre contemporain",
+      "note_critique_elevee: 3 Molières 2026",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Le Tartuffe — Comédie Française (La Villette)",
+    "date": "2026-05-21",
+    "date_fin": "2026-07-05",
+    "time": "20:00",
+    "cat": "theatre",
+    "venue": "Grande Halle de la Villette, Paris 19e",
+    "notes": "Molière, mise en scène Ivo van Hove. Comédie-Française hors les murs. Spectacle phare de la saison. ~35€.\nhttps://www.comedie-francaise.fr/en/events/le-tartuffe-ou-lhypocrite-25-26",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 90,
+    "source": "comedie-francaise.fr",
+    "match_reasons": [
+      "genre_prefere: theatre contemporain",
+      "lieu_prefere: Comedie Francaise",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Amadeus — Théâtre Marigny",
+    "date": "2026-01-22",
+    "date_fin": "2026-06-07",
+    "time": "20:30",
+    "cat": "theatre",
+    "venue": "Théâtre Marigny, Paris 8e",
+    "notes": "Peter Shaffer, mise en scène Olivier Solivérès. Thomas Solivérès (Mozart), Jérôme Kircher (Salieri — Molière du comédien 2026). 14 interprètes. ~40€.\nhttps://www.theatremarigny.fr/evenement/amadeus/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 85,
+    "source": "theatremarigny.fr",
+    "match_reasons": [
+      "genre_prefere: theatre contemporain",
+      "note_critique_elevee: Molière comédien privé 2026",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Le Malade imaginaire — Comédie Française (Porte Saint-Martin)",
+    "date": "2026-05-28",
+    "date_fin": "2026-07-12",
+    "time": "20:00",
+    "cat": "theatre",
+    "venue": "Théâtre de la Porte Saint-Martin, Paris 10e",
+    "notes": "Molière, mise en scène Claude Stratz. Comédie-Française hors les murs (travaux Richelieu). ~30€.\nhttps://www.comedie-francaise.fr/en/events/le-malade-imaginaire-25-26",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 85,
+    "source": "comedie-francaise.fr",
+    "match_reasons": [
+      "genre_prefere: comedie",
+      "lieu_prefere: Comedie Francaise",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Scènes de la vie conjugale — Odéon Théâtre de l'Europe",
+    "date": "2026-05-20",
+    "date_fin": "2026-06-07",
+    "time": "20:00",
+    "cat": "theatre",
+    "venue": "Odéon Théâtre de l'Europe, Paris 6e",
+    "notes": "D'après Ingmar Bergman. Mise en scène par un artiste international (saison Julien Gosselin). Théâtre contemporain. ~30€.\nhttps://www.theatre-odeon.eu/fr/saison-2025-2026",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 80,
+    "source": "theatre-odeon.eu",
+    "match_reasons": [
+      "genre_prefere: theatre contemporain",
+      "lieu_emblematique: Odéon",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Séisme — Comédie Française",
+    "date": "2026-05-21",
+    "date_fin": "2026-07-05",
+    "time": "20:00",
+    "cat": "theatre",
+    "venue": "Petit Saint-Martin, Paris 10e",
+    "notes": "Duncan MacMillan, mise en scène Robin Ormond. Création Comédie-Française hors les murs. ~25€.\nhttps://www.comedie-francaise.fr/en/season/2025-2026",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 75,
+    "source": "comedie-francaise.fr",
+    "match_reasons": [
+      "genre_prefere: theatre contemporain",
+      "lieu_prefere: Comedie Francaise",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Penthésilée — Comédie Française (Vieux-Colombier)",
+    "date": "2026-05-27",
+    "date_fin": "2026-07-12",
+    "time": "20:00",
+    "cat": "theatre",
+    "venue": "Théâtre du Vieux-Colombier, Paris 6e",
+    "notes": "Heinrich von Kleist. Création Comédie-Française. ~30€.\nhttps://www.comedie-francaise.fr/en/season/2025-2026",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 75,
+    "source": "comedie-francaise.fr",
+    "match_reasons": [
+      "genre_prefere: theatre contemporain",
+      "lieu_prefere: Comedie Francaise",
+      "nouveaute",
+      "budget_ok"
+    ],
+    "image_url": null
+  }
+]

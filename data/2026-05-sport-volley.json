@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Raccoon et Raccoonette sur Marne — Beach mixte FFVB (23 mai)",
+    "date": "2026-05-23",
+    "time": "09:00",
+    "cat": "volley",
+    "venue": "Nogent-sur-Marne (94)",
+    "notes": "Tournoi beach volley FFVB Série 3 (niveau loisir). Mixte 2x2. Homologué FFVB. Inscriptions sur bvs.ffvbbeach.org.\nhttps://bvs.ffvbbeach.org/mixte/page.php?P=fo%2Fpublic%2Fmenu%2Ftournoi%2Findex",
+    "reminders": ["1w", "1d"],
+    "score": 65,
+    "source": "bvs.ffvbbeach.org",
+    "match_reasons": ["type_prefere: tournoi", "format_prefere: beach", "proximite_dans_rayon: ~15km Paris", "jour_prefere: samedi", "mixte_ok"],
+    "image_url": null
+  },
+  {
+    "title": "Semaine du Beach Volley — 4e édition Saint-Germain-en-Laye",
+    "date": "2026-05-28",
+    "date_fin": "2026-05-31",
+    "time": "09:00",
+    "cat": "volley",
+    "venue": "Stade Georges-Lefèvre, Saint-Germain-en-Laye (78)",
+    "notes": "Plus gros tournoi beach volley de France. Compétition élite + initiations gratuites grand public. Accès libre spectateur. Programme complet 4 jours.\nhttps://www.infosyvelines.fr/articles/saint-germain-en-laye-la-4e-semaine-du-beach-volley-le-plus-gros-tournoi-en-france-arrive-fin-mai",
+    "reminders": ["2w", "1w"],
+    "score": 95,
+    "source": "infosyvelines.fr",
+    "match_reasons": ["type_prefere: tournoi", "format_prefere: beach", "proximite_dans_rayon: ~20km Paris", "jour_prefere: sam-dim", "gratuit: spectateur + initiations", "evenement_majeur"],
+    "image_url": null
+  },
+  {
+    "title": "Tournoi 4x4 mixte SVBC — Suresnes",
+    "date": "2026-05-30",
+    "time": "09:00",
+    "cat": "volley",
+    "venue": "Complexe sportif, Suresnes (92)",
+    "notes": "Tournoi interne 4x4 mixte. Tous niveaux. Tarif non communiqué. Contact via Suresnes Volley-Ball Club.\nhttps://portail.sportsregions.fr/recherche/tournoi-volley",
+    "reminders": ["1w", "1d"],
+    "score": 60,
+    "source": "sportsregions.fr",
+    "match_reasons": ["type_prefere: tournoi/4x4", "proximite_dans_rayon: ~8km Paris", "jour_prefere: samedi", "mixte_ok"],
+    "image_url": null
+  }
+]

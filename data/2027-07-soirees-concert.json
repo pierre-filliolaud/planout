@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Paris Jazz Festival 2027",
+    "date": "2027-06-27",
+    "date_fin": "2027-09-05",
+    "time": "15:00",
+    "cat": "concert",
+    "venue": "Parc Floral de Vincennes (75012)",
+    "notes": "Concerts jazz gratuits les week-ends (entrée parc 2,50€). Date estimée / récurrent (fin juin–début sept). Line-up TBA.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
+    "reminders": [
+      "1w"
+    ],
+    "score": 75,
+    "source": "festivalsduparcfloral.paris",
+    "match_reasons": [
+      "gratuit",
+      "genre_prefere: jazz/world",
+      "festival",
+      "proximite_dans_rayon: Paris"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Lollapalooza Paris 2027",
+    "date": "2027-07-16",
+    "date_fin": "2027-07-18",
+    "time": "12:00",
+    "cat": "concert",
+    "venue": "Hippodrome Paris-Longchamp (75016)",
+    "notes": "Festival international. Date estimée (historiquement 3e week-end de juillet). Line-up TBA.\nhttps://www.lollaparis.com/",
+    "reminders": [
+      "1m",
+      "2w"
+    ],
+    "score": 70,
+    "source": "lollaparis.com",
+    "match_reasons": [
+      "festival",
+      "genre_prefere: rock/pop/indie",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi/samedi"
+    ],
+    "image_url": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "title": "10km Champs-Élysées FULFIL 2027",
+    "date": "2027-11-07",
+    "date_fin": null,
+    "time": "10:30",
+    "cat": "running",
+    "venue": "Avenue des Champs-Élysées, Paris 8e (75)",
+    "notes": "Distance: 10km. Prix: ~35-39€. Date estimée / récurrent.\nhttps://www.10kmchampselysees.fr/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 85,
+    "source": "finishers.com",
+    "match_reasons": [
+      "distance_preferee: 10km",
+      "type_prefere: urban",
+      "proximite_dans_rayon",
+      "budget_ok",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Parkrun Bois de Boulogne — 5km gratuit (hebdo samedi)",
+    "date": "2026-06-06",
+    "date_fin": "2027-11-27",
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Bois de Boulogne, Paris 16e (75)",
+    "notes": "Distance: 5km. Prix: GRATUIT. Récurrent chaque samedi matin à 9h. Inscription unique sur parkrun.fr.\nhttps://www.parkrun.fr/boisdeboulogne/",
+    "reminders": [
+      "1d"
+    ],
+    "score": 65,
+    "source": "parkrun.fr",
+    "match_reasons": [
+      "type_prefere: urban/parc",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi",
+      "gratuit"
+    ],
+    "image_url": null
+  }
+]

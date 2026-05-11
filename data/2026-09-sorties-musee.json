@@ -1,0 +1,172 @@
+[
+  {
+    "title": "Fragile Beauté — Collection Sir Elton John & David Furnish",
+    "date": "2026-06-12",
+    "date_fin": "2026-09-27",
+    "time": "10:00",
+    "cat": "expo",
+    "venue": "Jeu de Paume, Paris 1er",
+    "notes": "Plus de 300 tirages, 90 photographes. Désir, mode, célébrités, photojournalisme. Adapté de l'expo V&A. Prix: 14€.\nhttps://jeudepaume.org/evenement/fragile-beaute-photographies-de-la-collection-de-sir-elton-john-et-david-furnish/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 110,
+    "source": "jeudepaume.org",
+    "match_reasons": [
+      "sujet_favori: photographie",
+      "lieu_emblematique",
+      "lieu_prefere: Jeu de Paume",
+      "note_critique_elevee",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Palais de Tokyo — Saison Normes Corps (en cours)",
+    "date": "2026-04-03",
+    "date_fin": "2026-09-13",
+    "time": "12:00",
+    "cat": "expo",
+    "venue": "Palais de Tokyo, Paris 16e",
+    "notes": "Jesse Darling, Pauline Curnier Jardin, Cathy de Monchaux, Benoît Piéron, Joseph Grigely. 8 expositions. 2 nouvelles expos dès le 5 juin. Ouvert 12h-22h.\nhttps://palaisdetokyo.com/agenda-palais-de-tokyo/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 105,
+    "source": "palaisdetokyo.com",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "lieu_emblematique",
+      "lieu_prefere: Palais de Tokyo",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Leandro Erlich — Rétrospective",
+    "date": "2026-06-02",
+    "date_fin": "2026-09-06",
+    "time": "10:00",
+    "cat": "expo",
+    "venue": "Grand Palais, Paris 8e",
+    "notes": "Première expo en France. 14 installations monumentales immersives et illusionnistes. Prix: 19€. Billet Liberté 24€.\nhttps://www.grandpalais.fr/en/program/leandro-erlich",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 100,
+    "source": "grandpalais.fr",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "lieu_emblematique",
+      "nouveaute",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Fujiko Nakaya — Fog Sculpture (Bourse de Commerce)",
+    "date": "2026-06-04",
+    "date_fin": "2026-09-20",
+    "time": "11:00",
+    "cat": "expo",
+    "venue": "Bourse de Commerce — Pinault Collection, Paris 1er",
+    "notes": "Sculpture de brouillard dans la Rotonde. Art contemporain + culture japonaise. Inclus billet Bourse de Commerce. 1er samedi du mois gratuit 17h-21h.\nhttps://www.pinaultcollection.com/fr/boursedecommerce/programme",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 95,
+    "source": "pinaultcollection.com",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "sujet_favori: culture japonaise",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Bicentenaire de la Photographie — Grand Palais",
+    "date": "2026-09-01",
+    "date_fin": "2027-01-31",
+    "time": "10:00",
+    "cat": "expo",
+    "venue": "Grand Palais, Paris 8e",
+    "notes": "Exposition phare du Bicentenaire (sept. 2026 – sept. 2027). De Niépce aux recherches photographiques contemporaines. 182 projets labellisés en France.\nhttps://photographemulhouse.fr/bicentenaire-photographie-2026/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 90,
+    "source": "culture.gouv.fr",
+    "match_reasons": [
+      "sujet_favori: photographie",
+      "lieu_emblematique",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Madeleine de Sinéty. A Life",
+    "date": "2026-06-12",
+    "date_fin": "2026-09-27",
+    "time": "10:00",
+    "cat": "expo",
+    "venue": "Jeu de Paume, Paris 1er",
+    "notes": "Rétrospective photographe française couleur en France et aux États-Unis. En parallèle de Fragile Beauté. Prix: 14€.\nhttps://jeudepaume.org/evenement/saison-2026/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 80,
+    "source": "jeudepaume.org",
+    "match_reasons": [
+      "sujet_favori: photographie",
+      "lieu_prefere: Jeu de Paume",
+      "lieu_emblematique",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Video Games & Music (en cours)",
+    "date": "2026-04-02",
+    "date_fin": "2026-11-01",
+    "time": "12:00",
+    "cat": "expo",
+    "venue": "Philharmonie de Paris — Cité de la Musique, Paris 19e",
+    "notes": "1ère grande expo 50 ans musique jeux vidéo. 29 jeux jouables, 5 installations. Prix: 17€. Nocturne vendredi.\nhttps://philharmoniedeparis.fr/fr/activite/exposition/28822-video-games-music",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 75,
+    "source": "philharmoniedeparis.fr",
+    "match_reasons": [
+      "sujet_favori: musique electronique",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Look ! 40 ans de mode au musée",
+    "date": "2026-09-29",
+    "date_fin": "2027-04-04",
+    "time": "11:00",
+    "cat": "expo",
+    "venue": "Musée des Arts Décoratifs (MAD), Paris 1er",
+    "notes": "40e anniversaire du département Mode du MAD. De l'esquisse au défilé jusqu'à la conservation muséale.\nhttps://madparis.fr/Look-40-ans-de-mode-au-musee",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 60,
+    "source": "madparis.fr",
+    "match_reasons": [
+      "sujet_favori: design"
+    ],
+    "image_url": null
+  }
+]

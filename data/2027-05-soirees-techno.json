@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Cercle Festival 2027 — édition estimée",
+    "date": "2027-05-21",
+    "date_fin": "2027-05-23",
+    "time": "12:00",
+    "cat": "festival",
+    "venue": "Musée de l'Air et de l'Espace, Le Bourget (estimé)",
+    "notes": "Date estimée / récurrent (mai, week-end Ascension). Surveiller festival.cercle.io pour l'annonce.",
+    "reminders": [
+      "2w"
+    ],
+    "score": 15,
+    "source": "festival.cercle.io",
+    "match_reasons": [
+      "genre_prefere: électronique",
+      "date estimée"
+    ],
+    "image_url": null
+  }
+]

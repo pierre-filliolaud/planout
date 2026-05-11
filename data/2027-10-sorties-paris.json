@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Nuit Blanche Paris 2027",
+    "date": "2027-10-02",
+    "date_fin": "2027-10-03",
+    "time": "18:00",
+    "cat": "nocturne culturelle",
+    "venue": "Paris (toute la ville)",
+    "notes": "Récurrent annuel. Nuit d'art contemporain de 18h à 5h. Gratuit. Dates 2027 à confirmer.\nhttps://parisjetaime.com/eng/article/nuit-blanche-in-paris-a994",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 80,
+    "source": "parisjetaime.com",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "gratuit",
+      "lieu_emblematique"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Salon du Chocolat Paris 2027",
+    "date": "2027-10-27",
+    "date_fin": "2027-10-31",
+    "time": "10:00",
+    "cat": "salon",
+    "venue": "Paris Expo Porte de Versailles, Paris 15e",
+    "notes": "Récurrent annuel. Salon mondial du chocolat et du cacao. Prix: ~15€.\nhttps://www.salon-du-chocolat.com",
+    "reminders": [
+      "1w"
+    ],
+    "score": 35,
+    "source": "salon-du-chocolat.com",
+    "match_reasons": [
+      "budget_ok"
+    ],
+    "image_url": null
+  }
+]

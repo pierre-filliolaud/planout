@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Jazz à la Villette 2026 – 25e édition",
+    "date": "2026-08-28",
+    "date_fin": "2026-09-06",
+    "time": "19:00",
+    "cat": "concert",
+    "venue": "Philharmonie de Paris / Grande Halle de La Villette (75019)",
+    "notes": "25e anniversaire. Programmation Great Black Music, jazz, hip-hop, soul, funk. Artistes : Snarky Puppy & Metropole Orkest (28-29 août), GoGo Penguin, Kokoroko, Cymande, Brian Jackson & Yasiin Bey, Selah Sue & The Gallands, Emma Jean Thackray, Mammal Hands, corto.alto. Prix : 40-50€/concert.\nhttps://jazzalavillette.com/fr/",
+    "reminders": [
+      "1m",
+      "2w",
+      "1w"
+    ],
+    "score": 90,
+    "source": "jazzalavillette.com",
+    "match_reasons": [
+      "festival",
+      "genre_prefere: jazz/soul",
+      "lieu_emblematique: Philharmonie de Paris",
+      "lieu_prefere: Philharmonie de Paris",
+      "budget_ok: 40-50€",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi/samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Paris Jazz Festival 2026",
+    "date": "2026-06-28",
+    "date_fin": "2026-09-06",
+    "time": "15:00",
+    "cat": "concert",
+    "venue": "Parc Floral de Vincennes (75012)",
+    "notes": "Concerts jazz gratuits les week-ends (entrée parc 2,50€). Dates : 28 juin, 4 et 12 et 18 juil., 15 et 23 et 29 août, 6 sept. Programmation variée jazz/world.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
+    "reminders": [
+      "1w"
+    ],
+    "score": 80,
+    "source": "festivalsduparcfloral.paris",
+    "match_reasons": [
+      "gratuit",
+      "genre_prefere: jazz/world",
+      "festival",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: week-ends"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "A$AP Rocky – Paris",
+    "date": "2026-09-30",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Accor Arena, Paris (75012)",
+    "notes": "Rap/hip-hop live. Accor Arena – Bercy.\nhttps://www.accorarena.com/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 40,
+    "source": "accorarena.com",
+    "match_reasons": [
+      "proximite_dans_rayon: Paris",
+      "lieu_emblematique: Accor Arena"
+    ],
+    "image_url": null
+  }
+]

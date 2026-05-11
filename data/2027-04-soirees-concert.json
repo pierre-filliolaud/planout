@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Hans Zimmer – Live (Symphonique)",
+    "date": "2027-04-17",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Grand Rex, Paris (75002)",
+    "notes": "Classique / musique de film. Spectacle symphonique autour des compositions de Hans Zimmer. Date confirmée.\nhttps://www.legrandrex.com/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 65,
+    "source": "sortiraparis.com",
+    "match_reasons": [
+      "genre_prefere: classique",
+      "note_critique_elevee",
+      "proximite_dans_rayon: Paris"
+    ],
+    "image_url": null
+  }
+]

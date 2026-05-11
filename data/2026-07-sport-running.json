@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Run Set & Match — Roland-Garros",
+    "date": "2026-07-05",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Stade Roland-Garros, Paris 16e (75)",
+    "notes": "Distance: 10km. Prix: 30€ à 45€. Arrivée au pied du Court Philippe-Chatrier.\nhttps://www.run-set-match.com/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 90,
+    "source": "run-set-match.com",
+    "match_reasons": [
+      "distance_preferee: 10km",
+      "type_prefere: urban",
+      "proximite_dans_rayon",
+      "jour_prefere: dimanche",
+      "budget_ok",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Parkrun Bois de Boulogne — 5km gratuit (hebdo samedi)",
+    "date": "2026-06-06",
+    "date_fin": "2027-11-27",
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Bois de Boulogne, Paris 16e (75)",
+    "notes": "Distance: 5km. Prix: GRATUIT. Récurrent chaque samedi matin à 9h. Inscription unique sur parkrun.fr.\nhttps://www.parkrun.fr/boisdeboulogne/",
+    "reminders": [
+      "1d"
+    ],
+    "score": 65,
+    "source": "parkrun.fr",
+    "match_reasons": [
+      "type_prefere: urban/parc",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi",
+      "gratuit"
+    ],
+    "image_url": null
+  }
+]

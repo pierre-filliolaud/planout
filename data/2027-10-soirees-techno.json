@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Dream Nation Festival 2027 — Halloween (estimé)",
+    "date": "2027-10-29",
+    "date_fin": "2027-10-30",
+    "time": "20:00",
+    "cat": "festival",
+    "venue": "Paris Nord Villepinte (estimé)",
+    "notes": "Date estimée / récurrent (Halloween). Surveiller dreamnation.fr.",
+    "reminders": [
+      "2w"
+    ],
+    "score": 10,
+    "source": "dreamnation.fr",
+    "match_reasons": [
+      "genre_prefere: électronique (EDM/hardstyle dominant)",
+      "date estimée"
+    ],
+    "image_url": null
+  }
+]

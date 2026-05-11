@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Peacock Society 2027 — édition estimée",
+    "date": "2027-07-09",
+    "date_fin": "2027-07-10",
+    "time": "12:00",
+    "cat": "festival",
+    "venue": "Hippodrome Paris-Vincennes (estimé)",
+    "notes": "Date estimée / récurrent (juillet, Hippodrome de Vincennes). Surveiller peacocksociety.fr.",
+    "reminders": [
+      "2w"
+    ],
+    "score": 15,
+    "source": "peacocksociety.fr",
+    "match_reasons": [
+      "genre_prefere: électronique/techno",
+      "date estimée"
+    ],
+    "image_url": null
+  }
+]

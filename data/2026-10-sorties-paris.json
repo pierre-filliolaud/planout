@@ -1,0 +1,78 @@
+[
+  {
+    "title": "Festival d'Automne à Paris 2026",
+    "date": "2026-09-01",
+    "date_fin": "2027-01-24",
+    "time": "20:00",
+    "cat": "festival",
+    "venue": "60+ lieux (Centre Pompidou, Odéon, Théâtre de la Ville...)",
+    "notes": "Festival pluridisciplinaire international: théâtre, danse, musique, arts visuels dans 60 lieux. ~80 spectacles. Programme 2026 à venir.\nhttps://www.festival-automne.com",
+    "reminders": [
+      "1w"
+    ],
+    "score": 70,
+    "source": "festival-automne.com",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "lieu_prefere: Centre Pompidou"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Salon du Chocolat Paris 2026",
+    "date": "2026-10-28",
+    "date_fin": "2026-11-01",
+    "time": "10:00",
+    "cat": "salon",
+    "venue": "Paris Expo Porte de Versailles, Hall 5, Paris 15e",
+    "notes": "500+ exposants de 60+ pays. Défilé robes en chocolat, animations, ateliers. Prix: ~15€.\nhttps://www.salon-du-chocolat.com",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 45,
+    "source": "salon-du-chocolat.com",
+    "match_reasons": [
+      "budget_ok",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Grünt Festival #5 — Rap & Hip-Hop",
+    "date": "2026-10-30",
+    "date_fin": "2026-10-31",
+    "time": "18:00",
+    "cat": "festival",
+    "venue": "Grande Halle de la Villette, Paris 19e",
+    "notes": "5e édition rap alternatif et émergent dans la Grande Halle. Prix: à partir de 90€.\nhttps://www.lavillette.com/manifestations/grunt-festival-25-26/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "lavillette.com",
+    "match_reasons": [
+      "sujet_favori: musique"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Fashion Week Paris — Femme Prêt-à-Porter PE 2027",
+    "date": "2026-09-28",
+    "date_fin": "2026-10-06",
+    "time": "10:00",
+    "cat": "fashion week",
+    "venue": "Divers lieux Paris",
+    "notes": "Semaine de la mode femme PE 2027. Chanel, Dior, LV, Hermès, Balenciaga, Saint Laurent... Événements satellites ouverts.\nhttps://www.fhcm.paris/en/paris-fashion-week",
+    "reminders": [
+      "1w"
+    ],
+    "score": 30,
+    "source": "fhcm.paris",
+    "match_reasons": [
+      "sujet_favori: design"
+    ],
+    "image_url": null
+  }
+]

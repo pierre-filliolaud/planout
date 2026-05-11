@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Trail du Muguet 2027",
+    "date": "2027-06-27",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Meudon, Hauts-de-Seine (92)",
+    "notes": "Distance: 10km / 21km / 30km. Prix: ~22€. Date estimée / récurrent.\nhttps://www.traildumuguet.fr/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 90,
+    "source": "traildumuguet.fr",
+    "match_reasons": [
+      "distance_preferee: trail",
+      "distance_preferee: semi",
+      "type_prefere: trail",
+      "proximite_dans_rayon",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Parkrun Bois de Boulogne — 5km gratuit (hebdo samedi)",
+    "date": "2026-06-06",
+    "date_fin": "2027-11-27",
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Bois de Boulogne, Paris 16e (75)",
+    "notes": "Distance: 5km. Prix: GRATUIT. Récurrent chaque samedi matin à 9h. Inscription unique sur parkrun.fr.\nhttps://www.parkrun.fr/boisdeboulogne/",
+    "reminders": [
+      "1d"
+    ],
+    "score": 65,
+    "source": "parkrun.fr",
+    "match_reasons": [
+      "type_prefere: urban/parc",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi",
+      "gratuit"
+    ],
+    "image_url": null
+  }
+]

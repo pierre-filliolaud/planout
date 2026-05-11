@@ -1,0 +1,189 @@
+[
+  {
+    "title": "World Paris Tournament 2026 — Green Volley 3x3 herbe",
+    "date": "2026-06-11",
+    "date_fin": "2026-06-14",
+    "time": "09:00",
+    "cat": "volley",
+    "venue": "Stade Charléty, Paris 13e (75)",
+    "notes": "2e édition. 450+ équipes, 32 terrains. Catégories loisirs, vétérans, jeunes. Récurrent chaque juin.\nhttps://parisvolley.com/pages/billetterie",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 95,
+    "source": "parisvolley.com",
+    "match_reasons": [
+      "type_prefere: tournoi/open",
+      "format_prefere: outdoor/herbe",
+      "proximite_dans_rayon",
+      "jour_prefere: sam/dim",
+      "niveau_adapte: loisir",
+      "mixte_ok",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Festival Vollidef 2026 — Tournoi Séniors Mixte",
+    "date": "2026-06-06",
+    "date_fin": "2026-06-07",
+    "time": "10:00",
+    "cat": "volley",
+    "venue": "Parc des Sports du Tremblay, Champigny-sur-Marne (94)",
+    "notes": "Festival du volley francilien organisé par la Ligue Île-de-France. Sam: Séniors Mixte + Masters. Prix: nc (~10-20€).\nhttps://www.montgeron-volley.com/festival-vollidef-6-et-7-juin-2026/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 90,
+    "source": "montgeron-volley.com",
+    "match_reasons": [
+      "type_prefere: tournoi/open",
+      "format_prefere: outdoor",
+      "proximite_dans_rayon",
+      "jour_prefere: sam/dim",
+      "niveau_adapte: loisir",
+      "mixte_ok",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Green Volley Saint-Cloud Paris SF — Outdoor",
+    "date": "2026-06-13",
+    "date_fin": "2026-06-14",
+    "time": "09:00",
+    "cat": "volley",
+    "venue": "Stade Martine Tacconi, Saint-Cloud (92)",
+    "notes": "Sam 4x4 mixte + Dim 3x3. Buvette, barbecue. Organisé par Saint-Cloud Paris SF.\nhttps://saintcloud-paris-sf.fr/pretes-a-faire-le-plein-de-tournois/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 85,
+    "source": "saintcloud-paris-sf.fr",
+    "match_reasons": [
+      "type_prefere: tournoi/4x4/3x3",
+      "format_prefere: outdoor/herbe",
+      "proximite_dans_rayon",
+      "jour_prefere: sam/dim",
+      "niveau_adapte: loisir",
+      "mixte_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Raccoon et Raccoonette sur Marne — FFVB (juin)",
+    "date": "2026-06-13",
+    "date_fin": "2026-06-14",
+    "time": "09:00",
+    "cat": "volley",
+    "venue": "Nogent-sur-Marne (94)",
+    "notes": "Tournoi beach volley FFVB Série 3 (niveau loisir). Mixte 2x2. Homologué FFVB.\nhttps://bvs.ffvbbeach.org/mixte/page.php?P=fo%2Fpublic%2Fmenu%2Ftournoi%2Findex",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 80,
+    "source": "bvs.ffvbbeach.org",
+    "match_reasons": [
+      "type_prefere: tournoi",
+      "format_prefere: beach",
+      "proximite_dans_rayon",
+      "jour_prefere: sam-dim",
+      "niveau_adapte: loisir",
+      "mixte_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Festival des Pratiques Mixtes FSGT — 4x4 équimixte",
+    "date": "2026-06-27",
+    "date_fin": null,
+    "time": "12:00",
+    "cat": "volley",
+    "venue": "Gymnase Bertrand Dauvin, Paris 18e",
+    "notes": "Tournoi 4x4 équimixte. Prix: Gratuit (licence FSGT requise). Niveau moyen à très bon.\nhttps://www.fsgt75.org/2026/02/05/festival-des-pratiques-mixtes",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 75,
+    "source": "fsgt75.org",
+    "match_reasons": [
+      "type_prefere: tournoi/4x4",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi",
+      "gratuit",
+      "mixte_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "La Mix'Cup7 — VB Torcy Marne la Vallée",
+    "date": "2026-06-17",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "volley",
+    "venue": "Torcy, Marne-la-Vallée (77)",
+    "notes": "Tournoi 4x4 indoor mixte, catégories Séniors et M20.\nhttps://www.ffvbbeach.org/ffvbapp/webtour/tournois_ffvb.php",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 72,
+    "source": "ffvbbeach.org",
+    "match_reasons": [
+      "type_prefere: tournoi/4x4",
+      "format_prefere: indoor",
+      "proximite_dans_rayon",
+      "niveau_adapte: loisir",
+      "mixte_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Palaiseau Green Challenge — US Palaiseau",
+    "date": "2026-06-28",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "volley",
+    "venue": "Palaiseau (91)",
+    "notes": "Tournoi green volley (herbe) outdoor 4x4, catégories Vétérans, Séniors, M20.\nhttps://www.ffvbbeach.org/ffvbapp/webtour/tournois_ffvb.php",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 72,
+    "source": "ffvbbeach.org",
+    "match_reasons": [
+      "type_prefere: tournoi/open",
+      "format_prefere: outdoor/herbe",
+      "proximite_dans_rayon",
+      "jour_prefere: dim"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Challenge de Paris FSGT 2026 — 4x4 Volley",
+    "date": "2026-06-01",
+    "date_fin": "2026-06-25",
+    "time": "19:00",
+    "cat": "volley",
+    "venue": "Paris (75) — salles multiples",
+    "notes": "Compétition fin de saison FSGT. Plateaux hebdo 1-19 juin, Final 4 le 25 juin. Format 4x4. Prix: 16€/équipe. Licence FSGT requise.\nhttps://www.fsgt75.org/2026/04/10/volley-lancement-du-challenge-de-paris",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 65,
+    "source": "fsgt75.org",
+    "match_reasons": [
+      "type_prefere: tournoi/4x4",
+      "proximite_dans_rayon",
+      "budget_ok"
+    ],
+    "image_url": null
+  }
+]

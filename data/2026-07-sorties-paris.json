@@ -1,0 +1,201 @@
+[
+  {
+    "title": "Festival Paris l'été 2026",
+    "date": "2026-07-11",
+    "date_fin": "2026-08-04",
+    "time": "19:00",
+    "cat": "festival",
+    "venue": "15+ lieux (Grand Palais, Tuileries, Petit Palais, Monnaie de Paris...)",
+    "notes": "Pluridisciplinaire: danse, musique, magie, installations dans 15+ lieux emblématiques. All World Waacking Battle Grand Palais (11 juil). ANIMA de Noémie Goudal Monnaie de Paris (16-18 juil).\nhttps://www.parislete.fr",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 85,
+    "source": "parislete.fr",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "lieu_emblematique",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Fête Nationale — Concert de Paris & Feu d'Artifice Tour Eiffel",
+    "date": "2026-07-14",
+    "date_fin": null,
+    "time": "21:00",
+    "cat": "spectacle en plein air",
+    "venue": "Champ-de-Mars / Tour Eiffel, Paris 7e",
+    "notes": "Concert de Paris musique classique, feu d'artifice ~23h (~30 min). Bals des pompiers. Défilé militaire Champs-Élysées. Gratuit.\nhttps://parisjetaime.com/eng/event/bastille-day-14th-july-e010",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 80,
+    "source": "parisjetaime.com",
+    "match_reasons": [
+      "gratuit",
+      "lieu_emblematique",
+      "sujet_favori: musique"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Paris Plages 2026 — 25e édition",
+    "date": "2026-07-04",
+    "date_fin": "2026-08-30",
+    "time": "08:00",
+    "cat": "festival",
+    "venue": "Quais de la Seine / Hôtel de Ville / Bassin de la Villette, Paris",
+    "notes": "25e édition. Thème: amitié franco-américaine. Plages, concerts, cinéma, sport, DJ sets, volleyball, kayak. Gratuit.\nhttps://parisjetaime.com/eng/event/paris-plages-e013",
+    "reminders": [
+      "1w"
+    ],
+    "score": 75,
+    "source": "parisjetaime.com",
+    "match_reasons": [
+      "gratuit",
+      "lieu_emblematique"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Festival Days Off 2026 — Philharmonie de Paris",
+    "date": "2026-06-27",
+    "date_fin": "2026-07-05",
+    "time": "20:00",
+    "cat": "festival",
+    "venue": "Philharmonie de Paris / Cité de la Musique, Paris 19e",
+    "notes": "16e édition. Tamino, Babyshambles, Aurora x Tom Rowlands, Alela Diane, Smerz, nuit Raï (1er juillet). Prix: 10-65€.\nhttps://daysoff.fr",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 70,
+    "source": "daysoff.fr",
+    "match_reasons": [
+      "sujet_favori: musique",
+      "sujet_favori: architecture",
+      "lieu_emblematique",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "The Peacock Society — Festival Électro 2026",
+    "date": "2026-07-10",
+    "date_fin": "2026-07-11",
+    "time": "16:00",
+    "cat": "festival",
+    "venue": "Hippodrome Paris-Vincennes, Paris 12e",
+    "notes": "15e édition. Floating Points, Boys Noize, Andy4000, Busy P, Channel Tres. 25 000 festivaliers open-air.\nhttps://peacocksociety.fr",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 70,
+    "source": "peacocksociety.fr",
+    "match_reasons": [
+      "sujet_favori: musique electronique"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Cinéma en Plein Air de La Villette 2026",
+    "date": "2026-07-22",
+    "date_fin": "2026-08-16",
+    "time": "18:00",
+    "cat": "festival",
+    "venue": "Prairie du Triangle, Parc de la Villette, Paris 19e",
+    "notes": "Thème 2026: la forêt. 2 séances/soir: 18h (enfants) et 21h. Films: Arrietty, Le Règne animal, Okja, Miséricorde... Gratuit.\nhttps://www.lavillette.com/manifestations/cinema-en-plein-air-25/",
+    "reminders": [
+      "1w"
+    ],
+    "score": 65,
+    "source": "lavillette.com",
+    "match_reasons": [
+      "gratuit",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Paris Jazz Festival 2026 — Parc Floral",
+    "date": "2026-06-24",
+    "date_fin": "2026-09-06",
+    "time": "15:00",
+    "cat": "festival",
+    "venue": "Parc Floral de Vincennes, Paris 12e",
+    "notes": "Concerts gratuits week-ends fin juin → début septembre. Melissa Aldana, Tomoki Sanders, Kyoto Jazz Massive, Emma Jean Thackray. Entrée parc: 2,50€.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 60,
+    "source": "festivalsduparcfloral.paris",
+    "match_reasons": [
+      "sujet_favori: musique",
+      "gratuit",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Festival Lyrique de Paris 2026 — Musée Jacquemart-André",
+    "date": "2026-07-02",
+    "date_fin": "2026-07-11",
+    "time": "20:30",
+    "cat": "festival",
+    "venue": "Musée Jacquemart-André, Paris 8e",
+    "notes": "2e édition. 4 soirées intimes mêlant grandes voix et visite nocturne. Prix: variable (soirée premium).\nhttps://www.sortiraparis.com/en/what-to-see-in-paris/concerts-music-festival/articles/328564",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 55,
+    "source": "sortiraparis.com",
+    "match_reasons": [
+      "sujet_favori: musique",
+      "lieu_emblematique"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Yardland Festival 2026",
+    "date": "2026-07-03",
+    "date_fin": "2026-07-05",
+    "time": "14:00",
+    "cat": "festival",
+    "venue": "Hippodrome Paris-Vincennes, Paris 12e",
+    "notes": "3e édition. Niska, Leto, Rema, Jorja Smith, Skepta, Kalash Criminel. Village et marché créateurs. Prix: à partir de 64€/jour.\nhttps://yardland.paris",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 45,
+    "source": "yardland.paris",
+    "match_reasons": [
+      "sujet_favori: musique"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Haute Couture Week — Automne-Hiver 2026-2027",
+    "date": "2026-07-06",
+    "date_fin": "2026-07-09",
+    "time": "10:00",
+    "cat": "fashion week",
+    "venue": "Divers lieux Paris",
+    "notes": "Iris van Herpen, Chanel, Dior, Valentino, Schiaparelli... Événements satellites accessibles.\nhttps://www.fhcm.paris/en/paris-fashion-week",
+    "reminders": [
+      "1w"
+    ],
+    "score": 30,
+    "source": "fhcm.paris",
+    "match_reasons": [
+      "sujet_favori: design"
+    ],
+    "image_url": null
+  }
+]

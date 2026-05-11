@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Stacey Kent – Paris",
+    "date": "2026-12-08",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Salle Pleyel, Paris (75008)",
+    "notes": "Jazz vocal. Chanteuse américaine de jazz réputée à la Salle Pleyel.\nhttps://www.sallepleyel.com/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 65,
+    "source": "sallepleyel.com",
+    "match_reasons": [
+      "genre_prefere: jazz",
+      "lieu_emblematique: Salle Pleyel",
+      "lieu_prefere: Salle Pleyel"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Orelsan – Résidence Accor Arena",
+    "date": "2026-12-09",
+    "date_fin": "2026-12-20",
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Accor Arena, Paris (75012)",
+    "notes": "Rap. 10 dates de résidence (9,10,11,12,14,15,16,18,19,20 décembre). Nouveau show scénique. Prix : 48€ – 80€.\nhttps://www.accorarena.com/en/events-and-tickets/orelsan--542ab",
+    "reminders": [
+      "1m",
+      "2w"
+    ],
+    "score": 55,
+    "source": "accorarena.com",
+    "match_reasons": [
+      "lieu_emblematique: Accor Arena",
+      "proximite_dans_rayon: Paris",
+      "budget_ok: 48€"
+    ],
+    "image_url": null
+  }
+]

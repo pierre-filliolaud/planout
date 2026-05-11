@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Salomon EcoTrail Paris — Printemps",
+    "date": "2027-03-20",
+    "date_fin": "2027-03-21",
+    "time": "07:00",
+    "cat": "running",
+    "venue": "Cergy → Versailles → Tour Eiffel, Île-de-France",
+    "notes": "Distance: 10-120km. Prix: ~31€ (10km) à ~120€ (120km). Date estimée / récurrent.\nhttps://www.ecotrailparis.com/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 95,
+    "source": "ecotrailparis.com",
+    "match_reasons": [
+      "distance_preferee: trail",
+      "type_prefere: trail",
+      "proximite_dans_rayon",
+      "budget_ok",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Hoka Semi de Paris",
+    "date": "2027-03-08",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Paris centre → bords de Seine (75)",
+    "notes": "Distance: 21,097km. Prix: ~69€ (estimation). Date estimée / récurrent. 50 000 coureurs.\nhttps://www.hokasemideparis.fr/en",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 85,
+    "source": "hokasemideparis.fr",
+    "match_reasons": [
+      "distance_preferee: semi-marathon",
+      "type_prefere: route",
+      "proximite_dans_rayon",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Parkrun Bois de Boulogne — 5km gratuit (hebdo samedi)",
+    "date": "2026-06-06",
+    "date_fin": "2027-11-27",
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Bois de Boulogne, Paris 16e (75)",
+    "notes": "Distance: 5km. Prix: GRATUIT. Récurrent chaque samedi matin à 9h. Inscription unique sur parkrun.fr.\nhttps://www.parkrun.fr/boisdeboulogne/",
+    "reminders": [
+      "1d"
+    ],
+    "score": 65,
+    "source": "parkrun.fr",
+    "match_reasons": [
+      "type_prefere: urban/parc",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi",
+      "gratuit"
+    ],
+    "image_url": null
+  }
+]

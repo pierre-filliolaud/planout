@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Interpol + Bloc Party",
+    "date": "2026-11-16",
+    "date_fin": null,
+    "time": "19:00",
+    "cat": "concert",
+    "venue": "Zénith de Paris – La Villette (75019)",
+    "notes": "Indie/post-punk. Tournée européenne conjointe. Sets successifs des deux groupes (Silent Alarm / Antics). Prix : 60,50€ – 88€.\nhttps://le-zenith.com/shows/Interpol%20x%20Bloc%20Party-21791",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 75,
+    "source": "le-zenith.com",
+    "match_reasons": [
+      "genre_prefere: indie/rock",
+      "proximite_dans_rayon: Paris",
+      "budget_ok: 60,50€",
+      "lieu_emblematique: Zénith"
+    ],
+    "image_url": null
+  }
+]

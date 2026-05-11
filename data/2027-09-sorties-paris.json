@@ -1,0 +1,60 @@
+[
+  {
+    "title": "Paris Design Week 2027",
+    "date": "2027-09-09",
+    "date_fin": "2027-09-18",
+    "time": "10:00",
+    "cat": "salon",
+    "venue": "Paris (toute la ville) + Parc des Expositions",
+    "notes": "Récurrent annuel. 10 jours de design. Thème 2027 non annoncé.\nhttps://www.maison-objet.com/en/paris-design-week",
+    "reminders": [
+      "1w"
+    ],
+    "score": 75,
+    "source": "maison-objet.com",
+    "match_reasons": [
+      "sujet_favori: design",
+      "sujet_favori: architecture"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Journées Européennes du Patrimoine 2027",
+    "date": "2027-09-18",
+    "date_fin": "2027-09-19",
+    "time": "09:00",
+    "cat": "événement culturel",
+    "venue": "Paris et Île-de-France",
+    "notes": "Récurrent annuel. Lieux fermés, visites guidées, ateliers. Gratuit. Dates 2027 à confirmer.\nhttps://journeesdupatrimoine.culture.gouv.fr",
+    "reminders": [
+      "1w"
+    ],
+    "score": 65,
+    "source": "journeesdupatrimoine.culture.gouv.fr",
+    "match_reasons": [
+      "sujet_favori: architecture",
+      "gratuit",
+      "jour_prefere"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Jazz à La Villette 2027",
+    "date": "2027-08-27",
+    "date_fin": "2027-09-05",
+    "time": "20:00",
+    "cat": "festival",
+    "venue": "Philharmonie de Paris / La Villette, Paris 19e",
+    "notes": "Récurrent annuel. Great Black Music — jazz, soul, funk, hip-hop. Programmation 2027 non annoncée.\nhttps://jazzalavillette.com",
+    "reminders": [
+      "1w"
+    ],
+    "score": 50,
+    "source": "jazzalavillette.com",
+    "match_reasons": [
+      "sujet_favori: musique",
+      "lieu_emblematique"
+    ],
+    "image_url": null
+  }
+]

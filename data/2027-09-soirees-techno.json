@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Techno Parade Paris 2027 — édition estimée",
+    "date": "2027-09-18",
+    "date_fin": null,
+    "time": "12:00",
+    "cat": "festival",
+    "venue": "Paris centre (trajet TBA)",
+    "notes": "Date estimée / récurrent (3e samedi de septembre). Gratuit. Surveiller technoparade.fr.",
+    "reminders": [
+      "2w"
+    ],
+    "score": 25,
+    "source": "technoparade.fr",
+    "match_reasons": [
+      "genre_prefere: techno",
+      "budget_ok: gratuit",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  }
+]

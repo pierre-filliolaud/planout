@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Ennio Morricone & Nino Rota – Symphonique",
+    "date": "2027-01-23",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "La Seine Musicale, Boulogne-Billancourt (92)",
+    "notes": "Classique / musique de film. Hommage symphonique aux deux compositeurs légendaires. Date estimée / déjà annoncé.\nhttps://www.laseinemusicale.com/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 60,
+    "source": "sortiraparis.com",
+    "match_reasons": [
+      "genre_prefere: classique",
+      "proximite_dans_rayon: ~10km Paris",
+      "note_critique_elevee"
+    ],
+    "image_url": null
+  }
+]

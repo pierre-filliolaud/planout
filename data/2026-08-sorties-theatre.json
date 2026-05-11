@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Le Procès d'une vie — Théâtre du Splendid",
+    "date": "2026-05-11",
+    "date_fin": "2026-09-13",
+    "time": "21:00",
+    "cat": "theatre",
+    "venue": "Théâtre du Splendid, Paris 10e",
+    "notes": "Barbara Lamballais & Karina Testa. Inspiré du procès de Bobigny 1972 (Gisèle Halimi). Lauréat 3 Molières 2026 : Meilleur spectacle privé, Autrices francophones, Comédienne second rôle. 1h20. ~30€.\nhttps://www.lesplendid.com/project/le-proces-dune-vie/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 90,
+    "source": "lesplendid.com",
+    "match_reasons": [
+      "genre_prefere: theatre contemporain",
+      "note_critique_elevee: 3 Molières 2026",
+      "budget_ok"
+    ],
+    "image_url": null
+  }
+]

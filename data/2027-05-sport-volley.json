@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Semaine du Beach Volley 2027 — Saint-Germain-en-Laye",
+    "date": "2027-05-27",
+    "date_fin": "2027-05-30",
+    "time": "09:00",
+    "cat": "volley",
+    "venue": "Stade Georges Lefèvre, Saint-Germain-en-Laye (78)",
+    "notes": "Date estimée / récurrent. 5e édition probable (récurrent fin mai). Compétition Série 1 + activités gratuites.\nhttps://www.volleyidf.org/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 58,
+    "source": "volleyidf.org",
+    "match_reasons": [
+      "format_prefere: beach",
+      "proximite_dans_rayon",
+      "jour_prefere: sam/dim",
+      "budget_ok: gratuit spectateur"
+    ],
+    "image_url": null
+  }
+]

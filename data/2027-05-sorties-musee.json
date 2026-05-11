@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Rafael Pavarotti — Photographe",
+    "date": "2026-10-02",
+    "date_fin": "2027-05-02",
+    "time": "11:00",
+    "cat": "expo",
+    "venue": "Musée des Arts Décoratifs, Paris 1er",
+    "notes": "1ère expo en France. +200 tirages: Vogue, i-D, Rihanna, Harry Styles, Beyoncé. Dior, Balmain, Margiela.\nhttps://madparis.fr/Rafael-Pavarotti-photographe",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 80,
+    "source": "madparis.fr",
+    "match_reasons": [
+      "sujet_favori: photographie",
+      "sujet_favori: design",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Leonor Fini (1907-1996) — Rétrospective",
+    "date": "2027-03-26",
+    "date_fin": "2027-08-15",
+    "time": "10:00",
+    "cat": "expo",
+    "venue": "Musée d'Art Moderne de la Ville de Paris (MAM), Paris 16e",
+    "notes": "Grande rétrospective de l'artiste surréaliste italo-française. Vernissage 25 mars 2027.\nhttps://www.exposition-paris.info/agenda-des-expos-a-paris-en-2027/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 65,
+    "source": "exposition-paris.info",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "nouveaute"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Billie Holiday — Exposition",
+    "date": "2027-01-22",
+    "date_fin": "2027-07-11",
+    "time": "12:00",
+    "cat": "expo",
+    "venue": "Philharmonie de Paris — Cité de la Musique, Paris 19e",
+    "notes": "Exposition consacrée à la légende du jazz Billie Holiday. Musée de la Musique.\nhttps://www.sortiraparis.com/en/what-to-visit-in-paris/exhibit-museum/guides/60116",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 55,
+    "source": "philharmoniedeparis.fr",
+    "match_reasons": [
+      "sujet_favori: musique"
+    ],
+    "image_url": null
+  }
+]

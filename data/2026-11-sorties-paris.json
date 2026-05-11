@@ -1,0 +1,99 @@
+[
+  {
+    "title": "Festival d'Automne à Paris 2026",
+    "date": "2026-09-01",
+    "date_fin": "2027-01-24",
+    "time": "20:00",
+    "cat": "festival",
+    "venue": "60+ lieux (Centre Pompidou, Odéon, Théâtre de la Ville...)",
+    "notes": "Festival pluridisciplinaire international: théâtre, danse, musique, arts visuels dans 60 lieux. ~80 spectacles. Programme 2026 à venir.\nhttps://www.festival-automne.com",
+    "reminders": [
+      "1w"
+    ],
+    "score": 70,
+    "source": "festival-automne.com",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "lieu_prefere: Centre Pompidou"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Marché de Noël des Tuileries — La Magie de Noël 2026",
+    "date": "2026-11-16",
+    "date_fin": "2027-01-07",
+    "time": "11:00",
+    "cat": "marché",
+    "venue": "Jardin des Tuileries, Paris 1er",
+    "notes": "~100 chalets en bois, patinoire extérieure, grande roue. Accès jardin gratuit, activités payantes.\nhttps://www.jds.fr/paris/manifestations/marche-de-noel/marche-de-noel-paris-259874_A",
+    "reminders": [
+      "1w"
+    ],
+    "score": 55,
+    "source": "jds.fr",
+    "match_reasons": [
+      "lieu_emblematique",
+      "jour_prefere"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Marché de Noël Notre-Dame 2026",
+    "date": "2026-11-26",
+    "date_fin": "2026-12-27",
+    "time": "11:00",
+    "cat": "marché",
+    "venue": "Parvis Notre-Dame, Paris 4e",
+    "notes": "Marché symbolique sur le parvis de Notre-Dame. Artisanal, produits régionaux. Gratuit.\nhttps://www.cometoparis.com/blog/christmas-markets-paris-s1339",
+    "reminders": [
+      "1w"
+    ],
+    "score": 55,
+    "source": "cometoparis.com",
+    "match_reasons": [
+      "gratuit",
+      "lieu_emblematique",
+      "jour_prefere"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Illuminations de Noël — Champs-Élysées 2026",
+    "date": "2026-11-22",
+    "date_fin": "2027-01-05",
+    "time": "17:00",
+    "cat": "événement",
+    "venue": "Avenue des Champs-Élysées, Paris 8e",
+    "notes": "Illuminations dès 17h jusqu'à minuit tous les soirs. Gratuit.\nhttps://www.sortiraparis.com/en/news/christmas-and-holidays",
+    "reminders": [
+      "1w"
+    ],
+    "score": 50,
+    "source": "sortiraparis.com",
+    "match_reasons": [
+      "gratuit",
+      "lieu_emblematique"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Salon du Chocolat Paris 2026",
+    "date": "2026-10-28",
+    "date_fin": "2026-11-01",
+    "time": "10:00",
+    "cat": "salon",
+    "venue": "Paris Expo Porte de Versailles, Hall 5, Paris 15e",
+    "notes": "500+ exposants de 60+ pays. Défilé robes en chocolat, animations, ateliers. Prix: ~15€.\nhttps://www.salon-du-chocolat.com",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 45,
+    "source": "salon-du-chocolat.com",
+    "match_reasons": [
+      "budget_ok",
+      "nouveaute"
+    ],
+    "image_url": null
+  }
+]

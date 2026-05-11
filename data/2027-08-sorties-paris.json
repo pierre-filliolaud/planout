@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Paris Plages 2027",
+    "date": "2027-07-05",
+    "date_fin": "2027-08-31",
+    "time": "08:00",
+    "cat": "festival",
+    "venue": "Quais de la Seine / Bassin de la Villette, Paris",
+    "notes": "Récurrent annuel. Plages urbaines gratuites, animations, concerts, sport. Gratuit.\nhttps://parisjetaime.com/eng/event/paris-plages-e013",
+    "reminders": [
+      "1w"
+    ],
+    "score": 65,
+    "source": "parisjetaime.com",
+    "match_reasons": [
+      "gratuit",
+      "lieu_emblematique"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Jazz à La Villette 2027",
+    "date": "2027-08-27",
+    "date_fin": "2027-09-05",
+    "time": "20:00",
+    "cat": "festival",
+    "venue": "Philharmonie de Paris / La Villette, Paris 19e",
+    "notes": "Récurrent annuel. Great Black Music — jazz, soul, funk, hip-hop. Programmation 2027 non annoncée.\nhttps://jazzalavillette.com",
+    "reminders": [
+      "1w"
+    ],
+    "score": 50,
+    "source": "jazzalavillette.com",
+    "match_reasons": [
+      "sujet_favori: musique",
+      "lieu_emblematique"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rock en Seine 2027",
+    "date": "2027-08-25",
+    "date_fin": "2027-08-29",
+    "time": "14:00",
+    "cat": "festival",
+    "venue": "Domaine National de Saint-Cloud, Hauts-de-Seine",
+    "notes": "Récurrent annuel. Festival rock et musiques actuelles. Programmation 2027 non annoncée.\nhttps://www.rockenseine.com",
+    "reminders": [
+      "1w"
+    ],
+    "score": 45,
+    "source": "rockenseine.com",
+    "match_reasons": [
+      "sujet_favori: musique"
+    ],
+    "image_url": null
+  }
+]

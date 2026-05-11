@@ -194,30 +194,4 @@
     "match_reasons": ["genre_prefere: techno/electro", "jour_prefere: samedi", "budget_ok"],
     "image_url": "https://badaboum.paris/wp-content/uploads/2026/04/capture-decran-2026-04-09-a-12-28-12-535x506.png"
   },
-  {
-    "title": "La Station — GS Presents : Stephen O'Malley, Shapednoise, EXIT",
-    "date": "2026-06-02",
-    "time": "20:00",
-    "cat": "concert",
-    "venue": "La Station — Gare des Mines, Paris 18e",
-    "notes": "Stephen O'Malley (Sunn O))), Shapednoise, EXIT. Industrial / drone / noise. 14€\nhttps://lastation.paris/stationgdm/rendez-vous/2026-06-02-gs-presents",
-    "reminders": ["1w", "1d"],
-    "score": 35,
-    "source": "lastation.paris",
-    "match_reasons": ["genre_prefere: industrial/techno", "budget_ok"],
-    "image_url": "https://lastation.paris/media/pages/stationgdm/rendez-vous/2026-06-02-gs-presents/1/85da3e4a3a-1777028095/gspresents_paris_020626-1.jpg"
-  },
-  {
-    "title": "Vendredixxl — La Bellevilloise",
-    "date": "2026-06-05",
-    "time": "23:00",
-    "cat": "concert",
-    "venue": "La Bellevilloise, Paris 20e",
-    "notes": "Soirée techno/house. Line-up TBA. 16€\nhttps://vendredix.fr/event/vendredixxl-21/",
-    "reminders": ["1w", "1d"],
-    "score": 35,
-    "source": "vendredix.fr",
-    "match_reasons": ["genre_prefere: techno/house", "jour_prefere: vendredi", "budget_ok"],
-    "image_url": "https://vendredix.fr/wp-content/uploads/2026/02/vxxl_1x1_05JUIN.jpg"
-  }
 ]

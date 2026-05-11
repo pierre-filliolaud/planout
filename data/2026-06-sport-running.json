@@ -1,0 +1,203 @@
+[
+  {
+    "title": "Trail du Muguet",
+    "date": "2026-06-28",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Complexe sportif Marcel Bec, Meudon (92)",
+    "notes": "Distance: 10km (200m D+) / 21km (450m D+) / 30km (600m D+). Prix: ~22€ pour le 21km. Forêt domaniale de Meudon.\nhttps://www.traildumuguet.fr/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 90,
+    "source": "traildumuguet.fr",
+    "match_reasons": [
+      "distance_preferee: trail",
+      "distance_preferee: semi",
+      "type_prefere: trail",
+      "proximite_dans_rayon",
+      "jour_prefere: dimanche",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Adidas 10K Paris",
+    "date": "2026-06-07",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Paris centre, Paris (75)",
+    "notes": "Distance: 10km. 8e édition. France's biggest 10K. Complet — liste d'attente.\nhttps://www.adidas10kparis.fr/en",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 85,
+    "source": "adidas10kparis.fr",
+    "match_reasons": [
+      "distance_preferee: 10km",
+      "type_prefere: route",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: dimanche",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Festi'Run Vincennes — 3/5/10km",
+    "date": "2026-06-14",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Bois de Vincennes, Paris 12e (75)",
+    "notes": "Distance: 3km / 5km / 10km. Course populaire dans le Bois de Vincennes.\nhttps://www.paris.fr/en/pages/the-2026-paris-race-calendar-34043",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 80,
+    "source": "paris.fr",
+    "match_reasons": [
+      "distance_preferee: 10km",
+      "type_prefere: route",
+      "proximite_dans_rayon",
+      "jour_prefere: dimanche"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Les Foulées du 12e",
+    "date": "2026-06-14",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "La Cipale, Paris 12e (75)",
+    "notes": "Distance: 5km / 10km. Course populaire au vélodrome de la Cipale.\nhttps://www.paris.fr/en/pages/the-2026-paris-race-calendar-34043",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 80,
+    "source": "paris.fr",
+    "match_reasons": [
+      "distance_preferee: 10km",
+      "type_prefere: route",
+      "proximite_dans_rayon",
+      "jour_prefere: dimanche"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Oxy'Trail — Noisiel",
+    "date": "2026-06-22",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Noisiel, Seine-et-Marne (77)",
+    "notes": "Distance: 5km / 13km / 23km. Prix: à partir de 3€. Trail accessible RER A.\nhttps://www.oxytrail.fr/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 80,
+    "source": "oxytrail.fr",
+    "match_reasons": [
+      "distance_preferee: trail",
+      "type_prefere: trail",
+      "proximite_dans_rayon",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Course Enfants sans Cancer City — La Défense",
+    "date": "2026-06-02",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "La Défense, Hauts-de-Seine (92)",
+    "notes": "Distance: 5km / 10km. Prix: à partir de 20€. Course caritative.\nhttps://fr.milesrepublic.com/en/running/ile-de-france",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 75,
+    "source": "milesrepublic.com",
+    "match_reasons": [
+      "distance_preferee: 10km",
+      "type_prefere: urban",
+      "proximite_dans_rayon",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Trail de la Colline d'Élancourt",
+    "date": "2026-06-06",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Élancourt, Yvelines (78)",
+    "notes": "Distance: 5km / 15km. Trail en colline d'Élancourt (point culminant naturel d'Île-de-France).\nhttps://gotrail.run/en/calendar/france/ile-de-france",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 75,
+    "source": "gotrail.run",
+    "match_reasons": [
+      "distance_preferee: trail",
+      "type_prefere: trail",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Parkrun Bois de Boulogne — 5km gratuit (hebdo samedi)",
+    "date": "2026-06-06",
+    "date_fin": "2027-11-27",
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Bois de Boulogne, Paris 16e (75)",
+    "notes": "Distance: 5km. Prix: GRATUIT. Récurrent chaque samedi matin à 9h. Inscription unique sur parkrun.fr.\nhttps://www.parkrun.fr/boisdeboulogne/",
+    "reminders": [
+      "1d"
+    ],
+    "score": 65,
+    "source": "parkrun.fr",
+    "match_reasons": [
+      "type_prefere: urban/parc",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi",
+      "gratuit"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "We Run Paris",
+    "date": "2026-06-28",
+    "date_fin": null,
+    "time": "09:00",
+    "cat": "running",
+    "venue": "Stade du Parc des Princes, Paris 16e (75)",
+    "notes": "Distance: 10km. Prix: 99,99€ — HORS BUDGET. Course légendaire lieu iconique.\nhttps://werunparis.psg.fr/en",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 60,
+    "source": "werunparis.psg.fr",
+    "match_reasons": [
+      "distance_preferee: 10km",
+      "type_prefere: urban",
+      "proximite_dans_rayon",
+      "evenement_majeur",
+      "budget_depasse"
+    ],
+    "image_url": null
+  }
+]

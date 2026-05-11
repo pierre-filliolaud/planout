@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Fête de la Musique Paris 2027",
+    "date": "2027-06-21",
+    "date_fin": null,
+    "time": "12:00",
+    "cat": "festival",
+    "venue": "Paris (toute la ville)",
+    "notes": "Récurrent annuel. Concerts gratuits partout le 21 juin. Programmation 2027 à confirmer.\nhttps://fetedelamusique.culture.gouv.fr",
+    "reminders": [
+      "1w"
+    ],
+    "score": 65,
+    "source": "fetedelamusique.culture.gouv.fr",
+    "match_reasons": [
+      "sujet_favori: musique",
+      "gratuit",
+      "lieu_emblematique"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "We Love Green Festival 2027",
+    "date": "2027-06-04",
+    "date_fin": "2027-06-06",
+    "time": "14:00",
+    "cat": "festival",
+    "venue": "Bois de Vincennes, Paris 12e",
+    "notes": "Récurrent annuel. Festival musique & écologie. Programmation 2027 non annoncée. Prix: ~49€+.\nhttps://www.welovegreen.fr",
+    "reminders": [
+      "1w"
+    ],
+    "score": 50,
+    "source": "welovegreen.fr",
+    "match_reasons": [
+      "sujet_favori: musique"
+    ],
+    "image_url": null
+  }
+]

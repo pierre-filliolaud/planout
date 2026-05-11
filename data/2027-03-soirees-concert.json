@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Carpenter Brut – The End Complete Tour",
+    "date": "2027-03-13",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Zénith de Paris – La Villette (75019)",
+    "notes": "Electro-live / synthwave / metal. Clôture de la trilogie Leather (Leather Temple, 2026).\nhttps://le-zenith.com/shows/Carpenter%20Brut-21903",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 65,
+    "source": "le-zenith.com",
+    "match_reasons": [
+      "genre_prefere: electro-live",
+      "lieu_emblematique: Zénith",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  }
+]

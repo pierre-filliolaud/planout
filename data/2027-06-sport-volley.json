@@ -1,0 +1,72 @@
+[
+  {
+    "title": "World Paris Tournament 2027 — Green Volley 3x3 herbe",
+    "date": "2027-06-05",
+    "date_fin": "2027-06-07",
+    "time": "09:00",
+    "cat": "volley",
+    "venue": "Stade Charléty, Paris 13e (75)",
+    "notes": "Date estimée / récurrent. 3e édition probable. Annuel en juin. Suivre parisvolley.com.\nhttps://parisvolley.com/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 90,
+    "source": "parisvolley.com",
+    "match_reasons": [
+      "type_prefere: tournoi/open",
+      "format_prefere: outdoor/herbe",
+      "proximite_dans_rayon",
+      "jour_prefere: sam/dim",
+      "niveau_adapte: loisir",
+      "mixte_ok",
+      "evenement_majeur"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Festival Vollidef 2027 — Ligue IDF Volley",
+    "date": "2027-06-05",
+    "date_fin": "2027-06-06",
+    "time": "10:00",
+    "cat": "volley",
+    "venue": "Parc des Sports du Tremblay, Champigny-sur-Marne (94)",
+    "notes": "Date estimée / récurrent. Festival annuel du volley francilien, généralement 1er-2e week-end juin.\nhttps://www.volleyidf.org/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 82,
+    "source": "volleyidf.org",
+    "match_reasons": [
+      "type_prefere: tournoi/open",
+      "format_prefere: outdoor",
+      "proximite_dans_rayon",
+      "jour_prefere: sam/dim",
+      "niveau_adapte: loisir",
+      "mixte_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Challenge de Paris FSGT 2027 — 4x4 Volley",
+    "date": "2027-06-01",
+    "date_fin": "2027-06-24",
+    "time": "19:00",
+    "cat": "volley",
+    "venue": "Paris (75) — salles multiples",
+    "notes": "Date estimée / récurrent. Challenge annuel FSGT, fin de saison (juin). Prix ~16€/équipe. Licence FSGT requise.\nhttps://www.volley.fsgt75.org/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 58,
+    "source": "fsgt75.org",
+    "match_reasons": [
+      "type_prefere: tournoi/4x4",
+      "proximite_dans_rayon",
+      "budget_ok"
+    ],
+    "image_url": null
+  }
+]

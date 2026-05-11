@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Mitski – Nothing's About to Happen to Me Tour",
+    "date": "2026-05-05",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Zénith Paris – La Villette (75019)",
+    "notes": "Indie/art-pop. Premier stop européen de la tournée. Album 'Nothing's About to Happen to Me' (fév 2026). Prix : 60,50€ – 77€.\nhttps://le-zenith.com/shows/MITSKI-22037",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 55,
+    "source": "le-zenith.com",
+    "match_reasons": [
+      "genre_prefere: indie/pop",
+      "proximite_dans_rayon: Paris",
+      "budget_ok: ~60€"
+    ],
+    "image_url": null
+  }
+]

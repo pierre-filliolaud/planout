@@ -1,0 +1,89 @@
+[
+  {
+    "title": "Fête de la Musique 2027",
+    "date": "2027-06-21",
+    "date_fin": null,
+    "time": "16:00",
+    "cat": "concert",
+    "venue": "Paris – partout (parcs, rues, musées)",
+    "notes": "Concerts gratuits toute la journée dans toute la ville. Rock, jazz, classique, world, pop. Date estimée / récurrent (chaque 21 juin).\nhttps://fetedelamusique.culture.gouv.fr/",
+    "reminders": [
+      "1w",
+      "3d"
+    ],
+    "score": 85,
+    "source": "fetedelamusique.culture.gouv.fr",
+    "match_reasons": [
+      "gratuit",
+      "genre_prefere: rock/jazz/classique/world",
+      "festival",
+      "proximite_dans_rayon: Paris"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Paris Jazz Festival 2027",
+    "date": "2027-06-27",
+    "date_fin": "2027-09-05",
+    "time": "15:00",
+    "cat": "concert",
+    "venue": "Parc Floral de Vincennes (75012)",
+    "notes": "Concerts jazz gratuits les week-ends (entrée parc 2,50€). Date estimée / récurrent (fin juin–début sept). Line-up TBA.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
+    "reminders": [
+      "1w"
+    ],
+    "score": 75,
+    "source": "festivalsduparcfloral.paris",
+    "match_reasons": [
+      "gratuit",
+      "genre_prefere: jazz/world",
+      "festival",
+      "proximite_dans_rayon: Paris"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "We Love Green 2027",
+    "date": "2027-06-04",
+    "date_fin": "2027-06-06",
+    "time": "17:00",
+    "cat": "concert",
+    "venue": "Bois de Vincennes (75012)",
+    "notes": "Festival éco-engagé récurrent. Date estimée / récurrent (1er week-end de juin). Line-up TBA.\nhttps://www.welovegreen.fr/",
+    "reminders": [
+      "1m",
+      "2w"
+    ],
+    "score": 70,
+    "source": "welovegreen.fr",
+    "match_reasons": [
+      "festival",
+      "genre_prefere: indie/pop/electro-live",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi/samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Solidays 2027",
+    "date": "2027-06-25",
+    "date_fin": "2027-06-27",
+    "time": "17:00",
+    "cat": "concert",
+    "venue": "Hippodrome Paris-Longchamp (75016)",
+    "notes": "Festival solidaire contre le SIDA. Date estimée / récurrent (dernier week-end de juin). Line-up TBA.\nhttps://www.solidays.org/",
+    "reminders": [
+      "1m",
+      "2w"
+    ],
+    "score": 60,
+    "source": "solidays.org",
+    "match_reasons": [
+      "festival",
+      "genre_prefere: pop",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi/samedi"
+    ],
+    "image_url": null
+  }
+]

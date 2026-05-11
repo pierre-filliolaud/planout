@@ -1,0 +1,85 @@
+[
+  {
+    "title": "Kilomètre25 — Saison estivale 2026",
+    "date": "2026-06-05",
+    "date_fin": "2026-11-01",
+    "time": "00:00",
+    "cat": "club",
+    "venue": "Kilomètre25, 8 Bd Macdonald, Paris 19e",
+    "notes": "Saison 2026 ouverte jusqu'au 1er novembre. Techno, house, bass music, hard techno. Artistes: Randomer, Pan Pot, Jayda G, Teksa... Tarifs ~15-20€.\nhttps://www.kilometre25.fr/",
+    "reminders": [
+      "1w"
+    ],
+    "score": 25,
+    "source": "kilometre25.fr",
+    "match_reasons": [
+      "genre_prefere: techno",
+      "proximite_dans_rayon",
+      "jour_prefere: vendredi/samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "FVTVR — Saison 2026 (Anetha, Sara Landry, Speedy J...)",
+    "date": "2026-06-06",
+    "date_fin": "2026-12-31",
+    "time": "23:59",
+    "cat": "club",
+    "venue": "FVTVR, 34 Quai d'Austerlitz, Paris 13e",
+    "notes": "Anetha, Sara Landry, Rene Wise, Shanti Celeste, Speedy J, Tatyana Jane, Jen Cardini... Techno/house. Week-end minuit-7h. Billetterie Shotgun dès 12,99€.\nhttps://shotgun.live/en/venues/fvtvr",
+    "reminders": [
+      "1w"
+    ],
+    "score": 25,
+    "source": "shotgun.live",
+    "match_reasons": [
+      "genre_prefere: techno",
+      "proximite_dans_rayon",
+      "budget_ok",
+      "jour_prefere: vendredi/samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rex Club — Automne/hiver 2026-2027",
+    "date": "2026-09-04",
+    "date_fin": "2027-03-31",
+    "time": "23:30",
+    "cat": "club",
+    "venue": "Rex Club, 5 Bd Poissonnière, Paris 2e",
+    "notes": "Soirées techno/house/DnB mercredi-samedi toute l'année. Programmation automne/hiver annoncée au fil de l'eau. Early bird ~5€, standard 12-20€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w"
+    ],
+    "score": 25,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno",
+      "jour_prefere: vendredi/samedi",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Essaim — Soirées 2026 (Tribalism techno / expérimental)",
+    "date": "2026-06-05",
+    "date_fin": "2026-12-31",
+    "time": "23:00",
+    "cat": "club",
+    "venue": "Essaim, 14 rue Philippe de Girard, Paris 10e",
+    "notes": "Club fondé par anciens DA de Concrete. Vendredi Tribalism (techno), samedi bass expérimental. Entrée unique: 20€.\nhttps://parisjetaime.com/eng/culture/essaim-paris-p4478",
+    "reminders": [
+      "1w"
+    ],
+    "score": 20,
+    "source": "sortiraparis.com",
+    "match_reasons": [
+      "genre_prefere: techno",
+      "proximite_dans_rayon",
+      "budget_ok",
+      "jour_prefere: vendredi/samedi"
+    ],
+    "image_url": null
+  }
+]

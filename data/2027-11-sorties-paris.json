@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Marché de Noël des Tuileries 2027",
+    "date": "2027-11-15",
+    "date_fin": "2028-01-06",
+    "time": "11:00",
+    "cat": "marché",
+    "venue": "Jardin des Tuileries, Paris 1er",
+    "notes": "Récurrent annuel. Grand marché de Noël — chalets, patinoire, grande roue. Accès gratuit, activités payantes.\nhttps://www.jds.fr/paris/manifestations/marche-de-noel/marche-de-noel-paris-259874_A",
+    "reminders": [
+      "1w"
+    ],
+    "score": 45,
+    "source": "jds.fr",
+    "match_reasons": [
+      "lieu_emblematique"
+    ],
+    "image_url": null
+  }
+]
