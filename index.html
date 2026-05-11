@@ -506,7 +506,7 @@ function goTab(name) {
   if (sb) sb.style.display = show ? 'block' : 'none';
   if (fb) fb.style.display = show ? 'flex' : 'none';
   if (name==='list')      render();
-  if (name==='cal')       renderCal();
+  if (name==='cal')       { if (!calSelDay) calSelDay = localStr(_today); renderCal(); }
   if (name==='top')       renderTop();
   if (name==='areserver') renderAReserver();
   if (name==='more')      initDataFiles();
@@ -855,7 +855,8 @@ function renderCal() {
     const evs=evMap[ds]||[];
     let dots=evs.slice(0,5).map(ev=>`<div class="cal-dot" style="background:${(CAT[ev.cat]||CAT.autre).dot}"></div>`).join('');
     if (evs.length>5) dots+=`<span style="font-size:8px;color:var(--text3);line-height:1">+${evs.length-5}</span>`;
-    html+=`<div class="cal-cell${ds===todayStr?' today':''}${ds<todayStr?' past':''}${calSelDay===ds?' selected':''}" onclick="selectDay('${ds}')">
+    const todayCls = ds===todayStr && (!calSelDay || calSelDay===todayStr) ? ' today' : '';
+    html+=`<div class="cal-cell${todayCls}${ds<todayStr?' past':''}${calSelDay===ds?' selected':''}" onclick="selectDay('${ds}')">
       <div class="cal-dn">${d}</div><div class="cal-dots">${dots}</div>
     </div>`;
   }
