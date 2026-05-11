@@ -5,65 +5,65 @@
     "date_fin": "2026-09-06",
     "time": "19:00",
     "cat": "concert",
-    "venue": "Philharmonie de Paris / Grande Halle de La Villette (75019)",
-    "notes": "25e anniversaire. Programmation Great Black Music, jazz, hip-hop, soul, funk. Artistes : Snarky Puppy & Metropole Orkest (28-29 août), GoGo Penguin, Kokoroko, Cymande, Brian Jackson & Yasiin Bey, Selah Sue & The Gallands, Emma Jean Thackray, Mammal Hands, corto.alto. Prix : 40-50€/concert.\nhttps://jazzalavillette.com/fr/",
+    "venue": "Philharmonie / Grande Halle de La Villette (75019)",
+    "notes": "25e anniversaire. Artistes : Snarky Puppy & Metropole Orkest (28-29 août), GoGo Penguin, Kokoroko, Cymande, Brian Jackson & Yasiin Bey, Selah Sue & The Gallands (4 sept). Prix : 40-50€/concert.\nhttps://jazzalavillette.com/fr/",
     "reminders": [
       "1m",
       "2w",
       "1w"
     ],
-    "score": 90,
+    "score": 70,
     "source": "jazzalavillette.com",
     "match_reasons": [
       "festival",
       "genre_prefere: jazz/soul",
-      "lieu_emblematique: Philharmonie de Paris",
-      "lieu_prefere: Philharmonie de Paris",
-      "budget_ok: 40-50€",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: vendredi/samedi"
+      "lieu_emblematique",
+      "lieu_prefere",
+      "budget_ok",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   },
   {
-    "title": "Paris Jazz Festival 2026",
+    "title": "Paris Jazz Festival 2026 – Parc Floral",
     "date": "2026-06-28",
     "date_fin": "2026-09-06",
     "time": "15:00",
     "cat": "concert",
     "venue": "Parc Floral de Vincennes (75012)",
-    "notes": "Concerts jazz gratuits les week-ends (entrée parc 2,50€). Dates : 28 juin, 4 et 12 et 18 juil., 15 et 23 et 29 août, 6 sept. Programmation variée jazz/world.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
-    "reminders": [
-      "1w"
-    ],
-    "score": 80,
-    "source": "festivalsduparcfloral.paris",
-    "match_reasons": [
-      "gratuit",
-      "genre_prefere: jazz/world",
-      "festival",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: week-ends"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "A$AP Rocky – Paris",
-    "date": "2026-09-30",
-    "date_fin": null,
-    "time": "20:00",
-    "cat": "concert",
-    "venue": "Accor Arena, Paris (75012)",
-    "notes": "Rap/hip-hop live. Accor Arena – Bercy.\nhttps://www.accorarena.com/",
+    "notes": "Concerts jazz gratuits (hors entrée parc : 2,50€) les week-ends d'été. Artistes 2026 : Melissa Aldana, Kyoto Jazz Massive, Poets of Forest, Célia Kameni, Tomoki Sanders… Pique-nique autorisé.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
     "reminders": [
       "2w",
       "1w"
     ],
-    "score": 40,
-    "source": "accorarena.com",
+    "score": 55,
+    "source": "festivalsduparcfloral.paris",
     "match_reasons": [
-      "proximite_dans_rayon: Paris",
-      "lieu_emblematique: Accor Arena"
+      "festival",
+      "gratuit",
+      "genre_prefere: jazz",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Nightclubbing Festival 2026",
+    "date": "2026-09-24",
+    "date_fin": "2026-09-27",
+    "time": "TBA",
+    "cat": "concert",
+    "venue": "La Villette + clubs nord-est Paris (75019)",
+    "notes": "1re édition du festival electro + nightlife curé par Jen Cardini (AEG Presents France). Concerts, installations, conférences. Partenariat avec MUTEK.\nhttps://electronicgroove.com/jen-cardini-announces-nightclubbing-festival-2026-in-paris/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 55,
+    "source": "electronicgroove.com",
+    "match_reasons": [
+      "festival",
+      "genre_prefere: electro/techno/house",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   }

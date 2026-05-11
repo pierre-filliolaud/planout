@@ -3,42 +3,21 @@
     "title": "Fête de la Musique 2027",
     "date": "2027-06-21",
     "date_fin": null,
-    "time": "16:00",
+    "time": "18:00",
     "cat": "concert",
-    "venue": "Paris – partout (parcs, rues, musées)",
-    "notes": "Concerts gratuits toute la journée dans toute la ville. Rock, jazz, classique, world, pop. Date estimée / récurrent (chaque 21 juin).\nhttps://fetedelamusique.culture.gouv.fr/",
+    "venue": "Paris entier – multiple scènes",
+    "notes": "date estimée / récurrent. Concerts gratuits dans toute la ville, toutes esthétiques musicales.\nhttps://fetedelamusique.culture.gouv.fr/",
     "reminders": [
-      "1w",
-      "3d"
-    ],
-    "score": 85,
-    "source": "fetedelamusique.culture.gouv.fr",
-    "match_reasons": [
-      "gratuit",
-      "genre_prefere: rock/jazz/classique/world",
-      "festival",
-      "proximite_dans_rayon: Paris"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Paris Jazz Festival 2027",
-    "date": "2027-06-27",
-    "date_fin": "2027-09-05",
-    "time": "15:00",
-    "cat": "concert",
-    "venue": "Parc Floral de Vincennes (75012)",
-    "notes": "Concerts jazz gratuits les week-ends (entrée parc 2,50€). Date estimée / récurrent (fin juin–début sept). Line-up TBA.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
-    "reminders": [
+      "2w",
       "1w"
     ],
-    "score": 75,
-    "source": "festivalsduparcfloral.paris",
+    "score": 55,
+    "source": "fetedelamusique.culture.gouv.fr",
     "match_reasons": [
-      "gratuit",
-      "genre_prefere: jazz/world",
       "festival",
-      "proximite_dans_rayon: Paris"
+      "gratuit",
+      "genre_prefere: electro/jazz/rock/pop",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   },
@@ -46,21 +25,43 @@
     "title": "We Love Green 2027",
     "date": "2027-06-04",
     "date_fin": "2027-06-06",
-    "time": "17:00",
+    "time": "14:00",
     "cat": "concert",
     "venue": "Bois de Vincennes (75012)",
-    "notes": "Festival éco-engagé récurrent. Date estimée / récurrent (1er week-end de juin). Line-up TBA.\nhttps://www.welovegreen.fr/",
+    "notes": "date estimée / récurrent. Festival eco-responsable annuel début juin au Bois de Vincennes. Programme 2027 non annoncé. Prix : estimé ~85€/jour.\nhttps://www.welovegreen.fr/",
     "reminders": [
-      "1m",
-      "2w"
+      "2w",
+      "1w"
     ],
-    "score": 70,
+    "score": 45,
     "source": "welovegreen.fr",
     "match_reasons": [
       "festival",
-      "genre_prefere: indie/pop/electro-live",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: vendredi/samedi"
+      "genre_prefere: pop/electro/rock/rap",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Days Off 2027 – Philharmonie",
+    "date": "2027-06-26",
+    "date_fin": "2027-07-04",
+    "time": "19:00",
+    "cat": "concert",
+    "venue": "Philharmonie de Paris (75019)",
+    "notes": "date estimée / récurrent. Festival pop/création annuel fin juin à la Philharmonie. Programme 2027 non annoncé.\nhttps://daysoff.fr/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 45,
+    "source": "daysoff.fr",
+    "match_reasons": [
+      "festival",
+      "genre_prefere: indie/pop/rock",
+      "lieu_emblematique",
+      "lieu_prefere",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   },
@@ -71,18 +72,39 @@
     "time": "17:00",
     "cat": "concert",
     "venue": "Hippodrome Paris-Longchamp (75016)",
-    "notes": "Festival solidaire contre le SIDA. Date estimée / récurrent (dernier week-end de juin). Line-up TBA.\nhttps://www.solidays.org/",
+    "notes": "date estimée / récurrent. Festival caritatif annuel fin juin. Programme 2027 non annoncé. Prix : estimé ~75€/jour.\nhttps://www.solidays.org/",
     "reminders": [
-      "1m",
-      "2w"
+      "2w",
+      "1w"
     ],
-    "score": 60,
+    "score": 40,
     "source": "solidays.org",
     "match_reasons": [
       "festival",
-      "genre_prefere: pop",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: vendredi/samedi"
+      "genre_prefere: electro/pop/rap",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Paris Jazz Festival 2027",
+    "date": "2027-06-27",
+    "date_fin": "2027-09-05",
+    "time": "15:00",
+    "cat": "concert",
+    "venue": "Parc Floral de Vincennes (75012)",
+    "notes": "date estimée / récurrent. Concerts gratuits les week-ends d'été au Parc Floral. Programme 2027 non annoncé.\nhttps://festivalsduparcfloral.paris/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 40,
+    "source": "festivalsduparcfloral.paris",
+    "match_reasons": [
+      "festival",
+      "gratuit",
+      "genre_prefere: jazz",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   }

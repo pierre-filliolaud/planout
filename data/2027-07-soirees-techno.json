@@ -1,20 +1,45 @@
 [
   {
-    "title": "Peacock Society 2027 — édition estimée",
+    "title": "Peacock Society 2027 (édition estimée)",
     "date": "2027-07-09",
-    "date_fin": "2027-07-10",
-    "time": "12:00",
-    "cat": "festival",
-    "venue": "Hippodrome Paris-Vincennes (estimé)",
-    "notes": "Date estimée / récurrent (juillet, Hippodrome de Vincennes). Surveiller peacocksociety.fr.",
+    "date_fin": null,
+    "time": "14:00",
+    "cat": "concert",
+    "venue": "Hippodrome Paris-Vincennes (estimé), Paris 12e",
+    "notes": "date estimée / récurrent. Le Peacock Society se tient chaque été à l'Hippodrome Paris-Vincennes. Édition 2027 (16e) non encore annoncée. Surveiller peacocksociety.fr dès janvier 2027. Lineup 2026 incluait Boys Noize, SebastiAn, Floating Points, Busy P — même qualité attendue.\nhttps://peacocksociety.fr/",
     "reminders": [
-      "2w"
+      "2w",
+      "1w"
     ],
-    "score": 15,
+    "score": 55,
     "source": "peacocksociety.fr",
     "match_reasons": [
-      "genre_prefere: électronique/techno",
-      "date estimée"
+      "artiste_favori: Boys Noize (récurrent)",
+      "genre_prefere: techno/house/electro",
+      "proximite_dans_rayon: Paris 12e"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rex Club — Soirée Techno/House (récurrente été 2027)",
+    "date": "2027-07-03",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Programme Rex Club. Consulter rexclub.com. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi"
     ],
     "image_url": null
   }

@@ -1,23 +1,46 @@
 [
   {
-    "title": "Carpenter Brut – The End Complete Tour",
-    "date": "2027-03-13",
+    "title": "The Avener – L'Olympia",
+    "date": "2027-03-20",
     "date_fin": null,
     "time": "20:00",
     "cat": "concert",
-    "venue": "Zénith de Paris – La Villette (75019)",
-    "notes": "Electro-live / synthwave / metal. Clôture de la trilogie Leather (Leather Temple, 2026).\nhttps://le-zenith.com/shows/Carpenter%20Brut-21903",
+    "venue": "L'Olympia, Paris (75009)",
+    "notes": "Nouvelle date parisienne de The Avener à l'Olympia. Prix : à confirmer.\nhttps://www.olympiahall.com/en/upcoming-events/the-avener/",
     "reminders": [
       "2w",
       "1w"
     ],
-    "score": 65,
+    "score": 110,
+    "source": "olympiahall.com",
+    "match_reasons": [
+      "artiste_favori: The Avener",
+      "genre_prefere: electro/house",
+      "lieu_emblematique",
+      "lieu_prefere",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "French 79 – Zénith Paris",
+    "date": "2027-03-27",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Zénith Paris - La Villette (75019)",
+    "notes": "Simon Henner présente son nouvel album. Genre : electro/synth-pop/indie. Prix : à confirmer.\nhttps://le-zenith.com/shows/French%2079-22115",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 60,
     "source": "le-zenith.com",
     "match_reasons": [
-      "genre_prefere: electro-live",
-      "lieu_emblematique: Zénith",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: samedi"
+      "genre_prefere: electro/indie/pop",
+      "lieu_emblematique",
+      "proximite_dans_rayon",
+      "jour_prefere"
     ],
     "image_url": null
   }

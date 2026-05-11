@@ -1,148 +1,243 @@
 [
   {
-    "title": "TRANSGENIK @ FVTVR",
-    "date": "2026-06-13",
+    "title": "David Guetta — The Ultimate Monolith Show — Stade de France (J1)",
+    "date": "2026-06-11",
     "date_fin": null,
-    "time": "23:59",
-    "cat": "club",
-    "venue": "FVTVR, 34 Quai d'Austerlitz, Paris 13e",
-    "notes": "Soirée TRANSGENIK au FVTVR. À partir de 12,99€.\nhttps://shotgun.live/en/venues/fvtvr",
+    "time": "19:00",
+    "cat": "concert",
+    "venue": "Stade de France, Saint-Denis (93)",
+    "notes": "Concert exceptionnel de David Guetta à 80 000 personnes. Show monolithe géant — dernière production de ce type. Première partie : Armin van Buuren. Prix depuis 49.90€ (Cat.4). Attention : places Cat.4 encore disponibles — Cat.3 et + SOLD OUT.\nhttps://www.stadefrance.com/en/ticket/david-guetta-3",
     "reminders": [
       "1w",
       "1d"
     ],
-    "score": 35,
-    "source": "shotgun.live",
+    "score": 65,
+    "source": "stadefrance.com",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok",
+      "artiste_favori: David Guetta",
+      "genre_prefere: house/electro",
+      "proximite_dans_rayon: Saint-Denis ~10km",
+      "budget_ok: Cat.4 à 49.90€"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "David Guetta — The Ultimate Monolith Show — Stade de France (J2)",
+    "date": "2026-06-12",
+    "date_fin": null,
+    "time": "19:00",
+    "cat": "concert",
+    "venue": "Stade de France, Saint-Denis (93)",
+    "notes": "2e concert de David Guetta au Stade de France. Show monolithe. Première partie : DJ Fisher. Majoritairement SOLD OUT — surveiller revente officielle. Prix dès 49.90€ si dispo.\nhttps://www.stadefrance.com/en/ticket/david-guetta-2",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 65,
+    "source": "stadefrance.com",
+    "match_reasons": [
+      "artiste_favori: David Guetta",
+      "genre_prefere: house/electro",
+      "proximite_dans_rayon: Saint-Denis ~10km",
+      "jour_prefere: vendredi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "David Guetta — The Ultimate Monolith Show — Stade de France (J3)",
+    "date": "2026-06-13",
+    "date_fin": null,
+    "time": "19:00",
+    "cat": "concert",
+    "venue": "Stade de France, Saint-Denis (93)",
+    "notes": "3e et dernier concert de David Guetta au Stade de France. Show monolithe — finale. Première partie : Black Coffee. SOLD OUT — surveiller revente officielle.\nhttps://www.stadefrance.com/en/ticket/david-guetta",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 60,
+    "source": "stadefrance.com",
+    "match_reasons": [
+      "artiste_favori: David Guetta",
+      "genre_prefere: house/electro",
+      "proximite_dans_rayon: Saint-Denis ~10km",
       "jour_prefere: samedi"
     ],
     "image_url": null
   },
   {
-    "title": "T7 — Sixtion",
-    "date": "2026-06-20",
+    "title": "T7 Paris — Soirée Techno (récurrente été 2026)",
+    "date": "2026-06-26",
     "date_fin": null,
     "time": "23:00",
-    "cat": "club",
-    "venue": "T7, Parc des Expositions Porte de Versailles, Paris 15e",
-    "notes": "Soirée Sixtion au T7. Techno/minimal 1000m² + terrasse. Tarifs ~15-25€.\nhttps://www.songkick.com/venues/3730524-t7",
+    "cat": "concert",
+    "venue": "T7, Paris 15e",
+    "notes": "date estimée / récurrent. T7 programme des soirées techno chaque vendredi/samedi (midnight-7am). Terrasse panoramique 400m². Consulter shotgun.live/en/venues/t-7 pour la prog exacte. ~14-20€.\nhttps://shotgun.live/en/venues/t-7",
     "reminders": [
       "1w",
       "1d"
     ],
-    "score": 30,
-    "source": "songkick.com",
+    "score": 50,
+    "source": "shotgun.live",
     "match_reasons": [
       "lieu_prefere: T7",
       "genre_prefere: techno/minimal",
-      "proximite_dans_rayon",
-      "jour_prefere: samedi"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Rex Club — Soirées été 2026",
-    "date": "2026-06-05",
-    "date_fin": "2026-08-29",
-    "time": "23:30",
-    "cat": "club",
-    "venue": "Rex Club, 5 Bd Poissonnière, Paris 2e",
-    "notes": "Soirées techno / house chaque vendredi et samedi. Programmation détaillée annoncée au fil de l'eau. Tarifs: early bird ~5€, standard 12-20€.\nhttps://rexclub.com/billetterie/",
-    "reminders": [
-      "1w"
-    ],
-    "score": 25,
-    "source": "rexclub.com",
-    "match_reasons": [
-      "lieu_prefere: Rex Club",
-      "genre_prefere: techno",
-      "jour_prefere: vendredi/samedi",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi",
       "budget_ok"
     ],
     "image_url": null
   },
   {
-    "title": "Kilomètre25 — Saison estivale 2026",
-    "date": "2026-06-05",
-    "date_fin": "2026-11-01",
-    "time": "00:00",
-    "cat": "club",
-    "venue": "Kilomètre25, 8 Bd Macdonald, Paris 19e",
-    "notes": "Saison 2026 ouverte jusqu'au 1er novembre. Techno, house, bass music, hard techno. Artistes: Randomer, Pan Pot, Jayda G, Teksa... Tarifs ~15-20€.\nhttps://www.kilometre25.fr/",
+    "title": "Weather Festival 2026 — La Seine Musicale",
+    "date": "2026-06-20",
+    "date_fin": null,
+    "time": "12:00",
+    "cat": "concert",
+    "venue": "La Seine Musicale, Boulogne-Billancourt (92)",
+    "notes": "Retour du Weather Festival après 2 ans d'absence. 14h de musique électronique intense. Lineup annoncé : Dixon, Marcel Dettmann, Ricardo Villalobos, Nina Kraviz, Daniel Avery, Antigone, Eris Drew, OKO DJ, Anetha, Shlømo, KiNK, DjRUM, Octo Octa, Tryphème, Red Axes et autres. Île Seguin / La Seine Musicale. Prix à confirmer sur ra.co.\nhttps://ra.co/promoters/39087",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 25,
-    "source": "kilometre25.fr",
+    "score": 45,
+    "source": "ra.co",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "jour_prefere: vendredi/samedi"
+      "genre_prefere: techno/minimal",
+      "proximite_dans_rayon: Boulogne ~8km",
+      "jour_prefere: samedi"
     ],
     "image_url": null
   },
   {
-    "title": "FVTVR — Saison 2026 (Anetha, Sara Landry, Speedy J...)",
-    "date": "2026-06-06",
-    "date_fin": "2026-12-31",
-    "time": "23:59",
-    "cat": "club",
-    "venue": "FVTVR, 34 Quai d'Austerlitz, Paris 13e",
-    "notes": "Anetha, Sara Landry, Rene Wise, Shanti Celeste, Speedy J, Tatyana Jane, Jen Cardini... Techno/house. Week-end minuit-7h. Billetterie Shotgun dès 12,99€.\nhttps://shotgun.live/en/venues/fvtvr",
+    "title": "Kilomètre25 — Saison 6 : Randomer, Pan Pot, Koboyo b2b Camille Doe",
+    "date": "2026-06-27",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "Kilomètre25, Paris 19e",
+    "notes": "Kilomètre25 saison 6 (ouvert avril–novembre 2026). Soirée nocturne vendredi/samedi minuit–9h. Artistes attendus en saison : Randomer, Under Black Helmet, Manu Le Malin, Pan Pot, Camille Doe, Terrence Parker, Koboyo... Vérifier programmation exacte sur shotgun.live. ~15-20€.\nhttps://shotgun.live/en/venues/kilometre-25",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 25,
+    "score": 45,
     "source": "shotgun.live",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok",
-      "jour_prefere: vendredi/samedi"
+      "genre_prefere: techno/house",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi"
     ],
     "image_url": null
   },
   {
-    "title": "Essaim — Soirées 2026 (Tribalism techno / expérimental)",
-    "date": "2026-06-05",
-    "date_fin": "2026-12-31",
+    "title": "La Machine du Moulin Rouge — Soirée Electro (récurrente 2026)",
+    "date": "2026-06-19",
+    "date_fin": null,
     "time": "23:00",
-    "cat": "club",
-    "venue": "Essaim, 14 rue Philippe de Girard, Paris 10e",
-    "notes": "Club fondé par anciens DA de Concrete. Vendredi Tribalism (techno), samedi bass expérimental. Entrée unique: 20€.\nhttps://parisjetaime.com/eng/culture/essaim-paris-p4478",
+    "cat": "concert",
+    "venue": "La Machine du Moulin Rouge, Paris 18e",
+    "notes": "date estimée / récurrent. La Machine programme des soirées electro/club chaque semaine (hors programmation concerts rock/pop). Consulter lamachinedumoulinrouge.com pour les soirées electro spécifiques. ~10-20€.\nhttps://www.lamachinedumoulinrouge.com/agenda/",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 20,
-    "source": "sortiraparis.com",
+    "score": 45,
+    "source": "lamachinedumoulinrouge.com",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok",
-      "jour_prefere: vendredi/samedi"
+      "lieu_prefere: La Machine du Moulin Rouge",
+      "genre_prefere: electro/house",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi",
+      "budget_ok"
     ],
     "image_url": null
   },
   {
-    "title": "La Clairière — Saison estivale 2026 (open-air Bois de Boulogne)",
-    "date": "2026-06-12",
-    "date_fin": "2026-09-26",
-    "time": "20:00",
-    "cat": "club",
-    "venue": "La Clairière, 1 Carrefour de Longchamp, Paris 16e",
-    "notes": "10e anniversaire. Chris Lake, Cloonee, Mau P, NTO, Agoria, Kölsch, Polo & Pan, Shimza... 1 500 personnes.\nhttps://shotgun.live/en/venues/la-clairiere",
+    "title": "Rex Club — Soirée Techno/House (récurrente été 2026)",
+    "date": "2026-06-06",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Le Rex Club programme chaque semaine des soirées techno, house, electro. Consulter rexclub.com pour la programmation exacte de juin 2026. ~12-15€.\nhttps://rexclub.com/billetterie/",
     "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "FVTVR — Transgenik",
+    "date": "2026-06-13",
+    "date_fin": null,
+    "time": "00:00",
+    "cat": "concert",
+    "venue": "FVTVR, Paris 13e",
+    "notes": "Soirée Transgenik au FVTVR. Trance / techno. ~15-20€.\nhttps://dice.fm/venue/fvtvr-pvlk",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 35,
+    "source": "dice.fm",
+    "match_reasons": [
+      "genre_prefere: techno",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Badaboum Paris — Soirée House/Techno (récurrente été 2026)",
+    "date": "2026-06-13",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Badaboum, Paris 11e",
+    "notes": "date estimée / récurrent. Badaboum (2 bis rue des Taillandiers, Bastille) programme des soirées house et techno chaque jeudi-vendredi-samedi. Spécialiste long sets. Consulter badaboum.paris/agenda/. ~10-15€.\nhttps://badaboum.paris/agenda/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 35,
+    "source": "badaboum.paris",
+    "match_reasons": [
+      "genre_prefere: house/techno",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Vitalic Live — Musée Electronique Festival, Grenoble",
+    "date": "2026-06-12",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Musée Dauphinois, Grenoble",
+    "notes": "Vitalic en concert live au Musée Electronique Festival à Grenoble (12-14 juin). Hors rayon 30km — Grenoble ~570km de Paris. Vérifier billets sur agendaculturel.fr. ~25-35€.\nhttps://www.agendaculturel.fr/vitalic",
+    "reminders": [
+      "2w",
       "1w"
     ],
-    "score": 20,
-    "source": "sortiraparis.com",
+    "score": 15,
+    "source": "agendaculturel.fr",
     "match_reasons": [
-      "genre_prefere: tech house / melodic",
-      "proximite_dans_rayon",
-      "jour_prefere: vendredi/samedi"
+      "artiste_favori: Vitalic",
+      "genre_prefere: electro-live",
+      "hors_rayon_favoris: Grenoble ~570km"
     ],
     "image_url": null
   }

@@ -1,21 +1,42 @@
 [
   {
-    "title": "Techno Parade Paris 2027 — édition estimée",
+    "title": "Techno Parade Paris 2027 (édition estimée)",
     "date": "2027-09-18",
     "date_fin": null,
-    "time": "12:00",
-    "cat": "festival",
-    "venue": "Paris centre (trajet TBA)",
-    "notes": "Date estimée / récurrent (3e samedi de septembre). Gratuit. Surveiller technoparade.fr.",
+    "time": "14:00",
+    "cat": "concert",
+    "venue": "Paris (parcours habituel), Paris",
+    "notes": "date estimée / récurrent. La Techno Parade se tient habituellement le 3e samedi de septembre. 29e édition attendue en 2027. Événement gratuit dans les rues de Paris + afterparties clubs. Surveiller technoparade.fr dès été 2027.\nhttps://www.jds.fr/paris/concerts/electro/techno-parade-paris-262388_A",
     "reminders": [
-      "2w"
+      "2w",
+      "1w"
     ],
-    "score": 25,
-    "source": "technoparade.fr",
+    "score": 45,
+    "source": "jds.fr",
     "match_reasons": [
-      "genre_prefere: techno",
-      "budget_ok: gratuit",
-      "jour_prefere: samedi"
+      "genre_prefere: techno/house/electro",
+      "proximite_dans_rayon: Paris",
+      "budget_ok: gratuit"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Nightclubbing Festival 2027 (édition estimée)",
+    "date": "2027-09-23",
+    "date_fin": null,
+    "time": "18:00",
+    "cat": "concert",
+    "venue": "La Villette + clubs parisiens, Paris 19e",
+    "notes": "date estimée / récurrent. Le Nightclubbing Festival inauguré en 2026 devrait revenir en 2027. Format citywide, curé par Jen Cardini. Surveiller aegpresents.fr. Dates et lineup à confirmer.\nhttps://www.aegpresents.fr/event/nightclubbing-festival/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 40,
+    "source": "aegpresents.fr",
+    "match_reasons": [
+      "genre_prefere: techno/house/electro",
+      "proximite_dans_rayon: Paris"
     ],
     "image_url": null
   }

@@ -1,0 +1,69 @@
+[
+  {
+    "title": "T7 Paris — Soirée Techno (récurrente été 2027)",
+    "date": "2027-06-26",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "T7, Paris 15e",
+    "notes": "date estimée / récurrent. T7 programme des soirées techno. Consulter shotgun.live/en/venues/t-7. ~14-20€.\nhttps://shotgun.live/en/venues/t-7",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 50,
+    "source": "shotgun.live",
+    "match_reasons": [
+      "lieu_prefere: T7",
+      "genre_prefere: techno",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rex Club — Soirée Techno/House (récurrente été 2027)",
+    "date": "2027-06-05",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Programme Rex Club été 2027. Consulter rexclub.com. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Weather Festival 2027 (édition estimée)",
+    "date": "2027-06-19",
+    "date_fin": null,
+    "time": "12:00",
+    "cat": "concert",
+    "venue": "La Seine Musicale (estimé), Boulogne-Billancourt (92)",
+    "notes": "date estimée / récurrent. Le Weather Festival revient chaque été. Édition 2027 non encore annoncée. Surveiller ra.co/promoters/39087 dès début 2027. Techno / minimal, 14h de musique. ~40-60€.\nhttps://ra.co/promoters/39087",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 40,
+    "source": "ra.co",
+    "match_reasons": [
+      "genre_prefere: techno/minimal",
+      "proximite_dans_rayon: Boulogne ~8km",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  }
+]

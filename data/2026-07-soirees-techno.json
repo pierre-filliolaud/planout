@@ -1,126 +1,135 @@
 [
   {
-    "title": "Peacock Society Festival 2026",
-    "date": "2026-07-10",
-    "date_fin": "2026-07-11",
-    "time": "12:00",
-    "cat": "festival",
+    "title": "Peacock Society 2026 — Jour 2 : Boys Noize b2b Salome, SebastiAn, Floating Points, Busy P...",
+    "date": "2026-07-11",
+    "date_fin": null,
+    "time": "14:00",
+    "cat": "concert",
     "venue": "Hippodrome Paris-Vincennes, Paris 12e",
-    "notes": "15e édition. Floating Points, Boys Noize, Busy P b2b Channel Tres, Dax J live, Palms Trax, Andy4000, SebastiAn... 25 000 festivaliers, open-air. Prix: à partir de 59€.\nhttps://peacocksociety.fr",
+    "notes": "Peacock Society 15e édition — Jour 2 samedi (headliners). Lineup : Boys Noize b2b Salome, Channel Tres b2b Busy P, SebastiAn, Floating Points (seule date française 2026 !), Benga & Flowdan, Girls Don't Sync, Mad Rey b2b Tatyana Jane b2b Andy4000, Palms Trax, Young Marco, 1tbsp, IAMBP et autres. ⚠️ SebastiAn joue ce soir — Guest possible : Thomas Bangalter ou Guy-Manuel ont déjà rejoint cet artiste sur scène. Prix à confirmer sur peacocksociety.fr.\nhttps://peacocksociety.fr/",
     "reminders": [
-      "2w",
       "1w",
       "1d"
     ],
-    "score": 35,
+    "score": 80,
     "source": "peacocksociety.fr",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "jour_prefere: vendredi/samedi"
+      "artiste_favori: Boys Noize",
+      "artiste_collaborateur: SebastiAn (guest Thomas Bangalter ou Guy-Manuel possible)",
+      "genre_prefere: techno/house/electro",
+      "proximite_dans_rayon: Paris 12e",
+      "jour_prefere: samedi"
     ],
     "image_url": null
   },
   {
-    "title": "Rex Club — Soirées été 2026",
-    "date": "2026-06-05",
-    "date_fin": "2026-08-29",
-    "time": "23:30",
-    "cat": "club",
-    "venue": "Rex Club, 5 Bd Poissonnière, Paris 2e",
-    "notes": "Soirées techno / house chaque vendredi et samedi. Programmation détaillée annoncée au fil de l'eau. Tarifs: early bird ~5€, standard 12-20€.\nhttps://rexclub.com/billetterie/",
+    "title": "Kilomètre25 — Cookie Records : Breakbot & Irfane All Night Long",
+    "date": "2026-07-18",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "Kilomètre25, Paris 19e",
+    "notes": "Cookie Records présente Breakbot & Irfane All Night Long au Kilomètre25. French touch / house. Sophie Lloyd et Lebron en support. ~15-20€.\n⚠️ Guest possible : Guy-Manuel de Homem-Christo a déjà collaboré avec Breakbot (Ed Banger Records / Because Music).\nhttps://shotgun.live/en/events/kilometre25-cookie-records",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 25,
-    "source": "rexclub.com",
+    "score": 65,
+    "source": "shotgun.live",
     "match_reasons": [
-      "lieu_prefere: Rex Club",
-      "genre_prefere: techno",
-      "jour_prefere: vendredi/samedi",
+      "artiste_collaborateur: Breakbot (guest Guy-Manuel possible)",
+      "genre_prefere: french touch/house",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
       "budget_ok"
     ],
     "image_url": null
   },
   {
-    "title": "Kilomètre25 — Saison estivale 2026",
-    "date": "2026-06-05",
-    "date_fin": "2026-11-01",
+    "title": "Peacock Society 2026 — Jour 1 : Robert Hood, Dax J live, Floating Points...",
+    "date": "2026-07-10",
+    "date_fin": null,
+    "time": "18:00",
+    "cat": "concert",
+    "venue": "Hippodrome Paris-Vincennes, Paris 12e",
+    "notes": "15e édition du Peacock Society. Jour 1 vendredi : Adiel b2b Quelza, Claude-Emmanuelle, Dax J (live — world premiere), Frost Children (live), horsegiirL, Mathew Johnson (live), Mobile b2b Karla Böhm, Robert Hood, Roulita, Satoshi Tomiie b2b Tomoki Tamura, u.r.trax (live), Woddd b2b Labouts. Prix à confirmer sur peacocksociety.fr.\nhttps://peacocksociety.fr/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 50,
+    "source": "peacocksociety.fr",
+    "match_reasons": [
+      "genre_prefere: techno/house",
+      "proximite_dans_rayon: Paris 12e",
+      "jour_prefere: vendredi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rex Club — Soirée Techno/House (récurrente été 2026)",
+    "date": "2026-07-03",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Programme du Rex Club : All Night Long, résidences, invités. Consulter rexclub.com. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "FVTVR — Hector Oaks",
+    "date": "2026-07-04",
+    "date_fin": null,
     "time": "00:00",
-    "cat": "club",
-    "venue": "Kilomètre25, 8 Bd Macdonald, Paris 19e",
-    "notes": "Saison 2026 ouverte jusqu'au 1er novembre. Techno, house, bass music, hard techno. Artistes: Randomer, Pan Pot, Jayda G, Teksa... Tarifs ~15-20€.\nhttps://www.kilometre25.fr/",
+    "cat": "concert",
+    "venue": "FVTVR, Paris 13e",
+    "notes": "Soirée Hector Oaks au FVTVR. Techno / minimal. ~15-20€.\nhttps://dice.fm/venue/fvtvr-pvlk",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 25,
-    "source": "kilometre25.fr",
+    "score": 35,
+    "source": "dice.fm",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "jour_prefere: vendredi/samedi"
+      "genre_prefere: techno/minimal",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
+      "budget_ok"
     ],
     "image_url": null
   },
   {
-    "title": "FVTVR — Saison 2026 (Anetha, Sara Landry, Speedy J...)",
-    "date": "2026-06-06",
-    "date_fin": "2026-12-31",
-    "time": "23:59",
-    "cat": "club",
-    "venue": "FVTVR, 34 Quai d'Austerlitz, Paris 13e",
-    "notes": "Anetha, Sara Landry, Rene Wise, Shanti Celeste, Speedy J, Tatyana Jane, Jen Cardini... Techno/house. Week-end minuit-7h. Billetterie Shotgun dès 12,99€.\nhttps://shotgun.live/en/venues/fvtvr",
+    "title": "FVTVR — Transgenik ft. Dactylo",
+    "date": "2026-07-12",
+    "date_fin": null,
+    "time": "00:00",
+    "cat": "concert",
+    "venue": "FVTVR, Paris 13e",
+    "notes": "Soirée Transgenik avec Dactylo au FVTVR. Trance / techno. ~15-20€.\nhttps://dice.fm/venue/fvtvr-pvlk",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 25,
-    "source": "shotgun.live",
+    "score": 35,
+    "source": "dice.fm",
     "match_reasons": [
       "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok",
-      "jour_prefere: vendredi/samedi"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Essaim — Soirées 2026 (Tribalism techno / expérimental)",
-    "date": "2026-06-05",
-    "date_fin": "2026-12-31",
-    "time": "23:00",
-    "cat": "club",
-    "venue": "Essaim, 14 rue Philippe de Girard, Paris 10e",
-    "notes": "Club fondé par anciens DA de Concrete. Vendredi Tribalism (techno), samedi bass expérimental. Entrée unique: 20€.\nhttps://parisjetaime.com/eng/culture/essaim-paris-p4478",
-    "reminders": [
-      "1w"
-    ],
-    "score": 20,
-    "source": "sortiraparis.com",
-    "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok",
-      "jour_prefere: vendredi/samedi"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "La Clairière — Saison estivale 2026 (open-air Bois de Boulogne)",
-    "date": "2026-06-12",
-    "date_fin": "2026-09-26",
-    "time": "20:00",
-    "cat": "club",
-    "venue": "La Clairière, 1 Carrefour de Longchamp, Paris 16e",
-    "notes": "10e anniversaire. Chris Lake, Cloonee, Mau P, NTO, Agoria, Kölsch, Polo & Pan, Shimza... 1 500 personnes.\nhttps://shotgun.live/en/venues/la-clairiere",
-    "reminders": [
-      "1w"
-    ],
-    "score": 20,
-    "source": "sortiraparis.com",
-    "match_reasons": [
-      "genre_prefere: tech house / melodic",
-      "proximite_dans_rayon",
-      "jour_prefere: vendredi/samedi"
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
+      "budget_ok"
     ],
     "image_url": null
   }

@@ -1,147 +1,153 @@
 [
   {
-    "title": "Techno Parade Paris 2026 — Retour après 2 ans",
+    "title": "Techno Parade Paris 2026 — 28e édition",
     "date": "2026-09-19",
     "date_fin": null,
-    "time": "12:00",
-    "cat": "festival",
-    "venue": "Paris (Place de la Bastille → Place de la Nation)",
-    "notes": "Retour après 2 ans d'absence. ~200 DJs sur chars, ~400 000 participants. Gratuit. Artistes et parcours annoncés à l'été 2026.\nhttps://www.sortiraparis.com/en/what-to-see-in-paris/concerts-music-festival/articles/30970-techno-parade-the-electro-parade-returns-to-paris-in-2026",
+    "time": "14:00",
+    "cat": "concert",
+    "venue": "Paris (parcours à confirmer), Paris",
+    "notes": "28e édition de la Techno Parade — retour après 2 ans d'absence. 200 DJs internationaux sur 15+ chars mobiles. ~400 000 festivaliers attendus. Événement GRATUIT (journée dans les rues de Paris) + afterparties payantes dans les clubs. Lineup non encore annoncé au 11 mai 2026.\nhttps://www.jds.fr/paris/concerts/electro/techno-parade-paris-262388_A",
     "reminders": [
-      "2w",
       "1w",
       "1d"
     ],
-    "score": 45,
-    "source": "sortiraparis.com",
+    "score": 50,
+    "source": "jds.fr",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok: gratuit",
-      "jour_prefere: samedi"
+      "genre_prefere: techno/electro/house",
+      "proximite_dans_rayon: Paris",
+      "budget_ok: gratuit"
     ],
     "image_url": null
   },
   {
-    "title": "Nightclubbing Festival Paris 2026",
-    "date": "2026-09-24",
-    "date_fin": "2026-09-27",
-    "time": "20:00",
-    "cat": "festival",
-    "venue": "Grande Halle de La Villette, Paris 19e + clubs partenaires",
-    "notes": "1ère édition. Direction artistique Jen Cardini (AEG Presents France). 4 jours dédiés musique électronique et vie nocturne. Partenariat MUTEK.\nhttps://www.aegpresents.fr/event/nightclubbing-festival/",
+    "title": "Alan Braxe — Paris (date estimée 2026-2027)",
+    "date": "2026-09-26",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "Rex Club ou La Machine (estimé), Paris",
+    "notes": "date estimée / récurrent. Alan Braxe est un DJ/producteur français touch collaborateur de Daft Punk et Thomas Bangalter (co-auteur de 'Intro'). Surveiller ses dates sur ra.co.\n⚠️ Guest possible : Thomas Bangalter a collaboré avec Alan Braxe sur scène.\nhttps://ra.co/",
     "reminders": [
       "2w",
       "1w"
     ],
-    "score": 30,
-    "source": "aegpresents.fr",
+    "score": 50,
+    "source": "ra.co",
     "match_reasons": [
-      "genre_prefere: techno/électronique",
-      "proximite_dans_rayon"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Kilomètre25 — Saison estivale 2026",
-    "date": "2026-06-05",
-    "date_fin": "2026-11-01",
-    "time": "00:00",
-    "cat": "club",
-    "venue": "Kilomètre25, 8 Bd Macdonald, Paris 19e",
-    "notes": "Saison 2026 ouverte jusqu'au 1er novembre. Techno, house, bass music, hard techno. Artistes: Randomer, Pan Pot, Jayda G, Teksa... Tarifs ~15-20€.\nhttps://www.kilometre25.fr/",
-    "reminders": [
-      "1w"
-    ],
-    "score": 25,
-    "source": "kilometre25.fr",
-    "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "jour_prefere: vendredi/samedi"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "FVTVR — Saison 2026 (Anetha, Sara Landry, Speedy J...)",
-    "date": "2026-06-06",
-    "date_fin": "2026-12-31",
-    "time": "23:59",
-    "cat": "club",
-    "venue": "FVTVR, 34 Quai d'Austerlitz, Paris 13e",
-    "notes": "Anetha, Sara Landry, Rene Wise, Shanti Celeste, Speedy J, Tatyana Jane, Jen Cardini... Techno/house. Week-end minuit-7h. Billetterie Shotgun dès 12,99€.\nhttps://shotgun.live/en/venues/fvtvr",
-    "reminders": [
-      "1w"
-    ],
-    "score": 25,
-    "source": "shotgun.live",
-    "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok",
-      "jour_prefere: vendredi/samedi"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Rex Club — Automne/hiver 2026-2027",
-    "date": "2026-09-04",
-    "date_fin": "2027-03-31",
-    "time": "23:30",
-    "cat": "club",
-    "venue": "Rex Club, 5 Bd Poissonnière, Paris 2e",
-    "notes": "Soirées techno/house/DnB mercredi-samedi toute l'année. Programmation automne/hiver annoncée au fil de l'eau. Early bird ~5€, standard 12-20€.\nhttps://rexclub.com/billetterie/",
-    "reminders": [
-      "1w"
-    ],
-    "score": 25,
-    "source": "rexclub.com",
-    "match_reasons": [
-      "lieu_prefere: Rex Club",
-      "genre_prefere: techno",
-      "jour_prefere: vendredi/samedi",
+      "artiste_collaborateur: Alan Braxe (guest Thomas Bangalter possible)",
+      "genre_prefere: french touch",
+      "proximite_dans_rayon: Paris",
       "budget_ok"
     ],
     "image_url": null
   },
   {
-    "title": "Essaim — Soirées 2026 (Tribalism techno / expérimental)",
-    "date": "2026-06-05",
-    "date_fin": "2026-12-31",
-    "time": "23:00",
-    "cat": "club",
-    "venue": "Essaim, 14 rue Philippe de Girard, Paris 10e",
-    "notes": "Club fondé par anciens DA de Concrete. Vendredi Tribalism (techno), samedi bass expérimental. Entrée unique: 20€.\nhttps://parisjetaime.com/eng/culture/essaim-paris-p4478",
+    "title": "Nightclubbing Festival — Paris (La Villette + clubs) — Jour 1",
+    "date": "2026-09-24",
+    "date_fin": null,
+    "time": "18:00",
+    "cat": "concert",
+    "venue": "La Villette + clubs parisiens, Paris 19e",
+    "notes": "Festival inaugural Nightclubbing, curé par Jen Cardini (AEG Presents France). Festival citywide 4 jours (24-27 sept). La Villette comme hub principal + extension dans les clubs du périph. Musique électronique + installations + conversations. Partenariat Mutek. Lineup non encore annoncé. Surveiller sur aegpresents.fr et ra.co.\nhttps://www.aegpresents.fr/event/nightclubbing-festival/",
     "reminders": [
+      "2w",
       "1w"
     ],
-    "score": 20,
-    "source": "sortiraparis.com",
+    "score": 45,
+    "source": "aegpresents.fr",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok",
-      "jour_prefere: vendredi/samedi"
+      "genre_prefere: techno/house/electro",
+      "proximite_dans_rayon: Paris"
     ],
     "image_url": null
   },
   {
-    "title": "La Clairière — Saison estivale 2026 (open-air Bois de Boulogne)",
-    "date": "2026-06-12",
-    "date_fin": "2026-09-26",
-    "time": "20:00",
-    "cat": "club",
-    "venue": "La Clairière, 1 Carrefour de Longchamp, Paris 16e",
-    "notes": "10e anniversaire. Chris Lake, Cloonee, Mau P, NTO, Agoria, Kölsch, Polo & Pan, Shimza... 1 500 personnes.\nhttps://shotgun.live/en/venues/la-clairiere",
+    "title": "La Machine du Moulin Rouge — Soirée Electro (récurrente automne 2026)",
+    "date": "2026-09-26",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "La Machine du Moulin Rouge, Paris 18e",
+    "notes": "date estimée / récurrent. La Machine programme des soirées electro/club. Consulter lamachinedumoulinrouge.com. ~10-20€.\nhttps://www.lamachinedumoulinrouge.com/agenda/",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 20,
-    "source": "sortiraparis.com",
+    "score": 45,
+    "source": "lamachinedumoulinrouge.com",
     "match_reasons": [
-      "genre_prefere: tech house / melodic",
-      "proximite_dans_rayon",
-      "jour_prefere: vendredi/samedi"
+      "lieu_prefere: La Machine du Moulin Rouge",
+      "genre_prefere: electro/house",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Nightclubbing Festival — Paris — Jour 4 (final)",
+    "date": "2026-09-27",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "La Villette, Paris 19e",
+    "notes": "Dernier jour du Nightclubbing Festival inaugural (24-27 sept 2026). Festival citywide électronique + nightlife culture. Lineup à confirmer.\nhttps://www.aegpresents.fr/event/nightclubbing-festival/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "aegpresents.fr",
+    "match_reasons": [
+      "genre_prefere: techno/house/electro",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rex Club — Soirée Techno/House (récurrente automne 2026)",
+    "date": "2026-09-12",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Programme du Rex Club pour septembre 2026. Consulter rexclub.com. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "FVTVR — Soirée Electro/Techno (récurrente été-automne 2026)",
+    "date": "2026-09-05",
+    "date_fin": null,
+    "time": "00:00",
+    "cat": "concert",
+    "venue": "FVTVR, Paris 13e",
+    "notes": "date estimée / récurrent. FVTVR programme des soirées techno et house chaque vendredi et samedi. Consulter dice.fm ou shotgun.live pour la programmation exacte de septembre 2026. ~15-20€.\nhttps://dice.fm/venue/fvtvr-pvlk",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 35,
+    "source": "dice.fm",
+    "match_reasons": [
+      "genre_prefere: techno/house",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
+      "budget_ok"
     ],
     "image_url": null
   }

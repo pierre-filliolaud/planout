@@ -1,84 +1,88 @@
 [
   {
-    "title": "Kilomètre25 — Saison estivale 2026",
-    "date": "2026-06-05",
-    "date_fin": "2026-11-01",
-    "time": "00:00",
-    "cat": "club",
-    "venue": "Kilomètre25, 8 Bd Macdonald, Paris 19e",
-    "notes": "Saison 2026 ouverte jusqu'au 1er novembre. Techno, house, bass music, hard techno. Artistes: Randomer, Pan Pot, Jayda G, Teksa... Tarifs ~15-20€.\nhttps://www.kilometre25.fr/",
+    "title": "Gesaffelstein — Paris (date estimée 2026-2027)",
+    "date": "2026-11-14",
+    "date_fin": null,
+    "time": "21:00",
+    "cat": "concert",
+    "venue": "Bataclan ou Accor Arena (estimé), Paris",
+    "notes": "date estimée / récurrent. Gesaffelstein n'a aucune date annoncée au 11 mai 2026. Il est réputé pour ses retours surprise. Surveiller gesaffelstein.com et ra.co/dj/gesaffelstein pour toute annonce.\n⚠️ Guest possible : Thomas Bangalter a déjà rejoint Gesaffelstein sur scène. En cas de concert Gesaffelstein à Paris, présence de Thomas Bangalter en guest envisageable.\nhttps://www.gesaffelstein.com/",
     "reminders": [
+      "2w",
       "1w"
     ],
-    "score": 25,
-    "source": "kilometre25.fr",
+    "score": 70,
+    "source": "gesaffelstein.com",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "jour_prefere: vendredi/samedi"
+      "artiste_collaborateur: Gesaffelstein (guest Thomas Bangalter possible)",
+      "genre_prefere: techno/electro",
+      "proximite_dans_rayon: Paris"
     ],
     "image_url": null
   },
   {
-    "title": "FVTVR — Saison 2026 (Anetha, Sara Landry, Speedy J...)",
-    "date": "2026-06-06",
-    "date_fin": "2026-12-31",
-    "time": "23:59",
-    "cat": "club",
-    "venue": "FVTVR, 34 Quai d'Austerlitz, Paris 13e",
-    "notes": "Anetha, Sara Landry, Rene Wise, Shanti Celeste, Speedy J, Tatyana Jane, Jen Cardini... Techno/house. Week-end minuit-7h. Billetterie Shotgun dès 12,99€.\nhttps://shotgun.live/en/venues/fvtvr",
+    "title": "Kavinsky — Paris (date estimée 2026-2027)",
+    "date": "2026-11-28",
+    "date_fin": null,
+    "time": "21:00",
+    "cat": "concert",
+    "venue": "Bataclan ou La Machine (estimé), Paris",
+    "notes": "date estimée / récurrent. Kavinsky a 5 dates annoncées en 2026 (Aix-en-Provence mai, Bordeaux juin...) mais pas de Paris confirmé au 11 mai 2026. Surveiller activement shotgun.live et ra.co pour une date parisienne. ~25-40€.\nhttps://www.songkick.com/artists/580030-kavinsky",
     "reminders": [
+      "2w",
       "1w"
     ],
-    "score": 25,
-    "source": "shotgun.live",
+    "score": 55,
+    "source": "songkick.com",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok",
-      "jour_prefere: vendredi/samedi"
+      "artiste_favori: Kavinsky",
+      "artiste_collaborateur: Kavinsky (guest Thomas Bangalter ou Guy-Manuel possible)",
+      "genre_prefere: french touch/electro",
+      "proximite_dans_rayon: Paris"
     ],
     "image_url": null
   },
   {
-    "title": "Rex Club — Automne/hiver 2026-2027",
-    "date": "2026-09-04",
-    "date_fin": "2027-03-31",
+    "title": "Rex Club — Soirée Techno/House (récurrente automne 2026)",
+    "date": "2026-11-06",
+    "date_fin": null,
     "time": "23:30",
-    "cat": "club",
-    "venue": "Rex Club, 5 Bd Poissonnière, Paris 2e",
-    "notes": "Soirées techno/house/DnB mercredi-samedi toute l'année. Programmation automne/hiver annoncée au fil de l'eau. Early bird ~5€, standard 12-20€.\nhttps://rexclub.com/billetterie/",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Le Rex Club programme chaque vendredi et samedi des soirées techno, house, electro. Consulter rexclub.com pour la programmation exacte de novembre 2026. ~12-15€.\nhttps://rexclub.com/billetterie/",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 25,
+    "score": 40,
     "source": "rexclub.com",
     "match_reasons": [
       "lieu_prefere: Rex Club",
-      "genre_prefere: techno",
-      "jour_prefere: vendredi/samedi",
-      "budget_ok"
+      "genre_prefere: techno/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi"
     ],
     "image_url": null
   },
   {
-    "title": "Essaim — Soirées 2026 (Tribalism techno / expérimental)",
-    "date": "2026-06-05",
-    "date_fin": "2026-12-31",
-    "time": "23:00",
-    "cat": "club",
-    "venue": "Essaim, 14 rue Philippe de Girard, Paris 10e",
-    "notes": "Club fondé par anciens DA de Concrete. Vendredi Tribalism (techno), samedi bass expérimental. Entrée unique: 20€.\nhttps://parisjetaime.com/eng/culture/essaim-paris-p4478",
+    "title": "Kilomètre25 — Fermeture de saison (récurrent automne)",
+    "date": "2026-11-01",
+    "date_fin": null,
+    "time": "16:00",
+    "cat": "concert",
+    "venue": "Kilomètre25, Paris 19e",
+    "notes": "date estimée / récurrent. Le Kilomètre25 ferme sa saison 6 le 1er novembre 2026. Grande soirée de clôture. Consulter kilometre25.fr pour le lineup exact. ~15-20€.\nhttps://www.kilometre25.fr/",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 20,
-    "source": "sortiraparis.com",
+    "score": 40,
+    "source": "kilometre25.fr",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok",
-      "jour_prefere: vendredi/samedi"
+      "genre_prefere: techno/house",
+      "proximite_dans_rayon: Paris",
+      "budget_ok"
     ],
     "image_url": null
   }

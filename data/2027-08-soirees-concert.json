@@ -6,18 +6,19 @@
     "time": "14:00",
     "cat": "concert",
     "venue": "Domaine National de Saint-Cloud (92)",
-    "notes": "Festival rock/indie/pop. Date estimée / récurrent (dernier mercredi d'août). Line-up TBA. 23e édition attendue.\nhttps://www.rockenseine.com/",
+    "notes": "date estimée / récurrent. 23e édition estimée fin août. Programme non annoncé. Prix : estimé ~79€/jour.\nhttps://www.rockenseine.com/",
     "reminders": [
       "1m",
-      "2w"
+      "2w",
+      "1w"
     ],
-    "score": 80,
+    "score": 50,
     "source": "rockenseine.com",
     "match_reasons": [
       "festival",
-      "genre_prefere: rock/indie/pop",
-      "proximite_dans_rayon: ~10km Paris",
-      "jour_prefere: vendredi/samedi/dimanche"
+      "genre_prefere: rock/indie/electro",
+      "lieu_emblematique",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   },
@@ -27,19 +28,20 @@
     "date_fin": "2027-09-05",
     "time": "19:00",
     "cat": "concert",
-    "venue": "Philharmonie de Paris / Grande Halle de La Villette (75019)",
-    "notes": "Festival jazz annuel récurrent. Date estimée (fin août-début sept). Line-up TBA.\nhttps://jazzalavillette.com/fr/",
+    "venue": "Grande Halle de la Villette / Philharmonie (75019)",
+    "notes": "date estimée / récurrent. Festival jazz annuel fin août–début sept. Programme 2027 non annoncé.\nhttps://jazzalavillette.com/",
     "reminders": [
       "1m",
-      "2w"
+      "2w",
+      "1w"
     ],
-    "score": 80,
+    "score": 45,
     "source": "jazzalavillette.com",
     "match_reasons": [
       "festival",
       "genre_prefere: jazz/soul",
-      "lieu_emblematique: Philharmonie de Paris",
-      "lieu_prefere: Philharmonie de Paris"
+      "lieu_emblematique",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   },
@@ -50,17 +52,18 @@
     "time": "15:00",
     "cat": "concert",
     "venue": "Parc Floral de Vincennes (75012)",
-    "notes": "Concerts jazz gratuits les week-ends (entrée parc 2,50€). Date estimée / récurrent (fin juin–début sept). Line-up TBA.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
+    "notes": "date estimée / récurrent. Concerts gratuits les week-ends d'été au Parc Floral. Programme 2027 non annoncé.\nhttps://festivalsduparcfloral.paris/",
     "reminders": [
+      "2w",
       "1w"
     ],
-    "score": 75,
+    "score": 40,
     "source": "festivalsduparcfloral.paris",
     "match_reasons": [
-      "gratuit",
-      "genre_prefere: jazz/world",
       "festival",
-      "proximite_dans_rayon: Paris"
+      "gratuit",
+      "genre_prefere: jazz",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   }

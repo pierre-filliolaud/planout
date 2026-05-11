@@ -1,22 +1,133 @@
 [
   {
-    "title": "Rex Club — Automne/hiver 2026-2027",
-    "date": "2026-09-04",
-    "date_fin": "2027-03-31",
-    "time": "23:30",
-    "cat": "club",
-    "venue": "Rex Club, 5 Bd Poissonnière, Paris 2e",
-    "notes": "Soirées techno/house/DnB mercredi-samedi toute l'année. Programmation automne/hiver annoncée au fil de l'eau. Early bird ~5€, standard 12-20€.\nhttps://rexclub.com/billetterie/",
+    "title": "Justice — Tour 2027 — Paris (date estimée)",
+    "date": "2027-03-15",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Accor Arena (estimé), Paris 12e",
+    "notes": "date estimée / récurrent. Justice démarrera leur grand tour mondial en mars 2027 avec Paris comme première étape (40+ villes, incluant Tokyo, New York, Berlin, Sao Paulo). Aucune date officielle confirmée au 11 mai 2026. Surveiller activement sur songkick.com et ra.co — annonce attendue courant 2026. Xavier de Rosnay et Gaspard Augé.\nhttps://www.songkick.com/artists/301499-justice",
     "reminders": [
+      "2w",
+      "1w",
+      "1d"
+    ],
+    "score": 80,
+    "source": "songkick.com",
+    "match_reasons": [
+      "artiste_favori: Justice",
+      "artiste_collaborateur: Justice (guest Thomas Bangalter ou Guy-Manuel possible)",
+      "genre_prefere: french touch/electro-live",
+      "proximite_dans_rayon: Paris"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Ofenbach — Paris (suivi post-tournée Cloned 2026)",
+    "date": "2027-03-20",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Zénith Paris La Villette (estimé), Paris 19e",
+    "notes": "date estimée / récurrent. Ofenbach a joué au Zénith Paris le 13 mars 2026 (tournée Cloned). Des festivals supplémentaires sont annoncés pour 2026. Surveiller weareofenbach.com pour de nouvelles dates Paris 2027. ~30-45€.\nhttps://www.weareofenbach.com/en/pages/live",
+    "reminders": [
+      "2w",
       "1w"
     ],
-    "score": 25,
+    "score": 50,
+    "source": "weareofenbach.com",
+    "match_reasons": [
+      "artiste_favori: Ofenbach",
+      "genre_prefere: electro/house",
+      "proximite_dans_rayon: Paris"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "T7 Paris — Soirée Techno (récurrente printemps 2027)",
+    "date": "2027-03-27",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "T7, Paris 15e",
+    "notes": "date estimée / récurrent. T7 programme des soirées techno. Consulter shotgun.live/en/venues/t-7. ~14-20€.\nhttps://shotgun.live/en/venues/t-7",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 50,
+    "source": "shotgun.live",
+    "match_reasons": [
+      "lieu_prefere: T7",
+      "genre_prefere: techno",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "The Avener — L'Olympia Paris (date estimée 2027)",
+    "date": "2027-03-20",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "L'Olympia, Paris 9e",
+    "notes": "date estimée / récurrent. The Avener a une date à L'Olympia Paris annoncée dans la saison 2026-2027 (vérifier sur olympiahall.com). En mars 2026 il jouait au Zénith Paris La Villette. Sa tournée 2026 inclut 12 dates jusqu'en mars 2027. Surveiller olympiahall.com/upcoming-events/the-avener/. ~35-50€.\nhttps://www.olympiahall.com/en/upcoming-events/the-avener/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 50,
+    "source": "olympiahall.com",
+    "match_reasons": [
+      "artiste_favori: The Avener",
+      "genre_prefere: french touch/house/electro",
+      "proximite_dans_rayon: Paris"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Laurent Wolf — Paris (date estimée 2026-2027)",
+    "date": "2027-03-21",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Zénith Paris La Villette (estimé), Paris 19e",
+    "notes": "date estimée / récurrent. Laurent Wolf s'est produit au Zénith de Paris en mars 2024 (No Stress Party Live Experience). Aucune date 2026-2027 annoncée au 11 mai 2026. Surveiller laurentwolf.com et infoconcert.com. ~35-50€.\nhttps://www.laurentwolf.com/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 45,
+    "source": "laurentwolf.com",
+    "match_reasons": [
+      "artiste_favori: Laurent Wolf",
+      "genre_prefere: electro/house",
+      "proximite_dans_rayon: Paris"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rex Club — Soirée Techno/House (récurrente printemps 2027)",
+    "date": "2027-03-06",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Programme du Rex Club pour mars 2027. Consulter rexclub.com. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
     "source": "rexclub.com",
     "match_reasons": [
       "lieu_prefere: Rex Club",
-      "genre_prefere: techno",
-      "jour_prefere: vendredi/samedi",
-      "budget_ok"
+      "genre_prefere: techno/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi"
     ],
     "image_url": null
   }

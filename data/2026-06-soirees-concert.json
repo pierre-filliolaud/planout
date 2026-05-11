@@ -1,23 +1,69 @@
 [
   {
-    "title": "Fête de la Musique 2026",
-    "date": "2026-06-21",
+    "title": "David Guetta – Monolith Show @ Stade de France (1)",
+    "date": "2026-06-11",
     "date_fin": null,
-    "time": "16:00",
+    "time": "20:00",
     "cat": "concert",
-    "venue": "Paris – partout (parcs, rues, musées)",
-    "notes": "Concerts gratuits toute la journée dans toute la ville. Rock, jazz, classique, world, pop. L'Orchestre de Paris sous la Pyramide du Louvre. Ouverture des concerts l'après-midi jusqu'à minuit et au-delà.\nhttps://fetedelamusique.culture.gouv.fr/",
+    "venue": "Stade de France, Saint-Denis (93)",
+    "notes": "Première des 3 dates du show monumental de Guetta au Stade de France. Opening : Armin van Buuren. Prix : à partir de ~55€.\nhttps://www.stadefrance.com/en/ticket/david-guetta-3",
     "reminders": [
-      "1w",
-      "3d"
+      "2w",
+      "1w"
     ],
-    "score": 85,
-    "source": "fetedelamusique.culture.gouv.fr",
+    "score": 100,
+    "source": "stadefrance.com",
     "match_reasons": [
-      "gratuit",
-      "genre_prefere: rock/jazz/classique/world",
-      "festival",
-      "proximite_dans_rayon: Paris"
+      "artiste_favori: David Guetta",
+      "genre_prefere: electro/house",
+      "lieu_emblematique",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "David Guetta – Monolith Show @ Stade de France (2)",
+    "date": "2026-06-12",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Stade de France, Saint-Denis (93)",
+    "notes": "Deuxième date du Monolith Show. Opening : DJ Fisher. Prix : à partir de ~55€.\nhttps://www.stadefrance.com/en/ticket/david-guetta-2",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 100,
+    "source": "stadefrance.com",
+    "match_reasons": [
+      "artiste_favori: David Guetta",
+      "genre_prefere: electro/house",
+      "lieu_emblematique",
+      "proximite_dans_rayon",
+      "jour_prefere"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "David Guetta – Monolith Show @ Stade de France (3)",
+    "date": "2026-06-13",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Stade de France, Saint-Denis (93)",
+    "notes": "Troisième et dernière date du Monolith Show. Opening : Black Coffee. Prix : à partir de ~55€.\nhttps://www.stadefrance.com/en/ticket/david-guetta",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 100,
+    "source": "stadefrance.com",
+    "match_reasons": [
+      "artiste_favori: David Guetta",
+      "genre_prefere: electro/house",
+      "lieu_emblematique",
+      "proximite_dans_rayon",
+      "jour_prefere"
     ],
     "image_url": null
   },
@@ -25,87 +71,87 @@
     "title": "We Love Green 2026",
     "date": "2026-06-05",
     "date_fin": "2026-06-07",
-    "time": "17:00",
+    "time": "14:00",
     "cat": "concert",
-    "venue": "Bois de Vincennes (75012)",
-    "notes": "Festival éco-engagé. Headliners : Gorillaz (ven 5), The xx (dim 7), Little Simz, Charlotte Cardin, Feu! Chatterton, Sébastien Tellier. 5 scènes, ~100 000 visiteurs. Billets : 29€/jour – 199€ pass 3j.\nhttps://www.welovegreen.fr/",
+    "venue": "Bois de Vincennes, Paris (75012)",
+    "notes": "Festival eco-responsable 3 jours. Lineup : Gorillaz, The xx, Charlotte de Witte, Sébastien Tellier, Hayley Williams, Little Simz, Mac DeMarco, Disiz, Charlotte Cardin, KI/KI… Plus de 50 artistes, 5 scènes. Prix : ~85€/jour.\nhttps://www.welovegreen.fr/",
     "reminders": [
-      "1m",
       "2w",
       "1w"
     ],
-    "score": 80,
+    "score": 75,
     "source": "welovegreen.fr",
     "match_reasons": [
       "festival",
-      "genre_prefere: indie/pop/electro-live",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: vendredi/samedi"
+      "genre_prefere: rock/indie/electro/pop",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   },
   {
-    "title": "Paris Jazz Festival 2026",
+    "title": "Fête de la Musique 2026",
+    "date": "2026-06-21",
+    "date_fin": null,
+    "time": "18:00",
+    "cat": "concert",
+    "venue": "Paris entier – multiple scènes",
+    "notes": "Paris devient scène géante. Concerts gratuits dans tous les arrondissements : electro, rock, jazz, rap, metal, classique. Animations dès 18h. Entrée libre.\nhttps://fetedelamusique.culture.gouv.fr/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 70,
+    "source": "fetedelamusique.culture.gouv.fr",
+    "match_reasons": [
+      "festival",
+      "gratuit",
+      "genre_prefere: electro/jazz/rock/pop",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Days Off 2026 – Philharmonie de Paris",
+    "date": "2026-06-27",
+    "date_fin": "2026-07-05",
+    "time": "19:00",
+    "cat": "concert",
+    "venue": "Philharmonie de Paris (75019)",
+    "notes": "16e édition. Lineup : Tamino, TOMORA (Aurora x Tom Rowlands), Babyshambles, Smerz, Alela Diane, Nuit Raï… Prix : 20€ à 65€.\nhttps://daysoff.fr/en/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 70,
+    "source": "daysoff.fr",
+    "match_reasons": [
+      "festival",
+      "genre_prefere: indie/pop/rock",
+      "lieu_emblematique",
+      "lieu_prefere",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Paris Jazz Festival 2026 – Parc Floral",
     "date": "2026-06-28",
     "date_fin": "2026-09-06",
     "time": "15:00",
     "cat": "concert",
     "venue": "Parc Floral de Vincennes (75012)",
-    "notes": "Concerts jazz gratuits les week-ends (entrée parc 2,50€). Dates : 28 juin, 4 et 12 et 18 juil., 15 et 23 et 29 août, 6 sept. Programmation variée jazz/world.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
+    "notes": "Concerts jazz gratuits (hors entrée parc : 2,50€) les week-ends d'été. Artistes 2026 : Melissa Aldana, Kyoto Jazz Massive, Poets of Forest, Célia Kameni, Tomoki Sanders… Pique-nique autorisé.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
     "reminders": [
+      "2w",
       "1w"
     ],
-    "score": 80,
+    "score": 55,
     "source": "festivalsduparcfloral.paris",
     "match_reasons": [
-      "gratuit",
-      "genre_prefere: jazz/world",
       "festival",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: week-ends"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Jack White – Europe Tour 2026",
-    "date": "2026-06-13",
-    "date_fin": "2026-06-14",
-    "time": "20:00",
-    "cat": "concert",
-    "venue": "L'Olympia, Paris (75009)",
-    "notes": "Rock. Deux soirs à l'Olympia. Concerts sans téléphone (Yondr pouches). Prix : 77€ – 97,90€.\nhttps://www.olympiahall.com/en/upcoming-events/jack-white/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 65,
-    "source": "olympiahall.com",
-    "match_reasons": [
-      "genre_prefere: rock",
-      "lieu_emblematique: Olympia",
-      "lieu_prefere: Olympia",
-      "jour_prefere: samedi (14 juin)"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Tom Morello – Electric Full Band Show",
-    "date": "2026-06-16",
-    "date_fin": null,
-    "time": "19:30",
-    "cat": "concert",
-    "venue": "Le Bataclan, Paris (75011)",
-    "notes": "Rock / punk. Fondateur de Rage Against the Machine & Audioslave. Prix : 49,25€ – 71,25€.\nhttps://www.bataclan.fr/evenement/tom-morello_2026-06-16/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 65,
-    "source": "bataclan.fr",
-    "match_reasons": [
-      "genre_prefere: rock",
-      "lieu_emblematique: Bataclan",
-      "lieu_prefere: Bataclan"
+      "gratuit",
+      "genre_prefere: jazz",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   },
@@ -116,40 +162,17 @@
     "time": "17:00",
     "cat": "concert",
     "venue": "Hippodrome Paris-Longchamp (75016)",
-    "notes": "Festival solidaire contre le SIDA. 80+ concerts. Artistes : Orelsan, Gims, Zara Larsson, BigFlo & Oli, Gazo. Ven 17h-23h, Sam/Dim 14h-23h. Prix TBA (env. 40-60€/j).\nhttps://www.solidays.org/",
+    "notes": "Festival caritatif (lutte contre le SIDA) 3 jours. Lineup : Orelsan, GIMS, Major Lazer, Zara Larsson, Bigflo & Oli, Mosimann, Suzane, Guy2Bezbar… 9 scènes. Prix : ~75€/jour.\nhttps://www.solidays.org/",
     "reminders": [
-      "1m",
       "2w",
       "1w"
     ],
-    "score": 65,
+    "score": 50,
     "source": "solidays.org",
     "match_reasons": [
       "festival",
-      "genre_prefere: pop/soul",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: vendredi/samedi"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Foo Fighters – Take Cover Tour",
-    "date": "2026-06-19",
-    "date_fin": null,
-    "time": "20:00",
-    "cat": "concert",
-    "venue": "Paris La Défense Arena, Nanterre (92)",
-    "notes": "Rock. Seule date française de la tournée. Première parties : Inhaler & Otoboke Beaver. ~30 000 places.\nhttps://www.parisladefense-arena.com/evenement/foo-fighters-2/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 60,
-    "source": "parisladefense-arena.com",
-    "match_reasons": [
-      "genre_prefere: rock",
-      "proximite_dans_rayon: ~10km Paris",
-      "jour_prefere: vendredi"
+      "genre_prefere: electro/pop/rap",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   }

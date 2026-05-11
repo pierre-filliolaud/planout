@@ -5,19 +5,20 @@
     "date_fin": "2027-09-05",
     "time": "19:00",
     "cat": "concert",
-    "venue": "Philharmonie de Paris / Grande Halle de La Villette (75019)",
-    "notes": "Festival jazz annuel récurrent. Date estimée (fin août-début sept). Line-up TBA.\nhttps://jazzalavillette.com/fr/",
+    "venue": "Grande Halle de la Villette / Philharmonie (75019)",
+    "notes": "date estimée / récurrent. Festival jazz annuel fin août–début sept. Programme 2027 non annoncé.\nhttps://jazzalavillette.com/",
     "reminders": [
       "1m",
-      "2w"
+      "2w",
+      "1w"
     ],
-    "score": 80,
+    "score": 45,
     "source": "jazzalavillette.com",
     "match_reasons": [
       "festival",
       "genre_prefere: jazz/soul",
-      "lieu_emblematique: Philharmonie de Paris",
-      "lieu_prefere: Philharmonie de Paris"
+      "lieu_emblematique",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   },
@@ -28,17 +29,39 @@
     "time": "15:00",
     "cat": "concert",
     "venue": "Parc Floral de Vincennes (75012)",
-    "notes": "Concerts jazz gratuits les week-ends (entrée parc 2,50€). Date estimée / récurrent (fin juin–début sept). Line-up TBA.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
+    "notes": "date estimée / récurrent. Concerts gratuits les week-ends d'été au Parc Floral. Programme 2027 non annoncé.\nhttps://festivalsduparcfloral.paris/",
     "reminders": [
+      "2w",
       "1w"
     ],
-    "score": 75,
+    "score": 40,
     "source": "festivalsduparcfloral.paris",
     "match_reasons": [
-      "gratuit",
-      "genre_prefere: jazz/world",
       "festival",
-      "proximite_dans_rayon: Paris"
+      "gratuit",
+      "genre_prefere: jazz",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Nightclubbing Festival 2027",
+    "date": "2027-09-23",
+    "date_fin": "2027-09-26",
+    "time": "TBA",
+    "cat": "concert",
+    "venue": "La Villette + clubs parisiens (75019)",
+    "notes": "date estimée / récurrent. 2e édition du festival electro/nightlife curé par Jen Cardini. Programme non annoncé.\nhttps://electronicgroove.com/jen-cardini-announces-nightclubbing-festival-2026-in-paris/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 40,
+    "source": "electronicgroove.com",
+    "match_reasons": [
+      "festival",
+      "genre_prefere: electro/techno/house",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   }

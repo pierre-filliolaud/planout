@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Cercle Festival 2027",
+    "date": "2027-05-21",
+    "date_fin": "2027-05-23",
+    "time": "12:00",
+    "cat": "concert",
+    "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
+    "notes": "date estimée / récurrent. Festival electro sur le tarmac du Bourget, généralement dernier week-end de mai. Programme 2027 non annoncé.\nhttps://festival.cercle.io/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 45,
+    "source": "festival.cercle.io",
+    "match_reasons": [
+      "festival",
+      "genre_prefere: electro/house/techno",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Versailles Electro 2027",
+    "date": "2027-05-15",
+    "date_fin": null,
+    "time": "19:00",
+    "cat": "concert",
+    "venue": "Château de Versailles, Versailles (78)",
+    "notes": "date estimée / récurrent. Nuit électronique annuelle dans les jardins du Château de Versailles, généralement 3e samedi de mai. Programme 2027 non annoncé.\nhttps://www.chateauversailles-spectacles.fr/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 40,
+    "source": "chateauversailles-spectacles.fr",
+    "match_reasons": [
+      "genre_prefere: electro/house/french touch",
+      "festival",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Jazz Saint-Germain-des-Prés 2027",
+    "date": "2027-05-10",
+    "date_fin": "2027-05-23",
+    "time": "19:00",
+    "cat": "concert",
+    "venue": "Saint-Germain-des-Prés / Odéon, Paris 6e",
+    "notes": "date estimée / récurrent. 26e édition du festival jazz de mai. Lieux emblématiques du 6e arrondissement. Programme non annoncé.\nhttps://festivaljazzsaintgermainparis.com/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 40,
+    "source": "festivaljazzsaintgermainparis.com",
+    "match_reasons": [
+      "festival",
+      "genre_prefere: jazz",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  }
+]

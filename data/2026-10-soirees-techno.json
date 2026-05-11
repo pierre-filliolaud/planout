@@ -1,126 +1,133 @@
 [
   {
-    "title": "Kilomètre25 — Saison estivale 2026",
-    "date": "2026-06-05",
-    "date_fin": "2026-11-01",
-    "time": "00:00",
-    "cat": "club",
-    "venue": "Kilomètre25, 8 Bd Macdonald, Paris 19e",
-    "notes": "Saison 2026 ouverte jusqu'au 1er novembre. Techno, house, bass music, hard techno. Artistes: Randomer, Pan Pot, Jayda G, Teksa... Tarifs ~15-20€.\nhttps://www.kilometre25.fr/",
+    "title": "Bob Sinclar — Paris (date estimée automne 2026)",
+    "date": "2026-10-24",
+    "date_fin": null,
+    "time": "21:00",
+    "cat": "concert",
+    "venue": "Pavillon Tilsitt ou Rex Club (estimé), Paris",
+    "notes": "date estimée / récurrent. Bob Sinclar s'est produit à Paris en mars et avril 2026. Il tourne régulièrement dans la capitale. Surveiller bobsinclar.com/tour et ra.co pour de nouvelles dates automne 2026. ~20-35€.\nhttps://www.bobsinclar.com/tour",
     "reminders": [
+      "2w",
       "1w"
     ],
-    "score": 25,
-    "source": "kilometre25.fr",
+    "score": 55,
+    "source": "bobsinclar.com",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "jour_prefere: vendredi/samedi"
+      "artiste_favori: Bob Sinclar",
+      "genre_prefere: french touch/house",
+      "proximite_dans_rayon: Paris",
+      "budget_ok"
     ],
     "image_url": null
   },
   {
-    "title": "FVTVR — Saison 2026 (Anetha, Sara Landry, Speedy J...)",
-    "date": "2026-06-06",
-    "date_fin": "2026-12-31",
-    "time": "23:59",
-    "cat": "club",
-    "venue": "FVTVR, 34 Quai d'Austerlitz, Paris 13e",
-    "notes": "Anetha, Sara Landry, Rene Wise, Shanti Celeste, Speedy J, Tatyana Jane, Jen Cardini... Techno/house. Week-end minuit-7h. Billetterie Shotgun dès 12,99€.\nhttps://shotgun.live/en/venues/fvtvr",
-    "reminders": [
-      "1w"
-    ],
-    "score": 25,
-    "source": "shotgun.live",
-    "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok",
-      "jour_prefere: vendredi/samedi"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "FVTVR — Sara Landry (date estimée automne 2026)",
+    "title": "T7 Paris — Soirée Techno (récurrente automne 2026)",
     "date": "2026-10-17",
     "date_fin": null,
-    "time": "23:59",
-    "cat": "club",
-    "venue": "FVTVR, 34 Quai d'Austerlitz, Paris 13e",
-    "notes": "Sara Landry confirmée dans la sélection FVTVR 2026 — date exacte non encore annoncée. Hard techno. Surveiller shotgun.live/en/venues/fvtvr.\nhttps://www.durevie.paris/article/anetha-patrick-mason-sara-landry-fvtvr-prevoit-une-selection-pointue-pour-2026",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 25,
-    "source": "durevie.paris",
-    "match_reasons": [
-      "genre_prefere: hard techno",
-      "proximite_dans_rayon",
-      "budget_ok"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Rex Club — Automne/hiver 2026-2027",
-    "date": "2026-09-04",
-    "date_fin": "2027-03-31",
-    "time": "23:30",
-    "cat": "club",
-    "venue": "Rex Club, 5 Bd Poissonnière, Paris 2e",
-    "notes": "Soirées techno/house/DnB mercredi-samedi toute l'année. Programmation automne/hiver annoncée au fil de l'eau. Early bird ~5€, standard 12-20€.\nhttps://rexclub.com/billetterie/",
-    "reminders": [
-      "1w"
-    ],
-    "score": 25,
-    "source": "rexclub.com",
-    "match_reasons": [
-      "lieu_prefere: Rex Club",
-      "genre_prefere: techno",
-      "jour_prefere: vendredi/samedi",
-      "budget_ok"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Essaim — Soirées 2026 (Tribalism techno / expérimental)",
-    "date": "2026-06-05",
-    "date_fin": "2026-12-31",
     "time": "23:00",
-    "cat": "club",
-    "venue": "Essaim, 14 rue Philippe de Girard, Paris 10e",
-    "notes": "Club fondé par anciens DA de Concrete. Vendredi Tribalism (techno), samedi bass expérimental. Entrée unique: 20€.\nhttps://parisjetaime.com/eng/culture/essaim-paris-p4478",
+    "cat": "concert",
+    "venue": "T7, Paris 15e",
+    "notes": "date estimée / récurrent. T7 programme des soirées techno chaque semaine. Consulter shotgun.live/en/venues/t-7 pour la prog exacte. ~14-20€.\nhttps://shotgun.live/en/venues/t-7",
     "reminders": [
-      "1w"
-    ],
-    "score": 20,
-    "source": "sortiraparis.com",
-    "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
-      "budget_ok",
-      "jour_prefere: vendredi/samedi"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Dream Nation Festival 2026 — Halloween",
-    "date": "2026-10-30",
-    "date_fin": "2026-10-31",
-    "time": "20:00",
-    "cat": "festival",
-    "venue": "Parc des Expositions Paris Nord Villepinte, 93420 Villepinte",
-    "notes": "Vini Vici, Pendulum (DJ Set), Flux Pavilion, The Bloody Beetroots, Dirtyphonics... Electro, techno, DnB, hardstyle. Prix: à partir de 43,90€.\nhttps://dreamnation.fr/en/",
-    "reminders": [
-      "2w",
       "1w",
       "1d"
     ],
-    "score": 20,
+    "score": 50,
+    "source": "shotgun.live",
+    "match_reasons": [
+      "lieu_prefere: T7",
+      "genre_prefere: techno",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rex Club — Soirée Techno/House (récurrente automne 2026)",
+    "date": "2026-10-02",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Le Rex Club programme chaque vendredi et samedi des soirées techno, house, electro avec DJs locaux et internationaux. Consulter rexclub.com pour la programmation exacte d'octobre 2026. ~12-15€. Programme habituel : All Night Long, résidences collectives, invités internationaux.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Dream Nation Festival 2026 — Jour 1",
+    "date": "2026-10-30",
+    "date_fin": null,
+    "time": "18:00",
+    "cat": "concert",
+    "venue": "Parc des Expositions Paris Nord, Villepinte (93)",
+    "notes": "Dream Nation Festival — Halloween edition. 2 jours, 6 scènes, 60+ artistes, 40 000 festivaliers. Lineup 1re vague : Pendulum, Todiefor, The Bloody Beetroots, Novah, Marion Di Napoli, Dirtyphonics, Vini Vici, Pawlowski, The Rocketman, Roland Cristal. Techno / trance / bass music / hard music. Villepinte ~20km de Paris. Prix à confirmer sur dreamnation.fr.\nhttps://dreamnation.fr/en/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 35,
     "source": "dreamnation.fr",
     "match_reasons": [
-      "genre_prefere: électronique",
-      "budget_ok: 43,90€"
+      "genre_prefere: techno/electro",
+      "proximite_dans_rayon: Villepinte ~20km",
+      "jour_prefere: vendredi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Dream Nation Festival 2026 — Jour 2 (Halloween)",
+    "date": "2026-10-31",
+    "date_fin": null,
+    "time": "14:00",
+    "cat": "concert",
+    "venue": "Parc des Expositions Paris Nord, Villepinte (93)",
+    "notes": "Dream Nation Festival — Halloween edition. Jour 2 samedi. 6 scènes, mapping 3D holographique, lasers, créatures. Videoprojections spectaculaires. Lineup complet à suivre sur dreamnation.fr.\nhttps://dreamnation.fr/en/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 35,
+    "source": "dreamnation.fr",
+    "match_reasons": [
+      "genre_prefere: techno/electro",
+      "proximite_dans_rayon: Villepinte ~20km",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Badaboum Paris — Soirée House/Techno (récurrente automne 2026)",
+    "date": "2026-10-03",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Badaboum, Paris 11e",
+    "notes": "date estimée / récurrent. Badaboum programme des soirées house et techno. Consulter badaboum.paris. ~10-15€.\nhttps://badaboum.paris/agenda/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 35,
+    "source": "badaboum.paris",
+    "match_reasons": [
+      "genre_prefere: house/techno",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
+      "budget_ok"
     ],
     "image_url": null
   }

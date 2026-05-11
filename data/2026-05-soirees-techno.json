@@ -1,197 +1,282 @@
 [
   {
-    "title": "Rex Club — Flabaire All Night Long",
-    "date": "2026-05-13",
-    "time": "23:30",
+    "title": "Versailles Electro 2026 — Cerrone, Folamour, Dabeull",
+    "date": "2026-05-16",
+    "date_fin": null,
+    "time": "20:00",
     "cat": "concert",
-    "venue": "Rex Club, Paris 2e",
-    "notes": "Flabaire en All Night Long. Techno. ~15€\nhttps://rexclub.com/billetterie/",
-    "reminders": ["1w", "1d"],
-    "score": 50,
-    "source": "rexclub.com",
-    "match_reasons": ["lieu_prefere: Rex Club", "genre_prefere: techno", "budget_ok"],
-    "image_url": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_1200,h_630/f_jpg/q_auto/c_limit,f_auto,fl_lossy,q_auto,w_1920/v1775551142/production/artworks/EVENT_FLABAIRE_ANL_REX_PRES_lspytf"
+    "venue": "Château de Versailles, Versailles (78)",
+    "notes": "6e édition. Lineup : Cerrone (50 ans de carrière, live exclusif au pied de la Galerie des Glaces), Folamour, Dabeull, Swimming Paul (warm-up). DJ sets de 20h à minuit sur les terrasses du château. Tickets ~40-60€ (vérifier sur chateauversailles-spectacles.fr)\nhttps://www.chateauversailles-spectacles.fr/evenement/versailles-electro-2026/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 60,
+    "source": "chateauversailles-spectacles.fr",
+    "match_reasons": [
+      "genre_prefere: french touch / disco-electro",
+      "proximite_dans_rayon: Versailles ~25km",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
   },
   {
-    "title": "Rex Club — Undercore (Pinotello, Why T, Barox, Izza)",
-    "date": "2026-05-14",
-    "time": "23:30",
+    "title": "Cercle Festival 2026 — Jour 2 : ARTBAT, Étienne de Crécy, Kölsch, Monolink, Vintage Culture...",
+    "date": "2026-05-23",
+    "date_fin": null,
+    "time": "12:00",
     "cat": "concert",
-    "venue": "Rex Club, Paris 2e",
-    "notes": "Pinotello, Why T, Barox, Izza. Techno hardcore. 10,80€\nhttps://shotgun.live/en/venues/rex-club",
-    "reminders": ["1w", "1d"],
+    "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
+    "notes": "Cercle Festival 3 jours (22-24 mai). Jour 2 samedi : Anfisa Letyago, ARTBAT, Étienne de Crécy, Ginton, Jimi Jules, Kasablanca, Kenya Grace, Kölsch, Lane 8, LP Giobbi b2b DJ Tennis, Michael Bibi, Monolink, Parra for Cuva, Vintage Culture. SOLD OUT — liste d'attente festival.cercle.io. ~110€/jour.\nhttps://festival.cercle.io/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
     "score": 50,
-    "source": "shotgun.live",
-    "match_reasons": ["lieu_prefere: Rex Club", "genre_prefere: techno", "budget_ok"],
-    "image_url": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_1200,h_630/f_jpg/q_auto/production/artworks/FB_BANNER_EVENT_1920_1080_k6vxdj.png"
-  },
-  {
-    "title": "Vendredixxl — La Bellevilloise",
-    "date": "2026-05-15",
-    "time": "23:00",
-    "cat": "concert",
-    "venue": "La Bellevilloise, Paris 20e",
-    "notes": "Soirée techno/house. Line-up TBA. 16€\nhttps://vendredix.fr/event/vendredixxl-14/",
-    "reminders": ["1w", "1d"],
-    "score": 35,
-    "source": "vendredix.fr",
-    "match_reasons": ["genre_prefere: techno/house", "jour_prefere: vendredi", "budget_ok"],
-    "image_url": "https://vendredix.fr/wp-content/uploads/2025/08/vxxl_1x1_29MAI.jpg"
+    "source": "festival.cercle.io",
+    "match_reasons": [
+      "genre_prefere: melodic techno / electro",
+      "proximite_dans_rayon: Le Bourget ~15km",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
   },
   {
     "title": "Rex Club — Theos All Night Long",
     "date": "2026-05-16",
+    "date_fin": null,
     "time": "23:30",
     "cat": "concert",
     "venue": "Rex Club, Paris 2e",
-    "notes": "Theos en All Night Long. Techno. ~16€\nhttps://rexclub.com/billetterie/",
-    "reminders": ["1w", "1d"],
+    "notes": "Theos en All Night Long au Rex Club. Electro / house. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
     "score": 50,
     "source": "rexclub.com",
-    "match_reasons": ["lieu_prefere: Rex Club", "genre_prefere: techno", "jour_prefere: samedi", "budget_ok"],
-    "image_url": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_1200,h_630/f_jpg/q_auto/c_limit,f_auto,fl_lossy,q_auto,w_1920/v1775802539/production/artworks/IMG_2463_u9nhmj"
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: electro/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
   },
   {
-    "title": "Badaboum — D. Tiffany, Hors-Sol, Marabou",
-    "date": "2026-05-16",
-    "time": "23:00",
-    "cat": "concert",
-    "venue": "Badaboum, Paris 11e",
-    "notes": "D. Tiffany, Hors-Sol, Marabou. Techno. 13€\nhttps://badaboum.paris/agenda/",
-    "reminders": ["1w", "1d"],
-    "score": 35,
-    "source": "badaboum.paris",
-    "match_reasons": ["genre_prefere: techno", "jour_prefere: samedi", "budget_ok"],
-    "image_url": "https://badaboum.paris/wp-content/uploads/2026/04/capture-decran-2026-04-23-a-17-46-43-535x510.png"
-  },
-  {
-    "title": "Mia Mao — Four Tet b2b Ben UFO",
-    "date": "2026-05-16",
-    "time": "23:00",
-    "cat": "concert",
-    "venue": "Mia Mao, Paris",
-    "notes": "Four Tet b2b Ben UFO. Techno / electronica UK. 28€\nhttps://fr.ra.co/events/2366940",
-    "reminders": ["1w", "1d"],
-    "score": 35,
-    "source": "ra.co",
-    "match_reasons": ["genre_prefere: techno/electronica", "jour_prefere: samedi", "budget_ok"],
-    "image_url": "https://miamao.fr/uploads/2026/02/insta-4-5-avec-photo-768x960.jpg"
-  },
-  {
-    "title": "Cercle Festival 2026 — Jour 1",
+    "title": "T7 Paris — Soirée Techno Hard (récurrente printemps 2026)",
     "date": "2026-05-22",
-    "time": "14:00",
-    "cat": "concert",
-    "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
-    "notes": "SOLD OUT — liste d'attente. Acid Pauli, Adriatique, ANNA, Carlita, Kerri Chandler, Mind Against, Arodes.\nhttps://festival.cercle.io/",
-    "reminders": ["2w", "1w"],
-    "score": 30,
-    "source": "festival.cercle.io",
-    "match_reasons": ["genre_prefere: techno/melodic", "jour_prefere: vendredi", "proximite_dans_rayon: Le Bourget ~14km"],
-    "image_url": "https://imagedelivery.net/HAiCCfepEhGEgROdxZG7_g/3b06f469-30a3-47c5-9faf-e03ecfd04900/1200w"
-  },
-  {
-    "title": "Cercle Festival 2026 — Jour 2",
-    "date": "2026-05-23",
-    "time": "14:00",
-    "cat": "concert",
-    "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
-    "notes": "SOLD OUT — liste d'attente. Anfisa Letyago, ARTBAT, Étienne de Crécy, Kölsch, Lane 8, Michael Bibi, Monolink, Vintage Culture.\nhttps://festival.cercle.io/",
-    "reminders": ["2w", "1w"],
-    "score": 30,
-    "source": "festival.cercle.io",
-    "match_reasons": ["genre_prefere: techno/melodic", "jour_prefere: samedi", "proximite_dans_rayon: Le Bourget ~14km"],
-    "image_url": "https://imagedelivery.net/HAiCCfepEhGEgROdxZG7_g/3b06f469-30a3-47c5-9faf-e03ecfd04900/1200w"
-  },
-  {
-    "title": "Cercle Festival Afterparty — Kilomètre25",
-    "date": "2026-05-23",
+    "date_fin": null,
     "time": "23:00",
     "cat": "concert",
-    "venue": "Kilomètre25, Paris 19e",
-    "notes": "Afterparty officielle Cercle Festival. Ethel, Jimi Jules, Dish Dash. 11,80€\nhttps://shotgun.live/en/events/cercle-festival-afterparty-dish-dash-notre-dame-matisa-km25",
-    "reminders": ["1w", "1d"],
-    "score": 35,
+    "venue": "T7, Paris 15e",
+    "notes": "date estimée / récurrent. T7 (Terminal 7, Porte de Versailles) programme des soirées techno chaque semaine. En avril 2026 : Charlotte de Witte, Sara Landry, Vladimir Cauchemar, Diplo (hard techno). Consulter shotgun.live/en/venues/t-7 pour mai-juin 2026. ~14-20€.\nhttps://shotgun.live/en/venues/t-7",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 50,
     "source": "shotgun.live",
-    "match_reasons": ["genre_prefere: melodic techno", "jour_prefere: samedi", "budget_ok"],
-    "image_url": "https://cdn.prod.website-files.com/60df95cb812ec9adc3c28099/69e8e10d2d458adc0496e3cd_Visuel%20de%20soire%CC%81e_Square_01%20(5).jpg"
+    "match_reasons": [
+      "lieu_prefere: T7",
+      "genre_prefere: hard techno/techno",
+      "proximite_dans_rayon: Paris",
+      "budget_ok"
+    ],
+    "image_url": null
   },
   {
-    "title": "Cercle Festival 2026 — Jour 3",
-    "date": "2026-05-24",
-    "time": "14:00",
+    "title": "Cercle Festival 2026 — Jour 1 : Acid Pauli, Adriatique, Kerri Chandler, ANNA, Mind Against...",
+    "date": "2026-05-22",
+    "date_fin": null,
+    "time": "12:00",
     "cat": "concert",
     "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
-    "notes": "SOLD OUT — liste d'attente. Eric Prydz, Âme b2b Sama' Abdulhadi, Anetha, Ben Böhmer, Röyksopp DJ Set, Miss Monique, YOTTO.\nhttps://festival.cercle.io/",
-    "reminders": ["2w", "1w"],
-    "score": 30,
+    "notes": "Cercle Festival 3 jours (22-24 mai). Jour 1 vendredi : Acid Pauli, Adriatique, ANNA, Arodes, berlioz, Carlita, Enfant Sauvage, Kerri Chandler, KILIMANJARO, Marten Lou, Mind Against, Rodrigo Gallardo, Sammy Virji. 3 scènes monumentales (A380, Ariane, Concorde). SOLD OUT — liste d'attente sur festival.cercle.io. ~110€/jour (si dispo).\nhttps://festival.cercle.io/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 45,
     "source": "festival.cercle.io",
-    "match_reasons": ["genre_prefere: techno/melodic", "proximite_dans_rayon: Le Bourget ~14km"],
-    "image_url": "https://imagedelivery.net/HAiCCfepEhGEgROdxZG7_g/3b06f469-30a3-47c5-9faf-e03ecfd04900/1200w"
+    "match_reasons": [
+      "genre_prefere: techno/electro",
+      "proximite_dans_rayon: Le Bourget ~15km",
+      "jour_prefere: vendredi"
+    ],
+    "image_url": null
   },
   {
-    "title": "Badaboum — Traumer All Night Long",
-    "date": "2026-05-28",
-    "time": "23:00",
+    "title": "Cercle Festival 2026 — Jour 3 : Eric Prydz, Röyksopp, Âme, Anetha, Ben Böhmer, Thylacine...",
+    "date": "2026-05-24",
+    "date_fin": null,
+    "time": "12:00",
     "cat": "concert",
-    "venue": "Badaboum, Paris 11e",
-    "notes": "Traumer en All Night Long. Techno/minimal. Entrée libre.\nhttps://badaboum.paris/agenda/",
-    "reminders": ["1w", "1d"],
-    "score": 35,
-    "source": "badaboum.paris",
-    "match_reasons": ["genre_prefere: techno/minimal", "gratuit", "budget_ok"],
-    "image_url": "https://badaboum.paris/wp-content/uploads/2026/04/capture-decran-2026-04-16-a-12-45-58-grande-535x550.jpeg"
+    "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
+    "notes": "Cercle Festival 3 jours (22-24 mai). Jour 3 dimanche : Aaron Hibell, Âme DJ b2b Sama' Abdulhadi, Anetha, Ben Böhmer, Deer Jade, Eric Prydz, Funk Tribu, Mahmut Orhan, meera, Miss Monique, nimino, Röyksopp DJ Set, Thylacine, Weval, YOTTO. SOLD OUT — liste d'attente. ~110€/jour.\nhttps://festival.cercle.io/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 45,
+    "source": "festival.cercle.io",
+    "match_reasons": [
+      "genre_prefere: melodic techno / progressive house",
+      "proximite_dans_rayon: Le Bourget ~15km"
+    ],
+    "image_url": null
   },
   {
     "title": "Rex Club — Meyem All Night Long",
     "date": "2026-05-29",
+    "date_fin": null,
     "time": "23:30",
     "cat": "concert",
     "venue": "Rex Club, Paris 2e",
-    "notes": "Meyem en All Night Long. Techno. ~17€\nhttps://rexclub.com/billetterie/",
-    "reminders": ["1w", "1d"],
-    "score": 60,
+    "notes": "Meyem en All Night Long au Rex Club. Electro / minimal. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 45,
     "source": "rexclub.com",
-    "match_reasons": ["lieu_prefere: Rex Club", "genre_prefere: techno", "jour_prefere: vendredi", "budget_ok"],
-    "image_url": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_1200,h_630/f_jpg/q_auto/c_limit,f_auto,fl_lossy,q_auto,w_1920/v1775113610/production/artworks/IMG_2352_lieuhe"
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: electro/minimal",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi"
+    ],
+    "image_url": null
   },
   {
-    "title": "DI.X FVTVR — Party & After (Underground Techno)",
-    "date": "2026-05-29",
-    "time": "23:00",
+    "title": "Rex Club — Better Days Invite : Eternal Love, Eg, Matteo, Tonak, Wolff",
+    "date": "2026-05-30",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "Soirée Better Days Invite au Rex Club. House. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 45,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Marvellous Island Festival 2026 — Jour 1",
+    "date": "2026-05-23",
+    "date_fin": null,
+    "time": "14:00",
+    "cat": "concert",
+    "venue": "Base de Loisirs de Vaires-Torcy, Torcy (77)",
+    "notes": "14e édition. 90 artistes, 5 scènes (Beach Stage, Digital 360°, Kasbah, Éclosion, Pampa). Lineup annoncé : Basswell, Dennis Cruz, Nic Fanciulli, Bad Boombox, Ilario Alicante, Mandragora, Ben Hemsley, Korolova, Mathame, Nikolina, Acidpach, Amrita... Vaires-Torcy à ~20min de Paris (RER E). Prix : consulter marvellous-island.fr.\nhttps://marvellous-island.fr/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "marvellous-island.fr",
+    "match_reasons": [
+      "genre_prefere: house / techno",
+      "proximite_dans_rayon: Torcy ~28km",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Marvellous Island Festival 2026 — Jour 2",
+    "date": "2026-05-24",
+    "date_fin": null,
+    "time": "14:00",
+    "cat": "concert",
+    "venue": "Base de Loisirs de Vaires-Torcy, Torcy (77)",
+    "notes": "14e édition — jour 2. Open air bord de lac. 90 artistes, 5 scènes. Vaires-Torcy à ~20min de Paris (RER E). Prix : consulter marvellous-island.fr.\nhttps://marvellous-island.fr/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "marvellous-island.fr",
+    "match_reasons": [
+      "genre_prefere: house / techno",
+      "proximite_dans_rayon: Torcy ~28km"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rex Club — Flabaire All Night Long",
+    "date": "2026-05-13",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "Flabaire en All Night Long au Rex Club. Techno / electro. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/electro",
+      "budget_ok",
+      "proximite_dans_rayon: Paris"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rex Club — Undercore : Pinotello, Why T, Barox, Izza",
+    "date": "2026-05-14",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "Soirée Undercore au Rex Club avec Pinotello, Why T, Barox, Izza. Hard techno / acid. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/acid",
+      "budget_ok",
+      "proximite_dans_rayon: Paris"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "FVTVR — Detroit Love : Moodymann, Carl Craig, Mike Banks, Juan Atkins",
+    "date": "2026-05-09",
+    "date_fin": null,
+    "time": "00:00",
     "cat": "concert",
     "venue": "FVTVR, Paris 13e",
-    "notes": "Soirée underground techno + after. Line-up TBA. ~12€\nhttps://vendredix.fr/event/di-x-fvtvr-6/",
-    "reminders": ["1w", "1d"],
-    "score": 35,
-    "source": "vendredix.fr",
-    "match_reasons": ["genre_prefere: underground techno", "jour_prefere: vendredi", "budget_ok"],
-    "image_url": "https://vendredix.fr/wp-content/uploads/2024/10/DIX-Formats-03.png"
-  },
-  {
-    "title": "Rex Club — Better Days Invite",
-    "date": "2026-05-30",
-    "time": "23:30",
-    "cat": "concert",
-    "venue": "Rex Club, Paris 2e",
-    "notes": "Eternal Love, Eg, Matteo, Tonak, Wolff. Techno. ~16€\nhttps://rexclub.com/billetterie/",
-    "reminders": ["1w", "1d"],
-    "score": 60,
-    "source": "rexclub.com",
-    "match_reasons": ["lieu_prefere: Rex Club", "genre_prefere: techno", "jour_prefere: samedi", "budget_ok"],
-    "image_url": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_1200,h_630/f_jpg/q_auto/production/artworks/Better_Days_Rex_Club_FB_Shotgun_rw9hbo.png"
-  },
-  {
-    "title": "Badaboum — Chippy Nonstop, Only Fire, Housewife 9",
-    "date": "2026-05-30",
-    "time": "23:00",
-    "cat": "concert",
-    "venue": "Badaboum, Paris 11e",
-    "notes": "Chippy Nonstop, Only Fire, Housewife 9, Je7nne, Teddylicious. Techno/electro. ~15€\nhttps://badaboum.paris/agenda/",
-    "reminders": ["1w", "1d"],
-    "score": 35,
-    "source": "badaboum.paris",
-    "match_reasons": ["genre_prefere: techno/electro", "jour_prefere: samedi", "budget_ok"],
-    "image_url": "https://badaboum.paris/wp-content/uploads/2026/04/capture-decran-2026-04-09-a-12-28-12-535x506.png"
-  },
+    "notes": "Soirée Detroit Love au FVTVR avec les légendes de Detroit techno : Moodymann, Carl Craig, Mike Banks (Underground Resistance), Juan Atkins. Techno / Detroit. Vérifier prix sur dice.fm.\nhttps://dice.fm/venue/fvtvr-pvlk",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "dice.fm",
+    "match_reasons": [
+      "genre_prefere: techno",
+      "proximite_dans_rayon: Paris",
+      "budget_ok"
+    ],
+    "image_url": null
+  }
 ]

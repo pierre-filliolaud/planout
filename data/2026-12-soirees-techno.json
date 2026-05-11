@@ -1,64 +1,69 @@
 [
   {
-    "title": "FVTVR — Saison 2026 (Anetha, Sara Landry, Speedy J...)",
-    "date": "2026-06-06",
-    "date_fin": "2026-12-31",
-    "time": "23:59",
-    "cat": "club",
-    "venue": "FVTVR, 34 Quai d'Austerlitz, Paris 13e",
-    "notes": "Anetha, Sara Landry, Rene Wise, Shanti Celeste, Speedy J, Tatyana Jane, Jen Cardini... Techno/house. Week-end minuit-7h. Billetterie Shotgun dès 12,99€.\nhttps://shotgun.live/en/venues/fvtvr",
+    "title": "Rex Club — Legends : Laurent Garnier & DJ Deep All Night Long",
+    "date": "2026-12-19",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. La soirée LEGENDS au Rex Club réunit régulièrement Laurent Garnier et DJ Deep en All Night Long — édition hivernale probable. Vérifier sur rexclub.com. ~12-15€.\nhttps://rexclub.com/billetterie/",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 25,
-    "source": "shotgun.live",
+    "score": 55,
+    "source": "rexclub.com",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/house",
       "budget_ok",
-      "jour_prefere: vendredi/samedi"
+      "proximite_dans_rayon: Paris"
     ],
     "image_url": null
   },
   {
-    "title": "Rex Club — Automne/hiver 2026-2027",
-    "date": "2026-09-04",
-    "date_fin": "2027-03-31",
-    "time": "23:30",
-    "cat": "club",
-    "venue": "Rex Club, 5 Bd Poissonnière, Paris 2e",
-    "notes": "Soirées techno/house/DnB mercredi-samedi toute l'année. Programmation automne/hiver annoncée au fil de l'eau. Early bird ~5€, standard 12-20€.\nhttps://rexclub.com/billetterie/",
+    "title": "T7 Paris — Soirée Techno (récurrente hiver 2026)",
+    "date": "2026-12-19",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "T7, Paris 15e",
+    "notes": "date estimée / récurrent. T7 programme des soirées techno chaque semaine. Consulter shotgun.live/en/venues/t-7 pour la prog exacte. ~14-20€.\nhttps://shotgun.live/en/venues/t-7",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 25,
-    "source": "rexclub.com",
+    "score": 50,
+    "source": "shotgun.live",
     "match_reasons": [
-      "lieu_prefere: Rex Club",
+      "lieu_prefere: T7",
       "genre_prefere: techno",
-      "jour_prefere: vendredi/samedi",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
       "budget_ok"
     ],
     "image_url": null
   },
   {
-    "title": "Essaim — Soirées 2026 (Tribalism techno / expérimental)",
-    "date": "2026-06-05",
-    "date_fin": "2026-12-31",
-    "time": "23:00",
-    "cat": "club",
-    "venue": "Essaim, 14 rue Philippe de Girard, Paris 10e",
-    "notes": "Club fondé par anciens DA de Concrete. Vendredi Tribalism (techno), samedi bass expérimental. Entrée unique: 20€.\nhttps://parisjetaime.com/eng/culture/essaim-paris-p4478",
+    "title": "Rex Club — Soirée Techno/House (récurrente hiver 2026)",
+    "date": "2026-12-05",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Programme du Rex Club pour décembre 2026. Consulter rexclub.com. ~12-15€.\nhttps://rexclub.com/billetterie/",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 20,
-    "source": "sortiraparis.com",
+    "score": 40,
+    "source": "rexclub.com",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon",
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/house",
       "budget_ok",
-      "jour_prefere: vendredi/samedi"
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi"
     ],
     "image_url": null
   }

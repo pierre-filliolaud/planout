@@ -1,22 +1,43 @@
 [
   {
-    "title": "Mitski – Nothing's About to Happen to Me Tour",
-    "date": "2026-05-05",
-    "date_fin": null,
-    "time": "20:00",
+    "title": "Cercle Festival 2026",
+    "date": "2026-05-22",
+    "date_fin": "2026-05-24",
+    "time": "12:00",
     "cat": "concert",
-    "venue": "Zénith Paris – La Villette (75019)",
-    "notes": "Indie/art-pop. Premier stop européen de la tournée. Album 'Nothing's About to Happen to Me' (fév 2026). Prix : 60,50€ – 77€.\nhttps://le-zenith.com/shows/MITSKI-22037",
+    "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
+    "notes": "Festival electro 3 jours sur le tarmac du Bourget avec 44 artistes, 3 scènes (A380, Ariane, Concorde). Lineup : Eric Prydz, ARTBAT, Röyksopp DJ set, Étienne de Crécy, Anetha, Mind Against, Carlita… Prix : à partir de ~90€.\nhttps://festival.cercle.io/",
     "reminders": [
       "2w",
       "1w"
     ],
-    "score": 55,
-    "source": "le-zenith.com",
+    "score": 75,
+    "source": "festival.cercle.io",
     "match_reasons": [
-      "genre_prefere: indie/pop",
-      "proximite_dans_rayon: Paris",
-      "budget_ok: ~60€"
+      "festival",
+      "genre_prefere: electro/house/techno",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Versailles Electro 2026 – Cerrone, Folamour, Dabeull",
+    "date": "2026-05-16",
+    "date_fin": null,
+    "time": "19:00",
+    "cat": "concert",
+    "venue": "Château de Versailles, Versailles (78)",
+    "notes": "6e édition. Lineup : Cerrone (50 ans de carrière), Folamour, Dabeull, Swimming Paul. Nuit électronique dans les jardins royaux. ⚠️ Cerrone est une figure fondatrice du disco-electro français proche de la French Touch.\nhttps://www.chateauversailles-spectacles.fr/evenement/versailles-electro-2026/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 60,
+    "source": "chateauversailles-spectacles.fr",
+    "match_reasons": [
+      "genre_prefere: electro/french touch/house",
+      "festival",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   }

@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Boys Noize — Paris (date estimée 2027)",
+    "date": "2027-04-10",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "Rex Club ou FVTVR (estimé), Paris",
+    "notes": "date estimée / récurrent. Boys Noize tourne régulièrement à Paris (confirmé Peacock Society juillet 2026). Aucune date Paris hors festival confirmée au 11 mai 2026 pour 2027. Surveiller ra.co/dj/boysnoize/tour-dates et bandsintown.com. ~15-25€.\nhttps://ra.co/dj/boysnoize/tour-dates",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 55,
+    "source": "ra.co",
+    "match_reasons": [
+      "artiste_favori: Boys Noize",
+      "genre_prefere: techno/electro",
+      "proximite_dans_rayon: Paris",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rex Club — Soirée Techno/House (récurrente printemps 2027)",
+    "date": "2027-04-03",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Programme du Rex Club pour avril 2027. Consulter rexclub.com. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Kilomètre25 — Saison 7 ouverture (estimée)",
+    "date": "2027-04-01",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "Kilomètre25, Paris 19e",
+    "notes": "date estimée / récurrent. Le Kilomètre25 ouvre sa saison chaque début avril. Saison 7 attendue en 2027. Consulter kilometre25.fr à partir de début 2027 pour les détails. ~15-20€.\nhttps://www.kilometre25.fr/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 35,
+    "source": "kilometre25.fr",
+    "match_reasons": [
+      "genre_prefere: techno/house",
+      "proximite_dans_rayon: Paris",
+      "budget_ok"
+    ],
+    "image_url": null
+  }
+]

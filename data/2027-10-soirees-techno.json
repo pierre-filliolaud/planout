@@ -1,20 +1,45 @@
 [
   {
-    "title": "Dream Nation Festival 2027 — Halloween (estimé)",
-    "date": "2027-10-29",
-    "date_fin": "2027-10-30",
-    "time": "20:00",
-    "cat": "festival",
-    "venue": "Paris Nord Villepinte (estimé)",
-    "notes": "Date estimée / récurrent (Halloween). Surveiller dreamnation.fr.",
+    "title": "Rex Club — Soirée Techno/House (récurrente automne 2027)",
+    "date": "2027-10-09",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Programme Rex Club octobre 2027. Consulter rexclub.com. ~12-15€.\nhttps://rexclub.com/billetterie/",
     "reminders": [
-      "2w"
+      "1w",
+      "1d"
     ],
-    "score": 10,
+    "score": 40,
+    "source": "rexclub.com",
+    "match_reasons": [
+      "lieu_prefere: Rex Club",
+      "genre_prefere: techno/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Dream Nation Festival 2027 (édition estimée)",
+    "date": "2027-10-29",
+    "date_fin": null,
+    "time": "18:00",
+    "cat": "concert",
+    "venue": "Parc des Expositions Paris Nord, Villepinte (93)",
+    "notes": "date estimée / récurrent. Dream Nation se tient chaque année fin octobre (Halloween) à Paris Nord Villepinte. 14e édition estimée en 2027. Consulter dreamnation.fr dès été 2027. ~50-80€.\nhttps://dreamnation.fr/en/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 30,
     "source": "dreamnation.fr",
     "match_reasons": [
-      "genre_prefere: électronique (EDM/hardstyle dominant)",
-      "date estimée"
+      "genre_prefere: techno/electro",
+      "proximite_dans_rayon: Villepinte ~20km",
+      "jour_prefere: vendredi"
     ],
     "image_url": null
   }

@@ -1,22 +1,23 @@
 [
   {
-    "title": "Hoshi – Bonjour Docteur Tour",
-    "date": "2027-11-18",
-    "date_fin": null,
-    "time": "20:00",
+    "title": "Pitchfork Music Festival Paris 2027",
+    "date": "2027-11-01",
+    "date_fin": "2027-11-07",
+    "time": "19:00",
     "cat": "concert",
-    "venue": "Accor Arena, Paris (75012)",
-    "notes": "Pop française. Accor Arena – Bercy. Date confirmée.\nhttps://www.accorarena.com/",
+    "venue": "Multi-salles Paris",
+    "notes": "date estimée / récurrent. Festival indie/electro/alternatif multisalles. Programme 2027 non annoncé.\nhttps://pitchforkmusicfestival.fr/",
     "reminders": [
       "2w",
       "1w"
     ],
-    "score": 40,
-    "source": "accorarena.com",
+    "score": 45,
+    "source": "pitchforkmusicfestival.fr",
     "match_reasons": [
-      "genre_prefere: pop",
-      "lieu_emblematique: Accor Arena",
-      "proximite_dans_rayon: Paris"
+      "festival",
+      "genre_prefere: indie/electro/rock",
+      "lieu_prefere",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   }

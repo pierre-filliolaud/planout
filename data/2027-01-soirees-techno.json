@@ -1,22 +1,70 @@
 [
   {
-    "title": "Rex Club — Automne/hiver 2026-2027",
-    "date": "2026-09-04",
-    "date_fin": "2027-03-31",
-    "time": "23:30",
-    "cat": "club",
-    "venue": "Rex Club, 5 Bd Poissonnière, Paris 2e",
-    "notes": "Soirées techno/house/DnB mercredi-samedi toute l'année. Programmation automne/hiver annoncée au fil de l'eau. Early bird ~5€, standard 12-20€.\nhttps://rexclub.com/billetterie/",
+    "title": "Robot Rock Alive — Daft Punk Tribute @ La Seine Musicale",
+    "date": "2027-01-22",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "La Seine Musicale, Boulogne-Billancourt (92)",
+    "notes": "Tribute show Daft Punk — reconstitution de la tournée Alive 2007 avec pyramide iconique, casques robots, jeu de lumières et vidéos. 2 robots recréent l'expérience légendaire avec les hits 'One More Time', 'Around the World', 'Harder Better Faster Stronger'... Billets : 54€ (fosse) à 74€ (Gold). Île Seguin, accessible métro ligne 9 (Pont de Sèvres).\nhttps://www.laseinemusicale.com/spectacles-concerts/robot-rock-alive-daft-punk-tribute/",
     "reminders": [
-      "1w"
+      "1w",
+      "1d"
     ],
-    "score": 25,
+    "score": 55,
+    "source": "laseinemusicale.com",
+    "match_reasons": [
+      "artiste_favori: Daft Punk (tribute)",
+      "genre_prefere: french touch/electro",
+      "proximite_dans_rayon: Boulogne ~8km",
+      "jour_prefere: vendredi",
+      "budget_ok: 54€"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "La Machine du Moulin Rouge — Soirée Electro (récurrente hiver 2027)",
+    "date": "2027-01-29",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "La Machine du Moulin Rouge, Paris 18e",
+    "notes": "date estimée / récurrent. La Machine programme des soirées electro/club. Consulter lamachinedumoulinrouge.com. ~10-20€.\nhttps://www.lamachinedumoulinrouge.com/agenda/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 45,
+    "source": "lamachinedumoulinrouge.com",
+    "match_reasons": [
+      "lieu_prefere: La Machine du Moulin Rouge",
+      "genre_prefere: electro/house",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Rex Club — Soirée Techno/House (récurrente hiver 2027)",
+    "date": "2027-01-08",
+    "date_fin": null,
+    "time": "23:30",
+    "cat": "concert",
+    "venue": "Rex Club, Paris 2e",
+    "notes": "date estimée / récurrent. Programme du Rex Club pour janvier 2027. Consulter rexclub.com. ~12-15€.\nhttps://rexclub.com/billetterie/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 40,
     "source": "rexclub.com",
     "match_reasons": [
       "lieu_prefere: Rex Club",
-      "genre_prefere: techno",
-      "jour_prefere: vendredi/samedi",
-      "budget_ok"
+      "genre_prefere: techno/house",
+      "budget_ok",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: vendredi"
     ],
     "image_url": null
   }

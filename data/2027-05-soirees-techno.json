@@ -1,20 +1,128 @@
 [
   {
-    "title": "Cercle Festival 2027 — édition estimée",
-    "date": "2027-05-21",
-    "date_fin": "2027-05-23",
-    "time": "12:00",
-    "cat": "festival",
-    "venue": "Musée de l'Air et de l'Espace, Le Bourget (estimé)",
-    "notes": "Date estimée / récurrent (mai, week-end Ascension). Surveiller festival.cercle.io pour l'annonce.",
+    "title": "Fred Again — Paris (suivi actif pour guest Bangalter)",
+    "date": "2027-05-01",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Accor Arena (estimé), Paris 12e",
+    "notes": "date estimée / récurrent. Fred Again et Thomas Bangalter ont joué un B2B légendaire à l'Alexandra Palace de Londres le 27 février 2026, et auparavant au Centre Pompidou Paris en octobre 2025. Des dates Paris 2027 pour Fred Again sont probables (il a joué à l'Accor Arena précédemment). Surveiller fredagain.com et shotgun.live/en/artists/fredagain.\n⚠️ Guest possible : Thomas Bangalter a déjà rejoint Fred Again sur scène à Paris (Pompidou oct 2025) et Londres (fév 2026).\nhttps://shotgun.live/en/artists/fredagain",
     "reminders": [
-      "2w"
+      "2w",
+      "1w"
     ],
-    "score": 15,
+    "score": 75,
+    "source": "shotgun.live",
+    "match_reasons": [
+      "artiste_collaborateur: Fred Again (guest Thomas Bangalter très probable)",
+      "genre_prefere: electro/house",
+      "proximite_dans_rayon: Paris"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Versailles Electro 2027 (édition estimée)",
+    "date": "2027-05-15",
+    "date_fin": null,
+    "time": "20:00",
+    "cat": "concert",
+    "venue": "Château de Versailles, Versailles (78)",
+    "notes": "date estimée / récurrent. Versailles Electro revient chaque printemps au Château de Versailles. 7e édition estimée en mai 2027. Surveiller chateauversailles-spectacles.fr à partir de début 2027. ~40-60€.\nhttps://www.chateauversailles-spectacles.fr/evenement/versailles-electro-2026/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 50,
+    "source": "chateauversailles-spectacles.fr",
+    "match_reasons": [
+      "genre_prefere: electro/house/disco",
+      "proximite_dans_rayon: Versailles ~25km",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "La Machine du Moulin Rouge — Soirée Electro (récurrente printemps 2027)",
+    "date": "2027-05-22",
+    "date_fin": null,
+    "time": "23:00",
+    "cat": "concert",
+    "venue": "La Machine du Moulin Rouge, Paris 18e",
+    "notes": "date estimée / récurrent. La Machine programme des soirées electro/club. Consulter lamachinedumoulinrouge.com. ~10-20€.\nhttps://www.lamachinedumoulinrouge.com/agenda/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 45,
+    "source": "lamachinedumoulinrouge.com",
+    "match_reasons": [
+      "lieu_prefere: La Machine du Moulin Rouge",
+      "genre_prefere: electro/house",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Cercle Festival 2027 (édition estimée)",
+    "date": "2027-05-21",
+    "date_fin": null,
+    "time": "12:00",
+    "cat": "concert",
+    "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
+    "notes": "date estimée / récurrent. Le Cercle Festival revient chaque année fin mai à Le Bourget (Musée de l'Air et de l'Espace). Édition 2027 non encore annoncée. Surveiller festival.cercle.io à partir de fin 2026. ~110€/jour.\nhttps://festival.cercle.io/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 40,
     "source": "festival.cercle.io",
     "match_reasons": [
-      "genre_prefere: électronique",
-      "date estimée"
+      "genre_prefere: techno/electro/melodic",
+      "proximite_dans_rayon: Le Bourget ~15km"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "FVTVR — Soirée Electro/Techno (récurrente printemps 2027)",
+    "date": "2027-05-08",
+    "date_fin": null,
+    "time": "00:00",
+    "cat": "concert",
+    "venue": "FVTVR, Paris 13e",
+    "notes": "date estimée / récurrent. FVTVR programme des soirées techno et house chaque weekend. Consulter dice.fm ou shotgun.live pour la prog mai 2027. ~15-20€.\nhttps://dice.fm/venue/fvtvr-pvlk",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "score": 35,
+    "source": "dice.fm",
+    "match_reasons": [
+      "genre_prefere: techno/house",
+      "proximite_dans_rayon: Paris",
+      "jour_prefere: samedi",
+      "budget_ok"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Marvellous Island Festival 2027 (édition estimée)",
+    "date": "2027-05-22",
+    "date_fin": null,
+    "time": "14:00",
+    "cat": "concert",
+    "venue": "Base de Loisirs de Vaires-Torcy, Torcy (77)",
+    "notes": "date estimée / récurrent. Marvellous Island se tient chaque fin mai depuis 2013 (15e édition attendue en 2027). 5 scènes, format bord de lac. Surveiller marvellous-island.fr à partir de début 2027. ~50-80€.\nhttps://marvellous-island.fr/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 35,
+    "source": "marvellous-island.fr",
+    "match_reasons": [
+      "genre_prefere: house/techno/electro",
+      "proximite_dans_rayon: Torcy ~28km"
     ],
     "image_url": null
   }

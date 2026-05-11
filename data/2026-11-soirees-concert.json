@@ -1,23 +1,44 @@
 [
   {
-    "title": "Interpol + Bloc Party",
-    "date": "2026-11-16",
-    "date_fin": null,
+    "title": "Pitchfork Music Festival Paris 2026",
+    "date": "2026-11-01",
+    "date_fin": "2026-11-08",
     "time": "19:00",
     "cat": "concert",
-    "venue": "Zénith de Paris – La Villette (75019)",
-    "notes": "Indie/post-punk. Tournée européenne conjointe. Sets successifs des deux groupes (Silent Alarm / Antics). Prix : 60,50€ – 88€.\nhttps://le-zenith.com/shows/Interpol%20x%20Bloc%20Party-21791",
+    "venue": "Multi-salles Paris : Olympia, Grande Halle, Trianon, Élysée Montmartre…",
+    "notes": "date estimée / récurrent. Festival indie/electro/alternatif multisalles (~80 artistes). Prix : 20€ à 60€ par concert.\nhttps://pitchforkmusicfestival.fr/",
     "reminders": [
       "2w",
       "1w"
     ],
-    "score": 75,
+    "score": 65,
+    "source": "pitchforkmusicfestival.fr",
+    "match_reasons": [
+      "festival",
+      "genre_prefere: indie/electro/rock",
+      "lieu_prefere",
+      "proximite_dans_rayon"
+    ],
+    "image_url": null
+  },
+  {
+    "title": "Bloc Party + Interpol – Zénith Paris",
+    "date": "2026-11-16",
+    "date_fin": null,
+    "time": "19:00",
+    "cat": "concert",
+    "venue": "Zénith Paris - La Villette (75019)",
+    "notes": "Double affiche post-punk / indie rock. Prix : à confirmer.\nhttps://le-zenith.com/shows/Interpol%20x%20Bloc%20Party-21791",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "score": 60,
     "source": "le-zenith.com",
     "match_reasons": [
       "genre_prefere: indie/rock",
-      "proximite_dans_rayon: Paris",
-      "budget_ok: 60,50€",
-      "lieu_emblematique: Zénith"
+      "lieu_emblematique",
+      "proximite_dans_rayon"
     ],
     "image_url": null
   }
