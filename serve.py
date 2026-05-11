@@ -79,6 +79,11 @@ class Handler(SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
     os.chdir(ROOT)
+    # Write static data/index.json so GitHub Pages stays in sync
+    idx_path = os.path.join(DATA_DIR, 'index.json')
+    with open(idx_path, 'w', encoding='utf-8') as f:
+        json.dump(build_index(), f, ensure_ascii=False, indent=2)
+    print(f'data/index.json updated ({len(build_index()["files"])} files)')
     print(f'PlanOut → http://localhost:{PORT}')
     os.system(f'open http://localhost:{PORT}')
     HTTPServer(('', PORT), Handler).serve_forever()
