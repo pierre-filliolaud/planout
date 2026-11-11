@@ -5953,6 +5953,47 @@
     }
   },
   {
+    "title": "Paris à l'arraché — Jacques Villeglé (centenaire)",
+    "cat": "musee",
+    "tags": [
+      "street-art"
+    ],
+    "date": "2026-10-14",
+    "date_fin": "2027-02-14",
+    "time": null,
+    "venue": "Musée Carnavalet, 23 rue de Sévigné, Paris 3e",
+    "notes": "Exposition street art / affichistes consacrée à Jacques Villeglé et à Paris. Ouvert du mardi au dimanche, 10h–18h. Billet horodaté recommandé, mais pas obligatoire. Tarif réduit 13 €, gratuit pour les moins de 18 ans.",
+    "prix": {
+      "min": 13,
+      "max": 15,
+      "gratuit": false
+    },
+    "reservation": {
+      "requise": false,
+      "statut": "ouverte",
+      "ouverture": null,
+      "url": "https://www.billetterie-parismusees.paris.fr/"
+    },
+    "urgence": "basse",
+    "score": 70,
+    "match_reasons": [
+      "sujet_favori: street art",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi/dimanche",
+      "budget_ok"
+    ],
+    "url": "https://www.carnavalet.paris.fr/",
+    "source": "carnavalet.paris.fr / sortiraparis.com",
+    "id": "2026-10-14-paris-a-l-arrache-jacques-villegle-centenaire",
+    "added": "2026-11-11T22:35",
+    "mis_a_jour_le": "2026-11-11T22:35",
+    "notifie": {
+      "alerte": null,
+      "quotidien": null,
+      "top10": []
+    }
+  },
+  {
     "title": "Stan Douglas — Rétrospective",
     "date": "2026-10-16",
     "date_fin": "2027-01-31",
@@ -6733,6 +6774,49 @@
     "notifie": {
       "alerte": "import",
       "quotidien": "import",
+      "top10": []
+    }
+  },
+  {
+    "title": "Super Discount Festival — 30 ans (Étienne de Crécy, French Touch All Stars)",
+    "cat": "techno",
+    "tags": [
+      "french-touch",
+      "nocturne"
+    ],
+    "date": "2026-12-18",
+    "date_fin": "2026-12-19",
+    "time": "19:30",
+    "venue": "Le CENTQUATRE-Paris, 5 rue Curial, Paris 19e",
+    "notes": "30 ans de Super Discount. Vendredi : Motorbass Tribute par Étienne de Crécy. Samedi : clôture French Touch All Stars B2B. Line-up RA : Felix Da Housecat, Jayda G, Kenny Dope, Mayou Picchu, Perel, Tiga, Uffie, Valentine Groove. Horaires 19h30–minuit selon Time Out. Statut de la billetterie non confirmé sur une page officielle ; vérifier sur la page RA/Shotgun.",
+    "prix": {
+      "min": 49,
+      "max": 49,
+      "gratuit": false
+    },
+    "reservation": {
+      "requise": true,
+      "statut": "ouverte",
+      "ouverture": null,
+      "url": "https://ra.co/events/2481537"
+    },
+    "urgence": "basse",
+    "score": 55,
+    "match_reasons": [
+      "genre_prefere: french touch",
+      "artiste_suggere: Étienne de Crécy",
+      "jour_prefere: vendredi/samedi",
+      "proximite_dans_rayon",
+      "budget_ok"
+    ],
+    "url": "https://ra.co/events/2481537",
+    "source": "ra.co / timeout.fr",
+    "id": "2026-12-18-super-discount-festival-30-ans-etienne-de-crecy-french-touch-all-stars",
+    "added": "2026-11-11T22:35",
+    "mis_a_jour_le": "2026-11-11T22:35",
+    "notifie": {
+      "alerte": null,
+      "quotidien": null,
       "top10": []
     }
   },

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "2026-12-18-super-discount-festival-30-ans-etienne-de-crecy-french-touch-all-stars",
+    "title": "Super Discount Festival — 30 ans (Étienne de Crécy, French Touch All Stars)",
+    "date": "2026-12-18",
+    "date_fin": "2026-12-19",
+    "time": "19:30",
+    "cat": "techno",
+    "venue": "Le CENTQUATRE-Paris, 5 rue Curial, Paris 19e",
+    "notes": "30 ans de Super Discount. Vendredi : Motorbass Tribute par Étienne de Crécy. Samedi : clôture French Touch All Stars B2B. Line-up RA : Felix Da Housecat, Jayda G, Kenny Dope, Mayou Picchu, Perel, Tiga, Uffie, Valentine Groove. Horaires 19h30–minuit selon Time Out. Statut de la billetterie non confirmé sur une page officielle ; vérifier sur la page RA/Shotgun.\n💶 49 € · 🎟️ réservation ouverte\nhttps://ra.co/events/2481537",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": "2026-12-12",
+    "score": 55,
+    "source": "ra.co / timeout.fr",
+    "match_reasons": [
+      "genre_prefere: french touch",
+      "artiste_suggere: Étienne de Crécy",
+      "jour_prefere: vendredi/samedi",
+      "proximite_dans_rayon",
+      "budget_ok"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T22:35",
+    "tags": [
+      "french-touch",
+      "nocturne"
+    ],
+    "urgence": "basse",
+    "reservation": {
+      "requise": true,
+      "statut": "ouverte",
+      "ouverture": null,
+      "url": "https://ra.co/events/2481537"
+    },
+    "prix": {
+      "min": 49,
+      "max": 49,
+      "gratuit": false
+    },
+    "url": "https://ra.co/events/2481537"
+  }
+]

@@ -265,6 +265,12 @@
       "month": "2026-12"
     },
     {
+      "file": "2026-12-soirees-techno.json",
+      "label": "December · Techno",
+      "theme": "techno",
+      "month": "2026-12"
+    },
+    {
       "file": "2026-12-sorties-paris.json",
       "label": "December · Paris",
       "theme": "paris",

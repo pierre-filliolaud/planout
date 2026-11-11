@@ -65,6 +65,47 @@
     "url": null
   },
   {
+    "id": "2026-10-14-paris-a-l-arrache-jacques-villegle-centenaire",
+    "title": "Paris à l'arraché — Jacques Villeglé (centenaire)",
+    "date": "2026-10-14",
+    "date_fin": "2027-02-14",
+    "time": null,
+    "cat": "musee",
+    "venue": "Musée Carnavalet, 23 rue de Sévigné, Paris 3e",
+    "notes": "Exposition street art / affichistes consacrée à Jacques Villeglé et à Paris. Ouvert du mardi au dimanche, 10h–18h. Billet horodaté recommandé, mais pas obligatoire. Tarif réduit 13 €, gratuit pour les moins de 18 ans.\n💶 13–15 € · 🎟️ réservation ouverte\nhttps://www.billetterie-parismusees.paris.fr/\nhttps://www.carnavalet.paris.fr/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "deadline": null,
+    "score": 70,
+    "source": "carnavalet.paris.fr / sortiraparis.com",
+    "match_reasons": [
+      "sujet_favori: street art",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi/dimanche",
+      "budget_ok"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T22:35",
+    "tags": [
+      "street-art"
+    ],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "ouverte",
+      "ouverture": null,
+      "url": "https://www.billetterie-parismusees.paris.fr/"
+    },
+    "prix": {
+      "min": 13,
+      "max": 15,
+      "gratuit": false
+    },
+    "url": "https://www.carnavalet.paris.fr/"
+  },
+  {
     "id": "2026-10-06-mary-cassatt-le-choix-de-l-independance",
     "title": "Mary Cassatt — Le choix de l'indépendance",
     "date": "2026-10-06",
