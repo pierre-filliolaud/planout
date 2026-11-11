@@ -16,8 +16,10 @@ Objectif : repérer ce qu'il faut **réserver vite** (logique de l'ancienne comm
 4. **Plateformes de billetterie** (WebFetch) : dice.fm, shotgun.live/fr/paris, ra.co/events/fr/paris,
    fnacspectacles.com, ticketmaster.fr → annonces et mises en vente à venir.
 5. **Lieux préférés institutionnels** (Opéra, Comédie-Française, Philharmonie, Olympia…) : ouvertures de billetterie.
-6. Expos de score > 70 qui **se terminent dans moins de 2 semaines**.
-7. Événements déjà connus dont le **statut de réservation a changé** → réutilise le même `id`.
+6. **Expos, projections ou hommages consacrés aux artistes favoris** (ex. une expo Daft Punk) :
+   souvent courts et sur réservation → `urgence: haute`.
+7. Expos de score > 70 qui **se terminent dans moins de 2 semaines**.
+8. Événements déjà connus dont le **statut de réservation a changé** → réutilise le même `id`.
 
 Horizon : billetteries qui ouvrent dans les 16 prochaines semaines.
 

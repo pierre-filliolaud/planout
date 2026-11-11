@@ -20,6 +20,8 @@ Thèmes à couvrir :
 - `techno` (soirees.json) : clubs et DJ sets, lieux préférés (Rex Club, T7, Dehors Brut, La Machine…),
   **surveillance des artistes_collaborateurs** (guest Bangalter / Guy-Manuel)
 - `concert` (soirees-concert.json) : artistes favoris et suggérés, salles préférées (Pleyel, Olympia, Cigale…)
+- **Artistes favoris hors concerts** (Daft Punk, Bangalter, French Touch) : expos, expos photo, projections,
+  hommages, listening parties → `recherches_web.artistes_hors_concerts` de sorties.json (cat `musee` ou `paris`, tag `french-touch`)
 - `musee` (sorties.json) : art classique (Orsay, Orangerie), photo, art contemporain, design, **street art**
 - `paris` (sorties.json) : festivals, immersif, **jeux de société**, **découvertes culinaires**, insolite
 - `spectacle` (sorties-theatre.json) : opéra, ballet, théâtre contemporain, lieux préférés

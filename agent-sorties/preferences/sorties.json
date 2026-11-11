@@ -7,6 +7,7 @@
   ],
   "budget_max_euros": 30,
   "sujets_preferes": [
+    "Daft Punk / French Touch (expos, projections, hommages, listening parties)",
     "art contemporain",
     "photographie",
     "design",
@@ -115,7 +116,7 @@
   },
   "notes": "Preferences partagees par toutes les commandes /sorties-*. Chaque specialisation (musee, paris...) lit ce fichier. Pour du tres specifique, creer preferences/sorties-<nom>.json en plus. Centre Pompidou fermé pour travaux (programmation hors-les-murs).",
   "recherches_web": {
-    "note": "Pas de site de référence unique : l'agent lance ces recherches (WebSearch).",
+    "note": "Pas de site de référence unique : l'agent lance ces recherches (WebSearch). Pour artistes_hors_concerts : remplacer {artiste} par chaque artiste de artistes_bouger_partout et artistes_favoris de soirees.json (Daft Punk en premier).",
     "street_art": [
       "street art Paris exposition {mois}",
       "parcours street art Paris 13e visite",
@@ -130,6 +131,12 @@
       "nouveau restaurant Paris {mois}",
       "food festival Paris {mois}",
       "atelier dégustation Paris {mois}"
+    ],
+    "artistes_hors_concerts": [
+      "\"{artiste}\" exposition Paris {annee}",
+      "\"{artiste}\" expo photo Paris",
+      "\"{artiste}\" hommage OR tribute OR \"listening party\" Paris {mois}",
+      "\"{artiste}\" projection OR documentaire Paris"
     ]
   }
 }
