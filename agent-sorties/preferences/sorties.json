@@ -1,0 +1,135 @@
+{
+  "ville_principale": "Paris",
+  "rayon_km_defaut": 30,
+  "jours_preferes": [
+    "samedi",
+    "dimanche"
+  ],
+  "budget_max_euros": 30,
+  "sujets_preferes": [
+    "art contemporain",
+    "photographie",
+    "design",
+    "musique electronique",
+    "culture japonaise",
+    "architecture",
+    "sciences",
+    "street art",
+    "theatre_immersif",
+    "spectacle_immersif",
+    "art classique (impressionnisme, post-impressionnisme, XIXe — type Musée d'Orsay)",
+    "jeux de societe",
+    "decouvertes culinaires",
+    "insolite"
+  ],
+  "sujets_rejetes": [],
+  "lieux_preferes": [
+    "Centre Pompidou",
+    "Palais de Tokyo",
+    "Fondation Louis Vuitton",
+    "Jeu de Paume",
+    "MK2",
+    "La Gaite Lyrique",
+    "Atelier des Lumieres",
+    "Musée d'Orsay",
+    "Musée de l'Orangerie"
+  ],
+  "lieux_a_eviter": [],
+  "expos_deja_vues": [],
+  "sources_web": {
+    "_global": [
+      {
+        "url": "https://www.timeout.fr/paris",
+        "note": "Timeout Paris - agenda general"
+      },
+      {
+        "url": "https://www.sortiraparis.com",
+        "note": "Sortir a Paris - events"
+      },
+      {
+        "url": "https://quefaire.paris.fr",
+        "note": "Ville de Paris - souvent gratuit"
+      }
+    ],
+    "musee": [
+      {
+        "url": "https://www.musee-orsay.fr",
+        "note": "Musée d'Orsay - expositions"
+      },
+      {
+        "url": "https://www.parismusees.paris.fr",
+        "note": "14 musees Ville de Paris - gratuits"
+      },
+      {
+        "url": "https://www.telerama.fr/sortir/expositions",
+        "note": "Telerama - expos recommandees"
+      },
+      {
+        "url": "https://www.connaissancedesarts.com/expositions/",
+        "note": "Connaissance des Arts"
+      },
+      {
+        "url": "https://www.beauxarts.com",
+        "note": "Beaux Arts Magazine"
+      }
+    ],
+    "paris": [
+      {
+        "url": "https://www.lebonbon.fr/paris/",
+        "note": "Le Bonbon - ephemere / food / festivals"
+      },
+      {
+        "url": "https://www.parisinfo.com/agenda",
+        "note": "Paris Info - agenda officiel"
+      },
+      {
+        "url": "https://www.fnacspectacles.com",
+        "note": "Fnac Spectacles"
+      }
+    ],
+    "cuisine": [
+      {
+        "url": "https://lefooding.com",
+        "note": "Le Fooding - nouveaux restaurants, événements food"
+      },
+      {
+        "url": "https://www.lebonbon.fr/paris/",
+        "note": "Le Bonbon - food, éphémère"
+      }
+    ]
+  },
+  "ranking_weights": {
+    "sujet_favori": 40,
+    "lieu_emblematique": 20,
+    "se_termine_bientot": 15,
+    "gratuit": 15,
+    "lieu_prefere": 15,
+    "note_critique_elevee": 15,
+    "nouveaute": 10,
+    "proximite_dans_rayon": 10,
+    "jour_prefere": 10,
+    "budget_ok": 10,
+    "sujet_rejete": -30,
+    "deja_vu": -100,
+    "lieu_a_eviter": -50
+  },
+  "notes": "Preferences partagees par toutes les commandes /sorties-*. Chaque specialisation (musee, paris...) lit ce fichier. Pour du tres specifique, creer preferences/sorties-<nom>.json en plus. Centre Pompidou fermé pour travaux (programmation hors-les-murs).",
+  "recherches_web": {
+    "note": "Pas de site de référence unique : l'agent lance ces recherches (WebSearch).",
+    "street_art": [
+      "street art Paris exposition {mois}",
+      "parcours street art Paris 13e visite",
+      "festival street art Paris {annee}"
+    ],
+    "jeux": [
+      "soirée jeux de société Paris {mois}",
+      "bar à jeux Paris événement",
+      "festival jeux de société Paris {annee}"
+    ],
+    "cuisine": [
+      "nouveau restaurant Paris {mois}",
+      "food festival Paris {mois}",
+      "atelier dégustation Paris {mois}"
+    ]
+  }
+}

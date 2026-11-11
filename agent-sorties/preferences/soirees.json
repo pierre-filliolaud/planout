@@ -1,0 +1,128 @@
+{
+  "genres_preferes": [
+    "techno",
+    "electro",
+    "french touch",
+    "house",
+    "electro-live"
+  ],
+  "genres_exclus": [],
+  "artistes_favoris": [
+    "Daft Punk",
+    "Thomas Bangalter",
+    "Guy-Manuel de Homem-Christo",
+    "Vitalic",
+    "Boys Noize",
+    "Deadmau5",
+    "Justice",
+    "Bob Sinclar",
+    "Cassius",
+    "Laurent Wolf",
+    "DJ Mehdi",
+    "David Guetta",
+    "Kavinsky",
+    "Ofenbach",
+    "The Avener"
+  ],
+  "artistes_bouger_partout": [
+    "Thomas Bangalter",
+    "Guy-Manuel de Homem-Christo"
+  ],
+  "artistes_collaborateurs": {
+    "note": "Artistes connus pour inviter Thomas Bangalter ou Guy-Manuel en guest surprise. Surveiller leurs shows même sans annonce officielle.",
+    "pour_Thomas_Bangalter": [
+      "Fred again",
+      "Gesaffelstein",
+      "SebastiAn",
+      "Kavinsky",
+      "Justice",
+      "Alan Braxe"
+    ],
+    "pour_Guy_Manuel": [
+      "Cassius",
+      "Breakbot",
+      "SebastiAn",
+      "Kavinsky",
+      "Justice"
+    ]
+  },
+  "ville_principale": "Paris",
+  "rayon_km_defaut": 30,
+  "rayon_km_pour_favoris": 800,
+  "jours_preferes": [
+    "vendredi",
+    "samedi"
+  ],
+  "horaire_preferee": "nuit",
+  "budget_max_euros": 50,
+  "lieux_preferes": [
+    "Rex Club",
+    "Concrete",
+    "T7",
+    "Dehors Brut",
+    "La Machine du Moulin Rouge"
+  ],
+  "lieux_a_eviter": [],
+  "sources_web": {
+    "_global": [
+      {
+        "url": "https://ra.co",
+        "note": "Resident Advisor - electronic events worldwide"
+      },
+      {
+        "url": "https://shotgun.live",
+        "note": "Tickets soirees / festivals"
+      },
+      {
+        "url": "https://dice.fm",
+        "note": "Tickets concerts / soirees"
+      }
+    ],
+    "techno": [
+      {
+        "url": "https://www.rexclub.com",
+        "note": "Rex Club Paris - programmation"
+      },
+      {
+        "url": "https://www.concreteclub.fr",
+        "note": "Concrete / Dehors Brut"
+      },
+      {
+        "url": "https://t7-paris.com",
+        "note": "T7 Paris"
+      },
+      {
+        "url": "https://www.lamachinedumoulinrouge.com",
+        "note": "La Machine du Moulin Rouge"
+      }
+    ]
+  },
+  "ranking_weights": {
+    "artiste_bouger_partout": 60,
+    "artiste_favori": 40,
+    "genre_prefere": 15,
+    "lieu_prefere": 15,
+    "proximite_dans_rayon": 10,
+    "jour_prefere": 10,
+    "budget_ok": 10,
+    "lieu_a_eviter": -50,
+    "genre_exclu": -40,
+    "hors_rayon_favoris": -30
+  },
+  "notes": "Par defaut: techno a Paris. Bouger jusqu'a 800km si Thomas Bangalter joue. Mettre a jour ce fichier librement — la commande /soirees le relit a chaque execution. Les pondérations `ranking_weights` controlent le Top ranking — ajuster pour changer les priorites. Concrete est fermé depuis 2019 (Dehors Brut a pris la suite).",
+  "artistes_suggeres": {
+    "note": "Ajoutés par l'agent (French Touch / électro) — à confirmer. Comptent comme genre_prefere.",
+    "liste": [
+      "Air",
+      "Étienne de Crécy",
+      "Alan Braxe",
+      "Breakbot",
+      "SebastiAn",
+      "Mr. Oizo",
+      "Busy P",
+      "DJ Falcon",
+      "Motorbass",
+      "Laurent Garnier"
+    ]
+  }
+}

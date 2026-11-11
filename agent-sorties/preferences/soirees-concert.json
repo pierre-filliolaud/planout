@@ -1,0 +1,157 @@
+{
+  "genres_preferes": [
+    "electro",
+    "french touch",
+    "house",
+    "electro-live",
+    "rock",
+    "indie",
+    "pop",
+    "jazz",
+    "soul",
+    "rap",
+    "R&B",
+    "world",
+    "classique"
+  ],
+  "genres_exclus": [],
+  "artistes_favoris": [
+    "Daft Punk",
+    "Thomas Bangalter",
+    "Guy-Manuel de Homem-Christo",
+    "Vitalic",
+    "One-T",
+    "Boys Noize",
+    "Deadmau5",
+    "The Avener",
+    "Justice",
+    "Bob Sinclar",
+    "Cassius",
+    "Laurent Wolf",
+    "DJ Mehdi",
+    "David Guetta",
+    "Nhyx",
+    "The Drill",
+    "Kavinsky",
+    "Mattafix",
+    "Luiza",
+    "The Cardigans",
+    "Kanye West",
+    "Ofenbach",
+    "Therapie Taxi",
+    "The Weeknd"
+  ],
+  "artistes_bouger_partout": [
+    "Thomas Bangalter",
+    "Guy-Manuel de Homem-Christo"
+  ],
+  "artistes_collaborateurs": {
+    "note": "Artistes connus pour inviter Thomas Bangalter ou Guy-Manuel en guest surprise. Surveiller leurs shows et chercher activement des annonces de guests.",
+    "pour_Thomas_Bangalter": [
+      "Fred again",
+      "Gesaffelstein",
+      "SebastiAn",
+      "Kavinsky",
+      "Justice",
+      "Alan Braxe"
+    ],
+    "pour_Guy_Manuel": [
+      "Cassius",
+      "Breakbot",
+      "SebastiAn",
+      "Kavinsky",
+      "Justice"
+    ]
+  },
+  "ville_principale": "Paris",
+  "rayon_km_defaut": 30,
+  "rayon_km_pour_favoris": 300,
+  "jours_preferes": [
+    "vendredi",
+    "samedi"
+  ],
+  "budget_max_euros": 60,
+  "lieux_preferes": [
+    "Salle Pleyel",
+    "La Cigale",
+    "Le Bataclan",
+    "Olympia",
+    "Philharmonie de Paris",
+    "L'Elysée Montmartre"
+  ],
+  "lieux_a_eviter": [],
+  "sources_web": {
+    "_global": [
+      {
+        "url": "https://www.fnacspectacles.com/concerts/paris/",
+        "note": "Fnac Spectacles - concerts Paris"
+      },
+      {
+        "url": "https://www.billetreduc.com/concerts-paris.htm",
+        "note": "BilletReduc - concerts Paris reduits"
+      },
+      {
+        "url": "https://www.sortiraparis.com/musique-et-concerts",
+        "note": "Sortir a Paris - concerts"
+      },
+      {
+        "url": "https://bandsintown.com",
+        "note": "BandsInTown - tournees artistes"
+      }
+    ],
+    "concert": [
+      {
+        "url": "https://www.sallepleyel.fr/fr/concert",
+        "note": "Salle Pleyel - programmation"
+      },
+      {
+        "url": "https://www.olympiahall.com/agenda/",
+        "note": "Olympia - programmation"
+      },
+      {
+        "url": "https://www.le-bataclan.com/agenda/",
+        "note": "Bataclan - programmation"
+      },
+      {
+        "url": "https://lacigale.fr/agenda/",
+        "note": "La Cigale - programmation"
+      },
+      {
+        "url": "https://philharmoniedeparis.fr/fr/agenda",
+        "note": "Philharmonie - concerts"
+      }
+    ]
+  },
+  "ranking_weights": {
+    "artiste_bouger_partout": 60,
+    "artiste_favori": 40,
+    "genre_prefere": 15,
+    "lieu_emblematique": 20,
+    "lieu_prefere": 15,
+    "festival": 15,
+    "gratuit": 15,
+    "note_critique_elevee": 10,
+    "proximite_dans_rayon": 10,
+    "jour_prefere": 10,
+    "budget_ok": 10,
+    "lieu_a_eviter": -50,
+    "genre_exclu": -40,
+    "hors_rayon_favoris": -30
+  },
+  "notes": "Preferences concerts live (hors clubbing). Ajouter vos artistes favoris dans artistes_favoris pour personnaliser le scoring. budget_max_euros = 60 (concerts souvent plus chers que le clubbing). La commande /soirees-concert relit ce fichier a chaque execution.",
+  "artistes_suggeres": {
+    "note": "Ajoutés par l'agent (French Touch / électro) — à confirmer : déplacer dans artistes_favoris ou supprimer. Comptent comme genre_prefere.",
+    "liste": [
+      "Air",
+      "Étienne de Crécy",
+      "Alan Braxe",
+      "Breakbot",
+      "SebastiAn",
+      "Mr. Oizo",
+      "Busy P",
+      "DJ Falcon",
+      "Motorbass",
+      "Laurent Garnier"
+    ]
+  }
+}

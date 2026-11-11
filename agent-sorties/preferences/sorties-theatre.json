@@ -1,0 +1,63 @@
+{
+  "ville_principale": "Paris",
+  "rayon_km_defaut": 30,
+  "jours_preferes": ["samedi", "dimanche"],
+  "budget_max_euros": 40,
+
+  "genres_preferes": [
+    "theatre contemporain",
+    "comedie",
+    "one-man-show",
+    "opera",
+    "ballet",
+    "danse contemporaine",
+    "cirque contemporain"
+  ],
+  "genres_rejetes": [],
+
+  "lieux_preferes": [
+    "Comedie Francaise",
+    "Opera Bastille",
+    "Palais Garnier",
+    "Theatre du Chatelet",
+    "Odeon Theatre de l'Europe",
+    "Theatre National de Chaillot",
+    "MC93 Bobigny"
+  ],
+  "lieux_a_eviter": [],
+
+  "spectacles_deja_vus": [],
+
+  "sources_web": {
+    "_global": [
+      {"url": "https://www.timeout.fr/paris/theatre", "note": "Timeout Paris - theatre"},
+      {"url": "https://www.sortiraparis.com/arts-culture/theatre", "note": "Sortir a Paris - theatre"},
+      {"url": "https://quefaire.paris.fr", "note": "Ville de Paris - spectacles"}
+    ],
+    "theatre": [
+      {"url": "https://www.theatreonline.com/Spectacles/Spectacles-a-Paris", "note": "Theatre Online - programmation Paris"},
+      {"url": "https://www.billetreduc.com/theatre-paris.htm", "note": "BilletReduc - theatre Paris"},
+      {"url": "https://www.comedie-francaise.fr/fr/la-saison", "note": "Comedie Francaise - saison"},
+      {"url": "https://www.operadeparis.fr/saison", "note": "Opera National de Paris - saison"},
+      {"url": "https://theatre-chatelet.com/saison/", "note": "Theatre du Chatelet - programmation"}
+    ]
+  },
+
+  "ranking_weights": {
+    "genre_prefere": 40,
+    "lieu_emblematique": 20,
+    "lieu_prefere": 15,
+    "se_termine_bientot": 15,
+    "gratuit": 15,
+    "note_critique_elevee": 15,
+    "nouveaute": 10,
+    "proximite_dans_rayon": 10,
+    "jour_prefere": 10,
+    "budget_ok": 10,
+    "genre_rejete": -30,
+    "lieu_a_eviter": -50,
+    "deja_vu": -100
+  },
+
+  "notes": "Preferences spectacle vivant (theatre, opera, ballet, comedie). Ajouter dans spectacles_deja_vus les spectacles deja vus pour les exclure. budget_max_euros = 40 (peut monter pour opera/ballet). La commande /sorties-theatre relit ce fichier a chaque execution."
+}

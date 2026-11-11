@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agent-sorties/event.schema.json",
+  "title": "Événement de sortie (format PlanOut étendu)",
+  "description": "Champs PlanOut : title, date, date_fin, time, cat, venue, notes, reminders, deadline, score, source, match_reasons, image_url. Champs ajoutés par l'agent : id, tags, prix, reservation, urgence, url.",
+  "type": "object",
+  "required": ["title", "cat", "date", "venue", "url"],
+  "properties": {
+    "id": { "type": "string", "description": "Réutiliser l'id de data/connus.txt si l'événement est déjà connu. Sinon ne pas mettre : calculé automatiquement." },
+    "title": { "type": "string", "description": "Nom exact de l'événement. JAMAIS « (date estimée) »." },
+    "cat": { "enum": ["concert", "techno", "musee", "spectacle", "paris", "running", "volley", "autre"] },
+    "tags": { "type": "array", "items": { "type": "string" }, "description": "ex. french-touch, street-art, jeux, cuisine, opera, gratuit, nocturne" },
+    "date": { "type": "string", "format": "date", "description": "AAAA-MM-JJ, date officielle de début" },
+    "date_fin": { "type": ["string", "null"], "format": "date" },
+    "time": { "type": ["string", "null"], "pattern": "^[0-2][0-9]:[0-5][0-9]$" },
+    "venue": { "type": "string", "description": "Lieu, arrondissement. ex. « Accor Arena, Paris 12e »" },
+    "notes": { "type": "string", "description": "1 à 2 phrases : pourquoi c'est intéressant pour Pierre. Pas besoin d'y mettre prix, statut ou liens (ajoutés automatiquement)." },
+    "prix": {
+      "type": ["object", "null"],
+      "properties": {
+        "min": { "type": ["number", "null"] },
+        "max": { "type": ["number", "null"] },
+        "gratuit": { "type": "boolean" }
+      }
+    },
+    "reservation": {
+      "type": "object",
+      "properties": {
+        "requise": { "type": "boolean" },
+        "statut": { "enum": ["a_venir", "ouverte", "presque_complet", "complet", "sans_resa"] },
+        "ouverture": { "type": ["string", "null"], "description": "Ouverture de la billetterie, AAAA-MM-JJTHH:MM" },
+        "url": { "type": ["string", "null"], "description": "Lien direct de réservation" }
+      }
+    },
+    "deadline": { "type": ["string", "null"], "format": "date", "description": "« Book by » PlanOut. Facultatif : calculé automatiquement depuis reservation." },
+    "reminders": { "type": "array", "items": { "enum": ["1m", "2w", "1w", "3d", "1d"] }, "description": "Facultatif : calculé automatiquement." },
+    "urgence": { "enum": ["haute", "moyenne", "basse"] },
+    "score": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "match_reasons": { "type": "array", "items": { "type": "string" }, "description": "Format PlanOut, ex. « artiste_favori: Justice », « genre_prefere: french touch », « lieu_prefere: Rex Club », « budget_ok »" },
+    "url": { "type": "string", "description": "Page officielle consultée (obligatoire)" },
+    "source": { "type": "string", "description": "Domaine de la source, ex. « ra.co »" },
+    "image_url": { "type": ["string", "null"] }
+  }
+}

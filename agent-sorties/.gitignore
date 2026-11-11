@@ -1,0 +1,12 @@
+# secrets et fichiers de travail : jamais publiés
+config/telegram.env
+logs/*
+!logs/.gitkeep
+data/inbox/*
+!data/inbox/.gitkeep
+data/.lock
+data/.planout_importe
+data/connus.txt
+exports/*
+!exports/.gitkeep
+__pycache__/

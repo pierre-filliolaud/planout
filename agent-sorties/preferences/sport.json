@@ -1,0 +1,64 @@
+{
+  "ville_principale": "Paris",
+  "rayon_km_defaut": 50,
+  "rayon_km_pour_favoris": 200,
+  "jours_preferes": ["samedi", "dimanche"],
+  "budget_max_euros": 50,
+
+  "running": {
+    "distances_preferes": ["10km", "semi-marathon", "trail"],
+    "distances_rejetees": [],
+    "niveau": "intermediaire",
+    "objectif_temps_10k_min": 50,
+    "objectif_temps_semi_min": 110,
+    "types_preferes": ["route", "trail", "urban"],
+    "types_rejetes": []
+  },
+
+  "volley": {
+    "formats_preferes": ["outdoor", "beach", "indoor"],
+    "niveau": "loisir",
+    "types_preferes": ["tournoi", "match", "open", "5x5", "4x4", "3x3"],
+    "types_rejetes": [],
+    "mixte": true
+  },
+
+  "lieux_preferes": [],
+  "lieux_a_eviter": [],
+
+  "sources_web": {
+    "_global": [
+      {"url": "https://www.decathlon.fr/store-event", "note": "Events Decathlon"},
+      {"url": "https://www.openrunner.com", "note": "Calendrier courses running France"},
+      {"url": "https://www.jogging-plus.com/calendrier-courses.html", "note": "Calendrier courses France"}
+    ],
+    "running": [
+      {"url": "https://www.courseapied.net/calendrier/", "note": "Calendrier courses à pied France"},
+      {"url": "https://www.raidlight.com/agenda-trail", "note": "Agenda trail France"},
+      {"url": "https://www.semMarathon.fr", "note": "Semi-marathons France"},
+      {"url": "https://www.paris.fr/sport", "note": "Sport Ville de Paris"}
+    ],
+    "volley": [
+      {"url": "https://www.ffvb.org/agenda", "note": "FFVB - Fédération Française Volley"},
+      {"url": "https://liguevolleyballidf.org", "note": "Ligue Volley Île-de-France"},
+      {"url": "https://www.sporteef.com", "note": "Événements sportifs IDF"}
+    ]
+  },
+
+  "ranking_weights": {
+    "distance_preferee": 30,
+    "type_prefere": 25,
+    "proximite_dans_rayon": 20,
+    "jour_prefere": 15,
+    "budget_ok": 15,
+    "niveau_adapte": 15,
+    "evenement_majeur": 10,
+    "nouveaute": 5,
+    "distance_rejetee": -30,
+    "type_rejete": -30,
+    "hors_rayon": -20,
+    "budget_depasse": -10
+  },
+
+  "notes": "Préférences sport partagées par /sport-running et /sport-volley. Adapter distances_preferes, niveau, et rayon selon tes objectifs."
+}
