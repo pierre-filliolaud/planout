@@ -1,5 +1,6 @@
 [
   {
+    "id": "2027-03-20-the-avener-l-olympia",
     "title": "The Avener – L'Olympia",
     "date": "2027-03-20",
     "date_fin": null,
@@ -11,7 +12,8 @@
       "2w",
       "1w"
     ],
-    "score": 110,
+    "deadline": null,
+    "score": 100,
     "source": "olympiahall.com",
     "match_reasons": [
       "artiste_favori: The Avener",
@@ -20,9 +22,19 @@
       "lieu_prefere",
       "proximite_dans_rayon"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2027-03-27-french-79-zenith-paris",
     "title": "French 79 – Zénith Paris",
     "date": "2027-03-27",
     "date_fin": null,
@@ -34,6 +46,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 60,
     "source": "le-zenith.com",
     "match_reasons": [
@@ -42,6 +55,15 @@
       "proximite_dans_rayon",
       "jour_prefere"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "2026-01-22-amadeus-theatre-marigny",
+    "title": "Amadeus — Théâtre Marigny",
+    "date": "2026-01-22",
+    "date_fin": "2026-06-07",
+    "time": "20:30",
+    "cat": "spectacle",
+    "venue": "Théâtre Marigny, Paris 8e",
+    "notes": "Peter Shaffer, mise en scène Olivier Solivérès. Thomas Solivérès (Mozart), Jérôme Kircher (Salieri — Molière du comédien 2026). 14 interprètes. ~40€.\nhttps://www.theatremarigny.fr/evenement/amadeus/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 85,
+    "source": "theatremarigny.fr",
+    "match_reasons": [
+      "genre_prefere: theatre contemporain",
+      "note_critique_elevee: Molière comédien privé 2026",
+      "budget_ok"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  }
+]

@@ -1,5 +1,6 @@
 [
   {
+    "id": "2026-12-06-saucony-10km-de-la-tour-eiffel",
     "title": "Saucony 10km de la Tour Eiffel",
     "date": "2026-12-06",
     "date_fin": null,
@@ -11,6 +12,7 @@
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 90,
     "source": "10kmtoureiffel.fr",
     "match_reasons": [
@@ -21,9 +23,19 @@
       "budget_ok",
       "evenement_majeur"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-12-05-les-lucioles-du-josas-trail-nocturne",
     "title": "Les Lucioles du Josas — Trail nocturne",
     "date": "2026-12-05",
     "date_fin": null,
@@ -35,6 +47,7 @@
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 80,
     "source": "traildujosas.com",
     "match_reasons": [
@@ -43,27 +56,15 @@
       "proximite_dans_rayon",
       "jour_prefere: samedi"
     ],
-    "image_url": null
-  },
-  {
-    "title": "Parkrun Bois de Boulogne — 5km gratuit (hebdo samedi)",
-    "date": "2026-06-06",
-    "date_fin": "2027-11-27",
-    "time": "09:00",
-    "cat": "running",
-    "venue": "Bois de Boulogne, Paris 16e (75)",
-    "notes": "Distance: 5km. Prix: GRATUIT. Récurrent chaque samedi matin à 9h. Inscription unique sur parkrun.fr.\nhttps://www.parkrun.fr/boisdeboulogne/",
-    "reminders": [
-      "1d"
-    ],
-    "score": 65,
-    "source": "parkrun.fr",
-    "match_reasons": [
-      "type_prefere: urban/parc",
-      "proximite_dans_rayon",
-      "jour_prefere: samedi",
-      "gratuit"
-    ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

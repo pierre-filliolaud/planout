@@ -1,15 +1,17 @@
 [
   {
+    "id": "2027-05-28-paris-gallery-weekend-2027",
     "title": "Paris Gallery Weekend 2027",
     "date": "2027-05-28",
     "date_fin": "2027-05-30",
     "time": "11:00",
-    "cat": "événement culturel",
+    "cat": "paris",
     "venue": "Galeries parisiennes (Marais, Saint-Germain, Belleville...)",
     "notes": "Récurrent annuel. Weekend art contemporain, vernissages, performances. Gratuit. Dates 2027 à confirmer.\nhttps://parisgalleryweekend.com",
     "reminders": [
       "1w"
     ],
+    "deadline": null,
     "score": 80,
     "source": "parisgalleryweekend.com",
     "match_reasons": [
@@ -17,6 +19,15 @@
       "gratuit",
       "jour_prefere"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

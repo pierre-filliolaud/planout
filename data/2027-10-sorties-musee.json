@@ -1,43 +1,33 @@
 [
   {
-    "title": "Zao Wou-Ki — Rétrospective",
-    "date": "2027-07-01",
-    "date_fin": "2027-11-30",
-    "time": "10:00",
-    "cat": "expo",
-    "venue": "Musée Cernuschi, Paris 8e",
-    "notes": "Rétrospective du peintre sino-français, figure de l'abstraction lyrique. Entrée permanente gratuite.\nhttps://www.exposition-paris.info/agenda-des-expos-a-paris-en-2027/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 65,
-    "source": "exposition-paris.info",
-    "match_reasons": [
-      "sujet_favori: art contemporain",
-      "sujet_favori: culture japonaise",
-      "gratuit"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2027-10-01-alex-katz-exposition",
     "title": "Alex Katz — Exposition",
     "date": "2027-10-01",
     "date_fin": "2027-11-30",
     "time": "10:00",
-    "cat": "expo",
+    "cat": "musee",
     "venue": "Musée d'Art Moderne de la Ville de Paris (MAM), Paris 16e",
     "notes": "Exposition du peintre américain figuratif pop/contemporain Alex Katz.\nhttps://www.exposition-paris.info/agenda-des-expos-a-paris-en-2027/",
     "reminders": [
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 60,
     "source": "exposition-paris.info",
     "match_reasons": [
       "sujet_favori: art contemporain",
       "nouveaute"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

@@ -1,0 +1,231 @@
+[
+  {
+    "id": "2026-03-18-nan-goldin-this-will-not-end-well",
+    "title": "Nan Goldin — This Will Not End Well",
+    "date": "2026-03-18",
+    "date_fin": "2026-06-21",
+    "time": "10:00",
+    "cat": "musee",
+    "venue": "Grand Palais (Salon d'Honneur), Paris 8e",
+    "notes": "Grande rétrospective de Nan Goldin. Photographie. 17€. Nocturne vendredi jusqu'à 22h. Ferme le 21 juin.\nhttps://www.grandpalais.fr/en/program/nan-goldin-will-not-end-well",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 100,
+    "source": "grandpalais.fr",
+    "match_reasons": [
+      "sujet_favori: photographie",
+      "sujet_favori: art contemporain",
+      "lieu_emblematique: Grand Palais",
+      "note_critique_elevee: 5/5",
+      "se_termine_bientot",
+      "budget_ok"
+    ],
+    "image_url": "https://www.grandpalais.fr/sites/default/files/styles/w1000_cropped/public/medias/images/2026-01/visuel-nan-goldin-untitled-1982-c-nangoldin.jpg",
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-03-13-renaissance-da-vinci-raphael-michel-ange-immersif",
+    "title": "Renaissance: Da Vinci, Raphaël, Michel-Ange (immersif)",
+    "date": "2026-03-13",
+    "date_fin": "2026-06-27",
+    "time": "10:00",
+    "cat": "musee",
+    "venue": "Atelier des Lumières, Paris 11e",
+    "notes": "Expérience numérique immersive. Art / design. 16€ (billet combiné avec Dreamed Japan).\nhttps://www.atelier-lumieres.com/en/whats-on",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 80,
+    "source": "atelier-lumieres.com",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "sujet_favori: design",
+      "lieu_prefere: Atelier des Lumieres",
+      "budget_ok"
+    ],
+    "image_url": "https://www.atelier-lumieres.com/sites/default/files/styles/w480/public/2026-02/michel-ange_david_atelier.jpg.webp",
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-03-13-dreamed-japan-art-numerique-immersif",
+    "title": "Dreamed Japan — Art numérique immersif",
+    "date": "2026-03-13",
+    "date_fin": "2026-06-28",
+    "time": "10:00",
+    "cat": "musee",
+    "venue": "Atelier des Lumières, Paris 11e",
+    "notes": "Voyage immersif dans le Japon des estampes et de l'animation. Culture japonaise. 16€ — inclus dans le même billet que Renaissance.\nhttps://www.atelier-lumieres.com/en/whats-on",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 75,
+    "source": "atelier-lumieres.com",
+    "match_reasons": [
+      "sujet_favori: culture japonaise",
+      "lieu_prefere: Atelier des Lumieres",
+      "budget_ok"
+    ],
+    "image_url": "https://www.atelier-lumieres.com/sites/default/files/styles/185x245/public/2023-04/09._spiller_0076_bd.jpg.webp",
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-03-24-matisse-1941-1954",
+    "title": "Matisse, 1941-1954",
+    "date": "2026-03-24",
+    "date_fin": "2026-07-26",
+    "time": "10:00",
+    "cat": "musee",
+    "venue": "Grand Palais, Paris 8e",
+    "notes": "Matisse : papiers découpés et chapelle. Art / peinture. 19€. Nocturne vendredi jusqu'à 22h. Co-organisée Centre Pompidou. Note : 5/5 Timeout.\nhttps://www.grandpalais.fr/en/program/matisse-1941-1954",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 75,
+    "source": "grandpalais.fr",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "lieu_emblematique: Grand Palais",
+      "note_critique_elevee: 5/5",
+      "budget_ok"
+    ],
+    "image_url": "https://www.grandpalais.fr/sites/default/files/styles/w1000_cropped/public/medias/images/2025-10/visuel_henri_matisse_nu_bleu_ii_1952-c-centre_pompidou_0.jpg",
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-03-24-matisse-1941-1954-en-cours",
+    "title": "Matisse, 1941-1954 (en cours)",
+    "date": "2026-03-24",
+    "date_fin": "2026-07-26",
+    "time": "10:00",
+    "cat": "musee",
+    "venue": "Grand Palais, Paris 8e",
+    "notes": "Papiers découpés et chapelle. 19€. Nocturne vendredi 22h. Co-organisée Centre Pompidou. Note: 5/5 Timeout.\nhttps://www.grandpalais.fr/en/program/matisse-1941-1954",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 75,
+    "source": "grandpalais.fr",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "lieu_emblematique",
+      "note_critique_elevee",
+      "budget_ok"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-03-04-clair-obscur-pinault-collection",
+    "title": "Clair-obscur — Pinault Collection",
+    "date": "2026-03-04",
+    "date_fin": "2026-08-24",
+    "time": "11:00",
+    "cat": "musee",
+    "venue": "Bourse de Commerce, Paris 1er",
+    "notes": "Collection Pinault. Art contemporain. 15€. Nocturne vendredi jusqu'à 21h.\nhttps://www.pinaultcollection.com/en/boursedecommerce/clair-obscur-0",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 70,
+    "source": "pinaultcollection.com",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "note_critique_elevee",
+      "budget_ok"
+    ],
+    "image_url": "https://www.pinaultcollection.com/p/styles/card/public/page/main/manvi0058_unframed_rendering_repro_layered-5mo.jpg.webp?VersionId=1772810317.062249&itok=Zrnrkq1b",
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-03-04-clair-obscur-pinault-collection-en-cours",
+    "title": "Clair-obscur — Pinault Collection (en cours)",
+    "date": "2026-03-04",
+    "date_fin": "2026-08-24",
+    "time": "11:00",
+    "cat": "musee",
+    "venue": "Bourse de Commerce — Pinault Collection, Paris 1er",
+    "notes": "~100 œuvres collection Pinault. Lumière et ombre. 1er samedi du mois gratuit 17h-21h. Nocturne vendredi 21h.\nhttps://www.pinaultcollection.com/fr/boursedecommerce/clair-obscur-0",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 70,
+    "source": "pinaultcollection.com",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "budget_ok"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  }
+]

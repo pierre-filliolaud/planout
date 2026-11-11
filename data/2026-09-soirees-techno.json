@@ -1,16 +1,18 @@
 [
   {
+    "id": "2026-09-19-techno-parade-paris-2026-28e-edition",
     "title": "Techno Parade Paris 2026 — 28e édition",
     "date": "2026-09-19",
     "date_fin": null,
     "time": "14:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Paris (parcours à confirmer), Paris",
     "notes": "28e édition de la Techno Parade — retour après 2 ans d'absence. 200 DJs internationaux sur 15+ chars mobiles. ~400 000 festivaliers attendus. Événement GRATUIT (journée dans les rues de Paris) + afterparties payantes dans les clubs. Lineup non encore annoncé au 11 mai 2026.\nhttps://www.jds.fr/paris/concerts/electro/techno-parade-paris-262388_A",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 50,
     "source": "jds.fr",
     "match_reasons": [
@@ -18,85 +20,62 @@
       "proximite_dans_rayon: Paris",
       "budget_ok: gratuit"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "Alan Braxe — Paris (date estimée 2026-2027)",
-    "date": "2026-09-26",
-    "date_fin": null,
-    "time": "23:00",
-    "cat": "concert",
-    "venue": "Rex Club ou La Machine (estimé), Paris",
-    "notes": "date estimée / récurrent. Alan Braxe est un DJ/producteur français touch collaborateur de Daft Punk et Thomas Bangalter (co-auteur de 'Intro'). Surveiller ses dates sur ra.co.\n⚠️ Guest possible : Thomas Bangalter a collaboré avec Alan Braxe sur scène.\nhttps://ra.co/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 50,
-    "source": "ra.co",
-    "match_reasons": [
-      "artiste_collaborateur: Alan Braxe (guest Thomas Bangalter possible)",
-      "genre_prefere: french touch",
-      "proximite_dans_rayon: Paris",
-      "budget_ok"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-09-24-nightclubbing-festival-paris-la-villette-clubs-jour-1",
     "title": "Nightclubbing Festival — Paris (La Villette + clubs) — Jour 1",
     "date": "2026-09-24",
     "date_fin": null,
     "time": "18:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "La Villette + clubs parisiens, Paris 19e",
     "notes": "Festival inaugural Nightclubbing, curé par Jen Cardini (AEG Presents France). Festival citywide 4 jours (24-27 sept). La Villette comme hub principal + extension dans les clubs du périph. Musique électronique + installations + conversations. Partenariat Mutek. Lineup non encore annoncé. Surveiller sur aegpresents.fr et ra.co.\nhttps://www.aegpresents.fr/event/nightclubbing-festival/",
     "reminders": [
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 45,
     "source": "aegpresents.fr",
     "match_reasons": [
       "genre_prefere: techno/house/electro",
       "proximite_dans_rayon: Paris"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "La Machine du Moulin Rouge — Soirée Electro (récurrente automne 2026)",
-    "date": "2026-09-26",
-    "date_fin": null,
-    "time": "23:00",
-    "cat": "concert",
-    "venue": "La Machine du Moulin Rouge, Paris 18e",
-    "notes": "date estimée / récurrent. La Machine programme des soirées electro/club. Consulter lamachinedumoulinrouge.com. ~10-20€.\nhttps://www.lamachinedumoulinrouge.com/agenda/",
-    "reminders": [
-      "1w",
-      "1d"
-    ],
-    "score": 45,
-    "source": "lamachinedumoulinrouge.com",
-    "match_reasons": [
-      "lieu_prefere: La Machine du Moulin Rouge",
-      "genre_prefere: electro/house",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: samedi",
-      "budget_ok"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-09-27-nightclubbing-festival-paris-jour-4-final",
     "title": "Nightclubbing Festival — Paris — Jour 4 (final)",
     "date": "2026-09-27",
     "date_fin": null,
     "time": "20:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "La Villette, Paris 19e",
     "notes": "Dernier jour du Nightclubbing Festival inaugural (24-27 sept 2026). Festival citywide électronique + nightlife culture. Lineup à confirmer.\nhttps://www.aegpresents.fr/event/nightclubbing-festival/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 40,
     "source": "aegpresents.fr",
     "match_reasons": [
@@ -104,51 +83,15 @@
       "proximite_dans_rayon: Paris",
       "jour_prefere: samedi"
     ],
-    "image_url": null
-  },
-  {
-    "title": "Rex Club — Soirée Techno/House (récurrente automne 2026)",
-    "date": "2026-09-12",
-    "date_fin": null,
-    "time": "23:30",
-    "cat": "concert",
-    "venue": "Rex Club, Paris 2e",
-    "notes": "date estimée / récurrent. Programme du Rex Club pour septembre 2026. Consulter rexclub.com. ~12-15€.\nhttps://rexclub.com/billetterie/",
-    "reminders": [
-      "1w",
-      "1d"
-    ],
-    "score": 40,
-    "source": "rexclub.com",
-    "match_reasons": [
-      "lieu_prefere: Rex Club",
-      "genre_prefere: techno/house",
-      "budget_ok",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: samedi"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "FVTVR — Soirée Electro/Techno (récurrente été-automne 2026)",
-    "date": "2026-09-05",
-    "date_fin": null,
-    "time": "00:00",
-    "cat": "concert",
-    "venue": "FVTVR, Paris 13e",
-    "notes": "date estimée / récurrent. FVTVR programme des soirées techno et house chaque vendredi et samedi. Consulter dice.fm ou shotgun.live pour la programmation exacte de septembre 2026. ~15-20€.\nhttps://dice.fm/venue/fvtvr-pvlk",
-    "reminders": [
-      "1w",
-      "1d"
-    ],
-    "score": 35,
-    "source": "dice.fm",
-    "match_reasons": [
-      "genre_prefere: techno/house",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: samedi",
-      "budget_ok"
-    ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

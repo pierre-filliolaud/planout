@@ -1,5 +1,6 @@
 [
   {
+    "id": "2026-06-11-david-guetta-monolith-show-stade-de-france-1",
     "title": "David Guetta – Monolith Show @ Stade de France (1)",
     "date": "2026-06-11",
     "date_fin": null,
@@ -11,6 +12,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 100,
     "source": "stadefrance.com",
     "match_reasons": [
@@ -19,9 +21,19 @@
       "lieu_emblematique",
       "proximite_dans_rayon"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-12-david-guetta-monolith-show-stade-de-france-2",
     "title": "David Guetta – Monolith Show @ Stade de France (2)",
     "date": "2026-06-12",
     "date_fin": null,
@@ -33,6 +45,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 100,
     "source": "stadefrance.com",
     "match_reasons": [
@@ -42,9 +55,19 @@
       "proximite_dans_rayon",
       "jour_prefere"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-13-david-guetta-monolith-show-stade-de-france-3",
     "title": "David Guetta – Monolith Show @ Stade de France (3)",
     "date": "2026-06-13",
     "date_fin": null,
@@ -56,6 +79,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 100,
     "source": "stadefrance.com",
     "match_reasons": [
@@ -65,9 +89,19 @@
       "proximite_dans_rayon",
       "jour_prefere"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-05-we-love-green-2026",
     "title": "We Love Green 2026",
     "date": "2026-06-05",
     "date_fin": "2026-06-07",
@@ -79,6 +113,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 75,
     "source": "welovegreen.fr",
     "match_reasons": [
@@ -86,9 +121,19 @@
       "genre_prefere: rock/indie/electro/pop",
       "proximite_dans_rayon"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-21-fete-de-la-musique-2026",
     "title": "Fête de la Musique 2026",
     "date": "2026-06-21",
     "date_fin": null,
@@ -100,6 +145,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 70,
     "source": "fetedelamusique.culture.gouv.fr",
     "match_reasons": [
@@ -108,9 +154,19 @@
       "genre_prefere: electro/jazz/rock/pop",
       "proximite_dans_rayon"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-27-days-off-2026-philharmonie-de-paris",
     "title": "Days Off 2026 – Philharmonie de Paris",
     "date": "2026-06-27",
     "date_fin": "2026-07-05",
@@ -122,6 +178,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 70,
     "source": "daysoff.fr",
     "match_reasons": [
@@ -131,9 +188,19 @@
       "lieu_prefere",
       "proximite_dans_rayon"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-28-paris-jazz-festival-2026-parc-floral",
     "title": "Paris Jazz Festival 2026 – Parc Floral",
     "date": "2026-06-28",
     "date_fin": "2026-09-06",
@@ -145,6 +212,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 55,
     "source": "festivalsduparcfloral.paris",
     "match_reasons": [
@@ -153,27 +221,15 @@
       "genre_prefere: jazz",
       "proximite_dans_rayon"
     ],
-    "image_url": null
-  },
-  {
-    "title": "Solidays 2026",
-    "date": "2026-06-26",
-    "date_fin": "2026-06-28",
-    "time": "17:00",
-    "cat": "concert",
-    "venue": "Hippodrome Paris-Longchamp (75016)",
-    "notes": "Festival caritatif (lutte contre le SIDA) 3 jours. Lineup : Orelsan, GIMS, Major Lazer, Zara Larsson, Bigflo & Oli, Mosimann, Suzane, Guy2Bezbar… 9 scènes. Prix : ~75€/jour.\nhttps://www.solidays.org/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 50,
-    "source": "solidays.org",
-    "match_reasons": [
-      "festival",
-      "genre_prefere: electro/pop/rap",
-      "proximite_dans_rayon"
-    ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

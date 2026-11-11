@@ -1,0 +1,37 @@
+[
+  {
+    "id": "2026-01-31-jules-verne-le-voyage-extraordinaire-le-grand-hotel-des-reves",
+    "title": "Jules Verne, Le Voyage Extraordinaire — Le Grand Hôtel des Rêves",
+    "date": "2026-01-31",
+    "date_fin": "2026-06-14",
+    "time": "13:00",
+    "cat": "paris",
+    "venue": "Le Grand Hôtel des Rêves, 47 rue du Cardinal Lemoine, Paris 5e",
+    "notes": "Spectacle immersif 55min dans une demeure du 18e s. 25 comédiens incarnent Jules Verne et ses héros : Phileas Fogg, Capitaine Nemo, Passepartout, George Sand, Thomas Edison. 8 décors, 1 000m². DERNIÈRES SEMAINES — se termine le 14 juin ! À partir de 19,99€. Mer 13h-19h / Sam 14h-21h / Dim 10h40-17h40. Note : 10/10 (131 avis).\nhttps://www.legrandhoteldesreves.fr/spectaclejulesverne",
+    "reminders": [
+      "3d",
+      "1d"
+    ],
+    "deadline": null,
+    "score": 100,
+    "source": "legrandhoteldesreves.fr",
+    "match_reasons": [
+      "sujet_favori: theatre_immersif",
+      "se_termine_bientot: <2 semaines",
+      "note_critique_elevee: 10/10",
+      "proximite_dans_rayon: Paris 5e",
+      "jour_prefere: sam/dim",
+      "budget_ok: 19,99€"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  }
+]

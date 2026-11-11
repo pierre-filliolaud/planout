@@ -1,9 +1,10 @@
 [
   {
+    "id": "2026-08-28-kompromat-vitalic-rock-en-seine-j3",
     "title": "Kompromat (Vitalic) @ Rock en Seine J3",
     "date": "2026-08-28",
     "date_fin": null,
-    "time": "TBA",
+    "time": null,
     "cat": "concert",
     "venue": "Domaine National de Saint-Cloud (92)",
     "notes": "Kompromat = Vitalic + Rebeka Warrior (EBM/techno-punk). Vitalic est artiste favori. En vedette américaine de Nick Cave vendredi. Prix festival : à partir de ~79€/jour.\nhttps://www.rockenseine.com/",
@@ -11,7 +12,8 @@
       "2w",
       "1w"
     ],
-    "score": 120,
+    "deadline": null,
+    "score": 100,
     "source": "rockenseine.com",
     "match_reasons": [
       "artiste_favori: Vitalic (alias Kompromat)",
@@ -20,9 +22,19 @@
       "proximite_dans_rayon",
       "jour_prefere"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-08-26-rock-en-seine-2026-pass-5-jours",
     "title": "Rock en Seine 2026 – Pass 5 jours",
     "date": "2026-08-26",
     "date_fin": "2026-08-30",
@@ -35,6 +47,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 90,
     "source": "rockenseine.com",
     "match_reasons": [
@@ -43,9 +56,19 @@
       "proximite_dans_rayon",
       "jour_prefere: vendredi/samedi/dimanche"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-08-28-jazz-a-la-villette-2026-25e-edition",
     "title": "Jazz à la Villette 2026 – 25e édition",
     "date": "2026-08-28",
     "date_fin": "2026-09-06",
@@ -58,6 +81,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 70,
     "source": "jazzalavillette.com",
     "match_reasons": [
@@ -68,28 +92,15 @@
       "budget_ok",
       "proximite_dans_rayon"
     ],
-    "image_url": null
-  },
-  {
-    "title": "Paris Jazz Festival 2026 – Parc Floral",
-    "date": "2026-06-28",
-    "date_fin": "2026-09-06",
-    "time": "15:00",
-    "cat": "concert",
-    "venue": "Parc Floral de Vincennes (75012)",
-    "notes": "Concerts jazz gratuits (hors entrée parc : 2,50€) les week-ends d'été. Artistes 2026 : Melissa Aldana, Kyoto Jazz Massive, Poets of Forest, Célia Kameni, Tomoki Sanders… Pique-nique autorisé.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 55,
-    "source": "festivalsduparcfloral.paris",
-    "match_reasons": [
-      "festival",
-      "gratuit",
-      "genre_prefere: jazz",
-      "proximite_dans_rayon"
-    ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

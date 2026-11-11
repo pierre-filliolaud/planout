@@ -1,30 +1,18 @@
 [
   {
-    "title": "Jules Verne, Le Voyage Extraordinaire — Le Grand Hôtel des Rêves",
-    "date": "2026-01-31",
-    "date_fin": "2026-06-14",
-    "time": "13:00",
-    "cat": "theatre_immersif",
-    "venue": "Le Grand Hôtel des Rêves, 47 rue du Cardinal Lemoine, Paris 5e",
-    "notes": "Spectacle immersif 55min dans une demeure du 18e s. 25 comédiens incarnent Jules Verne et ses héros : Phileas Fogg, Capitaine Nemo, Passepartout, George Sand, Thomas Edison. 8 décors, 1 000m². DERNIÈRES SEMAINES — se termine le 14 juin ! À partir de 19,99€. Mer 13h-19h / Sam 14h-21h / Dim 10h40-17h40. Note : 10/10 (131 avis).\nhttps://www.legrandhoteldesreves.fr/spectaclejulesverne",
-    "reminders": ["3d", "1d"],
-    "score": 115,
-    "source": "legrandhoteldesreves.fr",
-    "match_reasons": ["sujet_favori: theatre_immersif", "se_termine_bientot: <2 semaines", "note_critique_elevee: 10/10", "proximite_dans_rayon: Paris 5e", "jour_prefere: sam/dim", "budget_ok: 19,99€"],
-    "image_url": null
-  },
-  {
+    "id": "2026-06-06-nuit-blanche-2026-direction-barbara-butch",
     "title": "Nuit Blanche 2026 — direction Barbara Butch",
     "date": "2026-06-06",
     "date_fin": "2026-06-07",
     "time": "18:00",
-    "cat": "nocturne culturelle",
+    "cat": "paris",
     "venue": "Paris (toute la ville)",
     "notes": "25e édition. Thème: l'Amour. 200+ events (installations, performances, concerts, projections) de 18h à 5h. Gratuit.\nhttps://parisjetaime.com/eng/event/nuit-blanche-in-paris-e015",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 90,
     "source": "parisjetaime.com",
     "match_reasons": [
@@ -33,20 +21,31 @@
       "lieu_emblematique",
       "jour_prefere"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-21-fete-de-la-musique-paris-2026",
     "title": "Fête de la Musique Paris 2026",
     "date": "2026-06-21",
     "date_fin": null,
     "time": "12:00",
-    "cat": "festival",
+    "cat": "paris",
     "venue": "Paris (toute la ville)",
     "notes": "Concerts partout le 21 juin. Tambours japonais près de la Bastille, électro, folk nordique à La Villette. Gratuit.\nhttps://fetedelamusique.culture.gouv.fr",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 75,
     "source": "fetedelamusique.culture.gouv.fr",
     "match_reasons": [
@@ -55,20 +54,31 @@
       "lieu_emblematique",
       "jour_prefere"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-27-festival-days-off-2026-philharmonie-de-paris",
     "title": "Festival Days Off 2026 — Philharmonie de Paris",
     "date": "2026-06-27",
     "date_fin": "2026-07-05",
     "time": "20:00",
-    "cat": "festival",
+    "cat": "paris",
     "venue": "Philharmonie de Paris / Cité de la Musique, Paris 19e",
     "notes": "16e édition. Tamino, Babyshambles, Aurora x Tom Rowlands, Alela Diane, Smerz, nuit Raï (1er juillet). Prix: 10-65€.\nhttps://daysoff.fr",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 70,
     "source": "daysoff.fr",
     "match_reasons": [
@@ -77,40 +87,62 @@
       "lieu_emblematique",
       "budget_ok"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-05-we-love-green-festival-2026",
     "title": "We Love Green Festival 2026",
     "date": "2026-06-05",
     "date_fin": "2026-06-07",
     "time": "14:00",
-    "cat": "festival",
+    "cat": "paris",
     "venue": "Bois de Vincennes, Paris 12e",
     "notes": "15e édition. Gorillaz, Theodora, The xx, Charlotte de Witte. 100% énergie renouvelable. Prix: à partir de 49€.\nhttps://www.welovegreen.fr",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 65,
     "source": "welovegreen.fr",
     "match_reasons": [
       "sujet_favori: musique",
       "nouveaute"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-24-paris-jazz-festival-2026-parc-floral",
     "title": "Paris Jazz Festival 2026 — Parc Floral",
     "date": "2026-06-24",
     "date_fin": "2026-09-06",
     "time": "15:00",
-    "cat": "festival",
+    "cat": "paris",
     "venue": "Parc Floral de Vincennes, Paris 12e",
     "notes": "Concerts gratuits week-ends fin juin → début septembre. Melissa Aldana, Tomoki Sanders, Kyoto Jazz Massive, Emma Jean Thackray. Entrée parc: 2,50€.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 60,
     "source": "festivalsduparcfloral.paris",
     "match_reasons": [
@@ -118,44 +150,75 @@
       "gratuit",
       "budget_ok"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-26-solidays-2026",
     "title": "Solidays 2026",
     "date": "2026-06-26",
     "date_fin": "2026-06-28",
     "time": "14:00",
-    "cat": "festival",
+    "cat": "paris",
     "venue": "Hippodrome Paris-Longchamp, Paris 16e",
     "notes": "28e édition solidaire contre le Sida. Orelsan, Gims, Major Lazer, Zara Larsson, Josman. Prix: à partir de 39€.\nhttps://www.solidays.org",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 50,
     "source": "solidays.org",
     "match_reasons": [
       "sujet_favori: musique",
       "budget_ok"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-23-fashion-week-paris-homme-printemps-ete-2027",
     "title": "Fashion Week Paris — Homme Printemps-Été 2027",
     "date": "2026-06-23",
     "date_fin": "2026-06-28",
     "time": "10:00",
-    "cat": "fashion week",
+    "cat": "paris",
     "venue": "Divers lieux Paris",
     "notes": "Défilés mode homme PE 2027. ~100 shows. Dior, Hermès, LV, CdG... Événements satellites ouverts au public.\nhttps://www.fhcm.paris/en/paris-fashion-week",
     "reminders": [
       "1w"
     ],
+    "deadline": null,
     "score": 30,
     "source": "fhcm.paris",
     "match_reasons": [
       "sujet_favori: design"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

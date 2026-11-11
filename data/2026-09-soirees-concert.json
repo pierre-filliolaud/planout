@@ -1,56 +1,10 @@
 [
   {
-    "title": "Jazz à la Villette 2026 – 25e édition",
-    "date": "2026-08-28",
-    "date_fin": "2026-09-06",
-    "time": "19:00",
-    "cat": "concert",
-    "venue": "Philharmonie / Grande Halle de La Villette (75019)",
-    "notes": "25e anniversaire. Artistes : Snarky Puppy & Metropole Orkest (28-29 août), GoGo Penguin, Kokoroko, Cymande, Brian Jackson & Yasiin Bey, Selah Sue & The Gallands (4 sept). Prix : 40-50€/concert.\nhttps://jazzalavillette.com/fr/",
-    "reminders": [
-      "1m",
-      "2w",
-      "1w"
-    ],
-    "score": 70,
-    "source": "jazzalavillette.com",
-    "match_reasons": [
-      "festival",
-      "genre_prefere: jazz/soul",
-      "lieu_emblematique",
-      "lieu_prefere",
-      "budget_ok",
-      "proximite_dans_rayon"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Paris Jazz Festival 2026 – Parc Floral",
-    "date": "2026-06-28",
-    "date_fin": "2026-09-06",
-    "time": "15:00",
-    "cat": "concert",
-    "venue": "Parc Floral de Vincennes (75012)",
-    "notes": "Concerts jazz gratuits (hors entrée parc : 2,50€) les week-ends d'été. Artistes 2026 : Melissa Aldana, Kyoto Jazz Massive, Poets of Forest, Célia Kameni, Tomoki Sanders… Pique-nique autorisé.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 55,
-    "source": "festivalsduparcfloral.paris",
-    "match_reasons": [
-      "festival",
-      "gratuit",
-      "genre_prefere: jazz",
-      "proximite_dans_rayon"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-09-24-nightclubbing-festival-2026",
     "title": "Nightclubbing Festival 2026",
     "date": "2026-09-24",
     "date_fin": "2026-09-27",
-    "time": "TBA",
+    "time": null,
     "cat": "concert",
     "venue": "La Villette + clubs nord-est Paris (75019)",
     "notes": "1re édition du festival electro + nightlife curé par Jen Cardini (AEG Presents France). Concerts, installations, conférences. Partenariat avec MUTEK.\nhttps://electronicgroove.com/jen-cardini-announces-nightclubbing-festival-2026-in-paris/",
@@ -58,6 +12,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 55,
     "source": "electronicgroove.com",
     "match_reasons": [
@@ -65,6 +20,15 @@
       "genre_prefere: electro/techno/house",
       "proximite_dans_rayon"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

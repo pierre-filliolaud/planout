@@ -1,5 +1,6 @@
 [
   {
+    "id": "2026-10-18-semi-marathon-du-bois-de-vincennes",
     "title": "Semi-marathon du Bois de Vincennes",
     "date": "2026-10-18",
     "date_fin": null,
@@ -11,6 +12,7 @@
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 90,
     "source": "sportpassionorganisation.com",
     "match_reasons": [
@@ -20,9 +22,19 @@
       "jour_prefere: dimanche",
       "budget_ok"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-10-17-salomon-ecotrail-paris-automne",
     "title": "Salomon EcoTrail Paris — Automne",
     "date": "2026-10-17",
     "date_fin": null,
@@ -34,6 +46,7 @@
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 85,
     "source": "ecotrailparis.com",
     "match_reasons": [
@@ -43,9 +56,19 @@
       "budget_ok",
       "evenement_majeur"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-10-04-trail-des-hauteurs-romainville",
     "title": "Trail des Hauteurs — Romainville",
     "date": "2026-10-04",
     "date_fin": null,
@@ -57,6 +80,7 @@
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 80,
     "source": "fsgt.org",
     "match_reasons": [
@@ -65,9 +89,19 @@
       "proximite_dans_rayon",
       "jour_prefere: dimanche"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-10-11-harmonie-mutuelle-20km-de-paris-48e-edition",
     "title": "Harmonie Mutuelle 20km de Paris — 48e édition",
     "date": "2026-10-11",
     "date_fin": null,
@@ -79,6 +113,7 @@
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 72,
     "source": "20kmparis.com",
     "match_reasons": [
@@ -86,27 +121,15 @@
       "proximite_dans_rayon",
       "evenement_majeur"
     ],
-    "image_url": null
-  },
-  {
-    "title": "Parkrun Bois de Boulogne — 5km gratuit (hebdo samedi)",
-    "date": "2026-06-06",
-    "date_fin": "2027-11-27",
-    "time": "09:00",
-    "cat": "running",
-    "venue": "Bois de Boulogne, Paris 16e (75)",
-    "notes": "Distance: 5km. Prix: GRATUIT. Récurrent chaque samedi matin à 9h. Inscription unique sur parkrun.fr.\nhttps://www.parkrun.fr/boisdeboulogne/",
-    "reminders": [
-      "1d"
-    ],
-    "score": 65,
-    "source": "parkrun.fr",
-    "match_reasons": [
-      "type_prefere: urban/parc",
-      "proximite_dans_rayon",
-      "jour_prefere: samedi",
-      "gratuit"
-    ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

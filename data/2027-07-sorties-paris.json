@@ -1,16 +1,18 @@
 [
   {
+    "id": "2027-07-14-fete-nationale-14-juillet-2027",
     "title": "Fête Nationale 14 Juillet 2027",
     "date": "2027-07-14",
     "date_fin": null,
     "time": "21:00",
-    "cat": "spectacle en plein air",
+    "cat": "paris",
     "venue": "Champ-de-Mars / Tour Eiffel, Paris 7e",
     "notes": "Récurrent annuel. Concert de Paris + feu d'artifice Tour Eiffel. Gratuit.\nhttps://parisjetaime.com/eng/event/bastille-day-14th-july-e010",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 70,
     "source": "parisjetaime.com",
     "match_reasons": [
@@ -18,43 +20,74 @@
       "lieu_emblematique",
       "sujet_favori: musique"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2027-07-05-paris-plages-2027",
     "title": "Paris Plages 2027",
     "date": "2027-07-05",
     "date_fin": "2027-08-31",
     "time": "08:00",
-    "cat": "festival",
+    "cat": "paris",
     "venue": "Quais de la Seine / Bassin de la Villette, Paris",
     "notes": "Récurrent annuel. Plages urbaines gratuites, animations, concerts, sport. Gratuit.\nhttps://parisjetaime.com/eng/event/paris-plages-e013",
     "reminders": [
       "1w"
     ],
+    "deadline": null,
     "score": 65,
     "source": "parisjetaime.com",
     "match_reasons": [
       "gratuit",
       "lieu_emblematique"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2027-07-09-the-peacock-society-2027-festival-electro",
     "title": "The Peacock Society 2027 — Festival Électro",
     "date": "2027-07-09",
     "date_fin": "2027-07-10",
     "time": "16:00",
-    "cat": "festival",
+    "cat": "paris",
     "venue": "Hippodrome Paris-Vincennes, Paris 12e",
     "notes": "Récurrent annuel. Grand festival électro parisien. Programmation 2027 non annoncée.\nhttps://peacocksociety.fr",
     "reminders": [
       "1w"
     ],
+    "deadline": null,
     "score": 60,
     "source": "peacocksociety.fr",
     "match_reasons": [
       "sujet_favori: musique electronique"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

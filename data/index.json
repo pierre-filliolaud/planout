@@ -1,6 +1,48 @@
 {
   "files": [
     {
+      "file": "2026-01-sorties-musee.json",
+      "label": "January · Museums",
+      "theme": "musee",
+      "month": "2026-01"
+    },
+    {
+      "file": "2026-01-sorties-paris.json",
+      "label": "January · Paris",
+      "theme": "paris",
+      "month": "2026-01"
+    },
+    {
+      "file": "2026-01-sorties-theatre.json",
+      "label": "January · Shows",
+      "theme": "spectacle",
+      "month": "2026-01"
+    },
+    {
+      "file": "2026-03-sorties-musee.json",
+      "label": "March · Museums",
+      "theme": "musee",
+      "month": "2026-03"
+    },
+    {
+      "file": "2026-03-sorties-theatre.json",
+      "label": "March · Shows",
+      "theme": "spectacle",
+      "month": "2026-03"
+    },
+    {
+      "file": "2026-04-sorties-musee.json",
+      "label": "April · Museums",
+      "theme": "musee",
+      "month": "2026-04"
+    },
+    {
+      "file": "2026-04-sorties-theatre.json",
+      "label": "April · Shows",
+      "theme": "spectacle",
+      "month": "2026-04"
+    },
+    {
       "file": "2026-05-soirees-concert.json",
       "label": "May · Concerts",
       "theme": "concert",
@@ -97,21 +139,9 @@
       "month": "2026-07"
     },
     {
-      "file": "2026-07-sorties-musee.json",
-      "label": "July · Museums",
-      "theme": "musee",
-      "month": "2026-07"
-    },
-    {
       "file": "2026-07-sorties-paris.json",
       "label": "July · Paris",
       "theme": "paris",
-      "month": "2026-07"
-    },
-    {
-      "file": "2026-07-sorties-theatre.json",
-      "label": "July · Shows",
-      "theme": "spectacle",
       "month": "2026-07"
     },
     {
@@ -127,33 +157,9 @@
       "month": "2026-08"
     },
     {
-      "file": "2026-08-soirees-techno.json",
-      "label": "August · Techno",
-      "theme": "techno",
-      "month": "2026-08"
-    },
-    {
-      "file": "2026-08-sorties-musee.json",
-      "label": "August · Museums",
-      "theme": "musee",
-      "month": "2026-08"
-    },
-    {
       "file": "2026-08-sorties-paris.json",
       "label": "August · Paris",
       "theme": "paris",
-      "month": "2026-08"
-    },
-    {
-      "file": "2026-08-sorties-theatre.json",
-      "label": "August · Shows",
-      "theme": "spectacle",
-      "month": "2026-08"
-    },
-    {
-      "file": "2026-08-sport-running.json",
-      "label": "August · Running",
-      "theme": "running",
       "month": "2026-08"
     },
     {
@@ -235,12 +241,6 @@
       "month": "2026-11"
     },
     {
-      "file": "2026-11-soirees-techno.json",
-      "label": "November · Techno",
-      "theme": "techno",
-      "month": "2026-11"
-    },
-    {
       "file": "2026-11-sorties-musee.json",
       "label": "November · Museums",
       "theme": "musee",
@@ -259,27 +259,9 @@
       "month": "2026-11"
     },
     {
-      "file": "2026-11-sport-running.json",
-      "label": "November · Running",
-      "theme": "running",
-      "month": "2026-11"
-    },
-    {
       "file": "2026-12-soirees-concert.json",
       "label": "December · Concerts",
       "theme": "concert",
-      "month": "2026-12"
-    },
-    {
-      "file": "2026-12-soirees-techno.json",
-      "label": "December · Techno",
-      "theme": "techno",
-      "month": "2026-12"
-    },
-    {
-      "file": "2026-12-sorties-musee.json",
-      "label": "December · Museums",
-      "theme": "musee",
       "month": "2026-12"
     },
     {
@@ -301,12 +283,6 @@
       "month": "2026-12"
     },
     {
-      "file": "2027-01-soirees-concert.json",
-      "label": "January · Concerts",
-      "theme": "concert",
-      "month": "2027-01"
-    },
-    {
       "file": "2027-01-soirees-techno.json",
       "label": "January · Techno",
       "theme": "techno",
@@ -319,34 +295,10 @@
       "month": "2027-01"
     },
     {
-      "file": "2027-01-sorties-paris.json",
-      "label": "January · Paris",
-      "theme": "paris",
-      "month": "2027-01"
-    },
-    {
       "file": "2027-01-sorties-theatre.json",
       "label": "January · Shows",
       "theme": "spectacle",
       "month": "2027-01"
-    },
-    {
-      "file": "2027-01-sport-running.json",
-      "label": "January · Running",
-      "theme": "running",
-      "month": "2027-01"
-    },
-    {
-      "file": "2027-02-soirees-techno.json",
-      "label": "February · Techno",
-      "theme": "techno",
-      "month": "2027-02"
-    },
-    {
-      "file": "2027-02-sorties-musee.json",
-      "label": "February · Museums",
-      "theme": "musee",
-      "month": "2027-02"
     },
     {
       "file": "2027-02-sorties-theatre.json",
@@ -355,21 +307,9 @@
       "month": "2027-02"
     },
     {
-      "file": "2027-02-sport-running.json",
-      "label": "February · Running",
-      "theme": "running",
-      "month": "2027-02"
-    },
-    {
       "file": "2027-03-soirees-concert.json",
       "label": "March · Concerts",
       "theme": "concert",
-      "month": "2027-03"
-    },
-    {
-      "file": "2027-03-soirees-techno.json",
-      "label": "March · Techno",
-      "theme": "techno",
       "month": "2027-03"
     },
     {
@@ -385,27 +325,9 @@
       "month": "2027-03"
     },
     {
-      "file": "2027-03-sport-running.json",
-      "label": "March · Running",
-      "theme": "running",
-      "month": "2027-03"
-    },
-    {
       "file": "2027-04-soirees-concert.json",
       "label": "April · Concerts",
       "theme": "concert",
-      "month": "2027-04"
-    },
-    {
-      "file": "2027-04-soirees-techno.json",
-      "label": "April · Techno",
-      "theme": "techno",
-      "month": "2027-04"
-    },
-    {
-      "file": "2027-04-sorties-musee.json",
-      "label": "April · Museums",
-      "theme": "musee",
       "month": "2027-04"
     },
     {
@@ -413,30 +335,6 @@
       "label": "April · Shows",
       "theme": "spectacle",
       "month": "2027-04"
-    },
-    {
-      "file": "2027-04-sport-running.json",
-      "label": "April · Running",
-      "theme": "running",
-      "month": "2027-04"
-    },
-    {
-      "file": "2027-05-soirees-concert.json",
-      "label": "May · Concerts",
-      "theme": "concert",
-      "month": "2027-05"
-    },
-    {
-      "file": "2027-05-soirees-techno.json",
-      "label": "May · Techno",
-      "theme": "techno",
-      "month": "2027-05"
-    },
-    {
-      "file": "2027-05-sorties-musee.json",
-      "label": "May · Museums",
-      "theme": "musee",
-      "month": "2027-05"
     },
     {
       "file": "2027-05-sorties-paris.json",
@@ -451,36 +349,6 @@
       "month": "2027-05"
     },
     {
-      "file": "2027-05-sport-running.json",
-      "label": "May · Running",
-      "theme": "running",
-      "month": "2027-05"
-    },
-    {
-      "file": "2027-05-sport-volley.json",
-      "label": "May · Volley",
-      "theme": "volley",
-      "month": "2027-05"
-    },
-    {
-      "file": "2027-06-soirees-concert.json",
-      "label": "June · Concerts",
-      "theme": "concert",
-      "month": "2027-06"
-    },
-    {
-      "file": "2027-06-soirees-techno.json",
-      "label": "June · Techno",
-      "theme": "techno",
-      "month": "2027-06"
-    },
-    {
-      "file": "2027-06-sorties-musee.json",
-      "label": "June · Museums",
-      "theme": "musee",
-      "month": "2027-06"
-    },
-    {
       "file": "2027-06-sorties-paris.json",
       "label": "June · Paris",
       "theme": "paris",
@@ -491,30 +359,6 @@
       "label": "June · Shows",
       "theme": "spectacle",
       "month": "2027-06"
-    },
-    {
-      "file": "2027-06-sport-running.json",
-      "label": "June · Running",
-      "theme": "running",
-      "month": "2027-06"
-    },
-    {
-      "file": "2027-06-sport-volley.json",
-      "label": "June · Volley",
-      "theme": "volley",
-      "month": "2027-06"
-    },
-    {
-      "file": "2027-07-soirees-concert.json",
-      "label": "July · Concerts",
-      "theme": "concert",
-      "month": "2027-07"
-    },
-    {
-      "file": "2027-07-soirees-techno.json",
-      "label": "July · Techno",
-      "theme": "techno",
-      "month": "2027-07"
     },
     {
       "file": "2027-07-sorties-musee.json",
@@ -529,76 +373,10 @@
       "month": "2027-07"
     },
     {
-      "file": "2027-07-sorties-theatre.json",
-      "label": "July · Shows",
-      "theme": "spectacle",
-      "month": "2027-07"
-    },
-    {
-      "file": "2027-07-sport-running.json",
-      "label": "July · Running",
-      "theme": "running",
-      "month": "2027-07"
-    },
-    {
-      "file": "2027-08-soirees-concert.json",
-      "label": "August · Concerts",
-      "theme": "concert",
-      "month": "2027-08"
-    },
-    {
-      "file": "2027-08-sorties-musee.json",
-      "label": "August · Museums",
-      "theme": "musee",
-      "month": "2027-08"
-    },
-    {
-      "file": "2027-08-sorties-paris.json",
-      "label": "August · Paris",
-      "theme": "paris",
-      "month": "2027-08"
-    },
-    {
-      "file": "2027-08-sport-running.json",
-      "label": "August · Running",
-      "theme": "running",
-      "month": "2027-08"
-    },
-    {
-      "file": "2027-09-soirees-concert.json",
-      "label": "September · Concerts",
-      "theme": "concert",
-      "month": "2027-09"
-    },
-    {
-      "file": "2027-09-soirees-techno.json",
-      "label": "September · Techno",
-      "theme": "techno",
-      "month": "2027-09"
-    },
-    {
-      "file": "2027-09-sorties-musee.json",
-      "label": "September · Museums",
-      "theme": "musee",
-      "month": "2027-09"
-    },
-    {
       "file": "2027-09-sorties-paris.json",
       "label": "September · Paris",
       "theme": "paris",
       "month": "2027-09"
-    },
-    {
-      "file": "2027-09-sport-running.json",
-      "label": "September · Running",
-      "theme": "running",
-      "month": "2027-09"
-    },
-    {
-      "file": "2027-10-soirees-techno.json",
-      "label": "October · Techno",
-      "theme": "techno",
-      "month": "2027-10"
     },
     {
       "file": "2027-10-sorties-musee.json",
@@ -613,39 +391,9 @@
       "month": "2027-10"
     },
     {
-      "file": "2027-10-sport-running.json",
-      "label": "October · Running",
-      "theme": "running",
-      "month": "2027-10"
-    },
-    {
-      "file": "2027-11-soirees-concert.json",
-      "label": "November · Concerts",
-      "theme": "concert",
-      "month": "2027-11"
-    },
-    {
-      "file": "2027-11-soirees-techno.json",
-      "label": "November · Techno",
-      "theme": "techno",
-      "month": "2027-11"
-    },
-    {
-      "file": "2027-11-sorties-musee.json",
-      "label": "November · Museums",
-      "theme": "musee",
-      "month": "2027-11"
-    },
-    {
       "file": "2027-11-sorties-paris.json",
       "label": "November · Paris",
       "theme": "paris",
-      "month": "2027-11"
-    },
-    {
-      "file": "2027-11-sport-running.json",
-      "label": "November · Running",
-      "theme": "running",
       "month": "2027-11"
     }
   ]

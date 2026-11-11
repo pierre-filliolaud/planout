@@ -1,0 +1,266 @@
+[
+  {
+    "id": "2026-04-03-palais-de-tokyo-saison-normes-corps-en-cours",
+    "title": "Palais de Tokyo — Saison Normes Corps (en cours)",
+    "date": "2026-04-03",
+    "date_fin": "2026-09-13",
+    "time": "12:00",
+    "cat": "musee",
+    "venue": "Palais de Tokyo, Paris 16e",
+    "notes": "Jesse Darling, Pauline Curnier Jardin, Cathy de Monchaux, Benoît Piéron, Joseph Grigely. 8 expositions. 2 nouvelles expos dès le 5 juin. Ouvert 12h-22h.\nhttps://palaisdetokyo.com/agenda-palais-de-tokyo/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 100,
+    "source": "palaisdetokyo.com",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "lieu_emblematique",
+      "lieu_prefere: Palais de Tokyo",
+      "nouveaute"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-04-15-calder-rever-en-equilibre-en-cours",
+    "title": "Calder — Rêver en équilibre (en cours)",
+    "date": "2026-04-15",
+    "date_fin": "2026-08-16",
+    "time": "10:00",
+    "cat": "musee",
+    "venue": "Fondation Louis Vuitton, Paris 16e",
+    "notes": "Rétrospective: 300 œuvres, centenaire de l'arrivée de Calder à Paris. Nocturnes vendredi. Ouverture sam/dim 10h-20h.\nhttps://www.fondationlouisvuitton.fr/en/events/calder-rever-en-equilibre",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 100,
+    "source": "fondationlouisvuitton.fr",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "lieu_emblematique",
+      "lieu_prefere: Fondation Louis Vuitton",
+      "note_critique_elevee",
+      "budget_ok"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-04-15-calder-rever-en-equilibre",
+    "title": "Calder — Rêver en équilibre",
+    "date": "2026-04-15",
+    "date_fin": "2026-08-16",
+    "time": "10:00",
+    "cat": "musee",
+    "venue": "Fondation Louis Vuitton, Paris 16e",
+    "notes": "Sculptures et mobiles de Calder. Art contemporain. 16€. Nocturne vendredi jusqu'à 21h (23h 1er vendredi du mois). Ouverture sam/dim 10h-20h.\nhttps://www.fondationlouisvuitton.fr/fr/programme",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 95,
+    "source": "fondationlouisvuitton.fr",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "lieu_emblematique: Fondation Louis Vuitton",
+      "lieu_prefere: Fondation Louis Vuitton",
+      "note_critique_elevee: 5/5",
+      "budget_ok"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-04-03-normes-corps-palais-de-tokyo-saison-2026",
+    "title": "Normes Corps — Palais de Tokyo (saison 2026)",
+    "date": "2026-04-03",
+    "date_fin": "2026-09-13",
+    "time": "12:00",
+    "cat": "musee",
+    "venue": "Palais de Tokyo, Paris 16e",
+    "notes": "Jesse Darling + Cécile de Monchaux. Art contemporain / corps / société. 12€. Ouvert tous les jours 12h-22h.\nhttps://palaisdetokyo.com/agenda-palais-de-tokyo/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 85,
+    "source": "palaisdetokyo.com",
+    "match_reasons": [
+      "sujet_favori: art contemporain",
+      "lieu_emblematique: Palais de Tokyo",
+      "lieu_prefere: Palais de Tokyo",
+      "budget_ok"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-04-10-lee-miller",
+    "title": "Lee Miller",
+    "date": "2026-04-10",
+    "date_fin": "2026-08-02",
+    "time": "10:00",
+    "cat": "musee",
+    "venue": "Musée d'Art Moderne de Paris, Paris 16e",
+    "notes": "Grande rétrospective Lee Miller. Photographie / surréalisme. 17€. Nocturne jeudi jusqu'à 21h30. Note : 5/5 Timeout.\nhttps://www.mam.paris.fr/fr/expositions/exposition-lee-miller",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 85,
+    "source": "mam.paris.fr",
+    "match_reasons": [
+      "sujet_favori: photographie",
+      "sujet_favori: art contemporain",
+      "note_critique_elevee: 5/5",
+      "budget_ok"
+    ],
+    "image_url": "https://www.mam.paris.fr/sites/default/files/styles/visuel_960x660/public/content/carrousel/2._lee_miller_model_with_lightbulb_c.1943._lee_miller_archives.jpg?itok=iMj24jxQ",
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-04-10-lee-miller-retrospective-en-cours",
+    "title": "Lee Miller — Rétrospective (en cours)",
+    "date": "2026-04-10",
+    "date_fin": "2026-08-02",
+    "time": "10:00",
+    "cat": "musee",
+    "venue": "Musée d'Art Moderne de Paris, Paris 16e",
+    "notes": "Grande rétrospective Lee Miller. Photographie / surréalisme. 17€. Nocturne jeudi 21h30. Note: 5/5 Timeout.\nhttps://www.mam.paris.fr/fr/expositions/exposition-lee-miller",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 85,
+    "source": "mam.paris.fr",
+    "match_reasons": [
+      "sujet_favori: photographie",
+      "sujet_favori: art contemporain",
+      "note_critique_elevee",
+      "budget_ok"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-04-02-video-games-music-en-cours",
+    "title": "Video Games & Music (en cours)",
+    "date": "2026-04-02",
+    "date_fin": "2026-11-01",
+    "time": "12:00",
+    "cat": "musee",
+    "venue": "Philharmonie de Paris — Cité de la Musique, Paris 19e",
+    "notes": "1ère grande expo 50 ans musique jeux vidéo. 29 jeux jouables, 5 installations. Prix: 17€. Nocturne vendredi.\nhttps://philharmoniedeparis.fr/fr/activite/exposition/28822-video-games-music",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 75,
+    "source": "philharmoniedeparis.fr",
+    "match_reasons": [
+      "sujet_favori: musique electronique",
+      "budget_ok"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-04-02-video-games-music",
+    "title": "Video Games & Music",
+    "date": "2026-04-02",
+    "date_fin": "2026-11-01",
+    "time": "12:00",
+    "cat": "musee",
+    "venue": "Philharmonie de Paris, Paris 19e",
+    "notes": "Exposition interactive sur la musique de jeu vidéo. Musique / design / sciences. 17€. Nocturne vendredi, ouvert week-end.\nhttps://philharmoniedeparis.fr/fr/activite/exposition/28822-video-games-music",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 65,
+    "source": "philharmoniedeparis.fr",
+    "match_reasons": [
+      "sujet_favori: musique electronique",
+      "sujet_favori: design",
+      "jour_prefere: week-end",
+      "budget_ok"
+    ],
+    "image_url": "https://deneb.philharmoniedeparis.fr/uploads/images/cache/event_large/rc/sNtV2RNk/uploads/images/69babed760b9e_VGM_1600x633_no-text%202.jpg",
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  }
+]

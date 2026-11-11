@@ -1,16 +1,18 @@
 [
   {
+    "id": "2026-11-24-la-clemence-de-titus-opera-national-de-paris",
     "title": "La Clémence de Titus — Opéra National de Paris",
     "date": "2026-11-24",
     "date_fin": "2026-12-25",
     "time": "19:30",
-    "cat": "theatre",
+    "cat": "spectacle",
     "venue": "Palais Garnier, Paris 9e",
     "notes": "Mozart, mise en scène Willy Decker. Pavol Breslik (Tito). 2h45 avec entracte. Billets en vente dès le 16 juin 2026. ~60€.\nhttps://www.operadeparis.fr/saison-26-27/opera/la-clemence-de-titus",
     "reminders": [
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 95,
     "source": "operadeparis.fr",
     "match_reasons": [
@@ -18,20 +20,31 @@
       "lieu_emblematique: Palais Garnier",
       "lieu_prefere: Palais Garnier"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-11-27-turandot-opera-national-de-paris",
     "title": "Turandot — Opéra National de Paris",
     "date": "2026-11-27",
     "date_fin": "2026-12-27",
     "time": "19:30",
-    "cat": "theatre",
+    "cat": "spectacle",
     "venue": "Opéra Bastille, Paris 12e",
     "notes": "Puccini. Mise en scène Robert Wilson (dernière pour l'Opéra de Paris). Tamara Wilson (Turandot), Brian Jagde (Calaf). 2h30 avec entracte. ~70€.\nhttps://www.operadeparis.fr/saison-26-27/opera/turandot",
     "reminders": [
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 95,
     "source": "operadeparis.fr",
     "match_reasons": [
@@ -39,41 +52,31 @@
       "lieu_emblematique: Opera Bastille",
       "lieu_prefere: Opera Bastille"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "Le Barbier de Séville — Opéra National de Paris",
-    "date": "2026-09-12",
-    "date_fin": "2026-11-05",
-    "time": "19:30",
-    "cat": "theatre",
-    "venue": "Opéra Bastille, Paris 12e",
-    "notes": "Rossini, mise en scène Damiano Michieletto, direction Jader Bignamini. Saison 2026-2027. ~50€.\nhttps://www.operadeparis.fr/saison-26-27/opera/le-barbier-de-seville",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 90,
-    "source": "operadeparis.fr",
-    "match_reasons": [
-      "genre_prefere: opera",
-      "lieu_emblematique: Opera Bastille",
-      "lieu_prefere: Opera Bastille"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-11-29-cirque-phenix-odyssee-etoiles-du-cirque-de-pekin",
     "title": "Cirque Phénix — Odyssée (Étoiles du Cirque de Pékin)",
     "date": "2026-11-29",
     "date_fin": "2027-01-11",
     "time": "16:45",
-    "cat": "theatre",
+    "cat": "spectacle",
     "venue": "Cirque Phénix, Paris 12e",
     "notes": "Cirque contemporain. 40 artistes virtuoses du Cirque de Pékin. Décors spectaculaires, mise en scène repensée. 2h (dont 20min entracte). ~35€.\nhttps://www.cirquephenix.com/spectacles/odyssee-cirque-de-pekin/",
     "reminders": [
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 85,
     "source": "cirquephenix.com",
     "match_reasons": [
@@ -81,6 +84,15 @@
       "proximite_dans_rayon",
       "budget_ok"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

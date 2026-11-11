@@ -1,5 +1,6 @@
 [
   {
+    "id": "2026-05-22-cercle-festival-2026",
     "title": "Cercle Festival 2026",
     "date": "2026-05-22",
     "date_fin": "2026-05-24",
@@ -11,6 +12,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 75,
     "source": "festival.cercle.io",
     "match_reasons": [
@@ -18,27 +20,15 @@
       "genre_prefere: electro/house/techno",
       "proximite_dans_rayon"
     ],
-    "image_url": null
-  },
-  {
-    "title": "Versailles Electro 2026 – Cerrone, Folamour, Dabeull",
-    "date": "2026-05-16",
-    "date_fin": null,
-    "time": "19:00",
-    "cat": "concert",
-    "venue": "Château de Versailles, Versailles (78)",
-    "notes": "6e édition. Lineup : Cerrone (50 ans de carrière), Folamour, Dabeull, Swimming Paul. Nuit électronique dans les jardins royaux. ⚠️ Cerrone est une figure fondatrice du disco-electro français proche de la French Touch.\nhttps://www.chateauversailles-spectacles.fr/evenement/versailles-electro-2026/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 60,
-    "source": "chateauversailles-spectacles.fr",
-    "match_reasons": [
-      "genre_prefere: electro/french touch/house",
-      "festival",
-      "proximite_dans_rayon"
-    ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

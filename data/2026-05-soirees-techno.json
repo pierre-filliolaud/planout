@@ -1,16 +1,18 @@
 [
   {
+    "id": "2026-05-16-versailles-electro-2026-cerrone-folamour-dabeull",
     "title": "Versailles Electro 2026 — Cerrone, Folamour, Dabeull",
     "date": "2026-05-16",
     "date_fin": null,
     "time": "20:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Château de Versailles, Versailles (78)",
     "notes": "6e édition. Lineup : Cerrone (50 ans de carrière, live exclusif au pied de la Galerie des Glaces), Folamour, Dabeull, Swimming Paul (warm-up). DJ sets de 20h à minuit sur les terrasses du château. Tickets ~40-60€ (vérifier sur chateauversailles-spectacles.fr)\nhttps://www.chateauversailles-spectacles.fr/evenement/versailles-electro-2026/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 60,
     "source": "chateauversailles-spectacles.fr",
     "match_reasons": [
@@ -18,41 +20,31 @@
       "proximite_dans_rayon: Versailles ~25km",
       "jour_prefere: samedi"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "Cercle Festival 2026 — Jour 2 : ARTBAT, Étienne de Crécy, Kölsch, Monolink, Vintage Culture...",
-    "date": "2026-05-23",
-    "date_fin": null,
-    "time": "12:00",
-    "cat": "concert",
-    "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
-    "notes": "Cercle Festival 3 jours (22-24 mai). Jour 2 samedi : Anfisa Letyago, ARTBAT, Étienne de Crécy, Ginton, Jimi Jules, Kasablanca, Kenya Grace, Kölsch, Lane 8, LP Giobbi b2b DJ Tennis, Michael Bibi, Monolink, Parra for Cuva, Vintage Culture. SOLD OUT — liste d'attente festival.cercle.io. ~110€/jour.\nhttps://festival.cercle.io/",
-    "reminders": [
-      "1w",
-      "1d"
-    ],
-    "score": 50,
-    "source": "festival.cercle.io",
-    "match_reasons": [
-      "genre_prefere: melodic techno / electro",
-      "proximite_dans_rayon: Le Bourget ~15km",
-      "jour_prefere: samedi"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-05-16-rex-club-theos-all-night-long",
     "title": "Rex Club — Theos All Night Long",
     "date": "2026-05-16",
     "date_fin": null,
     "time": "23:30",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Rex Club, Paris 2e",
     "notes": "Theos en All Night Long au Rex Club. Electro / house. ~12-15€.\nhttps://rexclub.com/billetterie/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 50,
     "source": "rexclub.com",
     "match_reasons": [
@@ -62,42 +54,63 @@
       "proximite_dans_rayon: Paris",
       "jour_prefere: samedi"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "T7 Paris — Soirée Techno Hard (récurrente printemps 2026)",
-    "date": "2026-05-22",
+    "id": "2026-05-23-cercle-festival-2026-jour-2-artbat-etienne-de-crecy-kolsch-monolink-vintage-cul",
+    "title": "Cercle Festival 2026 — Jour 2 : ARTBAT, Étienne de Crécy, Kölsch, Monolink, Vintage Culture...",
+    "date": "2026-05-23",
     "date_fin": null,
-    "time": "23:00",
-    "cat": "concert",
-    "venue": "T7, Paris 15e",
-    "notes": "date estimée / récurrent. T7 (Terminal 7, Porte de Versailles) programme des soirées techno chaque semaine. En avril 2026 : Charlotte de Witte, Sara Landry, Vladimir Cauchemar, Diplo (hard techno). Consulter shotgun.live/en/venues/t-7 pour mai-juin 2026. ~14-20€.\nhttps://shotgun.live/en/venues/t-7",
+    "time": "12:00",
+    "cat": "techno",
+    "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
+    "notes": "Cercle Festival 3 jours (22-24 mai). Jour 2 samedi : Anfisa Letyago, ARTBAT, Étienne de Crécy, Ginton, Jimi Jules, Kasablanca, Kenya Grace, Kölsch, Lane 8, LP Giobbi b2b DJ Tennis, Michael Bibi, Monolink, Parra for Cuva, Vintage Culture. SOLD OUT — liste d'attente festival.cercle.io. ~110€/jour.\nhttps://festival.cercle.io/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 50,
-    "source": "shotgun.live",
+    "source": "festival.cercle.io",
     "match_reasons": [
-      "lieu_prefere: T7",
-      "genre_prefere: hard techno/techno",
-      "proximite_dans_rayon: Paris",
-      "budget_ok"
+      "genre_prefere: melodic techno / electro",
+      "proximite_dans_rayon: Le Bourget ~15km",
+      "jour_prefere: samedi"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-05-22-cercle-festival-2026-jour-1-acid-pauli-adriatique-kerri-chandler-anna-mind-agai",
     "title": "Cercle Festival 2026 — Jour 1 : Acid Pauli, Adriatique, Kerri Chandler, ANNA, Mind Against...",
     "date": "2026-05-22",
     "date_fin": null,
     "time": "12:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
     "notes": "Cercle Festival 3 jours (22-24 mai). Jour 1 vendredi : Acid Pauli, Adriatique, ANNA, Arodes, berlioz, Carlita, Enfant Sauvage, Kerri Chandler, KILIMANJARO, Marten Lou, Mind Against, Rodrigo Gallardo, Sammy Virji. 3 scènes monumentales (A380, Ariane, Concorde). SOLD OUT — liste d'attente sur festival.cercle.io. ~110€/jour (si dispo).\nhttps://festival.cercle.io/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 45,
     "source": "festival.cercle.io",
     "match_reasons": [
@@ -105,40 +118,62 @@
       "proximite_dans_rayon: Le Bourget ~15km",
       "jour_prefere: vendredi"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-05-24-cercle-festival-2026-jour-3-eric-prydz-royksopp-ame-anetha-ben-bohmer-thylacine",
     "title": "Cercle Festival 2026 — Jour 3 : Eric Prydz, Röyksopp, Âme, Anetha, Ben Böhmer, Thylacine...",
     "date": "2026-05-24",
     "date_fin": null,
     "time": "12:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Musée de l'Air et de l'Espace, Le Bourget (93)",
     "notes": "Cercle Festival 3 jours (22-24 mai). Jour 3 dimanche : Aaron Hibell, Âme DJ b2b Sama' Abdulhadi, Anetha, Ben Böhmer, Deer Jade, Eric Prydz, Funk Tribu, Mahmut Orhan, meera, Miss Monique, nimino, Röyksopp DJ Set, Thylacine, Weval, YOTTO. SOLD OUT — liste d'attente. ~110€/jour.\nhttps://festival.cercle.io/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 45,
     "source": "festival.cercle.io",
     "match_reasons": [
       "genre_prefere: melodic techno / progressive house",
       "proximite_dans_rayon: Le Bourget ~15km"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-05-29-rex-club-meyem-all-night-long",
     "title": "Rex Club — Meyem All Night Long",
     "date": "2026-05-29",
     "date_fin": null,
     "time": "23:30",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Rex Club, Paris 2e",
     "notes": "Meyem en All Night Long au Rex Club. Electro / minimal. ~12-15€.\nhttps://rexclub.com/billetterie/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 45,
     "source": "rexclub.com",
     "match_reasons": [
@@ -148,20 +183,31 @@
       "proximite_dans_rayon: Paris",
       "jour_prefere: vendredi"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-05-30-rex-club-better-days-invite-eternal-love-eg-matteo-tonak-wolff",
     "title": "Rex Club — Better Days Invite : Eternal Love, Eg, Matteo, Tonak, Wolff",
     "date": "2026-05-30",
     "date_fin": null,
     "time": "23:30",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Rex Club, Paris 2e",
     "notes": "Soirée Better Days Invite au Rex Club. House. ~12-15€.\nhttps://rexclub.com/billetterie/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 45,
     "source": "rexclub.com",
     "match_reasons": [
@@ -171,61 +217,63 @@
       "proximite_dans_rayon: Paris",
       "jour_prefere: samedi"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "Marvellous Island Festival 2026 — Jour 1",
-    "date": "2026-05-23",
+    "id": "2026-05-09-fvtvr-detroit-love-moodymann-carl-craig-mike-banks-juan-atkins",
+    "title": "FVTVR — Detroit Love : Moodymann, Carl Craig, Mike Banks, Juan Atkins",
+    "date": "2026-05-09",
     "date_fin": null,
-    "time": "14:00",
-    "cat": "concert",
-    "venue": "Base de Loisirs de Vaires-Torcy, Torcy (77)",
-    "notes": "14e édition. 90 artistes, 5 scènes (Beach Stage, Digital 360°, Kasbah, Éclosion, Pampa). Lineup annoncé : Basswell, Dennis Cruz, Nic Fanciulli, Bad Boombox, Ilario Alicante, Mandragora, Ben Hemsley, Korolova, Mathame, Nikolina, Acidpach, Amrita... Vaires-Torcy à ~20min de Paris (RER E). Prix : consulter marvellous-island.fr.\nhttps://marvellous-island.fr/",
+    "time": "00:00",
+    "cat": "techno",
+    "venue": "FVTVR, Paris 13e",
+    "notes": "Soirée Detroit Love au FVTVR avec les légendes de Detroit techno : Moodymann, Carl Craig, Mike Banks (Underground Resistance), Juan Atkins. Techno / Detroit. Vérifier prix sur dice.fm.\nhttps://dice.fm/venue/fvtvr-pvlk",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 40,
-    "source": "marvellous-island.fr",
+    "source": "dice.fm",
     "match_reasons": [
-      "genre_prefere: house / techno",
-      "proximite_dans_rayon: Torcy ~28km",
-      "jour_prefere: samedi"
+      "genre_prefere: techno",
+      "proximite_dans_rayon: Paris",
+      "budget_ok"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "Marvellous Island Festival 2026 — Jour 2",
-    "date": "2026-05-24",
-    "date_fin": null,
-    "time": "14:00",
-    "cat": "concert",
-    "venue": "Base de Loisirs de Vaires-Torcy, Torcy (77)",
-    "notes": "14e édition — jour 2. Open air bord de lac. 90 artistes, 5 scènes. Vaires-Torcy à ~20min de Paris (RER E). Prix : consulter marvellous-island.fr.\nhttps://marvellous-island.fr/",
-    "reminders": [
-      "1w",
-      "1d"
-    ],
-    "score": 40,
-    "source": "marvellous-island.fr",
-    "match_reasons": [
-      "genre_prefere: house / techno",
-      "proximite_dans_rayon: Torcy ~28km"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-05-13-rex-club-flabaire-all-night-long",
     "title": "Rex Club — Flabaire All Night Long",
     "date": "2026-05-13",
     "date_fin": null,
     "time": "23:30",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Rex Club, Paris 2e",
     "notes": "Flabaire en All Night Long au Rex Club. Techno / electro. ~12-15€.\nhttps://rexclub.com/billetterie/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 40,
     "source": "rexclub.com",
     "match_reasons": [
@@ -234,20 +282,31 @@
       "budget_ok",
       "proximite_dans_rayon: Paris"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-05-14-rex-club-undercore-pinotello-why-t-barox-izza",
     "title": "Rex Club — Undercore : Pinotello, Why T, Barox, Izza",
     "date": "2026-05-14",
     "date_fin": null,
     "time": "23:30",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Rex Club, Paris 2e",
     "notes": "Soirée Undercore au Rex Club avec Pinotello, Why T, Barox, Izza. Hard techno / acid. ~12-15€.\nhttps://rexclub.com/billetterie/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 40,
     "source": "rexclub.com",
     "match_reasons": [
@@ -256,27 +315,78 @@
       "budget_ok",
       "proximite_dans_rayon: Paris"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "FVTVR — Detroit Love : Moodymann, Carl Craig, Mike Banks, Juan Atkins",
-    "date": "2026-05-09",
+    "id": "2026-05-23-marvellous-island-festival-2026-jour-1",
+    "title": "Marvellous Island Festival 2026 — Jour 1",
+    "date": "2026-05-23",
     "date_fin": null,
-    "time": "00:00",
-    "cat": "concert",
-    "venue": "FVTVR, Paris 13e",
-    "notes": "Soirée Detroit Love au FVTVR avec les légendes de Detroit techno : Moodymann, Carl Craig, Mike Banks (Underground Resistance), Juan Atkins. Techno / Detroit. Vérifier prix sur dice.fm.\nhttps://dice.fm/venue/fvtvr-pvlk",
+    "time": "14:00",
+    "cat": "techno",
+    "venue": "Base de Loisirs de Vaires-Torcy, Torcy (77)",
+    "notes": "14e édition. 90 artistes, 5 scènes (Beach Stage, Digital 360°, Kasbah, Éclosion, Pampa). Lineup annoncé : Basswell, Dennis Cruz, Nic Fanciulli, Bad Boombox, Ilario Alicante, Mandragora, Ben Hemsley, Korolova, Mathame, Nikolina, Acidpach, Amrita... Vaires-Torcy à ~20min de Paris (RER E). Prix : consulter marvellous-island.fr.\nhttps://marvellous-island.fr/",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 40,
-    "source": "dice.fm",
+    "source": "marvellous-island.fr",
     "match_reasons": [
-      "genre_prefere: techno",
-      "proximite_dans_rayon: Paris",
-      "budget_ok"
+      "genre_prefere: house / techno",
+      "proximite_dans_rayon: Torcy ~28km",
+      "jour_prefere: samedi"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-05-24-marvellous-island-festival-2026-jour-2",
+    "title": "Marvellous Island Festival 2026 — Jour 2",
+    "date": "2026-05-24",
+    "date_fin": null,
+    "time": "14:00",
+    "cat": "techno",
+    "venue": "Base de Loisirs de Vaires-Torcy, Torcy (77)",
+    "notes": "14e édition — jour 2. Open air bord de lac. 90 artistes, 5 scènes. Vaires-Torcy à ~20min de Paris (RER E). Prix : consulter marvellous-island.fr.\nhttps://marvellous-island.fr/",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "deadline": null,
+    "score": 40,
+    "source": "marvellous-island.fr",
+    "match_reasons": [
+      "genre_prefere: house / techno",
+      "proximite_dans_rayon: Torcy ~28km"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

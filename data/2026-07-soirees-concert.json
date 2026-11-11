@@ -1,29 +1,6 @@
 [
   {
-    "title": "Peacock Society 2026",
-    "date": "2026-07-10",
-    "date_fin": "2026-07-11",
-    "time": "14:00",
-    "cat": "concert",
-    "venue": "Hippodrome Paris-Vincennes (75012)",
-    "notes": "Festival electro open air 2 jours. J2 (11/07) : SebastiAn, Boys Noize b2b SALOME, Floating Points, Channel Tres b2b Busy P, Benga & Flowdan, Mad Rey, Palms Trax… ⚠️ Guest possible : SebastiAn est collaborateur direct de Thomas Bangalter et Guy-Manuel. Prix : à partir de ~59€/jour.\nhttps://peacocksociety.fr/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 125,
-    "source": "peacocksociety.fr",
-    "match_reasons": [
-      "artiste_favori: Boys Noize",
-      "artiste_collaborateur: SebastiAn (pour Thomas Bangalter et Guy-Manuel)",
-      "festival",
-      "genre_prefere: electro/techno/house",
-      "proximite_dans_rayon",
-      "budget_ok"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-07-08-the-weeknd-after-hours-til-dawn-tour-stade-de-france-1",
     "title": "The Weeknd – After Hours Til Dawn Tour @ Stade de France (1)",
     "date": "2026-07-08",
     "date_fin": null,
@@ -35,6 +12,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 100,
     "source": "stadefrance.com",
     "match_reasons": [
@@ -43,9 +21,54 @@
       "lieu_emblematique",
       "proximite_dans_rayon"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-07-10-peacock-society-2026",
+    "title": "Peacock Society 2026",
+    "date": "2026-07-10",
+    "date_fin": "2026-07-11",
+    "time": "14:00",
+    "cat": "concert",
+    "venue": "Hippodrome Paris-Vincennes (75012)",
+    "notes": "Festival electro open air 2 jours. J2 (11/07) : SebastiAn, Boys Noize b2b SALOME, Floating Points, Channel Tres b2b Busy P, Benga & Flowdan, Mad Rey, Palms Trax… ⚠️ Guest possible : SebastiAn est collaborateur direct de Thomas Bangalter et Guy-Manuel. Prix : à partir de ~59€/jour.\nhttps://peacocksociety.fr/",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": null,
+    "score": 100,
+    "source": "peacocksociety.fr",
+    "match_reasons": [
+      "artiste_favori: Boys Noize",
+      "artiste_collaborateur: SebastiAn (pour Thomas Bangalter et Guy-Manuel)",
+      "festival",
+      "genre_prefere: electro/techno/house",
+      "proximite_dans_rayon",
+      "budget_ok"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
+  },
+  {
+    "id": "2026-07-10-the-weeknd-after-hours-til-dawn-tour-stade-de-france-2",
     "title": "The Weeknd – After Hours Til Dawn Tour @ Stade de France (2)",
     "date": "2026-07-10",
     "date_fin": null,
@@ -57,6 +80,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 100,
     "source": "stadefrance.com",
     "match_reasons": [
@@ -66,9 +90,19 @@
       "proximite_dans_rayon",
       "jour_prefere"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-07-11-the-weeknd-after-hours-til-dawn-tour-stade-de-france-3",
     "title": "The Weeknd – After Hours Til Dawn Tour @ Stade de France (3)",
     "date": "2026-07-11",
     "date_fin": null,
@@ -80,6 +114,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 100,
     "source": "stadefrance.com",
     "match_reasons": [
@@ -89,9 +124,19 @@
       "proximite_dans_rayon",
       "jour_prefere"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-07-12-the-weeknd-after-hours-til-dawn-tour-stade-de-france-4",
     "title": "The Weeknd – After Hours Til Dawn Tour @ Stade de France (4)",
     "date": "2026-07-12",
     "date_fin": null,
@@ -103,6 +148,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 100,
     "source": "stadefrance.com",
     "match_reasons": [
@@ -111,51 +157,15 @@
       "lieu_emblematique",
       "proximite_dans_rayon"
     ],
-    "image_url": null
-  },
-  {
-    "title": "Days Off 2026 – Philharmonie de Paris",
-    "date": "2026-06-27",
-    "date_fin": "2026-07-05",
-    "time": "19:00",
-    "cat": "concert",
-    "venue": "Philharmonie de Paris (75019)",
-    "notes": "16e édition. Lineup : Tamino, TOMORA (Aurora x Tom Rowlands), Babyshambles, Smerz, Alela Diane, Nuit Raï… Prix : 20€ à 65€.\nhttps://daysoff.fr/en/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 70,
-    "source": "daysoff.fr",
-    "match_reasons": [
-      "festival",
-      "genre_prefere: indie/pop/rock",
-      "lieu_emblematique",
-      "lieu_prefere",
-      "proximite_dans_rayon"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Paris Jazz Festival 2026 – Parc Floral",
-    "date": "2026-06-28",
-    "date_fin": "2026-09-06",
-    "time": "15:00",
-    "cat": "concert",
-    "venue": "Parc Floral de Vincennes (75012)",
-    "notes": "Concerts jazz gratuits (hors entrée parc : 2,50€) les week-ends d'été. Artistes 2026 : Melissa Aldana, Kyoto Jazz Massive, Poets of Forest, Célia Kameni, Tomoki Sanders… Pique-nique autorisé.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 55,
-    "source": "festivalsduparcfloral.paris",
-    "match_reasons": [
-      "festival",
-      "gratuit",
-      "genre_prefere: jazz",
-      "proximite_dans_rayon"
-    ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

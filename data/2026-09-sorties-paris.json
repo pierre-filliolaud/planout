@@ -1,16 +1,18 @@
 [
   {
+    "id": "2026-09-10-paris-design-week-2026",
     "title": "Paris Design Week 2026",
     "date": "2026-09-10",
     "date_fin": "2026-09-19",
     "time": "10:00",
-    "cat": "salon",
+    "cat": "paris",
     "venue": "Paris (Marais, Saint-Germain, Opéra...) + Parc des Expositions",
     "notes": "10 jours de design: Maison&Objet (10-14 sept) + 1 000+ boutiques, pop-ups, vernissages. Thème: 'Past Reveals Future'. Événements satellites souvent gratuits.\nhttps://www.maison-objet.com/en/paris-design-week",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 85,
     "source": "maison-objet.com",
     "match_reasons": [
@@ -18,20 +20,31 @@
       "sujet_favori: architecture",
       "nouveaute"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-09-19-journees-europeennes-du-patrimoine-2026",
     "title": "Journées Européennes du Patrimoine 2026",
     "date": "2026-09-19",
     "date_fin": "2026-09-20",
     "time": "09:00",
-    "cat": "événement culturel",
+    "cat": "paris",
     "venue": "Paris (toute la ville) + Île-de-France",
     "notes": "43e édition. Thème 2026: 'Patrimoines en mouvement'. Lieux fermés habituellement, visites guidées. Notre-Dame accessible. Gratuit.\nhttps://journeesdupatrimoine.culture.gouv.fr",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 75,
     "source": "journeesdupatrimoine.culture.gouv.fr",
     "match_reasons": [
@@ -40,102 +53,103 @@
       "lieu_emblematique",
       "jour_prefere"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-09-01-festival-d-automne-a-paris-2026",
     "title": "Festival d'Automne à Paris 2026",
     "date": "2026-09-01",
     "date_fin": "2027-01-24",
     "time": "20:00",
-    "cat": "festival",
+    "cat": "paris",
     "venue": "60+ lieux (Centre Pompidou, Odéon, Théâtre de la Ville...)",
     "notes": "Festival pluridisciplinaire international: théâtre, danse, musique, arts visuels dans 60 lieux. ~80 spectacles. Programme 2026 à venir.\nhttps://www.festival-automne.com",
     "reminders": [
       "1w"
     ],
+    "deadline": null,
     "score": 70,
     "source": "festival-automne.com",
     "match_reasons": [
       "sujet_favori: art contemporain",
       "lieu_prefere: Centre Pompidou"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "Paris Jazz Festival 2026 — Parc Floral",
-    "date": "2026-06-24",
-    "date_fin": "2026-09-06",
-    "time": "15:00",
-    "cat": "festival",
-    "venue": "Parc Floral de Vincennes, Paris 12e",
-    "notes": "Concerts gratuits week-ends fin juin → début septembre. Melissa Aldana, Tomoki Sanders, Kyoto Jazz Massive, Emma Jean Thackray. Entrée parc: 2,50€.\nhttps://festivalsduparcfloral.paris/programmation/paris-jazz-festival/",
-    "reminders": [
-      "1w",
-      "1d"
-    ],
-    "score": 60,
-    "source": "festivalsduparcfloral.paris",
-    "match_reasons": [
-      "sujet_favori: musique",
-      "gratuit",
-      "budget_ok"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Jazz à La Villette 2026",
-    "date": "2026-08-28",
-    "date_fin": "2026-09-06",
-    "time": "20:00",
-    "cat": "festival",
-    "venue": "Philharmonie de Paris / Cité de la Musique, Paris 19e",
-    "notes": "Great Black Music. Snarky Puppy, GoGo Penguin, Selah Sue, Kokoroko, Cymande, Brian Jackson & Yasiin Bey.\nhttps://jazzalavillette.com",
-    "reminders": [
-      "1w",
-      "1d"
-    ],
-    "score": 60,
-    "source": "jazzalavillette.com",
-    "match_reasons": [
-      "sujet_favori: musique",
-      "lieu_emblematique"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-09-11-fete-de-l-humanite-2026",
     "title": "Fête de l'Humanité 2026",
     "date": "2026-09-11",
     "date_fin": "2026-09-13",
     "time": "12:00",
-    "cat": "festival",
+    "cat": "paris",
     "venue": "Base 217, Le Plessis-Pâté / Brétigny-sur-Orge, Essonne",
     "notes": "91e édition. Patti Smith, Eddy de Pretto, Hoshi, MEUTE, Soprano, UB40, Oxmo Puccino. 60+ artistes.\nhttps://www.humanite.fr/fete",
     "reminders": [
       "1w"
     ],
+    "deadline": null,
     "score": 40,
     "source": "humanite.fr",
     "match_reasons": [
       "sujet_favori: musique"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-09-28-fashion-week-paris-femme-pret-a-porter-pe-2027",
     "title": "Fashion Week Paris — Femme Prêt-à-Porter PE 2027",
     "date": "2026-09-28",
     "date_fin": "2026-10-06",
     "time": "10:00",
-    "cat": "fashion week",
+    "cat": "paris",
     "venue": "Divers lieux Paris",
     "notes": "Semaine de la mode femme PE 2027. Chanel, Dior, LV, Hermès, Balenciaga, Saint Laurent... Événements satellites ouverts.\nhttps://www.fhcm.paris/en/paris-fashion-week",
     "reminders": [
       "1w"
     ],
+    "deadline": null,
     "score": 30,
     "source": "fhcm.paris",
     "match_reasons": [
       "sujet_favori: design"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

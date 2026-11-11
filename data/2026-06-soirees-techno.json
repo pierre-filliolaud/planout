@@ -1,16 +1,18 @@
 [
   {
+    "id": "2026-06-11-david-guetta-the-ultimate-monolith-show-stade-de-france-j1",
     "title": "David Guetta — The Ultimate Monolith Show — Stade de France (J1)",
     "date": "2026-06-11",
     "date_fin": null,
     "time": "19:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Stade de France, Saint-Denis (93)",
     "notes": "Concert exceptionnel de David Guetta à 80 000 personnes. Show monolithe géant — dernière production de ce type. Première partie : Armin van Buuren. Prix depuis 49.90€ (Cat.4). Attention : places Cat.4 encore disponibles — Cat.3 et + SOLD OUT.\nhttps://www.stadefrance.com/en/ticket/david-guetta-3",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 65,
     "source": "stadefrance.com",
     "match_reasons": [
@@ -19,20 +21,31 @@
       "proximite_dans_rayon: Saint-Denis ~10km",
       "budget_ok: Cat.4 à 49.90€"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-12-david-guetta-the-ultimate-monolith-show-stade-de-france-j2",
     "title": "David Guetta — The Ultimate Monolith Show — Stade de France (J2)",
     "date": "2026-06-12",
     "date_fin": null,
     "time": "19:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Stade de France, Saint-Denis (93)",
     "notes": "2e concert de David Guetta au Stade de France. Show monolithe. Première partie : DJ Fisher. Majoritairement SOLD OUT — surveiller revente officielle. Prix dès 49.90€ si dispo.\nhttps://www.stadefrance.com/en/ticket/david-guetta-2",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 65,
     "source": "stadefrance.com",
     "match_reasons": [
@@ -41,20 +54,31 @@
       "proximite_dans_rayon: Saint-Denis ~10km",
       "jour_prefere: vendredi"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-13-david-guetta-the-ultimate-monolith-show-stade-de-france-j3",
     "title": "David Guetta — The Ultimate Monolith Show — Stade de France (J3)",
     "date": "2026-06-13",
     "date_fin": null,
     "time": "19:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Stade de France, Saint-Denis (93)",
     "notes": "3e et dernier concert de David Guetta au Stade de France. Show monolithe — finale. Première partie : Black Coffee. SOLD OUT — surveiller revente officielle.\nhttps://www.stadefrance.com/en/ticket/david-guetta",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 60,
     "source": "stadefrance.com",
     "match_reasons": [
@@ -63,43 +87,31 @@
       "proximite_dans_rayon: Saint-Denis ~10km",
       "jour_prefere: samedi"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "T7 Paris — Soirée Techno (récurrente été 2026)",
-    "date": "2026-06-26",
-    "date_fin": null,
-    "time": "23:00",
-    "cat": "concert",
-    "venue": "T7, Paris 15e",
-    "notes": "date estimée / récurrent. T7 programme des soirées techno chaque vendredi/samedi (midnight-7am). Terrasse panoramique 400m². Consulter shotgun.live/en/venues/t-7 pour la prog exacte. ~14-20€.\nhttps://shotgun.live/en/venues/t-7",
-    "reminders": [
-      "1w",
-      "1d"
-    ],
-    "score": 50,
-    "source": "shotgun.live",
-    "match_reasons": [
-      "lieu_prefere: T7",
-      "genre_prefere: techno/minimal",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: vendredi",
-      "budget_ok"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-06-20-weather-festival-2026-la-seine-musicale",
     "title": "Weather Festival 2026 — La Seine Musicale",
     "date": "2026-06-20",
     "date_fin": null,
     "time": "12:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "La Seine Musicale, Boulogne-Billancourt (92)",
     "notes": "Retour du Weather Festival après 2 ans d'absence. 14h de musique électronique intense. Lineup annoncé : Dixon, Marcel Dettmann, Ricardo Villalobos, Nina Kraviz, Daniel Avery, Antigone, Eris Drew, OKO DJ, Anetha, Shlømo, KiNK, DjRUM, Octo Octa, Tryphème, Red Axes et autres. Île Seguin / La Seine Musicale. Prix à confirmer sur ra.co.\nhttps://ra.co/promoters/39087",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 45,
     "source": "ra.co",
     "match_reasons": [
@@ -107,20 +119,31 @@
       "proximite_dans_rayon: Boulogne ~8km",
       "jour_prefere: samedi"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
+    "id": "2026-06-27-kilometre25-saison-6-randomer-pan-pot-koboyo-b2b-camille-doe",
     "title": "Kilomètre25 — Saison 6 : Randomer, Pan Pot, Koboyo b2b Camille Doe",
     "date": "2026-06-27",
     "date_fin": null,
     "time": "23:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Kilomètre25, Paris 19e",
     "notes": "Kilomètre25 saison 6 (ouvert avril–novembre 2026). Soirée nocturne vendredi/samedi minuit–9h. Artistes attendus en saison : Randomer, Under Black Helmet, Manu Le Malin, Pan Pot, Camille Doe, Terrence Parker, Koboyo... Vérifier programmation exacte sur shotgun.live. ~15-20€.\nhttps://shotgun.live/en/venues/kilometre-25",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 45,
     "source": "shotgun.live",
     "match_reasons": [
@@ -128,66 +151,31 @@
       "proximite_dans_rayon: Paris",
       "jour_prefere: samedi"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "La Machine du Moulin Rouge — Soirée Electro (récurrente 2026)",
-    "date": "2026-06-19",
-    "date_fin": null,
-    "time": "23:00",
-    "cat": "concert",
-    "venue": "La Machine du Moulin Rouge, Paris 18e",
-    "notes": "date estimée / récurrent. La Machine programme des soirées electro/club chaque semaine (hors programmation concerts rock/pop). Consulter lamachinedumoulinrouge.com pour les soirées electro spécifiques. ~10-20€.\nhttps://www.lamachinedumoulinrouge.com/agenda/",
-    "reminders": [
-      "1w",
-      "1d"
-    ],
-    "score": 45,
-    "source": "lamachinedumoulinrouge.com",
-    "match_reasons": [
-      "lieu_prefere: La Machine du Moulin Rouge",
-      "genre_prefere: electro/house",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: vendredi",
-      "budget_ok"
-    ],
-    "image_url": null
-  },
-  {
-    "title": "Rex Club — Soirée Techno/House (récurrente été 2026)",
-    "date": "2026-06-06",
-    "date_fin": null,
-    "time": "23:30",
-    "cat": "concert",
-    "venue": "Rex Club, Paris 2e",
-    "notes": "date estimée / récurrent. Le Rex Club programme chaque semaine des soirées techno, house, electro. Consulter rexclub.com pour la programmation exacte de juin 2026. ~12-15€.\nhttps://rexclub.com/billetterie/",
-    "reminders": [
-      "1w",
-      "1d"
-    ],
-    "score": 40,
-    "source": "rexclub.com",
-    "match_reasons": [
-      "lieu_prefere: Rex Club",
-      "genre_prefere: techno/house",
-      "budget_ok",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: samedi"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-06-13-fvtvr-transgenik",
     "title": "FVTVR — Transgenik",
     "date": "2026-06-13",
     "date_fin": null,
     "time": "00:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "FVTVR, Paris 13e",
     "notes": "Soirée Transgenik au FVTVR. Trance / techno. ~15-20€.\nhttps://dice.fm/venue/fvtvr-pvlk",
     "reminders": [
       "1w",
       "1d"
     ],
+    "deadline": null,
     "score": 35,
     "source": "dice.fm",
     "match_reasons": [
@@ -196,42 +184,31 @@
       "jour_prefere: samedi",
       "budget_ok"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   },
   {
-    "title": "Badaboum Paris — Soirée House/Techno (récurrente été 2026)",
-    "date": "2026-06-13",
-    "date_fin": null,
-    "time": "23:30",
-    "cat": "concert",
-    "venue": "Badaboum, Paris 11e",
-    "notes": "date estimée / récurrent. Badaboum (2 bis rue des Taillandiers, Bastille) programme des soirées house et techno chaque jeudi-vendredi-samedi. Spécialiste long sets. Consulter badaboum.paris/agenda/. ~10-15€.\nhttps://badaboum.paris/agenda/",
-    "reminders": [
-      "1w",
-      "1d"
-    ],
-    "score": 35,
-    "source": "badaboum.paris",
-    "match_reasons": [
-      "genre_prefere: house/techno",
-      "proximite_dans_rayon: Paris",
-      "jour_prefere: samedi",
-      "budget_ok"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-06-12-vitalic-live-musee-electronique-festival-grenoble",
     "title": "Vitalic Live — Musée Electronique Festival, Grenoble",
     "date": "2026-06-12",
     "date_fin": null,
     "time": "20:00",
-    "cat": "concert",
+    "cat": "techno",
     "venue": "Musée Dauphinois, Grenoble",
     "notes": "Vitalic en concert live au Musée Electronique Festival à Grenoble (12-14 juin). Hors rayon 30km — Grenoble ~570km de Paris. Vérifier billets sur agendaculturel.fr. ~25-35€.\nhttps://www.agendaculturel.fr/vitalic",
     "reminders": [
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 15,
     "source": "agendaculturel.fr",
     "match_reasons": [
@@ -239,6 +216,15 @@
       "genre_prefere: electro-live",
       "hors_rayon_favoris: Grenoble ~570km"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]

@@ -1,27 +1,6 @@
 [
   {
-    "title": "Pitchfork Music Festival Paris 2026",
-    "date": "2026-11-01",
-    "date_fin": "2026-11-08",
-    "time": "19:00",
-    "cat": "concert",
-    "venue": "Multi-salles Paris : Olympia, Grande Halle, Trianon, Élysée Montmartre…",
-    "notes": "date estimée / récurrent. Festival indie/electro/alternatif multisalles (~80 artistes). Prix : 20€ à 60€ par concert.\nhttps://pitchforkmusicfestival.fr/",
-    "reminders": [
-      "2w",
-      "1w"
-    ],
-    "score": 65,
-    "source": "pitchforkmusicfestival.fr",
-    "match_reasons": [
-      "festival",
-      "genre_prefere: indie/electro/rock",
-      "lieu_prefere",
-      "proximite_dans_rayon"
-    ],
-    "image_url": null
-  },
-  {
+    "id": "2026-11-16-bloc-party-interpol-zenith-paris",
     "title": "Bloc Party + Interpol – Zénith Paris",
     "date": "2026-11-16",
     "date_fin": null,
@@ -33,6 +12,7 @@
       "2w",
       "1w"
     ],
+    "deadline": null,
     "score": 60,
     "source": "le-zenith.com",
     "match_reasons": [
@@ -40,6 +20,15 @@
       "lieu_emblematique",
       "proximite_dans_rayon"
     ],
-    "image_url": null
+    "image_url": null,
+    "added": "2026-11-11T19:51",
+    "tags": [],
+    "urgence": "basse",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa"
+    },
+    "prix": null,
+    "url": null
   }
 ]
