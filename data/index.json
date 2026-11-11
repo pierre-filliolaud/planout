@@ -343,22 +343,10 @@
       "month": "2027-04"
     },
     {
-      "file": "2027-05-sorties-paris.json",
-      "label": "May · Paris",
-      "theme": "paris",
-      "month": "2027-05"
-    },
-    {
       "file": "2027-05-sorties-theatre.json",
       "label": "May · Shows",
       "theme": "spectacle",
       "month": "2027-05"
-    },
-    {
-      "file": "2027-06-sorties-paris.json",
-      "label": "June · Paris",
-      "theme": "paris",
-      "month": "2027-06"
     },
     {
       "file": "2027-06-sorties-theatre.json",
@@ -373,34 +361,10 @@
       "month": "2027-07"
     },
     {
-      "file": "2027-07-sorties-paris.json",
-      "label": "July · Paris",
-      "theme": "paris",
-      "month": "2027-07"
-    },
-    {
-      "file": "2027-09-sorties-paris.json",
-      "label": "September · Paris",
-      "theme": "paris",
-      "month": "2027-09"
-    },
-    {
       "file": "2027-10-sorties-musee.json",
       "label": "October · Museums",
       "theme": "musee",
       "month": "2027-10"
-    },
-    {
-      "file": "2027-10-sorties-paris.json",
-      "label": "October · Paris",
-      "theme": "paris",
-      "month": "2027-10"
-    },
-    {
-      "file": "2027-11-sorties-paris.json",
-      "label": "November · Paris",
-      "theme": "paris",
-      "month": "2027-11"
     }
   ]
 }
