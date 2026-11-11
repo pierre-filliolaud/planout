@@ -115,8 +115,13 @@ def resa(e):
     return e.get("reservation") or {}
 
 
+# Dates supposées : « date estimée », « Récurrent annuel », « Dates 2027 à confirmer »…
+ESTIME_RE = re.compile(r"date[s]? estim|\(date estim|r[ée]current annuel|dates? (\d{4} )?[àa] confirmer", re.I)
+
+
 def is_estime(e):
-    return bool(e.get("estime")) or "date-estimee" in (e.get("tags") or [])
+    return (bool(e.get("estime")) or "date-estimee" in (e.get("tags") or [])
+            or bool(ESTIME_RE.search(f'{e.get("title", "")} {e.get("notes") or ""}')))
 
 
 def emoji(e):
@@ -211,7 +216,7 @@ def normalize(e, known_ids, file_theme=None):
     e["reservation"] = r
     if e.get("url") and not e.get("source"):
         e["source"] = domain(e["url"])
-    if "date estim" in (e.get("notes") or "").lower() or "(date estim" in e["title"].lower():
+    if is_estime(e):
         e["estime"] = True
         if "date-estimee" not in e["tags"]:
             e["tags"].append("date-estimee")
