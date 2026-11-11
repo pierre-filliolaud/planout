@@ -30,5 +30,48 @@
     },
     "prix": null,
     "url": null
+  },
+  {
+    "id": "2026-11-13-festival-street-art-de-la-poste-du-louvre-4e-edition",
+    "title": "Festival street art de la Poste du Louvre (4e édition)",
+    "date": "2026-11-13",
+    "date_fin": "2026-11-22",
+    "time": "17:00",
+    "cat": "musee",
+    "venue": "La Poste du Louvre, rue du Louvre, Paris 1er",
+    "notes": "Street art et art contemporain par la Galerie Roussard : expo, live painting dans la cour, rencontres avec les artistes. Vernissage ven. 13/11 de 17h à 22h, puis tous les jours de 11h à 19h jusqu'au 22/11 (dernière entrée 18h45). Entrée libre, sans réservation. Adresse : 48 ou 52 rue du Louvre selon les sources.\n💶 gratuit\nhttps://www.sortiraparis.com/en/what-to-visit-in-paris/exhibit-museum/articles/303019-free-street-art-festival-at-la-poste-du-louvre-in-2026-the-programme",
+    "reminders": [
+      "1w",
+      "1d"
+    ],
+    "deadline": null,
+    "score": 85,
+    "source": "sortiraparis.com",
+    "match_reasons": [
+      "sujet_favori: street art",
+      "lieu_emblematique: Poste du Louvre",
+      "gratuit",
+      "proximite_dans_rayon",
+      "se_termine_bientot"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T22:34",
+    "tags": [
+      "street-art",
+      "gratuit"
+    ],
+    "urgence": "moyenne",
+    "reservation": {
+      "requise": false,
+      "statut": "sans_resa",
+      "ouverture": null,
+      "url": null
+    },
+    "prix": {
+      "min": null,
+      "max": null,
+      "gratuit": true
+    },
+    "url": "https://www.sortiraparis.com/en/what-to-visit-in-paris/exhibit-museum/articles/303019-free-street-art-festival-at-la-poste-du-louvre-in-2026-the-programme"
   }
 ]
