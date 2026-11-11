@@ -25,10 +25,10 @@ Thèmes à couvrir :
 - `spectacle` (sorties-theatre.json) : opéra, ballet, théâtre contemporain, lieux préférés
 - `running` / `volley` (sport.json) : distances, formats et niveau préférés ; date limite d'inscription
 
-## 3. Écris le résultat
-Crée le fichier JSON indiqué en fin de message : un **tableau** conforme à
+## 3. Ta réponse
+Ta réponse finale est **UNIQUEMENT un tableau JSON** (aucun texte avant ou après), un **tableau** conforme à
 `agent-sorties/schema/event.schema.json` (exemple dans `agent-sorties/prompts/alertes.md`).
-Maximum 30 événements, les meilleurs scores, **au plus 8 par `cat`**. Si rien de nouveau : écris `[]`.
+Maximum 30 événements, les meilleurs scores, **au plus 8 par `cat`**. Si rien de nouveau : réponds `[]`.
 
 ## Règles absolues
 - **Jamais de date estimée ou supposée** : pas de date officielle = pas d'événement.
@@ -36,4 +36,4 @@ Maximum 30 événements, les meilleurs scores, **au plus 8 par `cat`**. Si rien 
 - Vérifie sur la page officielle. Inconnu = `null`. N'invente jamais.
 - Pas de doublon avec `connus.txt`, sauf changement de statut (même `id`).
 - Score, urgence et `match_reasons` selon `regles.md` (ranking_weights, borné 0–100).
-- N'écris rien d'autre que ce fichier. Réponse finale : une ligne de résumé.
+- N'écris aucun fichier. Ta réponse finale = le tableau JSON seul.

@@ -30,15 +30,14 @@ fi
 
 # 1. Recherche web par Claude (alertes et quotidien seulement)
 if [[ "$MODE" == "alertes" || "$MODE" == "quotidien" ]]; then
-  OUT="agent-sorties/data/inbox/$(date +%Y%m%d-%H%M)-$MODE.json"
+  RAW="$S/data/inbox/$(date +%Y%m%d-%H%M)-$MODE.raw"
   PROMPT="$(cat "$S/prompts/$MODE.md")
 
-Date et heure actuelles : $(date '+%Y-%m-%d %H:%M') (Europe/Paris).
-Fichier de sortie à créer : $OUT"
-  claude -p "$PROMPT" --model sonnet \
-    --allowedTools "WebSearch" "WebFetch" "Read" \
-                   "Write(./agent-sorties/data/inbox/**)" "Edit(./agent-sorties/data/inbox/**)" \
-    >> "$LOG" 2>&1 || log "erreur claude (code $?)"
+Date et heure actuelles : $(date '+%Y-%m-%d %H:%M') (Europe/Paris)."
+  # Claude ne fait que lire et chercher : sa réponse (le tableau JSON) est capturée ici
+  claude -p "$PROMPT" --model sonnet --allowedTools "WebSearch" "WebFetch" "Read" \
+    > "$RAW" 2>> "$LOG" || log "erreur claude (code $?)"
+  log "réponse de Claude : $(wc -c < "$RAW" | tr -d ' ') octets → $(basename "$RAW")"
   python3 "$S/scripts/sorties.py" merge >> "$LOG" 2>&1
   # Publication dans PlanOut (fichiers data/ + git push vers GitHub Pages)
   python3 "$S/scripts/sorties.py" planout >> "$LOG" 2>&1 || log "erreur publication PlanOut"

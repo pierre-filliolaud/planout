@@ -275,15 +275,33 @@ def cmd_import_planout():
     cmd_export()
 
 
+def extract_json(text):
+    """Récupère le tableau JSON d'une réponse de Claude (JSON pur, bloc ```json, ou texte autour)."""
+    text = text.strip()
+    try:
+        return json.loads(text or "[]")
+    except json.JSONDecodeError:
+        pass
+    for bloc in re.findall(r"```(?:json)?\s*(.*?)```", text, re.S):
+        try:
+            return json.loads(bloc)
+        except json.JSONDecodeError:
+            continue
+    debut, fin = text.find("["), text.rfind("]")
+    if debut != -1 and fin > debut:
+        return json.loads(text[debut:fin + 1])
+    raise ValueError("aucun tableau JSON trouvé dans la réponse")
+
+
 def cmd_merge():
     INBOX.mkdir(parents=True, exist_ok=True)
     (INBOX / "traites").mkdir(exist_ok=True)
     (INBOX / "erreurs").mkdir(exist_ok=True)
     db = {e["id"]: e for e in load_db()}
     stats = {"ajout": 0, "maj": 0, "ignorés": 0}
-    for f in sorted(INBOX.glob("*.json")):
+    for f in sorted([*INBOX.glob("*.json"), *INBOX.glob("*.raw")]):
         try:
-            items = json.loads(f.read_text(encoding="utf-8") or "[]")
+            items = extract_json(f.read_text(encoding="utf-8"))
             if isinstance(items, dict):
                 items = items.get("events", [])
             for raw in items:

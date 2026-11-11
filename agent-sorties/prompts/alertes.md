@@ -21,9 +21,9 @@ Objectif : repérer ce qu'il faut **réserver vite** (logique de l'ancienne comm
 
 Horizon : billetteries qui ouvrent dans les 16 prochaines semaines.
 
-## 3. Écris le résultat
-Crée le fichier JSON indiqué en fin de message : un **tableau** d'événements conforme à
-`agent-sorties/schema/event.schema.json`. Maximum 10. Si rien : écris `[]`.
+## 3. Ta réponse
+Ta réponse finale est **UNIQUEMENT un tableau JSON** (aucun texte avant ou après), un **tableau** d'événements conforme à
+`agent-sorties/schema/event.schema.json`. Maximum 10. Si rien : réponds `[]`.
 
 ```json
 {
@@ -48,4 +48,4 @@ Crée le fichier JSON indiqué en fin de message : un **tableau** d'événements
 - Paris + rayon des préférences (sauf artistes_bouger_partout), événements à venir uniquement.
 - Vérifie sur la page officielle. Inconnu = `null`. N'invente jamais.
 - Pas de doublon avec `connus.txt`, sauf changement de statut (même `id`).
-- N'écris rien d'autre que ce fichier. Réponse finale : une ligne de résumé.
+- N'écris aucun fichier. Ta réponse finale = le tableau JSON seul.
