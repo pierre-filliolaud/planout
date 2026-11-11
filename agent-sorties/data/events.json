@@ -6423,6 +6423,51 @@
     }
   },
   {
+    "title": "Around the World — l'expo dédiée à Daft Punk",
+    "cat": "musee",
+    "tags": [
+      "french-touch",
+      "daft-punk",
+      "expo-photo"
+    ],
+    "date": "2026-11-20",
+    "date_fin": "2026-11-22",
+    "time": "10:00",
+    "venue": "Around the World, 114 rue de Turenne, Paris 3e",
+    "notes": "Expo photo de 65 clichés d'archives, dont des inédits, retraçant les débuts du duo (1995-2005) sur 500 m² dans le Marais. 3 jours seulement, de 10h à 19h. Réservation obligatoire.",
+    "prix": {
+      "min": 8.66,
+      "max": 10,
+      "gratuit": false
+    },
+    "reservation": {
+      "requise": true,
+      "statut": "ouverte",
+      "ouverture": null,
+      "url": "https://www.aroundtheworldexpo.com/"
+    },
+    "urgence": "haute",
+    "score": 100,
+    "match_reasons": [
+      "artiste_favori: Daft Punk",
+      "sujet_favori: musique electronique",
+      "rare: 3 jours seulement",
+      "budget_ok",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi"
+    ],
+    "url": "https://www.paris.fr/evenements/around-the-world-l-expo-dediee-au-daft-punk-125927",
+    "source": "paris.fr",
+    "id": "2026-11-20-around-the-world-l-expo-dediee-a-daft-punk",
+    "added": "2026-11-11T22:51",
+    "mis_a_jour_le": "2026-11-11T22:51",
+    "notifie": {
+      "alerte": null,
+      "quotidien": null,
+      "top10": []
+    }
+  },
+  {
     "title": "Illuminations de Noël — Champs-Élysées 2026",
     "date": "2026-11-22",
     "date_fin": "2027-01-05",

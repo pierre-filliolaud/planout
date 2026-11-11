@@ -1,5 +1,50 @@
 [
   {
+    "id": "2026-11-20-around-the-world-l-expo-dediee-a-daft-punk",
+    "title": "Around the World — l'expo dédiée à Daft Punk",
+    "date": "2026-11-20",
+    "date_fin": "2026-11-22",
+    "time": "10:00",
+    "cat": "musee",
+    "venue": "Around the World, 114 rue de Turenne, Paris 3e",
+    "notes": "Expo photo de 65 clichés d'archives, dont des inédits, retraçant les débuts du duo (1995-2005) sur 500 m² dans le Marais. 3 jours seulement, de 10h à 19h. Réservation obligatoire.\n💶 8.66–10 € · 🎟️ réservation ouverte\nhttps://www.aroundtheworldexpo.com/\nhttps://www.paris.fr/evenements/around-the-world-l-expo-dediee-au-daft-punk-125927",
+    "reminders": [
+      "2w",
+      "1w"
+    ],
+    "deadline": "2026-11-13",
+    "score": 100,
+    "source": "paris.fr",
+    "match_reasons": [
+      "artiste_favori: Daft Punk",
+      "sujet_favori: musique electronique",
+      "rare: 3 jours seulement",
+      "budget_ok",
+      "proximite_dans_rayon",
+      "jour_prefere: samedi"
+    ],
+    "image_url": null,
+    "added": "2026-11-11T22:51",
+    "tags": [
+      "french-touch",
+      "daft-punk",
+      "expo-photo"
+    ],
+    "urgence": "haute",
+    "reservation": {
+      "requise": true,
+      "statut": "ouverte",
+      "ouverture": null,
+      "url": "https://www.aroundtheworldexpo.com/"
+    },
+    "prix": {
+      "min": 8.66,
+      "max": 10,
+      "gratuit": false
+    },
+    "url": "https://www.paris.fr/evenements/around-the-world-l-expo-dediee-au-daft-punk-125927"
+  },
+  {
     "id": "2026-11-12-paris-photo-2026",
     "title": "Paris Photo 2026",
     "date": "2026-11-12",
