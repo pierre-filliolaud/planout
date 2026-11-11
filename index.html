@@ -464,6 +464,9 @@ const MONTHS_FR = ['January','February','March','April','May','June','July','Aug
 function uid()      { return Math.random().toString(36).slice(2,10); }
 function localStr(d){ return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
 function scoreCls(s){ return s >= 80 ? 'score-hi' : s >= 60 ? 'score-mid' : 'score-lo'; }
+// Événements sur plusieurs jours (expos, festivals) : actifs de date à date_fin
+function evEnd(e)    { return e.date_fin && e.date_fin > e.date ? e.date_fin : e.date; }
+function onDay(e,ds) { return !!e.date && e.date <= ds && ds <= evEnd(e); }
 
 let events = JSON.parse(localStorage.getItem('psp-events') || '[]');
 let _dirty = false;
@@ -885,20 +888,14 @@ function renderCal() {
   const firstDay = new Date(calYear, calMonth, 1);
   const lastDay  = new Date(calYear, calMonth+1, 0);
   const offset   = (firstDay.getDay()+6)%7;
-  const evMap = {};
-  events.forEach(ev => {
-    if (!ev.date) return;
-    if (filter !== 'all' && (ev.cat||'autre') !== filter) return;
-    if (!matchesSearch(ev)) return;
-    if (!evMap[ev.date]) evMap[ev.date]=[];
-    evMap[ev.date].push(ev);
-  });
+  const visible = events.filter(ev => ev.date && (filter === 'all' || (ev.cat||'autre') === filter) && matchesSearch(ev));
   let html='';
   for (let i=0;i<offset;i++) html+='<div class="cal-cell empty"></div>';
   for (let d=1;d<=lastDay.getDate();d++) {
     const ds=`${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
-    const evs=evMap[ds]||[];
-    let dots=evs.slice(0,5).map(ev=>`<div class="cal-dot" style="background:${(CAT[ev.cat]||CAT.autre).dot}"></div>`).join('');
+    // d'abord les événements qui commencent ce jour-là, puis ceux en cours (point estompé)
+    const evs=visible.filter(ev=>onDay(ev,ds)).sort((a,b)=>(b.date===ds)-(a.date===ds));
+    let dots=evs.slice(0,5).map(ev=>`<div class="cal-dot" style="background:${(CAT[ev.cat]||CAT.autre).dot}${ev.date!==ds?';opacity:.35':''}"></div>`).join('');
     if (evs.length>5) dots+=`<span style="font-size:8px;color:var(--text3);line-height:1">+${evs.length-5}</span>`;
     const todayCls = ds===todayStr && (!calSelDay || calSelDay===todayStr) ? ' today' : '';
     html+=`<div class="cal-cell${todayCls}${ds<todayStr?' past':''}${calSelDay===ds?' selected':''}" onclick="selectDay('${ds}')">
@@ -913,7 +910,8 @@ function renderCal() {
 function selectDay(ds) { calSelDay=ds; renderCal(); }
 
 function renderCalDay(ds) {
-  const evs = events.filter(e=>e.date===ds && (filter==='all'||(e.cat||'autre')===filter) && matchesSearch(e)).sort((a,b)=>(a.time||'')<(b.time||'')?-1:1);
+  const evs = events.filter(e=>onDay(e,ds) && (filter==='all'||(e.cat||'autre')===filter) && matchesSearch(e))
+    .sort((a,b)=>((b.date===ds)-(a.date===ds)) || ((a.time||'')<(b.time||'')?-1:1));
   const label = new Date(ds+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',day:'numeric',month:'long'});
   let html=`<div class="cal-day-hdr">${label}</div>`;
   if (!evs.length) { html+='<div class="cal-empty" style="padding:16px 0">No events this day</div>'; }
@@ -923,7 +921,7 @@ function renderCalDay(ds) {
       html+=`<div class="rem-item" style="border-left:3px solid ${cat.dot};padding-left:11px;cursor:pointer;" onclick="openDetail('${ev.id}')">
         <div class="rem-body">
           <div class="rem-title">${ev.title}</div>
-          <div class="rem-sub">${[ev.time,ev.venue].filter(Boolean).join(' · ')}</div>
+          <div class="rem-sub">${[ev.date===ds?ev.time:`En cours → ${fmtDate(evEnd(ev))}`,ev.venue].filter(Boolean).join(' · ')}</div>
         </div>
         <div class="rem-right">
           <span class="ev-badge ${cat.b}" style="font-size:10px">${cat.l}</span>
@@ -940,7 +938,7 @@ function renderCalDay(ds) {
 
 function renderTop() {
   const todayStr = localStr(_today);
-  let upcoming = events.filter(e => e.date && e.date >= todayStr && matchesSearch(e));
+  let upcoming = events.filter(e => e.date && evEnd(e) >= todayStr && matchesSearch(e));
   if (filter !== 'all') upcoming = upcoming.filter(e => (e.cat||'autre') === filter);
   const cont = document.getElementById('top-list');
   if (!upcoming.length) {
@@ -994,7 +992,7 @@ function renderAReserver() {
 
   // Section 1 — Deadlines
   const withDead = events
-    .filter(e => catOk(e) && e.deadline && e.deadline >= todayStr && (!e.date || e.date >= todayStr))
+    .filter(e => catOk(e) && e.deadline && e.deadline >= todayStr && (!e.date || evEnd(e) >= todayStr))
     .sort((a,b) => a.deadline < b.deadline ? -1 : 1);
 
   // Section 2 — Rappels
